@@ -131,6 +131,6 @@
 | 요청 모델 | `nano_banana_pro` |
 | 실제 처리 모델 | `nano_banana_2` (서버 라우팅) |
 | 해상도 | 1696 × 2528 (2K, 2:3) |
-| 결과 | `hf_20260908_043944_54ae15e1-d578-494e-bcbe-741ba8fbd991.png` |
+| 결과 | [hf_20260908_043944_54ae15e1.png](https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20260908_043944_54ae15e1-d578-494e-bcbe-741ba8fbd991.png) |
 
 재생성 시 위 §3~§8 사양을 그대로 프롬프트로 옮긴다. 한국어 라벨이 깨지면 `nano_banana_pro`를 명시해 재시도한다.
