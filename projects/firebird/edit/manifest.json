@@ -767,8 +767,10 @@
    "from": "C016",
    "to": "C022",
    "db": -32,
-   "desc": "same bed, quieter",
-   "id": "jURsOtyLD0"
+   "desc": "치료소와 같은 베드 · 믹스에서만 낮춘다",
+   "id": "jURsOtyLD0",
+   "file": "S02_aid",
+   "offset": 12.0
   },
   {
    "name": "S04_05_army",

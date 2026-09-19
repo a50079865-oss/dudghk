@@ -254,21 +254,25 @@ def main():
         return None
 
     for b in man["ambience_beds"]:
-        f = pick("beds", b["name"])
+        # 다른 구간의 베드를 빌려 쓸 수 있다 — 캐논이 "같은 베드"를 지시하는 자리가 있다.
+        stem = b.get("file", b["name"])
+        f = pick("beds", stem)
         if f is None:
-            f = media / "beds" / f"{b['name']}.wav"
+            f = media / "beds" / f"{stem}.wav"
         if not f.exists():
-            missing.append(f"beds/{b['name']}")
+            missing.append(f"beds/{stem}")
             continue
         # 베드는 30초 한도로 생성되므로 구간 길이만큼 이어 붙인다.
         seg_start = starts[b["from"]]
         seg_end = starts[b["to"]] + durs[b["to"]]
         need = seg_end - seg_start
         src_len = probe_duration(f) or 1.0
-        loops = max(0, int(need // src_len) + 1)
+        # 같은 파일을 두 구간에 쓰면 루프가 겹쳐 들린다. 시작점을 어긋내 준다.
+        off = float(b.get("offset", 0.0)) % src_len
+        loops = max(0, int((need + off) // src_len) + 1)
         inputs.extend(["-stream_loop", str(loops), "-i", str(f)])
         lab = f"[l{idx}]"
-        filters.append(f"[{idx}:a]atrim=0:{need:.3f},asetpts=PTS-STARTPTS,"
+        filters.append(f"[{idx}:a]atrim={off:.3f}:{off + need:.3f},asetpts=PTS-STARTPTS,"
                        f"afade=t=in:st=0:d=0.75,afade=t=out:st={max(0,need-0.75):.3f}:d=0.75,"
                        f"adelay={int(seg_start*1000)}|{int(seg_start*1000)},volume={b['db']}dB{lab}")
         labels.append(lab); idx += 1
