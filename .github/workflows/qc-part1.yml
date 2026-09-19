@@ -1,0 +1,70 @@
+name: QC EP1 Part 1
+
+# qc/part1 브랜치에 푸시하면 돈다. 빌드를 다시 하지 않고,
+# 이미 만들어진 아티팩트를 받아 해부한 뒤 결과를 qc/results 에 커밋한다.
+# 결과를 다른 브랜치에 올리므로 자기 자신을 다시 트리거하지 않는다.
+on:
+  push:
+    branches: [qc/part1]
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  qc:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: ffmpeg 준비
+        run: pip install imageio-ffmpeg
+
+      - name: 검수할 실행 번호 읽기
+        id: src
+        run: |
+          RUN=$(tr -d '[:space:]' < projects/firebird/edit/qc/SOURCE_RUN)
+          [ -n "$RUN" ] || { echo "::error::SOURCE_RUN 이 비어 있다"; exit 1; }
+          echo "run_id=$RUN" >> "$GITHUB_OUTPUT"
+          echo "검수 대상 실행: $RUN"
+
+      - name: 완성본 내려받기
+        uses: actions/download-artifact@v4
+        with:
+          name: part1-자막트랙
+          run-id: ${{ steps.src.outputs.run_id }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: ./film
+
+      - name: 해부
+        run: |
+          FILM=$(find ./film -name '*.mp4' | head -1)
+          [ -n "$FILM" ] || { echo "::error::mp4 를 못 찾았다"; exit 1; }
+          ls -lh "$FILM"
+          python3 projects/firebird/edit/qc_part1.py \
+            --film "$FILM" --out projects/firebird/edit/qc
+
+      - name: 결과 커밋
+        run: |
+          cd projects/firebird/edit/qc
+          ls -la
+          cd "$GITHUB_WORKSPACE"
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B qc/results
+          git add -f projects/firebird/edit/qc
+          git commit -m "QC: 실행 ${{ steps.src.outputs.run_id }} 측정 결과" \
+            -m "컨택트 시트, 파형, 스펙트로그램, 측정 보고서." || echo "변경 없음"
+          git push -f origin qc/results
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: part1-검수
+          path: projects/firebird/edit/qc
+          retention-days: 14
+          if-no-files-found: error

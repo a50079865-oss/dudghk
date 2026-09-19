@@ -1,0 +1,188 @@
+#!/usr/bin/env python3
+"""
+완성본 해부 — 들을 수도 볼 수도 없는 쪽이 검수할 수 있게 만든다.
+
+  python3 qc_part1.py --film part1.mp4 --out qc/
+
+만드는 것:
+  qc/contact_sheet.jpg   컷마다 한 프레임씩, 격자로 (그림 확인)
+  qc/waveform.png        전체 파형 (음악이 어디서 들어오는지)
+  qc/spectrogram.png     전체 스펙트로그램 (첼로 드론·무음·습격 구분)
+  qc/report.md           무음·검은화면·정지·구간별 라우드니스 측정값
+
+측정은 로그로도 찍는다. 이미지는 저장소에 커밋해 사람 아닌 쪽도 읽게 한다.
+"""
+import argparse, json, re, subprocess, sys
+from pathlib import Path
+
+try:
+    import imageio_ffmpeg
+    FFMPEG = imageio_ffmpeg.get_ffmpeg_exe()
+except Exception:
+    import shutil
+    FFMPEG = shutil.which("ffmpeg") or "ffmpeg"
+
+
+def ff(args, expect_ok=True):
+    r = subprocess.run([FFMPEG, "-hide_banner", *args], capture_output=True, text=True)
+    if expect_ok and r.returncode != 0:
+        sys.stderr.write(r.stderr[-2000:] + "\n")
+        raise SystemExit(f"ffmpeg 실패: {' '.join(args[:8])}")
+    return r.stderr
+
+
+def hhmmss(t):
+    return f"{int(t)//60}:{int(t)%60:02d}"
+
+
+def cut_starts(man):
+    """디졸브는 핸들로 보상되므로 누적 시작점은 길이의 단순 합이다."""
+    t, rows = 0.0, []
+    for e in man["timeline"]:
+        rows.append((e["cut"], t, e["dur"], e["kind"]))
+        t += e["dur"]
+    return rows, t
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--film", required=True)
+    ap.add_argument("--manifest", default=str(Path(__file__).with_name("manifest.json")))
+    ap.add_argument("--out", default="qc")
+    ap.add_argument("--cols", type=int, default=8)
+    a = ap.parse_args()
+
+    film = Path(a.film)
+    out = Path(a.out); out.mkdir(parents=True, exist_ok=True)
+    man = json.loads(Path(a.manifest).read_text())
+    rows, total = cut_starts(man)
+
+    # ── 1. 컷별 한 프레임 → 컨택트 시트 ──────────────────────────────
+    frames = out / "_frames"; frames.mkdir(exist_ok=True)
+    for i, (cut, st, dur, kind) in enumerate(rows):
+        at = st + dur / 2.0
+        ff(["-y", "-ss", f"{at:.3f}", "-i", str(film), "-frames:v", "1",
+            "-vf", "scale=320:-2", "-q:v", "4", str(frames / f"{i:03d}_{cut}.jpg")])
+    n = len(rows)
+    cols = a.cols
+    tile_rows = (n + cols - 1) // cols
+    ff(["-y", "-framerate", "1", "-i", str(frames / "%03d_*.jpg"),
+        "-vf", f"tile={cols}x{tile_rows}:margin=6:padding=4:color=#111111",
+        "-frames:v", "1", "-q:v", "3", str(out / "contact_sheet.jpg")], expect_ok=False)
+    # glob 패턴이 안 먹는 빌드가 있어 순번 파일로 한 번 더 시도한다
+    if not (out / "contact_sheet.jpg").exists():
+        seq = out / "_seq"; seq.mkdir(exist_ok=True)
+        for i, p in enumerate(sorted(frames.glob("*.jpg"))):
+            (seq / f"{i:03d}.jpg").write_bytes(p.read_bytes())
+        ff(["-y", "-framerate", "1", "-i", str(seq / "%03d.jpg"),
+            "-vf", f"tile={cols}x{tile_rows}:margin=6:padding=4:color=#111111",
+            "-frames:v", "1", "-q:v", "3", str(out / "contact_sheet.jpg")])
+
+    # ── 2. 파형과 스펙트로그램 ────────────────────────────────────────
+    ff(["-y", "-i", str(film), "-filter_complex",
+        "[0:a]showwavespic=s=1920x360:colors=#e8d5a8|#a87f4a:split_channels=0[v]",
+        "-map", "[v]", "-frames:v", "1", str(out / "waveform.png")])
+    ff(["-y", "-i", str(film), "-lavfi",
+        "showspectrumpic=s=1920x540:mode=combined:legend=1:gain=3",
+        "-frames:v", "1", str(out / "spectrogram.png")])
+
+    # ── 3. 측정 ───────────────────────────────────────────────────────
+    sil = ff(["-i", str(film), "-af", "silencedetect=noise=-50dB:d=1.5",
+              "-f", "null", "-"], expect_ok=False)
+    silences = re.findall(r"silence_start:\s*([\d.]+).*?silence_end:\s*([\d.]+)", sil, re.S)
+
+    blk = ff(["-i", str(film), "-vf", "blackdetect=d=0.5:pix_th=0.05",
+              "-an", "-f", "null", "-"], expect_ok=False)
+    blacks = re.findall(r"black_start:([\d.]+)\s+black_end:([\d.]+)", blk)
+
+    frz = ff(["-i", str(film), "-vf", "freezedetect=n=-60dB:d=12",
+              "-an", "-f", "null", "-"], expect_ok=False)
+    freezes = re.findall(r"freeze_start:\s*([\d.]+)", frz)
+
+    eb = ff(["-i", str(film), "-af", "ebur128=framelog=quiet:peak=true",
+             "-f", "null", "-"], expect_ok=False)
+    def grab(k):
+        m = re.search(rf"{k}:\s*(-?[\d.inf]+)", eb)
+        return m.group(1) if m else "?"
+    lufs, lra, peak = grab("I"), grab("LRA"), grab("Peak")
+
+    # 구간별 평균 레벨 — 스코어 큐가 실제로 그 자리에 있는지
+    sections = [("cue_A 재 (0:00-0:45)", 0, 45),
+                ("조용한 중반 (1:30-3:00)", 90, 180),
+                ("cue_B 철수 (3:30-4:28)", 210, 268),
+                ("cue_C 습격 (5:45-6:55)", 345, 415)]
+    levels = []
+    for name, st, en in sections:
+        s = ff(["-ss", str(st), "-t", str(en - st), "-i", str(film),
+                "-af", "volumedetect", "-f", "null", "-"], expect_ok=False)
+        m = re.search(r"mean_volume:\s*(-?[\d.]+)", s)
+        p = re.search(r"max_volume:\s*(-?[\d.]+)", s)
+        levels.append((name, m.group(1) if m else "?", p.group(1) if p else "?"))
+
+    streams = ff(["-i", str(film)], expect_ok=False)
+    has_subs = "Subtitle:" in streams
+    dur_m = re.search(r"Duration:\s*(\d+):(\d+):([\d.]+)", streams)
+    dur = (int(dur_m.group(1)) * 3600 + int(dur_m.group(2)) * 60
+           + float(dur_m.group(3))) if dur_m else 0.0
+
+    # ── 4. 보고서 ─────────────────────────────────────────────────────
+    L = []
+    L.append("# EP1 1부 — 완성본 측정\n")
+    L.append(f"파일 `{film.name}` · 길이 **{dur:.2f}초** (목표 420초) · "
+             f"자막 트랙 **{'있음' if has_subs else '없음'}**\n")
+
+    L.append("\n## 라우드니스\n")
+    L.append(f"| 통합 | LRA | 트루피크 |\n|---|---|---|\n| {lufs} LUFS | {lra} LU | {peak} dBTP |\n")
+    L.append("\n납품 기준은 -14 LUFS / -1 dBTP.\n")
+
+    L.append("\n## 구간별 레벨 — 스코어가 설계한 자리에 있는가\n")
+    L.append("| 구간 | 평균 | 피크 |\n|---|---|---|\n")
+    for name, mean, pk in levels:
+        L.append(f"| {name} | {mean} dB | {pk} dB |\n")
+    L.append("\n습격이 가장 크고, 조용한 중반이 가장 작아야 한다.\n")
+
+    L.append(f"\n## 무음 — 1.5초 이상, -50dB 이하 ({len(silences)}곳)\n")
+    if silences:
+        L.append("| 시작 | 끝 | 길이 | 해당 컷 |\n|---|---|---|---|\n")
+        for st, en in silences:
+            st, en = float(st), float(en)
+            hit = [c for c, s, d, _ in rows if s <= st < s + d]
+            L.append(f"| {hhmmss(st)} | {hhmmss(en)} | {en-st:.1f}s | {hit[0] if hit else '-'} |\n")
+    else:
+        L.append("없음 — **설계와 어긋난다.** C019 전체와 C039 후반은 무음이어야 한다.\n")
+
+    L.append(f"\n## 검은 화면 — 0.5초 이상 ({len(blacks)}곳)\n")
+    if blacks:
+        L.append("소스가 빠졌다는 뜻이다.\n\n| 시작 | 끝 | 해당 컷 |\n|---|---|---|\n")
+        for st, en in blacks:
+            st = float(st)
+            hit = [c for c, s, d, _ in rows if s <= st < s + d]
+            L.append(f"| {hhmmss(st)} | {hhmmss(float(en))} | {hit[0] if hit else '-'} |\n")
+    else:
+        L.append("없음. 62컷 전부 그림이 들어 있다.\n")
+
+    L.append(f"\n## 12초 이상 정지 ({len(freezes)}곳)\n")
+    if freezes:
+        L.append("의도한 홀드(C004·C028·C039)인지 확인할 것.\n\n| 시작 | 해당 컷 |\n|---|---|\n")
+        for st in freezes:
+            st = float(st)
+            hit = [c for c, s, d, _ in rows if s <= st < s + d]
+            L.append(f"| {hhmmss(st)} | {hit[0] if hit else '-'} |\n")
+    else:
+        L.append("없음.\n")
+
+    L.append("\n## 그림\n")
+    L.append("- `contact_sheet.jpg` — 62컷 각각의 중간 프레임\n")
+    L.append("- `waveform.png` — 파형\n")
+    L.append("- `spectrogram.png` — 스펙트로그램\n")
+
+    (out / "report.md").write_text("".join(L))
+    print("".join(L))
+
+    import shutil as _sh
+    _sh.rmtree(frames, ignore_errors=True)
+    _sh.rmtree(out / "_seq", ignore_errors=True)
+
+
+if __name__ == "__main__":
+    main()
