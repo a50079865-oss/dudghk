@@ -2,7 +2,7 @@
 > 규격: Nano Banana 2 · 16:9 · 75/장 · 규칙0-[A] + ARRI_LOOK + 화각 배정 주입
 > 인물 컷은 확정 캐릭터 시트를 `references[type=image]`로 주입 (엘라라 Bh5pGDqoQR · 리븐 P3T7rNL42C)
 
-## 완료 16 / 55
+## 완료 55 / 55 — EP1 1부 전 컷 생성 완료
 
 ### 관문 6컷 (규칙0-[A] 미주입 — 룩·정체성 검증용)
 | 컷 | 내용 | 링크 |
@@ -69,5 +69,61 @@ C022~C025 · C027~C062 (C062는 타이틀카드, 생성 불필요)
 | C037 | long shot 200mm 후퇴 · 콜드 | https://www.magnific.com/app/creation/LwRr2wcswO |
 | C038 | aerial drone · 소프트 | https://www.magnific.com/app/creation/EbSawkouuO |
 
-## 진행 32 / 55 · 남은 23컷 (C039~C061)
-누적 이미지 32 × 75 = 2,400 · 프로젝트 누적 **5,400** · 잔액 약 **26,602**
+
+### 배치 5 — S06 「기도」 + S07 「연기」
+| 컷 | 화각 · 조명 | 링크 |
+|---|---|---|
+| C039 | macro 지면 · 하드라이트 ★요란의 손 | https://www.magnific.com/app/creation/TdCWuqSVNR |
+| C040 | one-point perspective low · 갓레이 | https://www.magnific.com/app/creation/WDvzfbXcXe |
+| C041 | low-angle · 볼류메트릭 (사제 권위) | https://www.magnific.com/app/creation/4RVODh69Aa |
+| C042 | high-angle · 로우키 (고개 숙인 사람들) | https://www.magnific.com/app/creation/gOALzB3SXO |
+| C043 | extreme low macro · 하드라이트 ★벽화 불새 | https://www.magnific.com/app/creation/LwRr2B1swO |
+| C044 | dutch wide · 콜드 (지평선 연기) | https://www.magnific.com/app/creation/1lN5iBPr4r |
+| C045 | low CU · 네거티브필 (처음으로 위를 본다) | https://www.magnific.com/app/creation/bxyF4XM5Y2 |
+| C046 | high-angle crowd · 소프트 | https://www.magnific.com/app/creation/4RVODxD9Aa |
+> 배치 5는 생성·확인은 끝났으나 기록이 누락되어, 계정 히스토리에서 프롬프트를 화각 맵과 대조해 복원했다.
+
+### 배치 6 — S08 「습격」 전반 ★도발적 사건
+| 컷 | 화각 · 조명 | 링크 |
+|---|---|---|
+| C047 | aerial drone · 블리치바이패스 | https://www.magnific.com/app/creation/aFsmgtPfSh |
+| C048 | extreme low 말발굽 높이 · 하드라이트 | https://www.magnific.com/app/creation/u5Uf7EaQLD |
+| C049 | dutch handheld 30° · 하드라이트 | https://www.magnific.com/app/creation/1lN53j8r4r |
+| C050 | high-angle crowd · 블리치바이패스 | https://www.magnific.com/app/creation/If1BjCKtvE |
+| C051 | OTS · 모티베이티드(불) | https://www.magnific.com/app/creation/CqgvwkcEEy |
+
+### 배치 7 — S08 「습격」 후반 ★1부 클리프행어
+| 컷 | 화각 · 조명 | 링크 |
+|---|---|---|
+| C052 | low-angle · 실루엣 역광 (불이 지붕으로) | https://www.magnific.com/app/creation/Bh5erluoQR |
+| C053 | object POV 지면 · 하드라이트 (말들이 날뛴다) | https://www.magnific.com/app/creation/4RVOem49Aa |
+| C054 | dutch demai CU · 스플릿 (공포를 누른다) | https://www.magnific.com/app/creation/If1BL42tvE |
+| C055 | bird's-eye top-down · 콜드 (길이 막힌다) | https://www.magnific.com/app/creation/N2DPXHp6D9 |
+| C056 | macro insert · 하드라이트 ★약초 주머니 (푼크툼) | https://www.magnific.com/app/creation/3zdN81TREY |
+| C057 | long shot silhouette · 실루엣 역광 | https://www.magnific.com/app/creation/1lN5Rh6r4r |
+| C058 | side profile long · 네거티브필 (멈춰 선다) | https://www.magnific.com/app/creation/s7ZxzH6l8e |
+| C059 | aerial drone · 블리치바이패스 (절반 불탄 마을) | https://www.magnific.com/app/creation/iGe9oJD3uK |
+| C060 | low demai CU · 렘브란트 | https://www.magnific.com/app/creation/p8FV50Kehw |
+| C061 | extreme CU slight dutch · 네거티브필 ★고개를 든다 | https://www.magnific.com/app/creation/w4ng0UZ7EI |
+
+## 완료 — 55 / 55 (C062는 암전 + 엔드 타이틀, 생성 불필요)
+
+### 화각 분포 검증 (아이레벨 0컷)
+| 화각 | 컷 수 |
+|---|---|
+| low / extreme low / worm's-eye | 13 |
+| high / bird's-eye / top-down / aerial drone | 13 |
+| macro insert / object POV | 10 |
+| dutch | 7 |
+| demai CU / low CU / extreme CU | 7 |
+| side profile | 4 |
+| OTS | 4 |
+| long shot (망원 압축) | 3 |
+> **정면 아이레벨 컷 0개.** 조명은 로우키·네거티브필·스플릿·렘브란트·실루엣 역광·하드라이트·블리치바이패스·볼류메트릭·갓레이·콜드·소프트로 분산. 전 컷 ARRI Alexa 룩 상수 주입(관문 6컷 제외 — 룩 검증용 선행분).
+
+## 누적 비용
+관문 6 × 75 = 450 · 본 컷 49 × 75 = 3,675 → **이미지 누적 4,125**
+캐릭터 시트 3,000 → **프로젝트 누적 7,125** · 잔액 실측 **23,977**
+
+## 다음 단계
+Kling 3.0 720p 5초 영상 41클립 × 450 = **18,450** (잔액 내 집행 가능, 여유 5,527)
