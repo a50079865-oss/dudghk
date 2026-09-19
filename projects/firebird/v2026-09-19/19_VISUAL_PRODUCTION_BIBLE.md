@@ -101,7 +101,10 @@ His expression is controlled rather than aggressive.
 
 ## 11. 리븐 갑옷 (RIVEN-A)
 blackened steel plate · functional medieval construction · aged silver edge details · charcoal mail at joints · faded midnight-blue wool cloak · dark worn leather gauntlets · practical sword belt · long northern longsword
-> **늑대 문양은 매우 작게. 흉갑 전체에 거대한 늑대를 새기지 않는다. 왕자라는 사실도 장식이 아니라 옷감과 제작 수준으로 표현한다.**
+> **개정 2026-09-19 (레퍼런스 절충안):**
+> - **머리는 collar-length 유지** — 어깨까지 내려오는 볼륨 큰 머리는 교정 대상
+> - **갑옷 장식 허용 상향** — 흉갑·고젯에 절제된 음각 패턴과 작은 로제트까지 허용(기존 "minimal ornament"에서 완화)
+> - **늑대 문양** — 어깨의 은색 늑대 두상 핀 수준까지 허용. **단 흉갑 전체를 덮는 거대한 늑대는 여전히 금지**
 
 ## 12. 엘라라 × 리븐 프레임 규칙
 | 국면 | 규칙 |

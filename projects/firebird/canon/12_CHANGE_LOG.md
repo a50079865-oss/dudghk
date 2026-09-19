@@ -393,3 +393,58 @@ Visual / Camera / Creature / Prompt Rule / Production Order
 
 ### APPROVED BY USER
 7단계 본문 = Yes (사용자 직접 작성) / 머리 길이 = **대기(시트 생성 차단 중)**
+
+---
+
+## 2026-09-19 (7차) — 캐릭터 시트 v2 · 나이 교정 및 리븐 외형 절충
+
+### AREA
+Character / Costume / Prompt Rule
+
+### 배경
+시트 v1에서 두 주인공이 캐논 나이(23/27)보다 늙게 생성됨. 사용자가 직접 뽑은 레퍼런스 2장을 제시.
+
+### 레퍼런스 대조 결과
+**엘라라 레퍼런스** — 주근깨·회녹색 눈·짙은 밤색 웨이브·해진 rust-red 울 숄·ivory linen 셔미즈·무화장 전부 캐논 일치.
+단 **얼굴은 28~32세로 읽힘**(팔자주름·눈밑 그늘·볼 아래 음영·목선).
+**리븐 레퍼런스** — 왼쪽 눈썹 위 흉터 ✅ · 스틸그레이 눈 ✅. 나이는 30~35세로 읽힘.
+캐논 위반 3건: ① 머리가 어깨 근처까지 길고 볼륨 큼(캐논 collar-length) ② 갑옷에 음각 패턴·로제트 장식 다수(캐논 minimal ornament) ③ 은색 늑대 두상 핀이 큼(캐논 "매우 작게")
+
+### 사용자 결정
+1. **나이 — 캐논 23/27 유지. 레퍼런스보다 더 어리게 간다.** 레퍼런스는 골격·의상·분위기 기준으로만 사용
+2. **리븐 — 절충: 머리만 캐논대로 교정.** 갑옷 장식과 늑대 핀은 레퍼런스 수준 허용
+
+### 캐논 개정 — `19_VISUAL_PRODUCTION_BIBLE` §11 RIVEN-A
+- **머리 collar-length 유지** — 어깨까지 내려오는 볼륨 큰 머리는 교정 대상
+- **갑옷 장식 허용 상향** — 흉갑·고젯의 절제된 음각 패턴과 작은 로제트까지 허용 (기존 "minimal ornament"에서 완화)
+- **늑대 문양** — 어깨의 은색 늑대 두상 핀 수준까지 허용. **흉갑 전체를 덮는 거대한 늑대는 여전히 금지**
+
+### 프롬프트 개정 (v2 — 나이 교정 레시피)
+v1의 노화 원인을 진단하고 변수만 바꿔 재생성(플레이북: 진단 없는 재생성 금지):
+| 원인 | 조치 |
+|---|---|
+| `subtle outdoor weathering`가 얼굴 전체에 적용 | **주근깨 + 볼의 옅은 홍조로만 한정.** "나머지 피부는 매끄럽고 젊다" 명시 |
+| `visible natural skin texture` → 주름으로 해석 | `smooth youthful skin, fine visible pores but completely unlined` |
+| `natural human asymmetry` → 처짐으로 해석 | `slight` 한정 + 아래 금지 리스트로 상쇄 |
+| `beauty accidental rather than cultivated` → 노화로 번역 | `youthful and unglamorous at the same time`로 재정의 |
+| 나이 언급 1회 | **[AGE] 전용 블록** 신설 — 필수 5항 + **금지 11항**(이마주름·미간주름·눈가주름·팔자주름·입가주름·눈밑 꺼짐·볼 함몰·턱선 처짐·목주름·거친 피부·30대 얼굴) |
+| 노동의 흔적 배치 | **얼굴 → 의상으로 이동.** "세월과 고생은 전부 옷감에 산다" |
+
+리븐 전용 추가: 머리에 `ends at the collar, DOES NOT reach the shoulders` + `NOT long / NOT shoulder-length / NOT voluminous` 3중 부정
+
+### 생성 기록
+| 라운드 | 인물 | 결과 | 비용 |
+|---|---|---|---|
+| v1 | ELARA | https://www.magnific.com/app/creation/u5UaMOhQLD | 600 |
+| v1 | RIVEN | https://www.magnific.com/app/creation/ks9q8GO16B | 600 |
+| **v2** | ELARA | https://www.magnific.com/app/creation/Bh5pGDqoQR | 600 |
+| **v2** | RIVEN | https://www.magnific.com/app/creation/P3T7rNL42C | 600 |
+누적 2,400 크레딧. 잔액 약 29,152.
+
+### 실행 환경 제약 (기록)
+Magnific의 CDN(`pikaso.cdnpk.net`)과 업로드 호스트(`ak-data.magnific.com`)가 **이 실행 환경의 egress 정책에 막혀 있다.**
+→ ① 생성 결과를 저장소로 내려받지 못한다 ② **레퍼런스 이미지를 참조로 주입하지 못한다.**
+→ 레퍼런스는 텍스트 정밀 기술로 대체. 진짜 이미지 참조가 필요하면 사용자가 Magnific 앱에 직접 업로드해야 한다.
+
+### APPROVED BY USER
+나이 기준(캐논 유지, 더 어리게) = Yes / 리븐 절충(머리만 교정) = Yes / v2 결과 채택 = **확인 대기**
