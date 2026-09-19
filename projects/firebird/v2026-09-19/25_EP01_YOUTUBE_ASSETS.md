@@ -1,5 +1,5 @@
 # EP1 유튜브 8부 — 썸네일 · 엔드 타이틀 카드
-> Nano Banana 2 · 16:9 · 75/장 · 9장 = **675**
+> Nano Banana 2 · 16:9 · 75/장 · 1차 9장 + 재생성 4장 = **13장 · 975**
 
 ## 설계 결정 — 글자는 굽지 않는다
 AI 생성 이미지에 텍스트를 굽지 않고, **구도 안에 글자 자리(네거티브 스페이스)만 비워 두었다.** 근거 셋:
@@ -11,17 +11,38 @@ AI 생성 이미지에 텍스트를 굽지 않고, **구도 안에 글자 자리
 씬 이미지의 로우키·저채도·크러시드 블랙을 그대로 쓰면 유튜브 그리드의 168px에서 **탁하게 죽는다.**
 → 팔레트(Burnt Gold / Smoke Grey / Ember Red)와 ARRI 필름 베이스는 유지하되, **컨트라스트와 밝은 액센트 하나를 씬보다 세게** 밀었다. 각 장은 실루엣 수준에서 읽히는 **단일 아이디어 하나**로 설계했다.
 
-## 썸네일 8장
+## 썸네일 8장 (정본)
+> 2·5·6·8화는 캐논 썸네일 사양에 맞춰 재생성한 판이 정본이다(아래 §불일치 처리 참조).
+
 | 화 | 제목 | 단일 아이디어 | 글자 자리 | 링크 |
 |---|---|---|---|---|
 | 1 | 재가 내리는 길 | 재가 내리는데 **아무도 위를 보지 않는다** | 좌상단 하늘 | https://www.magnific.com/app/creation/gOALpAqSXO |
-| 2 | 거꾸로 걷는 사람 | 군중은 나오고 **한 사람만 들어간다** | 좌하단 | https://www.magnific.com/app/creation/WDvzKfRcXe |
+| 2 | 거꾸로 걷는 사람 | 불길 속 실루엣 + **재가 위로 오른다** | 좌하단 | https://www.magnific.com/app/creation/9ZMyumyNYZ |
 | 3 | 표식 | 사람들이 물러서서 생긴 **빈 원** | 우상단 연기 | https://www.magnific.com/app/creation/rg6Kc2Axtc |
 | 4 | 네 개의 명령 | 거대한 석상 발치의 **작은 왕** | 우하단 바닥 | https://www.magnific.com/app/creation/Bh5eUltoQR |
-| 5 | 그걸로 나를 막겠다는 건가 | 이미 뽑혀 있는 검, **역광 실루엣** | 좌측 1/3 암부 | https://www.magnific.com/app/creation/jU31T0dLD0 |
-| 6 | 판단 보류 | 프레임 양 끝의 두 사람, **가운데는 텅 빈 길** | 중앙 빈 길 | https://www.magnific.com/app/creation/3zdNCFNREY |
+| 5 | 그걸로 나를 막겠다는 건가 | **얼굴 없이 두 손만** — 치유용 칼 vs 장검 | 상단 중앙 암부 | https://www.magnific.com/app/creation/VXEcSsXMMU |
+| 6 | 판단 보류 | **모닥불을 사이에 둔** 두 사람 (프레임 장애물) | 상단 중앙 밤하늘 | https://www.magnific.com/app/creation/EbSaGzQuuO |
 | 7 | 포위 | 양쪽 끝의 **서로 다른 두 군대** | 상단 새벽 하늘 | https://www.magnific.com/app/creation/mEx8yiehJQ |
-| 8 | 널 원하는 사람들 | 멈춰 선 대열에서 **소수만 이탈한다** | 우하단 지면 | https://www.magnific.com/app/creation/8akX76TIrU |
+| 8 | 널 원하는 사람들 | **말 위의 두 사람 + 뒤에 불타는 마을** | 우하단 지면 | https://www.magnific.com/app/creation/u5UfzcJQLD |
+
+### 불일치 처리 (2026-09-19)
+1차 8장은 캐논의 **썸네일 사양**이 아니라 「첫 15초 훅」을 기준으로 설계된 것이어서 5장이 불일치, 2장이 부분 불일치했다. 사양 미확인은 에이전트 과실이다. 사용자 판단으로 **선별 재생성 4장(300)**을 집행했다.
+
+| 화 | 처리 | 근거 |
+|---|---|---|
+| 2 | **재생성** | 캐논의 "위로 오르는 재"가 빠져 있었다. 불이 멈추고 재가 거꾸로 오르는 것이 이 화의 훅이다 |
+| 5 | **재생성** | 캐논의 「얼굴 없이 두 손만」이 분명히 더 좋다. 치유용 칼과 장검의 대비가 이 화 전체다 |
+| 6 | **재생성** | 모닥불이 두 사람 사이를 가르는 **프레임 장애물**이라는 점이 캐논의 핵심인데 1차에는 없었다 |
+| 8 | **재생성** | 「말 위의 두 사람 + 불타는 마을」이 1화 전체의 종착 이미지로 훨씬 강하다 |
+| 3 | **1차 유지** | 캐논은 표식 매크로(100mm)지만 168px 그리드에서 매크로 인서트는 피사체가 읽히지 않는다 |
+| 4 | **1차 유지** | 캐논은 명령서 매크로에 영문 텍스트를 굽는 것을 전제 — 동일자 확정한 "글자를 굽지 않는다"와 정면 충돌 |
+| 7 | **1차 유지** | 캐논은 밤 횃불, 1차는 새벽. 본편 훅이 「새벽 능선」이므로 본편과 일치하는 쪽을 택했다 |
+
+> **폐기된 1차 판** (기록 보존용, 사용 금지)
+> 2화 https://www.magnific.com/app/creation/WDvzKfRcXe · 5화 https://www.magnific.com/app/creation/jU31T0dLD0
+> 6화 https://www.magnific.com/app/creation/3zdNCFNREY · 8화 https://www.magnific.com/app/creation/8akX76TIrU
+
+> **캐논 반영 필요:** `21_EP01_YOUTUBE_EPISODES.md`의 3·4·7화 썸네일 항목은 위 근거대로 갱신되어야 한다. 그 항목들은 내용 메모로 쓰인 것이고 그리드 가독성 기준으로 작성된 것이 아니다.
 
 ## 엔드 타이틀 카드 — 공통 배경 플레이트 1장
 https://www.magnific.com/app/creation/SyGseaYUb8
