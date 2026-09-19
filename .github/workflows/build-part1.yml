@@ -20,7 +20,7 @@ jobs:
           python-version: '3.11'
 
       - name: ffmpeg 준비
-        run: pip install imageio-ffmpeg
+        run: pip install imageio-ffmpeg pillow
 
       - name: 주소 목록 준비
         working-directory: projects/firebird/edit

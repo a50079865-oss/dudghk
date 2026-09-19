@@ -111,6 +111,26 @@ def main():
         "-vf", f"tile={cols}x{tile_rows}:margin=6:padding=4:color=#111111",
         "-frames:v", "1", "-q:v", "3", str(out / "contact_sheet.jpg")])
 
+    # ── 1b. 컷마다 실제로 움직이는가 ────────────────────────────────
+    # "영상 컷"이라고 해서 움직인다는 보장이 없다. 클립이 거의 정지인 경우가
+    # 있고, 그러면 정지 비중이 매니페스트가 말하는 것보다 높다.
+    motion = []
+    for cut, st, dur, kind in rows:
+        a_t, b_t = st + dur * 0.25, st + dur * 0.75
+        fa, fb = out / "_m_a.jpg", out / "_m_b.jpg"
+        for t_, dst in ((a_t, fa), (b_t, fb)):
+            ff(["-y", "-ss", f"{t_:.3f}", "-i", str(film), "-frames:v", "1",
+                "-vf", "scale=240:-2", "-q:v", "3", str(dst)])
+        try:
+            from PIL import Image, ImageChops, ImageStat
+            ia, ib = Image.open(fa).convert("L"), Image.open(fb).convert("L")
+            st_ = ImageStat.Stat(ImageChops.difference(ia, ib))
+            motion.append((cut, kind, st_.rms[0]))
+        except Exception:
+            motion.append((cut, kind, -1.0))
+    for f_ in (out / "_m_a.jpg", out / "_m_b.jpg"):
+        f_.unlink(missing_ok=True)
+
     # ── 2. 파형과 스펙트로그램 ────────────────────────────────────────
     ff(["-y", "-i", str(film), "-filter_complex",
         "[0:a]showwavespic=s=1920x360:colors=#e8d5a8|#a87f4a:split_channels=0[v]",
@@ -243,6 +263,29 @@ def main():
             L.append(f"\n### 쓰이지 않는 파일 ({len(dead)}개) — 조치 대상이 아니다\n\n")
             for name, dur, mean, pk, quiet, pct, _ in dead:
                 L.append(f"- `{name}` — {dur:.1f}s · {mean} dB · 빈 시간 {pct:.0f}%\n")
+
+    STILLISH = 3.0
+    quiet_cuts = sorted([r for r in motion if 0 <= r[2] < STILLISH], key=lambda z: z[2])
+    vid_dead = [r for r in quiet_cuts if r[1] == "video"]
+    L.append(f"\n## 움직임 — 컷의 25% 지점과 75% 지점 차이 ({len(rows)}컷)\n")
+    L.append(f"값이 {STILLISH} 미만이면 그 컷은 사실상 정지 화면이다.\n\n")
+    L.append(f"**움직이지 않는 영상 컷 {len(vid_dead)}개** — 영상으로 뽑았으나 정지처럼 보인다\n\n")
+    if vid_dead:
+        L.append("| 컷 | 차이 |\n|---|---|\n")
+        for cut, _, v in vid_dead:
+            L.append(f"| **{cut}** | {v:.2f} |\n")
+    else:
+        L.append("없음 — 영상 컷은 전부 움직인다.\n")
+    still_dead = [r for r in quiet_cuts if r[1] == "still"]
+    if still_dead:
+        L.append(f"\n움직이지 않는 정지 컷 {len(still_dead)}개 — "
+                 "켄번스가 너무 느려 프레임이 반복된다 "
+                 f"({', '.join(c for c, _, _ in still_dead)})\n")
+    moving = sum(1 for _, _, v in motion if v >= STILLISH)
+    real_still = sum(d for (c, s0, d, k), (c2, k2, v) in zip(rows, motion) if v < STILLISH)
+    L.append(f"\n움직이는 컷 {moving}/{len(rows)} · "
+             f"**실질 정지 시간 {real_still:.0f}초 = {real_still/dur*100:.1f}%** "
+             f"(매니페스트 기준 정지는 {sum(d for c,s0,d,k in rows if k=='still')}초)\n")
 
     L.append("\n## 그림\n")
     L.append("- `contact_sheet.jpg` — 62컷 각각의 중간 프레임\n")
