@@ -20,8 +20,8 @@
 | v1 | ELARA | https://www.magnific.com/app/creation/u5UaMOhQLD | ❌ 나이가 30대로 읽힘 |
 | v1 | RIVEN | https://www.magnific.com/app/creation/ks9q8GO16B | ❌ 나이가 30대로 읽힘 |
 | **v2** | **ELARA** | **https://www.magnific.com/app/creation/Bh5pGDqoQR** | ✅ **정본 채택 (2026-09-19)** |
-| v2 | RIVEN | https://www.magnific.com/app/creation/P3T7rNL42C | ❌ 머리 길이·갑옷 광택·흉터 방향 |
-| v3 | RIVEN | https://www.magnific.com/app/creation/SyGLkXbUb8 | 판정 대기 |
+| **v2** | **RIVEN** | **https://www.magnific.com/app/creation/P3T7rNL42C** | ✅ **정본 채택 (2026-09-19)** |
+| v3 | RIVEN | https://www.magnific.com/app/creation/SyGLkXbUb8 | ⛔ 폐기 — 짧은 머리. 방향 전환으로 무효 |
 
 누적 3,000 크레딧. 잔액 약 28,552.
 
@@ -30,7 +30,12 @@
 옷의 낡음(해진 밑단·기운 자리·얼룩) 우수. 패널 헤더 글자 안 깨짐. 5패널 얼굴 일관성 확보.
 > 유일한 유보: 얼굴이 캐논의 "accidental beauty"보다 배우 쪽에 가깝다. 무화장·헝클어진 머리·때 묻은 옷이 상쇄하므로 채택.
 
-### RIVEN — 미해결 이력
+### ✅ RIVEN v2 — 정본 확정
+**긴머리 확정에 따라 v2가 정본이 됐다.** 사용자가 "긴머리로 갔으면 좋겠어"로 방향을 뒤집으면서, v2에서 결함으로 잡았던 머리 길이가 오히려 정답이 됐고, 흉터 방향은 좌우 완화로 해소됐다.
+남은 유보는 갑옷 광택 1건이며 수용하고 채택.
+> **v3(짧은 머리)는 폐기.** 생성 자체는 지시대로 나왔으나 방향 전환으로 무효가 됐다. 600 크레딧은 매몰비용.
+
+### RIVEN — 시행착오 이력 (기법 기록)
 - **v2 실패 원인 진단:** 머리 길이를 `NOT long / NOT shoulder-length / NOT voluminous` 부정 3중으로 눌렀으나 안 먹힘.
   **부정문은 길이를 통제하지 못한다.**
 - **v3 조치:** 양성 판정 지표로 전환 — **"두 귀가 전 패널에서 완전히 드러난다. 머리카락이 귀를 스치거나 가리지 않는다."**

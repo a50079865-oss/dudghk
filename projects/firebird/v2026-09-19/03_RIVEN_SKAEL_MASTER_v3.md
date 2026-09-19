@@ -1,4 +1,6 @@
 # RIVEN SKAEL — CHARACTER MASTER v3 (권위본)
+> ✅ **캐릭터 마스터 시트 정본 확정: https://www.magnific.com/app/creation/P3T7rNL42C** (2026-09-19)
+> 리븐이 등장하는 모든 컷은 이 시트를 정체성 ref로 잠근다.
 > v1(canon/03) + 사용자 2·3단계 통합. **v2의 Lie 설정("복종주의")은 폐기** — 아래 §4가 정본(확률주의).
 
 ## 1. 기본
@@ -10,10 +12,10 @@
 Northern-European-featured man. **거칠고 야만적인 바이킹형이 아니라 차갑고 귀족적인 북방 왕자.**
 - 188cm · 장신의 lean sword-trained physique · 넓지만 현실적인 어깨 · 긴 팔다리 · **not bodybuilder-large**
 - 차분한 angular-oval face · 뚜렷한 턱선 · 높은 광대 · straight natural nose · fair cool-neutral skin
-- **눈:** 깊은 steel-grey · **오른쪽 눈이 왼쪽보다 아주 미세하게 좁음** · controlled, observant · **no glowing eyes**
-- **머리:** dark ash-blond (낮은 조명에서 brown-grey로 읽힘) · collar-length natural waves · 느슨하게 넘김 · 이마 위 2~3가닥 · **no modern fade/undercut/slick**
+- **눈:** 깊은 steel-grey · **한쪽 눈이 아주 미세하게 좁음(방향 무관 — 2026-09-19 완화)** · controlled, observant · **no glowing eyes**
+- **머리:** dark ash-blond (낮은 조명에서 brown-grey로 읽힘) · **어깨 근처까지 내려오는 느슨한 웨이브 — 2026-09-19 확정** · 귀를 덮고 갑옷 목깃과 어깨에 닿음 · 이마 위 2~3가닥 · **no modern fade/undercut/slick · 광택 스타일링 금지**
 - clean-shaven 또는 아주 옅은 수염
-- **흉터:** **왼쪽** 눈썹 위 짧은 오래된 검상 — **위치 절대 불변**
+- **흉터:** **한쪽** 눈썹 위 짧은 오래된 검상 — **전 컷에서 같은 쪽**(방향 무관 — 2026-09-19 완화). 채택 시트에 나온 쪽으로 고정
 
 **잘생겼지만 자신의 외모를 의식하는 인물이 아니다.**
 

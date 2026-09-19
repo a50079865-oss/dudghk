@@ -1,4 +1,6 @@
 # ELARA VAREN — CHARACTER MASTER v3 (권위본)
+> ✅ **캐릭터 마스터 시트 정본 확정: https://www.magnific.com/app/creation/Bh5pGDqoQR** (2026-09-19)
+> 엘라라가 등장하는 모든 컷은 이 시트를 정체성 ref로 잠근다.
 > v1(canon/02) + 사용자 2·3단계 통합. **v2의 "능력 없음" 해석은 폐기** — 아래 §5가 정본.
 > ⚠️ 미결 2건은 §9 참조(머리 길이 · 눈 반응). 이미지 생성 전 확정 필요.
 

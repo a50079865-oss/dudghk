@@ -93,8 +93,7 @@ Tall, lean, sword-trained functional physique. Broad but realistic shoulders.
 Long angular-oval face. Firm refined jaw. High cheekbones.
 Cool fair skin with natural texture.
 Deep steel-grey eyes. One eye fractionally narrower than the other (direction not fixed).
-Dark ash-blond hair, collar length. In darker light the hair can read muted ash-brown.
-Natural slight waves. Loose imperfect strands across forehead. Mostly clean-shaven.
+Dark ash-blond hair, SHOULDER-LENGTH, worn loose in natural soft waves that fall around the ears and down to the collar and shoulders. In darker light the hair can read muted ash-brown. Loose imperfect strands across the forehead. Mostly clean-shaven.
 Short faded old blade scar above one eyebrow — the same eyebrow in every shot.
 His expression is controlled rather than aggressive.
 ```
@@ -102,9 +101,14 @@ His expression is controlled rather than aggressive.
 ## 11. 리븐 갑옷 (RIVEN-A)
 blackened steel plate · functional medieval construction · aged silver edge details · charcoal mail at joints · faded midnight-blue wool cloak · dark worn leather gauntlets · practical sword belt · long northern longsword
 > **개정 2026-09-19 (레퍼런스 절충안):**
-> - **머리는 collar-length 유지** — 어깨까지 내려오는 볼륨 큰 머리는 교정 대상
+> - ~~머리는 collar-length 유지~~ → **3차 개정에서 폐기. 아래 참조**
 > - **갑옷 장식 허용 상향** — 흉갑·고젯에 절제된 음각 패턴과 작은 로제트까지 허용(기존 "minimal ornament"에서 완화)
 > - **늑대 문양** — 어깨의 은색 늑대 두상 핀 수준까지 허용. **단 흉갑 전체를 덮는 거대한 늑대는 여전히 금지**
+> **개정 2026-09-19 (3차) — 머리 길이 전환 ★★**
+> **`collar-length` 폐기. 리븐의 머리는 어깨 근처까지 내려오는 느슨한 웨이브다.**
+> 귀를 덮고 목을 지나 갑옷 목깃과 어깨에 닿는다. 헝클어진 결과 볼륨을 허용한다.
+> 채택 시트: 리븐 마스터 시트 v2. **여전히 금지** — 현대식 언더컷·페이드·슬릭백, 광택나는 스타일링, 묶은 머리(별도 지시가 없는 한)
+>
 > **개정 2026-09-19 (2차) — 좌우 지정 완화 ★**
 > AI 생성에서 좌/우는 가장 안 잡히는 속성이라, 컷마다 미러링되며 재생성 비용을 계속 발생시킨다. 따라서:
 > - **흉터** — `왼쪽 눈썹 위` → **"한쪽 눈썹 위의 짧고 오래된 검상. 전 컷에서 같은 쪽."** 방향은 채택된 시트에 나온 쪽으로 사후 고정한다
