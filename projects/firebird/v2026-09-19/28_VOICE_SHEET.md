@@ -14,42 +14,54 @@
 
 ---
 
-## 확정 — 조연 2인
-| 인물 | voice | 근거 | 시청 |
+## ✅ 확정 — 전 배역 락 (2026-09-19)
+> 락 완료. **8부작 내내 이 목소리를 쓴다.** 씬마다 새로 정하지 않는다.
+
+| 인물 | voice | 억양·성격 | 확정 근거 |
 |---|---|---|---|
-| **브리스 할렌** (24, 부관·관객 대리인) | **Henry Arthur** (남·청년·영국) | "따뜻하고 깊은, 친근하고 열의 있는". 관객 대리인은 관객의 질문을 대신하는 인물이라 **리븐의 낮고 건조한 음역과 대비**되어야 한다. 밝기 차이 자체가 부관/지휘관 관계를 만든다 | [C027+C031](https://www.magnific.com/app/creation/jU31vrrLD0) |
-| **사제** (S06) | **Henry Fletcher** (남·노년·영국) | "깊고 질감 있는, 미묘한 거칠음을 지닌". 대성당이 아니라 **마을 예배당**의 사제다 — 매끄러운 내레이터보다 거친 쪽이 맞다. 그리고 이 기도문은 나중에 **거짓으로 드러난다** | [C041](https://www.magnific.com/app/creation/jU31v11LD0) |
+| **엘라라 바렌** | **Cordelia Hartley** (여·청년) | **잉글랜드 남서부** · 따뜻하고 다정한 | 사용자 선택 B. 시골 억양이 **계급과 장소를 즉시 만든다.** 그녀는 궁정 사람이 아니라 농경 지역 치유사이므로 RP는 애초에 후보에서 뺐다 |
+| **리븐 스카엘** | **Ben Watson** (남·청년) | 영국 · 진지하고 차분하고 안정된 | 사용자 선택 A. **군인**을 택했다. 억제가 잘 들린다 — 「THE PRINCE」의 왕족성보다 국경에서 자란 야전 지휘관 쪽 |
+| **브리스 할렌** | **Henry Arthur** (남·청년) | 영국 · 따뜻하고 깊은, 열의 있는 | 관객 대리인은 리븐의 낮고 건조한 음역과 **대비**되어야 한다. 밝기 차이가 부관/지휘관 관계를 만든다 |
+| **사제** | **Henry Fletcher** (남·노년) | 영국 · 깊고 질감 있는, 미묘한 거칠음 | 대성당이 아니라 **마을 예배당** 사제. 그리고 이 기도문은 나중에 거짓으로 드러난다 |
+| **노파** | **Charlotte Winslow** (여·중년) | 영국 · 성격 연기용 | 사용자 선택 B. 영어 카탈로그의 노년 여성이 단 한 종뿐이라, **나이를 연기하는** 쪽을 택했다 |
 
-## 선택 대기 — 리드 2인
-락하면 **8부작 내내 이 목소리다.** 같은 대본으로 후보를 뽑았고, 대본에 **두 레지스터**를 넣었다 — 한쪽만 좋은 목소리는 8부를 못 버틴다.
-
-### 엘라라 바렌 (23)
-테스트 대본: "Does a dying man still have a country?" *(시즌의 씨앗)* + "What's your name?" *(아이에게, 속삭임)*
-
-| 안 | voice | 억양 | 성격 | 트레이드오프 | 시청 |
-|---|---|---|---|---|---|
-| **A** | Eleanor Hastings | **런던** | 부드럽고 온화한 젊은 이야기꾼 | 도시 억양이라 **마을 치유사의 지역성이 약하다** | [듣기](https://www.magnific.com/app/creation/3zdNL73REY) |
-| **B** | Cordelia Hartley | **잉글랜드 남서부** | 따뜻하고 다정한 | 시골 억양이 **계급과 장소를 즉시 만든다.** 다만 지역색이 강해 호불호가 갈릴 수 있다 | [듣기](https://www.magnific.com/app/creation/SyGsu1zUb8) |
-
-> **이건 단순 취향이 아니라 계급 설정이다.** 엘라라는 궁정 사람이 아니라 농경 지역의 치유사다. RP(표준 상류 억양)를 쓰면 그녀가 아닌 **귀족처럼** 들린다. 그래서 RP 후보는 아예 올리지 않았다. 남은 선택은 **도시(A)냐 시골(B)이냐**다.
-
-### 리븐 스카엘 (20대 후반)
-테스트 대본: "You mean to stop me with that?" *(첫 만남의 도발)* + "...We withdraw." *(후퇴 명령)*
-
-| 안 | voice | 성격 | 무엇을 얻고 무엇을 잃나 | 시청 |
-|---|---|---|---|---|
-| **A** | Ben Watson | 진지하고 차분하고 안정된 | **군인**을 얻는다. 억제가 잘 들린다. 다만 **왕족의 결이 옅다** | [듣기](https://www.magnific.com/app/creation/dtqDR04XSL) |
-| **B** | Emmett Kingsley | 약간 깊고 매우 차분한, 다소 격식 있는 | **왕자**를 얻는다. 다만 **17세부터 국경에 있던 사람**치고는 매끄러울 수 있다 | [듣기](https://www.magnific.com/app/creation/ovKdADY829) |
-
-> 캐논은 그를 **둘 다**로 정의한다 — S05의 제목이 「THE PRINCE」이고, 동시에 17세부터 국경전을 치른 야전 지휘관이다. 어느 쪽을 목소리로 가져갈지가 이 선택이다.
-
-## 선택 대기 — 노파
-영어 카탈로그의 **노년 여성이 단 한 종**이다. 그래서 중년 성격배우가 나이를 연기하는 안을 같이 올린다.
-
-| 안 | voice | 트레이드오프 | 시청 |
+## 수록 완료 — 8테이크
+| 컷 | 인물 | 대사 | 링크 |
 |---|---|---|---|
-| **A** | Imogen Radcliffe (여·노년) | **실제 노년**이지만 "재즈풍의 교사 같은" 결이라 중세 마을 사람과 거리가 있다 | [듣기](https://www.magnific.com/app/creation/vQLtc8ha47) |
-| **B** | Charlotte Winslow (여·중년·영국) | 성격 연기용 목소리라 **나이를 만들어낼 수 있다.** 다만 진짜 노년은 아니다 | [듣기](https://www.magnific.com/app/creation/TdCW4Y9VNR) |
+| C009 | 노파 | "Where's he from, that one?" | https://www.magnific.com/app/creation/MBuVwMVDCm |
+| C017 | 엘라라 | "What's your name?" | https://www.magnific.com/app/creation/ovKBNth829 |
+| C027 | 브리스 | "A village, my lord. Three miles inside the border." | https://www.magnific.com/app/creation/EbSCnH3uuO |
+| C027 | 리븐 | "Continue." | https://www.magnific.com/app/creation/YMhnsV7WeC |
+| C030 | 리븐 *(오프)* | "How many?" | https://www.magnific.com/app/creation/VXETwXOMMU |
+| C031 | 브리스 | "Four, my lord." | https://www.magnific.com/app/creation/s7ZL8J5l8e |
+| C035 | 리븐 | "...We withdraw." | https://www.magnific.com/app/creation/ovKBNCu829 |
+| C041 | 사제 | "The Firebird saved us once, and through the royal house it shall come again." | https://www.magnific.com/app/creation/Bh5X9CRoQR |
+
+## 립싱크가 필요한 컷은 절반뿐이다 — 화각 덕분
+화각 맵을 대조하니 **8줄 중 3줄이 이미 오프스크린**이었다. 「아이레벨 지양 · OTS 적극 사용」 지시가 만든 부수 효과다.
+
+| 컷 | 화각 | 말하는 사람의 얼굴 | 립싱크 |
+|---|---|---|---|
+| C009 | OTS(**노파** 어깨 너머) | 등지고 있다 | ❌ 불필요 |
+| C017 | OTS(**엘라라** 어깨 너머) | 등지고 있다 | ❌ 불필요 |
+| C027 | OTS(**리븐** 어깨 너머) | 브리스 보임 / 리븐 등짐 | ⭕ 브리스만 |
+| C030 | bird's-eye top-down (부상병들) | 화면에 없다 | ❌ 불필요 |
+| C031 | OTS | 브리스 보임 | ⭕ |
+| C035 | **side profile CU** | 리븐 측면, 입이 크게 보인다 | ⭕ **가장 노출된 컷** |
+| C041 | low-angle | 사제 보임 | ⭕ |
+
+> **주목할 결과: 엘라라의 1부 유일한 대사가 오프스크린이다.** 그녀의 목소리가 얼굴 없이 먼저 도착한다. 캐논의 「약간 방어적」과 맞고, 그녀의 진짜 순간은 어차피 **답하지 않는** C010이다. 의도된 것은 아니지만 결과적으로 맞다.
+
+## 립싱크 단가 — 80배 차이
+| 모드 | 단가 | 판단 |
+|---|---|---|
+| `lipsync-2.0` (프리미엄) | **2,000** | 4컷이면 8,000 — **잔액 초과** |
+| `veed-sync-2-v2v` | 1,120 | 역시 비싸다 |
+| `latentsync` | **25** | 4컷 = 100 |
+| `omnihuman` | — | 영상 입력 미지원 |
+
+**집행: `latentsync`로 4컷 전부(100) 먼저 돌린다.** 보고 나서 정말 부족한 컷에만 프리미엄을 쓴다.
+프리미엄이 필요하다면 후보는 **C035 하나**다 — 유일한 측면 CU이고 리븐의 1부 결정적 대사다. 나머지 셋은 OTS 미디엄과 로우앵글이라 입이 작게 보여 관대하다.
 
 ## 예정 — 요란 (19)
 1부에 대사 없음(C033·C036은 침묵의 시선). **EP5 페이오프에서 처음 말한다.** 부상당한 19세의 취약함이 필요하므로 테스트 없이 락하지 않는다.
