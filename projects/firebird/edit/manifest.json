@@ -674,12 +674,13 @@
       "tier": "C",
       "content": "암전 → 엔드 타이틀",
       "kind": "still",
-      "source": null,
+      "source": "SyGseaYUb8",
       "ken_burns": {
         "mode": "hold",
         "from": 1.0,
         "to": 1.0
-      }
+      },
+      "note": "엔드 타이틀 공통 플레이트 · 번호는 편집에서 얹는다"
     }
   ],
   "dialogue": [
