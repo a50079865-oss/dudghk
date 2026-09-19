@@ -128,9 +128,15 @@ def main():
               "-an", "-f", "null", "-"], expect_ok=False)
     blacks = re.findall(r"black_start:([\d.]+)\s+black_end:([\d.]+)", blk)
 
-    frz = ff(["-i", str(film), "-vf", "freezedetect=n=-60dB:d=12",
+    # 시작 시각만으로는 판단이 안 된다 — 얼마나 오래, 어느 컷들에 걸쳐 있는지가 필요하다.
+    frz = ff(["-i", str(film), "-vf", "freezedetect=n=-60dB:d=8",
               "-an", "-f", "null", "-"], expect_ok=False)
-    freezes = re.findall(r"freeze_start:\s*([\d.]+)", frz)
+    freezes = []
+    for m_ in re.finditer(r"freeze_start:\s*([\d.]+)", frz):
+        st = float(m_.group(1))
+        tail = frz[m_.end():]
+        e_ = re.search(r"freeze_end:\s*([\d.]+)", tail)
+        freezes.append((st, float(e_.group(1)) if e_ else None))
 
     eb = ff(["-i", str(film), "-af", "ebur128=framelog=quiet:peak=true",
              "-f", "null", "-"], expect_ok=False)
@@ -197,7 +203,7 @@ def main():
         for st, en in real:
             L.append(f"| {hhmmss(float(st))} | {hhmmss(float(en))} | {cut_at(float(st))} |\n")
     else:
-        L.append("없음. 62컷 전부 그림이 들어 있다.\n")
+        L.append(f"없음. {len(rows)}컷 전부 그림이 들어 있다.\n")
     if okay:
         L.append("\n설계된 암전으로 확인된 것 — 조치 대상이 아니다:\n\n")
         for st, en in okay:
@@ -205,13 +211,17 @@ def main():
     else:
         L.append("\n⚠️ C062 암전이 검출되지 않았다 — 엔드카드가 안 붙었을 수 있다.\n")
 
-    L.append(f"\n## 12초 이상 정지 ({len(freezes)}곳)\n")
+    L.append(f"\n## 8초 이상 정지 ({len(freezes)}곳)\n")
     if freezes:
-        L.append("의도한 홀드(C004·C028·C039)인지 확인할 것.\n\n| 시작 | 해당 컷 |\n|---|---|\n")
-        for st in freezes:
-            st = float(st)
-            hit = [c for c, s, d, _ in rows if s <= st < s + d]
-            L.append(f"| {hhmmss(st)} | {hit[0] if hit else '-'} |\n")
+        L.append("| 시작 | 끝 | 길이 | 걸친 컷 |\n|---|---|---|---|\n")
+        for st, en in freezes:
+            end = en if en is not None else dur
+            spans = [f"{c}({k[0]})" for c, s0, d0, k in rows
+                     if s0 < end and st < s0 + d0]
+            L.append(f"| {hhmmss(st)} | {hhmmss(end)} | {end-st:.1f}s | "
+                     f"{' · '.join(spans) if spans else '-'} |\n")
+        L.append("\n괄호는 컷 종류 — **v**=영상, **s**=정지. "
+                 "영상 컷에 걸린 정지는 클립 자체가 멈춰 있다는 뜻이다.\n")
     else:
         L.append("없음.\n")
 
