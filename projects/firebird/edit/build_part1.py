@@ -8,10 +8,12 @@ EP1 1부 빌드 — 편집 지시서(27_EP01_PART1_EDIT_SHEET.md)를 그대로 �
   media/C001.png ... media/C061.png      C 계층 스틸
   media/C002.mp4 ... media/C061.mp4      A·B 계층 영상 (C027·C031·C035·C041은 립싱크 판)
   media/dlg/<id>.mp3                     오프스크린 대사 3줄
-  media/beds/<name>.wav                  앰비언스 베드 (없으면 그 구간은 조용히 간다)
-  media/sfx/<cut>.wav                    SFX 타점 (선택)
+  media/beds/<name>.wav                  앰비언스 베드
+  media/sfx/<cut>.wav                    SFX 타점 (선택 — 없어도 통과한다)
 
-없는 파일은 건너뛰고 계속 간다 — 베드나 SFX가 아직 없어도 그림은 완성된다.
+컷·대사·베드·스코어가 하나라도 없으면 끝에서 종료 코드 1로 멈춘다.
+빠진 그림은 검은 화면, 빠진 소리는 무음으로 나가는데 둘 다 조용해서
+성공과 구별되지 않기 때문이다. 확인이 끝날 때까지 건너뛰려면 소스를 채워라.
 """
 import argparse, json, os, re, subprocess, sys, shutil
 from pathlib import Path
@@ -123,7 +125,7 @@ def build_segment(entry, media, work, fps, crf):
         run([FFMPEG, "-y", "-loop", "1", "-i", str(src),
              "-f", "lavfi", "-i", f"anullsrc=r={SAMPLE}:cl=stereo",
              "-t", str(dur), "-vf", vf, *venc, *aenc, "-shortest", str(out)])
-        return out, False
+        return out, True
 
     src = find_media(media, cut, [".mp4", ".mov", ".mkv", ".webm"])
     if src is None:
@@ -186,11 +188,12 @@ def main():
 
     segs, missing = [], []
     for e in man["timeline"]:
-        p, real = build_segment(e, media, work, fps, crf)
+        p, found = build_segment(e, media, work, fps, crf)
         segs.append((e, p))
-        if not real and e["kind"] == "video":
+        if not found:
             missing.append(e["cut"])
-        print(f"  {e['cut']}  {e['dur']:>2}s  {e['kind']:<5} {'' if real or e['kind']=='still' else '(미디어 없음 → 검은 화면)'}")
+        print(f"  {e['cut']}  {e['dur']:>2}s  {e['kind']:<5} "
+              f"{'' if found else '(미디어 없음 → 검은 화면)'}")
 
     # 디졸브가 지정된 자리만 두 세그먼트를 하나로 합친다.
     merged, i = [], 0
@@ -319,10 +322,14 @@ def main():
 
     dur = probe_duration(a.out)
     print(f"\n완성: {a.out}  ({dur:.2f}초 / 목표 420초)")
-    if missing:
-        print(f"빠진 소스 {len(missing)}건: {', '.join(missing[:12])}{' …' if len(missing) > 12 else ''}")
     if not a.keep_work:
         shutil.rmtree(work, ignore_errors=True)
+    if missing:
+        # 빠진 컷은 검은 화면으로, 빠진 스코어·앰비언스는 무음으로 나간다.
+        # 둘 다 조용해서 성공과 구별되지 않으므로, 여기서 멈춘다.
+        print(f"빠진 소스 {len(missing)}건: {', '.join(missing[:12])}"
+              f"{' …' if len(missing) > 12 else ''}", file=sys.stderr)
+        sys.exit(1)
 
 if __name__ == "__main__":
     main()

@@ -37,6 +37,8 @@ def main():
         print("\n실패가 전부 pikaso.cdnpk.net 이면 두 가지 중 하나다:")
         print("  1) 토큰 만료 — 주소를 다시 뽑아야 한다")
         print("  2) 네트워크에서 그 호스트가 막혀 있다")
+        # 조용히 성공하면 소스가 빠진 채로 영화가 나온다. 그건 성공이 아니다.
+        sys.exit(1)
 
 if __name__ == "__main__":
     main()
