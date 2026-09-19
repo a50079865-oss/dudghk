@@ -44,3 +44,30 @@ C022~C025 · C027~C062 (C062는 타이틀카드, 생성 불필요)
 ## 누적 비용
 관문 6 × 75 = 450 · 배치1·2 16 × 75 = 1,200 → **누적 이미지 1,650**
 프로젝트 누적(캐릭터 시트 포함) **4,650** · 잔액 약 **27,352**
+
+### 배치 3 — S03 마무리 + S04 「북쪽의 말발굽」 + S05 도입
+| 컷 | 화각 · 조명 | 링크 |
+|---|---|---|
+| C022 | extreme low 올려다봄 · 갓레이 | https://www.magnific.com/app/creation/1lN56wEr4r |
+| C023 | extreme low silhouette · 실루엣 역광 | https://www.magnific.com/app/creation/DoQTFCEpcl |
+| C024 | aerial drone · 콜드 로우키 | https://www.magnific.com/app/creation/JNWUccCOq4 |
+| C025 | object POV 지면 · 하드라이트 | https://www.magnific.com/app/creation/DoQTF5Kpcl |
+| C027 | OTS(리븐) · 로우키 | https://www.magnific.com/app/creation/ks9bNzX16B |
+| C028 | dutch wide · 콜드 로우키 | https://www.magnific.com/app/creation/s7Zx2Dxl8e |
+| C029 | high-angle · 블리치바이패스 | https://www.magnific.com/app/creation/jU31RprLD0 |
+| C030 | bird's-eye top-down · 소프트 | https://www.magnific.com/app/creation/ks9bNpf16B |
+
+### 배치 4 — S05 「후퇴」 ★요란 페이오프 설치
+| 컷 | 화각 · 조명 | 링크 |
+|---|---|---|
+| C031 | OTS · 로우키 | https://www.magnific.com/app/creation/TdCWE9cVNR |
+| C032 | low demai CU · 스플릿 | https://www.magnific.com/app/creation/cpanf6J0eP |
+| C033 | high-angle CU · 네거티브필 ★요란 | https://www.magnific.com/app/creation/If1BrDhtvE |
+| C034 | macro insert · 하드라이트 ★엄지 습관 | https://www.magnific.com/app/creation/p8FVH0rehw |
+| C035 | side profile CU · 스플릿 | https://www.magnific.com/app/creation/N2DPp416D9 |
+| C036 | extreme low 요란 POV · 실루엣 역광 | https://www.magnific.com/app/creation/5jPH91SKxe |
+| C037 | long shot 200mm 후퇴 · 콜드 | https://www.magnific.com/app/creation/LwRr2wcswO |
+| C038 | aerial drone · 소프트 | https://www.magnific.com/app/creation/EbSawkouuO |
+
+## 진행 32 / 55 · 남은 23컷 (C039~C061)
+누적 이미지 32 × 75 = 2,400 · 프로젝트 누적 **5,400** · 잔액 약 **26,602**
