@@ -1,0 +1,62 @@
+name: Build EP1 Part 1
+
+# build/part1 브랜치에 푸시하면 돈다. 기본 브랜치를 건드리지 않으려고 push 트리거를 쓴다.
+on:
+  push:
+    branches: [build/part1]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: ffmpeg 준비
+        run: pip install imageio-ffmpeg
+
+      - name: 주소 목록 준비
+        working-directory: projects/firebird/edit
+        env:
+          MEDIA_URLS: ${{ secrets.MEDIA_URLS }}
+        run: |
+          if [ -f urls.json ]; then
+            echo "저장소의 urls.json 을 쓴다"
+          elif [ -n "$MEDIA_URLS" ]; then
+            printf '%s' "$MEDIA_URLS" > urls.json
+            echo "시크릿에서 urls.json 을 만들었다"
+          else
+            echo "::error::urls.json 도 MEDIA_URLS 시크릿도 없다"; exit 1
+          fi
+          python3 -c "import json;d=json.load(open('urls.json'));print(f'주소 {len(d)}건')"
+
+      - name: 소스 다운로드
+        working-directory: projects/firebird/edit
+        run: python3 fetch_media.py --urls urls.json --out ./media
+
+      - name: 빌드
+        working-directory: projects/firebird/edit
+        run: |
+          python3 build_part1.py --media ./media --out part1.mp4 \
+            --subs ../v2026-09-19/subtitles/EP01_part1.ko.srt
+          ls -la part1.mp4
+
+      - name: 자막 구운 판도 하나
+        working-directory: projects/firebird/edit
+        continue-on-error: true
+        run: |
+          python3 build_part1.py --media ./media --out part1_burned.mp4 --burn-subs \
+            --subs ../v2026-09-19/subtitles/EP01_part1.ko.srt
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ep1-part1
+          path: |
+            projects/firebird/edit/part1.mp4
+            projects/firebird/edit/part1_burned.mp4
+          retention-days: 14
+          if-no-files-found: error
