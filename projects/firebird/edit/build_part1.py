@@ -253,6 +253,21 @@ def main():
                 return q
         return None
 
+    BED_REF_DB = -25.0        # 잘 나온 베드들이 모여 있는 값
+
+    def level_offset(path):
+        """소재마다 레벨이 제각각이라 지시서의 dB 가 뜻대로 작동하지 않는다.
+        기준선에 맞춘 뒤 지시서 값을 적용한다. 한 베드는 20dB 낮게 나왔었다."""
+        r = subprocess.run([FFMPEG, "-hide_banner", "-i", str(path),
+                            "-af", "volumedetect", "-f", "null", "-"],
+                           capture_output=True, text=True)
+        m = re.search(r"mean_volume:\s*(-?[\d.]+)", r.stderr)
+        if not m:
+            return 0.0
+        mean = float(m.group(1))
+        # 죽은 파일을 끌어올려 잡음만 키우지 않도록 상한을 둔다.
+        return max(-6.0, min(20.0, BED_REF_DB - mean))
+
     for b in man["ambience_beds"]:
         # 다른 구간의 베드를 빌려 쓸 수 있다 — 캐논이 "같은 베드"를 지시하는 자리가 있다.
         stem = b.get("file", b["name"])
@@ -272,9 +287,12 @@ def main():
         loops = max(0, int((need + off) // src_len) + 1)
         inputs.extend(["-stream_loop", str(loops), "-i", str(f)])
         lab = f"[l{idx}]"
+        norm = level_offset(f)
+        print(f"  베드 {b['name']:<12} {Path(f).stem:<12} 보정 {norm:+5.1f}dB → {b['db'] + norm:+6.1f}dB")
         filters.append(f"[{idx}:a]atrim={off:.3f}:{off + need:.3f},asetpts=PTS-STARTPTS,"
                        f"afade=t=in:st=0:d=0.75,afade=t=out:st={max(0,need-0.75):.3f}:d=0.75,"
-                       f"adelay={int(seg_start*1000)}|{int(seg_start*1000)},volume={b['db']}dB{lab}")
+                       f"adelay={int(seg_start*1000)}|{int(seg_start*1000)},"
+                       f"volume={b['db'] + norm:.1f}dB{lab}")
         labels.append(lab); idx += 1
 
     for sx in man["sfx"]:
@@ -313,7 +331,25 @@ def main():
         filters.append(f"{amap}volume=enable='between(t,{st},{en})':volume=0{nxt}")
         amap = nxt
 
-    filters.append(f"{amap}loudnorm=I=-14:TP=-1:LRA=11[aout]")
+    # loudnorm 1패스는 이 영화처럼 의도된 침묵으로 다이내믹이 넓은 소재에서
+    # 목표를 못 맞춘다(-14 를 노리고 -15.8 이 나왔다). 먼저 재고 그 값으로 건다.
+    LN = "I=-14:TP=-1:LRA=11"
+    probe = run([FFMPEG, "-hide_banner", *inputs,
+                 "-filter_complex", ";".join(filters +
+                     [f"{amap}loudnorm={LN}:print_format=json[aout]"]),
+                 "-map", "[aout]", "-vn", "-f", "null", "-"], quiet=True)
+    mj = re.search(r"\{[^{}]*input_i[^{}]*\}", probe.stderr, re.S)
+    if mj:
+        d = json.loads(mj.group(0))
+        filters.append(
+            f"{amap}loudnorm={LN}"
+            f":measured_I={d['input_i']}:measured_TP={d['input_tp']}"
+            f":measured_LRA={d['input_lra']}:measured_thresh={d['input_thresh']}"
+            f":offset={d['target_offset']}:linear=true[aout]")
+        print(f"[loudnorm] 측정 {d['input_i']} LUFS / LRA {d['input_lra']} → 2패스")
+    else:
+        filters.append(f"{amap}loudnorm={LN}[aout]")
+        print("[loudnorm] 측정 실패 — 1패스로 간다")
 
     vf = []
     if a.burn_subs and a.subs and Path(a.subs).exists():

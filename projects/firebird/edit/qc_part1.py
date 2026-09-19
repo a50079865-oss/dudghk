@@ -44,8 +44,9 @@ def cut_starts(man):
     return rows, t
 
 
-def analyse_stems(media):
-    """베드와 스코어 원본을 잰다 — 희박한가, 작기만 한가."""
+def analyse_stems(media, used=None):
+    """베드와 스코어 원본을 잰다 — 희박한가, 작기만 한가.
+    `used` 에 없는 파일은 빌드가 쓰지 않는 것이므로 그렇게 표시한다."""
     rows = []
     for sub in ("beds", "score"):
         d = Path(media) / sub
@@ -70,7 +71,8 @@ def analyse_stems(media):
             rows.append((f"{sub}/{f.stem}", dur,
                          mean.group(1) if mean else "?",
                          peak.group(1) if peak else "?",
-                         quiet, (quiet / dur * 100) if dur else 0.0))
+                         quiet, (quiet / dur * 100) if dur else 0.0,
+                         used is None or f.stem in used))
     return rows
 
 
@@ -214,13 +216,23 @@ def main():
         L.append("없음.\n")
 
     if a.stems:
-        st = analyse_stems(a.stems)
-        L.append(f"\n## 원본 스템 ({len(st)}개)\n")
+        # 매니페스트가 실제로 참조하는 파일만이 영화에 들어간다.
+        # 버려진 파일이 표에 섞이면 고쳐야 할 것처럼 읽힌다.
+        used = {b.get("file", b["name"]) for b in man.get("ambience_beds", [])}
+        used |= {c["name"] for c in man.get("score", [])}
+        st = analyse_stems(a.stems, used)
+        live = [r for r in st if r[6]]
+        dead = [r for r in st if not r[6]]
+        L.append(f"\n## 원본 스템 — 쓰이는 것 ({len(live)}개)\n")
         L.append("| 스템 | 길이 | 평균 | 피크 | 빈 시간 | 비율 |\n|---|---|---|---|---|---|\n")
-        for name, dur, mean, pk, quiet, pct in st:
+        for name, dur, mean, pk, quiet, pct, _ in live:
             L.append(f"| {name} | {dur:.1f}s | {mean} dB | {pk} dB | "
                      f"{quiet:.1f}s | **{pct:.0f}%** |\n")
         L.append("\n빈 비율이 높으면 게인을 올려도 채워지지 않는다 — 소재를 다시 뽑아야 한다.\n")
+        if dead:
+            L.append(f"\n### 쓰이지 않는 파일 ({len(dead)}개) — 조치 대상이 아니다\n\n")
+            for name, dur, mean, pk, quiet, pct, _ in dead:
+                L.append(f"- `{name}` — {dur:.1f}s · {mean} dB · 빈 시간 {pct:.0f}%\n")
 
     L.append("\n## 그림\n")
     L.append("- `contact_sheet.jpg` — 62컷 각각의 중간 프레임\n")
