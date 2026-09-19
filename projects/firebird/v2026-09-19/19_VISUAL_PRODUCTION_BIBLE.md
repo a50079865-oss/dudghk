@@ -92,10 +92,10 @@ ivory linen base · dark brown leather travel coat · faded deep-crimson wool cl
 Tall, lean, sword-trained functional physique. Broad but realistic shoulders.
 Long angular-oval face. Firm refined jaw. High cheekbones.
 Cool fair skin with natural texture.
-Deep steel-grey eyes. Right eye fractionally narrower than left.
+Deep steel-grey eyes. One eye fractionally narrower than the other (direction not fixed).
 Dark ash-blond hair, collar length. In darker light the hair can read muted ash-brown.
 Natural slight waves. Loose imperfect strands across forehead. Mostly clean-shaven.
-Short faded old blade scar above left eyebrow.
+Short faded old blade scar above one eyebrow — the same eyebrow in every shot.
 His expression is controlled rather than aggressive.
 ```
 
@@ -105,6 +105,11 @@ blackened steel plate · functional medieval construction · aged silver edge de
 > - **머리는 collar-length 유지** — 어깨까지 내려오는 볼륨 큰 머리는 교정 대상
 > - **갑옷 장식 허용 상향** — 흉갑·고젯에 절제된 음각 패턴과 작은 로제트까지 허용(기존 "minimal ornament"에서 완화)
 > - **늑대 문양** — 어깨의 은색 늑대 두상 핀 수준까지 허용. **단 흉갑 전체를 덮는 거대한 늑대는 여전히 금지**
+> **개정 2026-09-19 (2차) — 좌우 지정 완화 ★**
+> AI 생성에서 좌/우는 가장 안 잡히는 속성이라, 컷마다 미러링되며 재생성 비용을 계속 발생시킨다. 따라서:
+> - **흉터** — `왼쪽 눈썹 위` → **"한쪽 눈썹 위의 짧고 오래된 검상. 전 컷에서 같은 쪽."** 방향은 채택된 시트에 나온 쪽으로 사후 고정한다
+> - **눈 비대칭** — `오른쪽 눈이 더 좁음` → **"한쪽 눈이 아주 미세하게 더 좁음"**(방향 무관). 클로즈업이 아니면 사실상 판별 불가하므로 강제하지 않는다
+> - 이 완화는 **리븐에만** 적용된다. 엘라라의 표식 위치(가슴 중앙보다 약간 왼쪽)는 의상으로 가려지는 경우가 많고 인서트에서만 보이므로 **기존 캐논 유지**
 
 ## 12. 엘라라 × 리븐 프레임 규칙
 | 국면 | 규칙 |

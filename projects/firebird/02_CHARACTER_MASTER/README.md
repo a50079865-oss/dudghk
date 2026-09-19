@@ -14,13 +14,28 @@
 > 7단계 §36이 요구하는 소품 패널(herb satchel · medical knife · firebird mark · costume texture · longsword · wolf insignia)은
 > 패널 6개 상한 때문에 이 시트에 넣지 않았다. → **얼굴 확정 후 별도 V1 디테일 시트**로 제작한다.
 
-## v1 (2026-09-19) — 1안 테스트
-| 인물 | 결과 |
-|---|---|
-| ELARA VAREN | https://www.magnific.com/app/creation/u5UaMOhQLD |
-| RIVEN SKAEL | https://www.magnific.com/app/creation/ks9q8GO16B |
+## 생성 이력
+| 라운드 | 인물 | 결과 | 판정 |
+|---|---|---|---|
+| v1 | ELARA | https://www.magnific.com/app/creation/u5UaMOhQLD | ❌ 나이가 30대로 읽힘 |
+| v1 | RIVEN | https://www.magnific.com/app/creation/ks9q8GO16B | ❌ 나이가 30대로 읽힘 |
+| **v2** | **ELARA** | **https://www.magnific.com/app/creation/Bh5pGDqoQR** | ✅ **정본 채택 (2026-09-19)** |
+| v2 | RIVEN | https://www.magnific.com/app/creation/P3T7rNL42C | ❌ 머리 길이·갑옷 광택·흉터 방향 |
+| v3 | RIVEN | https://www.magnific.com/app/creation/SyGLkXbUb8 | 판정 대기 |
 
-소비: 1,200 크레딧 (600 × 2). 생성 후 잔액 약 30,352.
+누적 3,000 크레딧. 잔액 약 28,552.
+
+### ✅ ELARA v2 — 정본 확정
+나이 22~25세로 교정 성공. 주근깨·회녹색 눈·허리까지 오는 밤색 땋음·ivory linen + 갈색 울 + 해진 rust-red 숄·약초 다발·의료 가방·낡은 부츠 전부 캐논 일치.
+옷의 낡음(해진 밑단·기운 자리·얼룩) 우수. 패널 헤더 글자 안 깨짐. 5패널 얼굴 일관성 확보.
+> 유일한 유보: 얼굴이 캐논의 "accidental beauty"보다 배우 쪽에 가깝다. 무화장·헝클어진 머리·때 묻은 옷이 상쇄하므로 채택.
+
+### RIVEN — 미해결 이력
+- **v2 실패 원인 진단:** 머리 길이를 `NOT long / NOT shoulder-length / NOT voluminous` 부정 3중으로 눌렀으나 안 먹힘.
+  **부정문은 길이를 통제하지 못한다.**
+- **v3 조치:** 양성 판정 지표로 전환 — **"두 귀가 전 패널에서 완전히 드러난다. 머리카락이 귀를 스치거나 가리지 않는다."**
+  그리거나 안 그리거나 둘 중 하나라 판정이 명확하다. + 목덜미 짧게 · 두상에 붙게 · 최장 지점이 귀 높이
+- **v3 추가:** 갑옷 무광화(그을음·먼지·잔흠집으로 빛 흡수, 스페큘러 거의 없음) · 흉터는 방향 무관 + 전 패널 동일 쪽
 
 > ⚠️ 결과 파일은 CDN 호스트가 이 실행 환경의 네트워크 정책에 막혀 저장소로 내려받지 못했다.
 > 링크로 확인하고, 채택본은 사용자가 직접 내려받아 이 폴더에 `ELARA_VAREN_sheet_vN.png` 형식으로 보관한다.
