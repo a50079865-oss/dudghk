@@ -90,6 +90,14 @@ jobs:
 
       - name: 검수 결과 커밋
         run: |
+          # 앞선 실행이 늦게 끝나면서 새 결과를 덮어쓰는 일이 있었다.
+          # 지금 빌드한 커밋이 build/part1 의 현재 끝이 아니면 올리지 않는다.
+          git fetch -q origin build/part1
+          TIP=$(git rev-parse origin/build/part1)
+          if [ "$TIP" != "${{ github.sha }}" ]; then
+            echo "::warning::이 실행(${{ github.sha }})은 build/part1 의 끝($TIP)이 아니다 — 검수 결과를 올리지 않는다"
+            exit 0
+          fi
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -B qc/results
