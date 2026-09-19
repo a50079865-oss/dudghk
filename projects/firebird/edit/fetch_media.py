@@ -21,7 +21,6 @@ def main():
     urls = json.loads(Path(a.urls).read_text())
     out = Path(a.out); ok = fail = 0
     for name, url in urls.items():
-        ext = ".mp4" if "/dlg/" not in name and name.startswith("C") and "-h264" in url else None
         dest = out / name
         if dest.suffix == "":
             dest = dest.with_suffix(".mp4" if "mp4" in url else ".png" if "png" in url else ".mp3")
@@ -35,7 +34,9 @@ def main():
             print(f"  실패  {dest.name}: {e}", file=sys.stderr); fail += 1
     print(f"\n완료 {ok}건 / 실패 {fail}건")
     if fail:
-        print("실패가 전부 pikaso.cdnpk.net 이면 이그레스 정책 문제다 — 호스트 허용이 필요하다.")
+        print("\n실패가 전부 pikaso.cdnpk.net 이면 두 가지 중 하나다:")
+        print("  1) 토큰 만료 — 주소를 다시 뽑아야 한다")
+        print("  2) 네트워크에서 그 호스트가 막혀 있다")
 
 if __name__ == "__main__":
     main()
