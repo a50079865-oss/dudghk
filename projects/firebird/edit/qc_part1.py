@@ -86,6 +86,9 @@ def main():
 
     film = Path(a.film)
     out = Path(a.out); out.mkdir(parents=True, exist_ok=True)
+    # 이전 판이 남아 있으면 새 결과로 오인된다. 먼저 지운다.
+    for stale in ("contact_sheet.jpg", "waveform.png", "spectrogram.png", "report.md"):
+        (out / stale).unlink(missing_ok=True)
     man = json.loads(Path(a.manifest).read_text())
     rows, total = cut_starts(man)
 
@@ -98,17 +101,13 @@ def main():
     n = len(rows)
     cols = a.cols
     tile_rows = (n + cols - 1) // cols
-    ff(["-y", "-framerate", "1", "-i", str(frames / "%03d_*.jpg"),
+    # ffmpeg 의 image2 디먹서는 글롭을 받지 않는다. 순번 파일로만 만든다.
+    seq = out / "_seq"; seq.mkdir(exist_ok=True)
+    for i, f in enumerate(sorted(frames.glob("*.jpg"))):
+        (seq / f"{i:03d}.jpg").write_bytes(f.read_bytes())
+    ff(["-y", "-framerate", "1", "-i", str(seq / "%03d.jpg"),
         "-vf", f"tile={cols}x{tile_rows}:margin=6:padding=4:color=#111111",
-        "-frames:v", "1", "-q:v", "3", str(out / "contact_sheet.jpg")], expect_ok=False)
-    # glob 패턴이 안 먹는 빌드가 있어 순번 파일로 한 번 더 시도한다
-    if not (out / "contact_sheet.jpg").exists():
-        seq = out / "_seq"; seq.mkdir(exist_ok=True)
-        for i, p in enumerate(sorted(frames.glob("*.jpg"))):
-            (seq / f"{i:03d}.jpg").write_bytes(p.read_bytes())
-        ff(["-y", "-framerate", "1", "-i", str(seq / "%03d.jpg"),
-            "-vf", f"tile={cols}x{tile_rows}:margin=6:padding=4:color=#111111",
-            "-frames:v", "1", "-q:v", "3", str(out / "contact_sheet.jpg")])
+        "-frames:v", "1", "-q:v", "3", str(out / "contact_sheet.jpg")])
 
     # ── 2. 파형과 스펙트로그램 ────────────────────────────────────────
     ff(["-y", "-i", str(film), "-filter_complex",
@@ -183,15 +182,26 @@ def main():
     else:
         L.append("없음 — **설계와 어긋난다.** C019 전체와 C039 후반은 무음이어야 한다.\n")
 
-    L.append(f"\n## 검은 화면 — 0.5초 이상 ({len(blacks)}곳)\n")
-    if blacks:
+    # C062 는 지시서가 정한 암전 엔드카드다. 검은 것이 정상이므로 경고에서 뺀다.
+    BY_DESIGN = {"C062"}
+    def cut_at(t):
+        hit = [c for c, s, d, _ in rows if s <= t < s + d]
+        return hit[0] if hit else "-"
+    real = [(s, e) for s, e in blacks if cut_at(float(s)) not in BY_DESIGN]
+    okay = [(s, e) for s, e in blacks if cut_at(float(s)) in BY_DESIGN]
+    L.append(f"\n## 검은 화면 — 0.5초 이상, 설계된 암전 제외 ({len(real)}곳)\n")
+    if real:
         L.append("소스가 빠졌다는 뜻이다.\n\n| 시작 | 끝 | 해당 컷 |\n|---|---|---|\n")
-        for st, en in blacks:
-            st = float(st)
-            hit = [c for c, s, d, _ in rows if s <= st < s + d]
-            L.append(f"| {hhmmss(st)} | {hhmmss(float(en))} | {hit[0] if hit else '-'} |\n")
+        for st, en in real:
+            L.append(f"| {hhmmss(float(st))} | {hhmmss(float(en))} | {cut_at(float(st))} |\n")
     else:
         L.append("없음. 62컷 전부 그림이 들어 있다.\n")
+    if okay:
+        L.append("\n설계된 암전으로 확인된 것 — 조치 대상이 아니다:\n\n")
+        for st, en in okay:
+            L.append(f"- {hhmmss(float(st))}~{hhmmss(float(en))} **{cut_at(float(st))}**\n")
+    else:
+        L.append("\n⚠️ C062 암전이 검출되지 않았다 — 엔드카드가 안 붙었을 수 있다.\n")
 
     L.append(f"\n## 12초 이상 정지 ({len(freezes)}곳)\n")
     if freezes:

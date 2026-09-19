@@ -4,3 +4,10 @@ projects/firebird/edit/urls.json
 projects/firebird/edit/DOWNLOAD_LIST.md
 projects/firebird/edit/media/
 projects/firebird/edit/urls_audio.json
+
+# 검수 산출물은 qc/results 브랜치에만 둔다.
+# 소스 브랜치에 있으면 CI 체크아웃에 낡은 판이 섞여 새 결과로 오인된다.
+projects/firebird/edit/qc/contact_sheet.jpg
+projects/firebird/edit/qc/waveform.png
+projects/firebird/edit/qc/spectrogram.png
+projects/firebird/edit/qc/report.md
