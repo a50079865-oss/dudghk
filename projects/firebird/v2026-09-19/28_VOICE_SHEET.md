@@ -82,3 +82,19 @@
 4. 확정 voice_id를 캐릭터 마스터 파일에 영구 기재
 
 > 대본 정본은 `29_EP01_PART1_SCRIPT.md`. 자막은 `subtitles/EP01_part1.ko.srt`(주) · `.en.srt`(해외용).
+
+---
+
+## 립싱크 완료 — 4컷 (`latentsync` · 100크레딧)
+| 컷 | 인물 | 대사 | 립싱크 결과 |
+|---|---|---|---|
+| C027 | 브리스 | "A village, my lord. Three miles inside the border." | https://www.magnific.com/app/creation/4RVPQCg9Aa |
+| C031 | 브리스 | "Four, my lord." | https://www.magnific.com/app/creation/jU3xBXBLD0 |
+| C035 | 리븐 | "...We withdraw." | https://www.magnific.com/app/creation/aFsvAGofSh |
+| C041 | 사제 | "The Firebird saved us once, and through the royal house it shall come again." | https://www.magnific.com/app/creation/w4nUvCC7EI |
+
+> **편집에 쓰는 것은 이 립싱크 판이다.** 원본 무성 클립(C027·C031·C035·C041)은 폐기하지 않되 사용하지 않는다.
+> 오프스크린 3줄(C009·C017·C030)은 **원본 무성 클립 + 음성 파일을 편집에서 얹는다.**
+
+### 남은 판단 — C035에 프리미엄 립싱크를 쓸지
+C035는 유일한 **측면 CU**라 입이 크게 보이고, 리븐의 1부 결정적 대사다. `latentsync` 결과를 보고 부족하면 `lipsync-2.0`(2,000)으로 이 한 컷만 다시 간다. 나머지 셋은 OTS 미디엄·로우앵글이라 입이 작아 관대하다.
