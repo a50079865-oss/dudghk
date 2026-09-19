@@ -27,6 +27,7 @@ jobs:
         env:
           MEDIA_URLS: ${{ secrets.MEDIA_URLS }}
           MEDIA_URLS_AUDIO: ${{ secrets.MEDIA_URLS_AUDIO }}
+          MEDIA_URLS_PATCH: ${{ secrets.MEDIA_URLS_PATCH }}
         run: |
           if [ -f urls.json ]; then
             echo "저장소의 urls.json 을 쓴다"
@@ -42,6 +43,12 @@ jobs:
             python3 -c "import json;a=json.load(open('urls.json'));b=json.load(open('urls_audio.json'));a.update(b);json.dump(a,open('urls.json','w'));print(f'오디오 {len(b)}건 합침')"
           else
             echo "::warning::MEDIA_URLS_AUDIO 가 없다 — 스코어와 앰비언스 없이 빌드한다"
+          fi
+          # 소재를 고칠 때마다 시크릿 전체를 다시 붙이지 않아도 되게,
+          # 덮어쓸 항목만 담은 작은 시크릿을 맨 마지막에 합친다.
+          if [ -n "$MEDIA_URLS_PATCH" ]; then
+            printf '%s' "$MEDIA_URLS_PATCH" > urls_patch.json
+            python3 -c "import json;a=json.load(open('urls.json'));b=json.load(open('urls_patch.json'));a.update(b);json.dump(a,open('urls.json','w'));print(f'덮어쓰기 {len(b)}건 적용: '+', '.join(sorted(b)))"
           fi
           python3 -c "import json;d=json.load(open('urls.json'));print(f'주소 {len(d)}건')"
 

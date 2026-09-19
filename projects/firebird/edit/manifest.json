@@ -82,13 +82,9 @@
    "dur": 6,
    "tier": "C",
    "content": "손 인서트 — 약초 얼룩·짧은 손톱",
-   "kind": "still",
+   "kind": "video",
    "source": "4RVOTgI9Aa",
-   "ken_burns": {
-    "mode": "in",
-    "from": 1.02,
-    "to": 1.07
-   }
+   "note": "정지컷 영상화 1호 — 손 인서트, 100mm 푸시인이 클립에 포함됨"
   },
   {
    "cut": "C008",
