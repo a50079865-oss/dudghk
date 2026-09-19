@@ -15,7 +15,7 @@
 - 부드러운 긴 타원형 얼굴 · realistic natural asymmetry · 뚜렷하되 지나치게 높지 않은 광대
 - 코와 광대 위 옅은 주근깨 · straight natural nose · restrained natural lips
 - **눈:** 진한 회녹색(deep grey-green) · 눈동자 가장자리에 아주 옅은 금색/앰버 고리 · **no glowing eyes**
-- **머리:** 짙은 chestnut-brown, 옅은 warm undertone · 자연스러운 웨이브 · 낮게 묶거나 느슨한 땋음 · 관자놀이·뺨 주변에 흘러나온 잔머리 · **현대적·광택·글래머 스타일 절대 금지**
+- **머리:** 짙은 chestnut-brown, 옅은 warm undertone · **허리까지 오는 길이(waist-length) — 확정** · 자연스러운 웨이브 · 낮게 묶거나 느슨한 땋음 · 관자놀이·뺨 주변에 흘러나온 잔머리 · **현대적·광택·글래머 스타일 절대 금지**
 - **체형:** slim, practical build. 걷고, 약초를 캐고, 짐을 나르고, 부상자를 돌본 몸
 - **손:** 아문 작은 상처들 · 손끝 약초 물 · 건조한 노동 피부 · 짧고 실용적인 손톱
 - 화장 거의 없음
@@ -93,6 +93,6 @@
 ## 9. ❗미결 — 이미지 생성 전 확정 필요
 | # | 항목 | v1 캐논 | 2단계 신규 | 영향 |
 |---|---|---|---|---|
-| A | **머리 길이** | below shoulder blades (견갑골 아래) | **허리까지** | 전 컷 실루엣. 캐릭터 시트에 직접 박힘 |
+| A | **머리 길이** | ~~below shoulder blades~~ | **허리까지 — ✅ 확정(2026-09-19)** | 해소됨 |
 | B | **눈의 반응** | no glowing eyes (절대 금지) | "감정이 극단으로 치솟을 때만 금빛 테두리가 아주 미세하게 강해진다" | 발광 금지선과의 경계 |
 > B 권장 처리: **발광(emissive) 아님**을 명시하고 "iris outer ring saturation +10%, no light emission, no bloom"으로 한정. 그러면 절대 금지선을 지키면서 연출은 살린다.

@@ -67,7 +67,7 @@ EP1 Burnt Gold / Smoke Grey / Ember Red · EP2 Earth Brown / Ash Grey / Dried Gr
 Soft long oval face. Natural human asymmetry.
 Fair neutral skin with subtle outdoor weathering and faint freckles.
 Deep grey-green eyes with a very subtle warm amber outer ring.
-Dark chestnut-brown hair, long, naturally wavy.
+Dark chestnut-brown hair, waist-length, naturally wavy.
 Usually arranged in a practical loose low braid.
 A few imperfect strands always escape around the face.
 No glamour makeup. No princess styling. No elaborate jewelry.
@@ -75,7 +75,7 @@ Hands show small scars and traces of herbs and work.
 Her beauty should feel accidental rather than cultivated.
 ```
 **표정 기본값** observant · compassionate · stubborn · slightly guarded · quietly courageous
-> ❗ **머리 길이 미확정** — 본 문서는 "long"만 명시. v1 캐논=견갑골 아래 / 2단계=허리까지. **캐릭터 시트 생성 전 확정 필요.**
+> ✅ **머리 길이 확정 = 허리까지(waist-length)** — 2026-09-19 사용자 확정. v1의 '견갑골 아래'는 폐기.
 
 ## 08. 엘라라 초기 의상 (ELARA-A)
 warm ivory linen chemise · weathered brown wool overdress · faded rust-red wool shawl · dark practical leather belt · small herb pouches · simple leather boots · small medical knife · worn travel satchel
