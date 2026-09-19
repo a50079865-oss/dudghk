@@ -23,6 +23,7 @@ jobs:
         working-directory: projects/firebird/edit
         env:
           MEDIA_URLS: ${{ secrets.MEDIA_URLS }}
+          MEDIA_URLS_AUDIO: ${{ secrets.MEDIA_URLS_AUDIO }}
         run: |
           if [ -f urls.json ]; then
             echo "저장소의 urls.json 을 쓴다"
@@ -31,6 +32,13 @@ jobs:
             echo "시크릿에서 urls.json 을 만들었다"
           else
             echo "::error::urls.json 도 MEDIA_URLS 시크릿도 없다"; exit 1
+          fi
+          # 오디오(스코어·앰비언스)는 별도 시크릿으로 합친다
+          if [ -n "$MEDIA_URLS_AUDIO" ]; then
+            printf '%s' "$MEDIA_URLS_AUDIO" > urls_audio.json
+            python3 -c "import json;a=json.load(open('urls.json'));b=json.load(open('urls_audio.json'));a.update(b);json.dump(a,open('urls.json','w'));print(f'오디오 {len(b)}건 합침')"
+          else
+            echo "::warning::MEDIA_URLS_AUDIO 가 없다 — 스코어와 앰비언스 없이 빌드한다"
           fi
           python3 -c "import json;d=json.load(open('urls.json'));print(f'주소 {len(d)}건')"
 

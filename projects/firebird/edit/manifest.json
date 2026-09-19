@@ -751,49 +751,56 @@
       "from": "C001",
       "to": "C004",
       "db": -28,
-      "desc": "wind + distant footsteps + cart wheels"
+      "desc": "wind + distant footsteps + cart wheels",
+      "id": "aFlC5AUfSh"
     },
     {
       "name": "S02_aid",
       "from": "C005",
       "to": "C015",
       "db": -28,
-      "desc": "aid-post murmur + cloth + water"
+      "desc": "aid-post murmur + cloth + water",
+      "id": "dtbBa4dXSL"
     },
     {
       "name": "S03_boy",
       "from": "C016",
       "to": "C022",
       "db": -32,
-      "desc": "same bed, quieter"
+      "desc": "same bed, quieter",
+      "id": "jURsOtyLD0"
     },
     {
       "name": "S04_05_army",
       "from": "C023",
       "to": "C039",
       "db": -28,
-      "desc": "wind + harness + leather + metal"
+      "desc": "wind + harness + leather + metal",
+      "id": "DoFemiVpcl"
     },
     {
       "name": "S06_chapel",
       "from": "C040",
       "to": "C043",
       "db": -28,
-      "desc": "stone reverb + low prayer murmur"
+      "desc": "stone reverb + low prayer murmur",
+      "id": "tCxhFcZmZJ"
     },
     {
       "name": "S07_smoke",
       "from": "C044",
       "to": "C047",
       "db": -30,
-      "desc": "wind rising to -24dB"
+      "desc": "wind rising to -24dB",
+      "id": "CqSukd2EEy"
     },
     {
       "name": "S08_raid",
       "from": "C048",
       "to": "C061",
       "db": -18,
-      "desc": "fire + hooves + screams + collapse"
+      "desc": "fire + hooves + screams + collapse",
+      "id": "jURsOF0LD0"
     }
   ],
   "silences": [
@@ -861,5 +868,31 @@
     "loudness": "-14 LUFS",
     "peak": "-1 dBTP",
     "colour": "rec709"
-  }
+  },
+  "score": [
+    {
+      "name": "cue_A_ash",
+      "id": "6Ae3YfFiJO",
+      "start": 0,
+      "use": 45.0,
+      "db": -26,
+      "note": "S01 재 — 해결되지 않는 첼로 드론. 0:00~0:45"
+    },
+    {
+      "name": "cue_B_withdraw",
+      "id": "YMvcd1gWeC",
+      "start": 210,
+      "use": 58.0,
+      "db": -24,
+      "note": "S05 후퇴 — 시계 같은 저현. 3:30에 들어와 C039 침묵 3초 전에 빠진다"
+    },
+    {
+      "name": "cue_C_raid",
+      "id": "mEjvHgahJQ",
+      "start": 345,
+      "use": 70.0,
+      "db": -20,
+      "note": "S08 습격 — 유일한 빌드. 5:45~6:55, C062 암전에서 칼같이 끊긴다"
+    }
+  ]
 }

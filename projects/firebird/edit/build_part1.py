@@ -231,8 +231,17 @@ def main():
         else:
             missing.append(f"dlg/{d['audio']}")
 
+    def pick(d, stem):
+        for ext in (".wav", ".mp3", ".m4a", ".ogg"):
+            q = media / d / f"{stem}{ext}"
+            if q.exists():
+                return q
+        return None
+
     for b in man["ambience_beds"]:
-        f = media / "beds" / f"{b['name']}.wav"
+        f = pick("beds", b["name"])
+        if f is None:
+            f = media / "beds" / f"{b['name']}.wav"
         if not f.exists():
             missing.append(f"beds/{b['name']}")
             continue
@@ -249,10 +258,27 @@ def main():
                        f"adelay={int(seg_start*1000)}|{int(seg_start*1000)},volume={b['db']}dB{lab}")
         labels.append(lab); idx += 1
 
-    for s in man["sfx"]:
-        f = media / "sfx" / f"{s['cut']}.wav"
-        if f.exists():
-            add(f, starts[s["cut"]] + s["at"])
+    for sx in man["sfx"]:
+        f = pick("sfx", sx["cut"])
+        if f:
+            add(f, starts[sx["cut"]] + sx["at"])
+
+    # ── 스코어 ──────────────────────────────────────────────
+    # 전편에 깔지 않는다. 세 번만, 자리값을 하는 곳에.
+    for cue in man.get("score", []):
+        f = pick("score", cue["name"])
+        if f is None:
+            missing.append(f"score/{cue['name']}")
+            continue
+        use = float(cue["use"])
+        inputs.extend(["-i", str(f)])
+        lab = f"[l{idx}]"
+        filters.append(
+            f"[{idx}:a]atrim=0:{use:.3f},asetpts=PTS-STARTPTS,"
+            f"afade=t=in:st=0:d=1.5,afade=t=out:st={max(0.0, use-2.5):.3f}:d=2.5,"
+            f"adelay={int(cue['start']*1000)}|{int(cue['start']*1000)},"
+            f"volume={cue['db']}dB{lab}")
+        labels.append(lab); idx += 1
 
     if len(labels) > 1:
         filters.append("".join(labels) + f"amix=inputs={len(labels)}:duration=first:normalize=0[mixed]")
