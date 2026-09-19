@@ -52,11 +52,33 @@ jobs:
           python3 build_part1.py --media ./media --out part1_burned.mp4 --burn-subs \
             --subs ../v2026-09-19/subtitles/EP01_part1.ko.srt
 
+      - name: 휴대폰용 경량 판
+        working-directory: projects/firebird/edit
+        run: |
+          FF=$(python3 -c "import imageio_ffmpeg;print(imageio_ffmpeg.get_ffmpeg_exe())")
+          "$FF" -y -i part1_burned.mp4 -vf scale=854:480 \
+            -c:v libx264 -preset medium -crf 30 -profile:v main \
+            -c:a aac -b:a 96k -movflags +faststart part1_preview.mp4
+          ls -lh part1_preview.mp4
+
+      # 파일별로 나눠 올린다 — 하나 받으려고 전체를 받지 않아도 되게.
       - uses: actions/upload-artifact@v4
         with:
-          name: ep1-part1
-          path: |
-            projects/firebird/edit/part1.mp4
-            projects/firebird/edit/part1_burned.mp4
+          name: part1-preview-경량
+          path: projects/firebird/edit/part1_preview.mp4
+          retention-days: 14
+          if-no-files-found: error
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: part1-자막트랙
+          path: projects/firebird/edit/part1.mp4
+          retention-days: 14
+          if-no-files-found: error
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: part1-자막구움
+          path: projects/firebird/edit/part1_burned.mp4
           retention-days: 14
           if-no-files-found: error
