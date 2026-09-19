@@ -225,12 +225,16 @@
    "tier": "A",
    "content": "엘라라가 다시 움직인다",
    "kind": "video",
-   "source": "SyGsTfMUb8"
+   "source": "SyGsTfMUb8",
+   "transition_after": {
+    "type": "dissolve",
+    "seconds": 0.5
+   }
   },
   {
    "cut": "C022",
    "start": 153,
-   "dur": 12,
+   "dur": 20,
    "tier": "C",
    "content": "천막 사이로 새벽빛",
    "kind": "still",
@@ -240,24 +244,12 @@
     "from": 1.05,
     "to": 1.05
    },
-   "transition_after": {
-    "type": "dissolve",
-    "seconds": 0.5
-   }
-  },
-  {
-   "cut": "C023",
-   "start": 165,
-   "dur": 8,
-   "tier": "C",
-   "content": "능선 실루엣. 로우앵글",
-   "kind": "still",
-   "source": "DoQTFCEpcl",
-   "ken_burns": {
-    "mode": "tilt_up",
-    "from": 1.04,
-    "to": 1.04
-   }
+   "transition_after": null,
+   "merged_from": [
+    "C022",
+    "C023"
+   ],
+   "note": "C023 과 같은 그림이었다. 한 컷으로 합쳐 틸트를 끊지 않는다"
   },
   {
    "cut": "C024",
@@ -401,21 +393,7 @@
    "tier": "B",
    "content": "기병대가 돌아선다",
    "kind": "video",
-   "source": "s7Zxc9el8e"
-  },
-  {
-   "cut": "C038",
-   "start": 259,
-   "dur": 8,
-   "tier": "C",
-   "content": "남겨진 잔해 와이드",
-   "kind": "still",
-   "source": "EbSawkouuO",
-   "ken_burns": {
-    "mode": "out",
-    "from": 1.06,
-    "to": 1.0
-   },
+   "source": "s7Zxc9el8e",
    "transition_after": {
     "type": "dissolve",
     "seconds": 0.33
@@ -424,7 +402,7 @@
   {
    "cut": "C039",
    "start": 267,
-   "dur": 18,
+   "dur": 26,
    "tier": "C",
    "content": "요란의 손이 흙을 쥔다",
    "kind": "still",
@@ -432,8 +410,13 @@
    "ken_burns": {
     "mode": "in",
     "from": 1.0,
-    "to": 1.04
-   }
+    "to": 1.05
+   },
+   "merged_from": [
+    "C038",
+    "C039"
+   ],
+   "note": "C038 과 같은 그림이었다. 반대 방향 켄번스가 서로를 지우고 있었다"
   },
   {
    "cut": "C040",
@@ -765,7 +748,7 @@
   {
    "name": "S03_boy",
    "from": "C016",
-   "to": "C022",
+   "to": "C021",
    "db": -32,
    "desc": "치료소와 같은 베드 · 믹스에서만 낮춘다",
    "id": "jURsOtyLD0",
@@ -774,7 +757,7 @@
   },
   {
    "name": "S04_05_army",
-   "from": "C023",
+   "from": "C022",
    "to": "C039",
    "db": -28,
    "desc": "wind + harness + leather + metal",
@@ -813,7 +796,7 @@
   },
   {
    "cut": "C039",
-   "from_offset": 4.0,
+   "from_offset": 12.0,
    "note": "14s of nothing after the soil grip"
   },
   {
@@ -840,7 +823,7 @@
   },
   {
    "cut": "C039",
-   "at": 3.0,
+   "at": 11.0,
    "desc": "soil gripped once, then silence"
   },
   {
