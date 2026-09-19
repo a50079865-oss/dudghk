@@ -93,7 +93,12 @@ def ken_burns(mode, z0, z1, dur, fps):
             f"zoompan=z='{z}':x='{x}':y='{y}':d={n}:s={W}x{H}:fps={fps},"
             f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H}")
 
-def find_media(media, cut, exts):
+def find_media(media, cut, exts, entry=None):
+    # 저장소가 직접 들고 있는 소스(엔드 타이틀 카드 등)가 우선한다.
+    if entry and entry.get("source"):
+        p = Path(__file__).resolve().parent / entry["source"]
+        if p.exists():
+            return p
     for e in exts:
         p = media / f"{cut}{e}"
         if p.exists():
@@ -113,7 +118,7 @@ def build_segment(entry, media, work, fps, crf):
     aenc = ["-c:a", "aac", "-b:a", "192k", "-ar", str(SAMPLE), "-ac", "2"]
 
     if entry["kind"] == "still":
-        src = find_media(media, cut, [".png", ".jpg", ".jpeg", ".webp"])
+        src = find_media(media, cut, [".png", ".jpg", ".jpeg", ".webp"], entry)
         kbs = entry.get("ken_burns", {"mode": "in", "from": 1.0, "to": 1.04})
         if src is None:                       # 없으면 검은 화면으로 자리를 지킨다
             vf = f"color=c=black:s={W}x{H}:r={fps}:d={dur}"
@@ -127,14 +132,21 @@ def build_segment(entry, media, work, fps, crf):
              "-t", str(dur), "-vf", vf, *venc, *aenc, "-shortest", str(out)])
         return out, True
 
-    src = find_media(media, cut, [".mp4", ".mov", ".mkv", ".webm"])
+    src = find_media(media, cut, [".mp4", ".mov", ".mkv", ".webm"], entry)
     if src is None:
         run([FFMPEG, "-y", "-f", "lavfi", "-i", f"color=c=black:s={W}x{H}:r={fps}:d={dur}",
              "-f", "lavfi", "-i", f"anullsrc=r={SAMPLE}:cl=stereo",
              "-t", str(dur), *venc, *aenc, "-shortest", str(out)])
         return out, False
     # 클립이 지시서의 길이보다 짧으면 마지막 프레임을 물리고, 길면 자른다.
-    vf = (f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},"
+    pre = ""
+    cr = entry.get("crop")
+    if cr:
+        # 픽셀이 아니라 비율로 자른다 — 소스 해상도가 달라도 같은 그림이 나온다.
+        keep = 1.0 - cr["drop_top"]
+        pre = (f"crop=w='min(iw\\,ih*{keep}*16/9)':h='ih*{keep}'"
+               f":x='(iw-ow)/2':y='ih*{cr['drop_top']}',")
+    vf = (f"{pre}scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},"
           f"tpad=stop_mode=clone:stop_duration=6,fps={fps}")
     run([FFMPEG, "-y", "-i", str(src),
          "-f", "lavfi", "-i", f"anullsrc=r={SAMPLE}:cl=stereo",

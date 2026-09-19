@@ -5,6 +5,9 @@ on:
   push:
     branches: [build/part1]
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -68,6 +71,24 @@ jobs:
             -c:v libx264 -preset medium -crf 30 -profile:v main \
             -c:a aac -b:a 96k -movflags +faststart part1_preview.mp4
           ls -lh part1_preview.mp4
+
+      # 빌드 직후 바로 해부한다 — 미디어가 아직 러너에 있으므로
+      # 완성본뿐 아니라 베드·스코어 원본까지 잴 수 있다.
+      - name: 검수
+        run: |
+          python3 projects/firebird/edit/qc_part1.py \
+            --film projects/firebird/edit/part1.mp4 \
+            --stems projects/firebird/edit/media \
+            --out projects/firebird/edit/qc
+
+      - name: 검수 결과 커밋
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B qc/results
+          git add -f projects/firebird/edit/qc
+          git commit -m "QC: 실행 ${{ github.run_id }} 측정 결과" || echo "변경 없음"
+          git push -f origin qc/results
 
       # 파일별로 나눠 올린다 — 하나 받으려고 전체를 받지 않아도 되게.
       - uses: actions/upload-artifact@v4

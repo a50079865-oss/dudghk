@@ -1,898 +1,902 @@
 {
-  "title": "THE KINGDOM OF THE FIREBIRD — EP1 Part 1",
-  "runtime_seconds": 420,
-  "fps_note": "match source clips; do not convert",
-  "resolution": [
-    1920,
-    1080
-  ],
-  "timeline": [
-    {
-      "cut": "C001",
-      "start": 0,
-      "dur": 12,
-      "tier": "C",
-      "content": "회색 하늘. **재가 아래로 내린다.** 느린 틸트다운",
-      "kind": "still",
-      "source": "4RVOc2r9Aa",
-      "ken_burns": {
-        "mode": "tilt_down",
-        "from": 1.06,
-        "to": 1.06
-      }
-    },
-    {
-      "cut": "C002",
-      "start": 12,
-      "dur": 5,
-      "tier": "B",
-      "content": "지평선까지 이어진 피난민 행렬. 락오프",
-      "kind": "video",
-      "source": "rg6KGJextc"
-    },
-    {
-      "cut": "C003",
-      "start": 17,
-      "dur": 5,
-      "tier": "B",
-      "content": "행렬 측면 트래킹. 발·수레바퀴·진흙",
-      "kind": "video",
-      "source": "tCroSbcmZJ"
-    },
-    {
-      "cut": "C004",
-      "start": 22,
-      "dur": 23,
-      "tier": "C",
-      "content": "재가 어깨에 내려앉는다. 아무도 위를 보지 않는다",
-      "kind": "still",
-      "source": "nVmA8taYQD",
-      "ken_burns": {
-        "mode": "in",
-        "from": 1.0,
-        "to": 1.05
-      }
-    },
-    {
-      "cut": "C005",
-      "start": 45,
-      "dur": 11,
-      "tier": "C",
-      "content": "길가 임시 치료소 와이드",
-      "kind": "still",
-      "source": "rg6KNELxtc",
-      "ken_burns": {
-        "mode": "pan_right",
-        "from": 1.05,
-        "to": 1.05
-      }
-    },
-    {
-      "cut": "C006",
-      "start": 56,
-      "dur": 5,
-      "tier": "A",
-      "content": "**엘라라**가 붕대를 감는다",
-      "kind": "video",
-      "source": "N2DP8VJ6D9"
-    },
-    {
-      "cut": "C007",
-      "start": 61,
-      "dur": 6,
-      "tier": "C",
-      "content": "손 인서트 — 약초 얼룩·짧은 손톱",
-      "kind": "still",
-      "source": "4RVOTgI9Aa",
-      "ken_burns": {
-        "mode": "in",
-        "from": 1.02,
-        "to": 1.07
-      }
-    },
-    {
-      "cut": "C008",
-      "start": 67,
-      "dur": 5,
-      "tier": "A",
-      "content": "**푼크툼: 왼손이 반 박자 늦게 따라온다**",
-      "kind": "video",
-      "source": "p8FV1FNehw"
-    },
-    {
-      "cut": "C009",
-      "start": 72,
-      "dur": 5,
-      "tier": "A",
-      "content": "노파: \"저 아이는 어디서 왔소?\"",
-      "kind": "video",
-      "source": "vQLt7lWa47"
-    },
-    {
-      "cut": "C010",
-      "start": 77,
-      "dur": 5,
-      "tier": "A",
-      "content": "엘라라 — 답하지 않는다",
-      "kind": "video",
-      "source": "jU31nApLD0"
-    },
-    {
-      "cut": "C011",
-      "start": 82,
-      "dur": 5,
-      "tier": "A",
-      "content": "다음 사람에게 간다",
-      "kind": "video",
-      "source": "4RVOBXg9Aa"
-    },
-    {
-      "cut": "C012",
-      "start": 87,
-      "dur": 11,
-      "tier": "C",
-      "content": "치료소 전경. 부상자들이 늘어서 있다",
-      "kind": "still",
-      "source": "1lN5Nwvr4r",
-      "ken_burns": {
-        "mode": "out",
-        "from": 1.08,
-        "to": 1.02
-      }
-    },
-    {
-      "cut": "C013",
-      "start": 98,
-      "dur": 5,
-      "tier": "B",
-      "content": "물을 나르는 아이들",
-      "kind": "video",
-      "source": "gOAL0pJSXO"
-    },
-    {
-      "cut": "C014",
-      "start": 103,
-      "dur": 5,
-      "tier": "A",
-      "content": "엘라라 CU — 지친 눈",
-      "kind": "video",
-      "source": "YMhGQkaWeC"
-    },
-    {
-      "cut": "C015",
-      "start": 108,
-      "dur": 12,
-      "tier": "C",
-      "content": "피 묻은 천이 대야에 담긴다",
-      "kind": "still",
-      "source": "gOALAp6SXO",
-      "ken_burns": {
-        "mode": "in",
-        "from": 1.0,
-        "to": 1.06
-      }
-    },
-    {
-      "cut": "C016",
-      "start": 120,
-      "dur": 5,
-      "tier": "A",
-      "content": "소년 환자. 울고 있다",
-      "kind": "video",
-      "source": "YMhGQrCWeC"
-    },
-    {
-      "cut": "C017",
-      "start": 125,
-      "dur": 5,
-      "tier": "A",
-      "content": "엘라라가 이름을 묻는다",
-      "kind": "video",
-      "source": "DoQTkwspcl"
-    },
-    {
-      "cut": "C018",
-      "start": 130,
-      "dur": 5,
-      "tier": "A",
-      "content": "소년이 답한다",
-      "kind": "video",
-      "source": "dtqDxP6XSL"
-    },
-    {
-      "cut": "C019",
-      "start": 135,
-      "dur": 5,
-      "tier": "A",
-      "content": "**엘라라가 잠깐 굳는다** ← Wound 설치",
-      "kind": "video",
-      "source": "DoQTkyUpcl"
-    },
-    {
-      "cut": "C020",
-      "start": 140,
-      "dur": 8,
-      "tier": "C",
-      "content": "소년의 손을 잡은 그녀의 손",
-      "kind": "still",
-      "source": "VXEcEi7MMU",
-      "ken_burns": {
-        "mode": "in",
-        "from": 1.02,
-        "to": 1.06
-      }
-    },
-    {
-      "cut": "C021",
-      "start": 148,
-      "dur": 5,
-      "tier": "A",
-      "content": "엘라라가 다시 움직인다",
-      "kind": "video",
-      "source": "SyGsTfMUb8"
-    },
-    {
-      "cut": "C022",
-      "start": 153,
-      "dur": 12,
-      "tier": "C",
-      "content": "천막 사이로 새벽빛",
-      "kind": "still",
-      "source": "1lN56wEr4r",
-      "ken_burns": {
-        "mode": "tilt_up",
-        "from": 1.05,
-        "to": 1.05
-      },
-      "transition_after": {
-        "type": "dissolve",
-        "seconds": 0.5
-      }
-    },
-    {
-      "cut": "C023",
-      "start": 165,
-      "dur": 8,
-      "tier": "C",
-      "content": "능선 실루엣. 로우앵글",
-      "kind": "still",
-      "source": "DoQTFCEpcl",
-      "ken_burns": {
-        "mode": "tilt_up",
-        "from": 1.04,
-        "to": 1.04
-      }
-    },
-    {
-      "cut": "C024",
-      "start": 173,
-      "dur": 5,
-      "tier": "B",
-      "content": "**북방 기병대**가 능선에 오른다",
-      "kind": "video",
-      "source": "4RVOBj09Aa"
-    },
-    {
-      "cut": "C025",
-      "start": 178,
-      "dur": 5,
-      "tier": "B",
-      "content": "말 다리 레벨 트래킹",
-      "kind": "video",
-      "source": "9ZMyolhNYZ"
-    },
-    {
-      "cut": "C026",
-      "start": 183,
-      "dur": 5,
-      "tier": "A",
-      "content": "**리븐** CU — steel-grey eyes",
-      "kind": "video",
-      "source": "6Ap4IwbiJO"
-    },
-    {
-      "cut": "C027",
-      "start": 188,
-      "dur": 5,
-      "tier": "A",
-      "content": "브리스가 정찰 보고. 리븐이 한 단어로 답한다",
-      "kind": "video",
-      "source": "4RVPQCg9Aa",
-      "lipsynced": true
-    },
-    {
-      "cut": "C028",
-      "start": 193,
-      "dur": 17,
-      "tier": "C",
-      "content": "리븐 왼쪽 끝 / 마을 오른쪽 끝. **능선이 둘 사이를 가른다**",
-      "kind": "still",
-      "source": "s7Zx2Dxl8e",
-      "ken_burns": {
-        "mode": "hold",
-        "from": 1.0,
-        "to": 1.0
-      }
-    },
-    {
-      "cut": "C029",
-      "start": 210,
-      "dur": 8,
-      "tier": "C",
-      "content": "국경 초소 잔해",
-      "kind": "still",
-      "source": "jU31RprLD0",
-      "ken_burns": {
-        "mode": "pan_right",
-        "from": 1.04,
-        "to": 1.04
-      }
-    },
-    {
-      "cut": "C030",
-      "start": 218,
-      "dur": 5,
-      "tier": "B",
-      "content": "부상병들이 널려 있다",
-      "kind": "video",
-      "source": "1lN5Ab0r4r"
-    },
-    {
-      "cut": "C031",
-      "start": 223,
-      "dur": 5,
-      "tier": "A",
-      "content": "브리스: \"넷입니다.\"",
-      "kind": "video",
-      "source": "jU3xBXBLD0",
-      "lipsynced": true
-    },
-    {
-      "cut": "C032",
-      "start": 228,
-      "dur": 5,
-      "tier": "A",
-      "content": "리븐 — 계산하는 얼굴",
-      "kind": "video",
-      "source": "Bh5eLBZoQR"
-    },
-    {
-      "cut": "C033",
-      "start": 233,
-      "dur": 5,
-      "tier": "A",
-      "content": "**요란(19)**의 얼굴 ★페이오프 설치",
-      "kind": "video",
-      "source": "nVmAQTGYQD"
-    },
-    {
-      "cut": "C034",
-      "start": 238,
-      "dur": 6,
-      "tier": "C",
-      "content": "**푼크툼: 엄지가 검 자루를 두 번 누른다**",
-      "kind": "still",
-      "source": "p8FVH0rehw",
-      "ken_burns": {
-        "mode": "hold",
-        "from": 1.0,
-        "to": 1.0
-      }
-    },
-    {
-      "cut": "C035",
-      "start": 244,
-      "dur": 5,
-      "tier": "A",
-      "content": "리븐: **\"…후퇴한다.\"**",
-      "kind": "video",
-      "source": "xSirhxIjfW",
-      "lipsynced": true
-    },
-    {
-      "cut": "C036",
-      "start": 249,
-      "dur": 5,
-      "tier": "A",
-      "content": "요란이 그를 본다",
-      "kind": "video",
-      "source": "N2DPIns6D9"
-    },
-    {
-      "cut": "C037",
-      "start": 254,
-      "dur": 5,
-      "tier": "B",
-      "content": "기병대가 돌아선다",
-      "kind": "video",
-      "source": "s7Zxc9el8e"
-    },
-    {
-      "cut": "C038",
-      "start": 259,
-      "dur": 8,
-      "tier": "C",
-      "content": "남겨진 잔해 와이드",
-      "kind": "still",
-      "source": "EbSawkouuO",
-      "ken_burns": {
-        "mode": "out",
-        "from": 1.06,
-        "to": 1.0
-      },
-      "transition_after": {
-        "type": "dissolve",
-        "seconds": 0.33
-      }
-    },
-    {
-      "cut": "C039",
-      "start": 267,
-      "dur": 18,
-      "tier": "C",
-      "content": "요란의 손이 흙을 쥔다",
-      "kind": "still",
-      "source": "TdCWuqSVNR",
-      "ken_burns": {
-        "mode": "in",
-        "from": 1.0,
-        "to": 1.04
-      }
-    },
-    {
-      "cut": "C040",
-      "start": 285,
-      "dur": 8,
-      "tier": "C",
-      "content": "마을 예배당 내부",
-      "kind": "still",
-      "source": "WDvzfbXcXe",
-      "ken_burns": {
-        "mode": "in",
-        "from": 1.0,
-        "to": 1.05
-      }
-    },
-    {
-      "cut": "C041",
-      "start": 293,
-      "dur": 5,
-      "tier": "A",
-      "content": "사제의 기도 — *\"불새가 우리를 구하였고…\"*",
-      "kind": "video",
-      "source": "w4nUvCC7EI",
-      "lipsynced": true
-    },
-    {
-      "cut": "C042",
-      "start": 298,
-      "dur": 5,
-      "tier": "B",
-      "content": "고개 숙인 마을 사람들",
-      "kind": "video",
-      "source": "3zdNhesREY"
-    },
-    {
-      "cut": "C043",
-      "start": 303,
-      "dur": 12,
-      "tier": "C",
-      "content": "**벽화의 불새** 인서트 ← 나중에 거짓으로 드러난다",
-      "kind": "still",
-      "source": "LwRr2B1swO",
-      "ken_burns": {
-        "mode": "out",
-        "from": 1.06,
-        "to": 1.0
-      }
-    },
-    {
-      "cut": "C044",
-      "start": 315,
-      "dur": 10,
-      "tier": "C",
-      "content": "지평선의 검은 연기. 느린 푸시인",
-      "kind": "still",
-      "source": "1lN5iBPr4r",
-      "ken_burns": {
-        "mode": "in",
-        "from": 1.0,
-        "to": 1.08
-      }
-    },
-    {
-      "cut": "C045",
-      "start": 325,
-      "dur": 5,
-      "tier": "A",
-      "content": "엘라라가 고개를 든다",
-      "kind": "video",
-      "source": "fHlhygaCDY"
-    },
-    {
-      "cut": "C046",
-      "start": 330,
-      "dur": 5,
-      "tier": "B",
-      "content": "피난민들이 웅성인다",
-      "kind": "video",
-      "source": "rg6KzGCxtc"
-    },
-    {
-      "cut": "C047",
-      "start": 335,
-      "dur": 10,
-      "tier": "C",
-      "content": "연기가 커진다",
-      "kind": "still",
-      "source": "aFsmgtPfSh",
-      "ken_burns": {
-        "mode": "in",
-        "from": 1.02,
-        "to": 1.1
-      }
-    },
-    {
-      "cut": "C048",
-      "start": 345,
-      "dur": 5,
-      "tier": "B",
-      "content": "적 기병이 마을로 쏟아진다",
-      "kind": "video",
-      "source": "LwRrWccswO"
-    },
-    {
-      "cut": "C049",
-      "start": 350,
-      "dur": 5,
-      "tier": "B",
-      "content": "핸드헬드 — 무너지는 좌판",
-      "kind": "video",
-      "source": "lJ2j0Mzgv9"
-    },
-    {
-      "cut": "C050",
-      "start": 355,
-      "dur": 5,
-      "tier": "B",
-      "content": "도망치는 군중",
-      "kind": "video",
-      "source": "0efYbrtTfW"
-    },
-    {
-      "cut": "C051",
-      "start": 360,
-      "dur": 5,
-      "tier": "A",
-      "content": "엘라라가 부상자를 끌어당긴다",
-      "kind": "video",
-      "source": "xSiknMljfW"
-    },
-    {
-      "cut": "C052",
-      "start": 365,
-      "dur": 5,
-      "tier": "B",
-      "content": "불이 지붕으로 옮겨붙는다",
-      "kind": "video",
-      "source": "8akXgPTIrU"
-    },
-    {
-      "cut": "C053",
-      "start": 370,
-      "dur": 5,
-      "tier": "B",
-      "content": "말들이 날뛴다",
-      "kind": "video",
-      "source": "KL4q2Vvkqp"
-    },
-    {
-      "cut": "C054",
-      "start": 375,
-      "dur": 5,
-      "tier": "A",
-      "content": "엘라라 — 공포를 누른다 (E4)",
-      "kind": "video",
-      "source": "aFsmOYFfSh"
-    },
-    {
-      "cut": "C055",
-      "start": 380,
-      "dur": 5,
-      "tier": "B",
-      "content": "길이 막힌다",
-      "kind": "video",
-      "source": "w4ngDur7EI"
-    },
-    {
-      "cut": "C056",
-      "start": 385,
-      "dur": 6,
-      "tier": "C",
-      "content": "흙바닥에 떨어진 약초 주머니",
-      "kind": "still",
-      "source": "3zdN81TREY",
-      "ken_burns": {
-        "mode": "hold",
-        "from": 1.0,
-        "to": 1.0
-      }
-    },
-    {
-      "cut": "C057",
-      "start": 391,
-      "dur": 5,
-      "tier": "B",
-      "content": "불길이 골목을 삼킨다",
-      "kind": "video",
-      "source": "vQLtOEJa47"
-    },
-    {
-      "cut": "C058",
-      "start": 396,
-      "dur": 5,
-      "tier": "A",
-      "content": "엘라라가 멈춰 선다",
-      "kind": "video",
-      "source": "Bh5esnUoQR"
-    },
-    {
-      "cut": "C059",
-      "start": 401,
-      "dur": 5,
-      "tier": "B",
-      "content": "마을 전경 — 절반이 불탄다",
-      "kind": "video",
-      "source": "xSiknufjfW"
-    },
-    {
-      "cut": "C060",
-      "start": 406,
-      "dur": 5,
-      "tier": "A",
-      "content": "엘라라 CU",
-      "kind": "video",
-      "source": "N2DPIUv6D9"
-    },
-    {
-      "cut": "C061",
-      "start": 411,
-      "dur": 4,
-      "tier": "A",
-      "content": "**엘라라가 처음으로 고개를 든다** ★클리프행어",
-      "kind": "video",
-      "source": "p8FVrWQehw",
-      "transition_after": {
-        "type": "cut_to_black",
-        "seconds": 0.25
-      }
-    },
-    {
-      "cut": "C062",
-      "start": 415,
-      "dur": 5,
-      "tier": "C",
-      "content": "암전 → 엔드 타이틀",
-      "kind": "still",
-      "source": "SyGseaYUb8",
-      "ken_burns": {
-        "mode": "hold",
-        "from": 1.0,
-        "to": 1.0
-      },
-      "note": "엔드 타이틀 공통 플레이트 · 번호는 편집에서 얹는다"
-    }
-  ],
-  "dialogue": [
-    {
-      "cut": "C009",
-      "speaker": "old_woman",
-      "audio": "MBuVwMVDCm",
-      "offset": 0.4,
-      "onscreen": false
-    },
-    {
-      "cut": "C017",
-      "speaker": "elara",
-      "audio": "ovKBNth829",
-      "offset": 0.4,
-      "onscreen": false
-    },
-    {
-      "cut": "C027",
-      "speaker": "brys",
-      "audio": "EbSCnH3uuO",
-      "offset": 0.3,
-      "onscreen": true,
-      "baked_in_clip": true
-    },
-    {
-      "cut": "C027",
-      "speaker": "riven",
-      "audio": "YMhnsV7WeC",
-      "offset": 3.2,
-      "onscreen": false
-    },
-    {
-      "cut": "C030",
-      "speaker": "riven",
-      "audio": "VXETwXOMMU",
-      "offset": 0.6,
-      "onscreen": false
-    },
-    {
-      "cut": "C031",
-      "speaker": "brys",
-      "audio": "s7ZL8J5l8e",
-      "offset": 0.4,
-      "onscreen": true,
-      "baked_in_clip": true
-    },
-    {
-      "cut": "C035",
-      "speaker": "riven",
-      "audio": "ovKBNCu829",
-      "offset": 0.6,
-      "onscreen": true,
-      "baked_in_clip": true
-    },
-    {
-      "cut": "C041",
-      "speaker": "priest",
-      "audio": "Bh5X9CRoQR",
-      "offset": 0.4,
-      "onscreen": true,
-      "baked_in_clip": true
-    }
-  ],
-  "ambience_beds": [
-    {
-      "name": "S01_ash",
-      "from": "C001",
-      "to": "C004",
-      "db": -28,
-      "desc": "wind + distant footsteps + cart wheels",
-      "id": "aFlC5AUfSh"
-    },
-    {
-      "name": "S02_aid",
-      "from": "C005",
-      "to": "C015",
-      "db": -28,
-      "desc": "aid-post murmur + cloth + water",
-      "id": "dtbBa4dXSL"
-    },
-    {
-      "name": "S03_boy",
-      "from": "C016",
-      "to": "C022",
-      "db": -32,
-      "desc": "same bed, quieter",
-      "id": "jURsOtyLD0"
-    },
-    {
-      "name": "S04_05_army",
-      "from": "C023",
-      "to": "C039",
-      "db": -28,
-      "desc": "wind + harness + leather + metal",
-      "id": "DoFemiVpcl"
-    },
-    {
-      "name": "S06_chapel",
-      "from": "C040",
-      "to": "C043",
-      "db": -28,
-      "desc": "stone reverb + low prayer murmur",
-      "id": "tCxhFcZmZJ"
-    },
-    {
-      "name": "S07_smoke",
-      "from": "C044",
-      "to": "C047",
-      "db": -30,
-      "desc": "wind rising to -24dB",
-      "id": "CqSukd2EEy"
-    },
-    {
-      "name": "S08_raid",
-      "from": "C048",
-      "to": "C061",
-      "db": -18,
-      "desc": "fire + hooves + screams + collapse",
-      "id": "jURsOF0LD0"
-    }
-  ],
-  "silences": [
-    {
-      "cut": "C019",
-      "whole": true,
-      "note": "ambience to -60dB — she cannot hear the world"
-    },
-    {
-      "cut": "C039",
-      "from_offset": 4.0,
-      "note": "14s of nothing after the soil grip"
-    },
-    {
-      "cut": "C062",
-      "whole": true,
-      "note": "end card is silent"
-    }
-  ],
-  "sfx": [
-    {
-      "cut": "C008",
-      "at": 0.0,
-      "desc": "cloth twice, second half a beat late"
-    },
-    {
-      "cut": "C034",
-      "at": 0.5,
-      "desc": "leather pressed exactly twice — motif reused in ep5"
-    },
-    {
-      "cut": "C037",
-      "at": 0.0,
-      "desc": "hooves receding, doppler"
-    },
-    {
-      "cut": "C039",
-      "at": 3.0,
-      "desc": "soil gripped once, then silence"
-    },
-    {
-      "cut": "C048",
-      "at": 0.0,
-      "desc": "peak of the part"
-    },
-    {
-      "cut": "C056",
-      "at": 0.5,
-      "desc": "dry herbs on soil; duck fire -6dB"
-    },
-    {
-      "cut": "C061",
-      "at": 0.0,
-      "desc": "one breath only"
-    }
-  ],
-  "subtitles": {
-    "ko": "subtitles/EP01_part1.ko.srt",
-    "en": "subtitles/EP01_part1.en.srt"
+ "title": "THE KINGDOM OF THE FIREBIRD — EP1 Part 1",
+ "runtime_seconds": 420,
+ "fps_note": "match source clips; do not convert",
+ "resolution": [
+  1920,
+  1080
+ ],
+ "timeline": [
+  {
+   "cut": "C001",
+   "start": 0,
+   "dur": 12,
+   "tier": "C",
+   "content": "회색 하늘. **재가 아래로 내린다.** 느린 틸트다운",
+   "kind": "still",
+   "source": "4RVOc2r9Aa",
+   "ken_burns": {
+    "mode": "tilt_down",
+    "from": 1.06,
+    "to": 1.06
+   }
   },
-  "delivery": {
-    "codec": "h264 high",
-    "bitrate": "16-20M 2-pass",
-    "audio": "aac 384k 48k",
-    "loudness": "-14 LUFS",
-    "peak": "-1 dBTP",
-    "colour": "rec709"
+  {
+   "cut": "C002",
+   "start": 12,
+   "dur": 5,
+   "tier": "B",
+   "content": "지평선까지 이어진 피난민 행렬. 락오프",
+   "kind": "video",
+   "source": "rg6KGJextc"
   },
-  "score": [
-    {
-      "name": "cue_A_ash",
-      "id": "6Ae3YfFiJO",
-      "start": 0,
-      "use": 45.0,
-      "db": -26,
-      "note": "S01 재 — 해결되지 않는 첼로 드론. 0:00~0:45"
-    },
-    {
-      "name": "cue_B_withdraw",
-      "id": "YMvcd1gWeC",
-      "start": 210,
-      "use": 58.0,
-      "db": -24,
-      "note": "S05 후퇴 — 시계 같은 저현. 3:30에 들어와 C039 침묵 3초 전에 빠진다"
-    },
-    {
-      "name": "cue_C_raid",
-      "id": "mEjvHgahJQ",
-      "start": 345,
-      "use": 70.0,
-      "db": -20,
-      "note": "S08 습격 — 유일한 빌드. 5:45~6:55, C062 암전에서 칼같이 끊긴다"
-    }
-  ]
+  {
+   "cut": "C003",
+   "start": 17,
+   "dur": 5,
+   "tier": "B",
+   "content": "행렬 측면 트래킹. 발·수레바퀴·진흙",
+   "kind": "video",
+   "source": "tCroSbcmZJ"
+  },
+  {
+   "cut": "C004",
+   "start": 22,
+   "dur": 23,
+   "tier": "C",
+   "content": "재가 어깨에 내려앉는다. 아무도 위를 보지 않는다",
+   "kind": "still",
+   "source": "nVmA8taYQD",
+   "ken_burns": {
+    "mode": "in",
+    "from": 1.0,
+    "to": 1.05
+   }
+  },
+  {
+   "cut": "C005",
+   "start": 45,
+   "dur": 11,
+   "tier": "C",
+   "content": "길가 임시 치료소 와이드",
+   "kind": "still",
+   "source": "rg6KNELxtc",
+   "ken_burns": {
+    "mode": "pan_right",
+    "from": 1.05,
+    "to": 1.05
+   }
+  },
+  {
+   "cut": "C006",
+   "start": 56,
+   "dur": 5,
+   "tier": "A",
+   "content": "**엘라라**가 붕대를 감는다",
+   "kind": "video",
+   "source": "N2DP8VJ6D9"
+  },
+  {
+   "cut": "C007",
+   "start": 61,
+   "dur": 6,
+   "tier": "C",
+   "content": "손 인서트 — 약초 얼룩·짧은 손톱",
+   "kind": "still",
+   "source": "4RVOTgI9Aa",
+   "ken_burns": {
+    "mode": "in",
+    "from": 1.02,
+    "to": 1.07
+   }
+  },
+  {
+   "cut": "C008",
+   "start": 67,
+   "dur": 5,
+   "tier": "A",
+   "content": "**푼크툼: 왼손이 반 박자 늦게 따라온다**",
+   "kind": "video",
+   "source": "p8FV1FNehw"
+  },
+  {
+   "cut": "C009",
+   "start": 72,
+   "dur": 5,
+   "tier": "A",
+   "content": "노파: \"저 아이는 어디서 왔소?\"",
+   "kind": "video",
+   "source": "vQLt7lWa47"
+  },
+  {
+   "cut": "C010",
+   "start": 77,
+   "dur": 5,
+   "tier": "A",
+   "content": "엘라라 — 답하지 않는다",
+   "kind": "video",
+   "source": "jU31nApLD0"
+  },
+  {
+   "cut": "C011",
+   "start": 82,
+   "dur": 5,
+   "tier": "A",
+   "content": "다음 사람에게 간다",
+   "kind": "video",
+   "source": "4RVOBXg9Aa"
+  },
+  {
+   "cut": "C012",
+   "start": 87,
+   "dur": 11,
+   "tier": "C",
+   "content": "치료소 전경. 부상자들이 늘어서 있다",
+   "kind": "still",
+   "source": "1lN5Nwvr4r",
+   "ken_burns": {
+    "mode": "out",
+    "from": 1.08,
+    "to": 1.02
+   }
+  },
+  {
+   "cut": "C013",
+   "start": 98,
+   "dur": 5,
+   "tier": "B",
+   "content": "물을 나르는 아이들",
+   "kind": "video",
+   "source": "gOAL0pJSXO"
+  },
+  {
+   "cut": "C014",
+   "start": 103,
+   "dur": 5,
+   "tier": "A",
+   "content": "엘라라 CU — 지친 눈",
+   "kind": "video",
+   "source": "YMhGQkaWeC"
+  },
+  {
+   "cut": "C015",
+   "start": 108,
+   "dur": 12,
+   "tier": "C",
+   "content": "피 묻은 천이 대야에 담긴다",
+   "kind": "still",
+   "source": "gOALAp6SXO",
+   "ken_burns": {
+    "mode": "in",
+    "from": 1.0,
+    "to": 1.06
+   }
+  },
+  {
+   "cut": "C016",
+   "start": 120,
+   "dur": 5,
+   "tier": "A",
+   "content": "소년 환자. 울고 있다",
+   "kind": "video",
+   "source": "YMhGQrCWeC"
+  },
+  {
+   "cut": "C017",
+   "start": 125,
+   "dur": 5,
+   "tier": "A",
+   "content": "엘라라가 이름을 묻는다",
+   "kind": "video",
+   "source": "DoQTkwspcl"
+  },
+  {
+   "cut": "C018",
+   "start": 130,
+   "dur": 5,
+   "tier": "A",
+   "content": "소년이 답한다",
+   "kind": "video",
+   "source": "dtqDxP6XSL"
+  },
+  {
+   "cut": "C019",
+   "start": 135,
+   "dur": 5,
+   "tier": "A",
+   "content": "**엘라라가 잠깐 굳는다** ← Wound 설치",
+   "kind": "video",
+   "source": "DoQTkyUpcl"
+  },
+  {
+   "cut": "C020",
+   "start": 140,
+   "dur": 8,
+   "tier": "C",
+   "content": "소년의 손을 잡은 그녀의 손",
+   "kind": "still",
+   "source": "VXEcEi7MMU",
+   "ken_burns": {
+    "mode": "in",
+    "from": 1.02,
+    "to": 1.06
+   }
+  },
+  {
+   "cut": "C021",
+   "start": 148,
+   "dur": 5,
+   "tier": "A",
+   "content": "엘라라가 다시 움직인다",
+   "kind": "video",
+   "source": "SyGsTfMUb8"
+  },
+  {
+   "cut": "C022",
+   "start": 153,
+   "dur": 12,
+   "tier": "C",
+   "content": "천막 사이로 새벽빛",
+   "kind": "still",
+   "source": "1lN56wEr4r",
+   "ken_burns": {
+    "mode": "tilt_up",
+    "from": 1.05,
+    "to": 1.05
+   },
+   "transition_after": {
+    "type": "dissolve",
+    "seconds": 0.5
+   }
+  },
+  {
+   "cut": "C023",
+   "start": 165,
+   "dur": 8,
+   "tier": "C",
+   "content": "능선 실루엣. 로우앵글",
+   "kind": "still",
+   "source": "DoQTFCEpcl",
+   "ken_burns": {
+    "mode": "tilt_up",
+    "from": 1.04,
+    "to": 1.04
+   }
+  },
+  {
+   "cut": "C024",
+   "start": 173,
+   "dur": 5,
+   "tier": "B",
+   "content": "**북방 기병대**가 능선에 오른다",
+   "kind": "video",
+   "source": "4RVOBj09Aa"
+  },
+  {
+   "cut": "C025",
+   "start": 178,
+   "dur": 5,
+   "tier": "B",
+   "content": "말 다리 레벨 트래킹",
+   "kind": "video",
+   "source": "9ZMyolhNYZ"
+  },
+  {
+   "cut": "C026",
+   "start": 183,
+   "dur": 5,
+   "tier": "A",
+   "content": "**리븐** CU — steel-grey eyes",
+   "kind": "video",
+   "source": "6Ap4IwbiJO"
+  },
+  {
+   "cut": "C027",
+   "start": 188,
+   "dur": 5,
+   "tier": "A",
+   "content": "브리스가 정찰 보고. 리븐이 한 단어로 답한다",
+   "kind": "video",
+   "source": "4RVPQCg9Aa",
+   "lipsynced": true
+  },
+  {
+   "cut": "C028",
+   "start": 193,
+   "dur": 17,
+   "tier": "C",
+   "content": "리븐 왼쪽 끝 / 마을 오른쪽 끝. **능선이 둘 사이를 가른다**",
+   "kind": "still",
+   "source": "s7Zx2Dxl8e",
+   "ken_burns": {
+    "mode": "hold",
+    "from": 1.0,
+    "to": 1.0
+   }
+  },
+  {
+   "cut": "C029",
+   "start": 210,
+   "dur": 8,
+   "tier": "C",
+   "content": "국경 초소 잔해",
+   "kind": "still",
+   "source": "jU31RprLD0",
+   "ken_burns": {
+    "mode": "pan_right",
+    "from": 1.04,
+    "to": 1.04
+   }
+  },
+  {
+   "cut": "C030",
+   "start": 218,
+   "dur": 5,
+   "tier": "B",
+   "content": "부상병들이 널려 있다",
+   "kind": "video",
+   "source": "1lN5Ab0r4r"
+  },
+  {
+   "cut": "C031",
+   "start": 223,
+   "dur": 5,
+   "tier": "A",
+   "content": "브리스: \"넷입니다.\"",
+   "kind": "video",
+   "source": "jU3xBXBLD0",
+   "lipsynced": true
+  },
+  {
+   "cut": "C032",
+   "start": 228,
+   "dur": 5,
+   "tier": "A",
+   "content": "리븐 — 계산하는 얼굴",
+   "kind": "video",
+   "source": "Bh5eLBZoQR"
+  },
+  {
+   "cut": "C033",
+   "start": 233,
+   "dur": 5,
+   "tier": "A",
+   "content": "**요란(19)**의 얼굴 ★페이오프 설치",
+   "kind": "video",
+   "source": "nVmAQTGYQD"
+  },
+  {
+   "cut": "C034",
+   "start": 238,
+   "dur": 6,
+   "tier": "C",
+   "content": "**푼크툼: 엄지가 검 자루를 두 번 누른다**",
+   "kind": "still",
+   "source": "p8FVH0rehw",
+   "ken_burns": {
+    "mode": "hold",
+    "from": 1.0,
+    "to": 1.0
+   }
+  },
+  {
+   "cut": "C035",
+   "start": 244,
+   "dur": 5,
+   "tier": "A",
+   "content": "리븐: **\"…후퇴한다.\"**",
+   "kind": "video",
+   "source": "xSirhxIjfW",
+   "lipsynced": true
+  },
+  {
+   "cut": "C036",
+   "start": 249,
+   "dur": 5,
+   "tier": "A",
+   "content": "요란이 그를 본다",
+   "kind": "video",
+   "source": "N2DPIns6D9"
+  },
+  {
+   "cut": "C037",
+   "start": 254,
+   "dur": 5,
+   "tier": "B",
+   "content": "기병대가 돌아선다",
+   "kind": "video",
+   "source": "s7Zxc9el8e"
+  },
+  {
+   "cut": "C038",
+   "start": 259,
+   "dur": 8,
+   "tier": "C",
+   "content": "남겨진 잔해 와이드",
+   "kind": "still",
+   "source": "EbSawkouuO",
+   "ken_burns": {
+    "mode": "out",
+    "from": 1.06,
+    "to": 1.0
+   },
+   "transition_after": {
+    "type": "dissolve",
+    "seconds": 0.33
+   }
+  },
+  {
+   "cut": "C039",
+   "start": 267,
+   "dur": 18,
+   "tier": "C",
+   "content": "요란의 손이 흙을 쥔다",
+   "kind": "still",
+   "source": "TdCWuqSVNR",
+   "ken_burns": {
+    "mode": "in",
+    "from": 1.0,
+    "to": 1.04
+   }
+  },
+  {
+   "cut": "C040",
+   "start": 285,
+   "dur": 8,
+   "tier": "C",
+   "content": "마을 예배당 내부",
+   "kind": "still",
+   "source": "WDvzfbXcXe",
+   "ken_burns": {
+    "mode": "in",
+    "from": 1.0,
+    "to": 1.05
+   }
+  },
+  {
+   "cut": "C041",
+   "start": 293,
+   "dur": 5,
+   "tier": "A",
+   "content": "사제의 기도 — *\"불새가 우리를 구하였고…\"*",
+   "kind": "video",
+   "source": "w4nUvCC7EI",
+   "lipsynced": true
+  },
+  {
+   "cut": "C042",
+   "start": 298,
+   "dur": 5,
+   "tier": "B",
+   "content": "고개 숙인 마을 사람들",
+   "kind": "video",
+   "source": "3zdNhesREY"
+  },
+  {
+   "cut": "C043",
+   "start": 303,
+   "dur": 12,
+   "tier": "C",
+   "content": "**벽화의 불새** 인서트 ← 나중에 거짓으로 드러난다",
+   "kind": "still",
+   "source": "LwRr2B1swO",
+   "ken_burns": {
+    "mode": "out",
+    "from": 1.06,
+    "to": 1.0
+   }
+  },
+  {
+   "cut": "C044",
+   "start": 315,
+   "dur": 10,
+   "tier": "C",
+   "content": "지평선의 검은 연기. 느린 푸시인",
+   "kind": "still",
+   "source": "1lN5iBPr4r",
+   "ken_burns": {
+    "mode": "in",
+    "from": 1.0,
+    "to": 1.08
+   }
+  },
+  {
+   "cut": "C045",
+   "start": 325,
+   "dur": 5,
+   "tier": "A",
+   "content": "엘라라가 고개를 든다",
+   "kind": "video",
+   "source": "fHlhygaCDY"
+  },
+  {
+   "cut": "C046",
+   "start": 330,
+   "dur": 5,
+   "tier": "B",
+   "content": "피난민들이 웅성인다",
+   "kind": "video",
+   "source": "rg6KzGCxtc"
+  },
+  {
+   "cut": "C047",
+   "start": 335,
+   "dur": 10,
+   "tier": "C",
+   "content": "연기가 커진다",
+   "kind": "still",
+   "source": "aFsmgtPfSh",
+   "ken_burns": {
+    "mode": "in",
+    "from": 1.02,
+    "to": 1.1
+   }
+  },
+  {
+   "cut": "C048",
+   "start": 345,
+   "dur": 5,
+   "tier": "B",
+   "content": "적 기병이 마을로 쏟아진다",
+   "kind": "video",
+   "source": "LwRrWccswO"
+  },
+  {
+   "cut": "C049",
+   "start": 350,
+   "dur": 5,
+   "tier": "B",
+   "content": "핸드헬드 — 무너지는 좌판",
+   "kind": "video",
+   "source": "lJ2j0Mzgv9"
+  },
+  {
+   "cut": "C050",
+   "start": 355,
+   "dur": 5,
+   "tier": "B",
+   "content": "도망치는 군중",
+   "kind": "video",
+   "source": "0efYbrtTfW"
+  },
+  {
+   "cut": "C051",
+   "start": 360,
+   "dur": 5,
+   "tier": "A",
+   "content": "엘라라가 부상자를 끌어당긴다",
+   "kind": "video",
+   "source": "xSiknMljfW"
+  },
+  {
+   "cut": "C052",
+   "start": 365,
+   "dur": 5,
+   "tier": "B",
+   "content": "불이 지붕으로 옮겨붙는다",
+   "kind": "video",
+   "source": "8akXgPTIrU"
+  },
+  {
+   "cut": "C053",
+   "start": 370,
+   "dur": 5,
+   "tier": "B",
+   "content": "말들이 날뛴다",
+   "kind": "video",
+   "source": "KL4q2Vvkqp"
+  },
+  {
+   "cut": "C054",
+   "start": 375,
+   "dur": 5,
+   "tier": "A",
+   "content": "엘라라 — 공포를 누른다 (E4)",
+   "kind": "video",
+   "source": "aFsmOYFfSh"
+  },
+  {
+   "cut": "C055",
+   "start": 380,
+   "dur": 5,
+   "tier": "B",
+   "content": "길이 막힌다",
+   "kind": "video",
+   "source": "w4ngDur7EI",
+   "crop": {
+    "drop_top": 0.34,
+    "why": "생성 이미지 상단에 규칙 프롬프트가 캡션으로 렌더됐다. 그 아래에서 16:9 를 오려 쓴다"
+   }
+  },
+  {
+   "cut": "C056",
+   "start": 385,
+   "dur": 6,
+   "tier": "C",
+   "content": "흙바닥에 떨어진 약초 주머니",
+   "kind": "still",
+   "source": "3zdN81TREY",
+   "ken_burns": {
+    "mode": "hold",
+    "from": 1.0,
+    "to": 1.0
+   }
+  },
+  {
+   "cut": "C057",
+   "start": 391,
+   "dur": 5,
+   "tier": "B",
+   "content": "불길이 골목을 삼킨다",
+   "kind": "video",
+   "source": "vQLtOEJa47"
+  },
+  {
+   "cut": "C058",
+   "start": 396,
+   "dur": 5,
+   "tier": "A",
+   "content": "엘라라가 멈춰 선다",
+   "kind": "video",
+   "source": "Bh5esnUoQR"
+  },
+  {
+   "cut": "C059",
+   "start": 401,
+   "dur": 5,
+   "tier": "B",
+   "content": "마을 전경 — 절반이 불탄다",
+   "kind": "video",
+   "source": "xSiknufjfW"
+  },
+  {
+   "cut": "C060",
+   "start": 406,
+   "dur": 5,
+   "tier": "A",
+   "content": "엘라라 CU",
+   "kind": "video",
+   "source": "N2DPIUv6D9"
+  },
+  {
+   "cut": "C061",
+   "start": 411,
+   "dur": 4,
+   "tier": "A",
+   "content": "**엘라라가 처음으로 고개를 든다** ★클리프행어",
+   "kind": "video",
+   "source": "p8FVrWQehw",
+   "transition_after": {
+    "type": "cut_to_black",
+    "seconds": 0.25
+   }
+  },
+  {
+   "cut": "C062",
+   "start": 415,
+   "dur": 5,
+   "tier": "C",
+   "content": "암전 → 엔드 타이틀",
+   "kind": "still",
+   "source": "assets/C062_endcard.png",
+   "ken_burns": {
+    "mode": "hold",
+    "from": 1.0,
+    "to": 1.0
+   },
+   "note": "엔드 타이틀 공통 플레이트 · 번호는 편집에서 얹는다"
+  }
+ ],
+ "dialogue": [
+  {
+   "cut": "C009",
+   "speaker": "old_woman",
+   "audio": "MBuVwMVDCm",
+   "offset": 0.4,
+   "onscreen": false
+  },
+  {
+   "cut": "C017",
+   "speaker": "elara",
+   "audio": "ovKBNth829",
+   "offset": 0.4,
+   "onscreen": false
+  },
+  {
+   "cut": "C027",
+   "speaker": "brys",
+   "audio": "EbSCnH3uuO",
+   "offset": 0.3,
+   "onscreen": true,
+   "baked_in_clip": true
+  },
+  {
+   "cut": "C027",
+   "speaker": "riven",
+   "audio": "YMhnsV7WeC",
+   "offset": 3.2,
+   "onscreen": false
+  },
+  {
+   "cut": "C030",
+   "speaker": "riven",
+   "audio": "VXETwXOMMU",
+   "offset": 0.6,
+   "onscreen": false
+  },
+  {
+   "cut": "C031",
+   "speaker": "brys",
+   "audio": "s7ZL8J5l8e",
+   "offset": 0.4,
+   "onscreen": true,
+   "baked_in_clip": true
+  },
+  {
+   "cut": "C035",
+   "speaker": "riven",
+   "audio": "ovKBNCu829",
+   "offset": 0.6,
+   "onscreen": true,
+   "baked_in_clip": true
+  },
+  {
+   "cut": "C041",
+   "speaker": "priest",
+   "audio": "Bh5X9CRoQR",
+   "offset": 0.4,
+   "onscreen": true,
+   "baked_in_clip": true
+  }
+ ],
+ "ambience_beds": [
+  {
+   "name": "S01_ash",
+   "from": "C001",
+   "to": "C004",
+   "db": -28,
+   "desc": "wind + distant footsteps + cart wheels",
+   "id": "aFlC5AUfSh"
+  },
+  {
+   "name": "S02_aid",
+   "from": "C005",
+   "to": "C015",
+   "db": -28,
+   "desc": "aid-post murmur + cloth + water",
+   "id": "dtbBa4dXSL"
+  },
+  {
+   "name": "S03_boy",
+   "from": "C016",
+   "to": "C022",
+   "db": -32,
+   "desc": "same bed, quieter",
+   "id": "jURsOtyLD0"
+  },
+  {
+   "name": "S04_05_army",
+   "from": "C023",
+   "to": "C039",
+   "db": -28,
+   "desc": "wind + harness + leather + metal",
+   "id": "DoFemiVpcl"
+  },
+  {
+   "name": "S06_chapel",
+   "from": "C040",
+   "to": "C043",
+   "db": -28,
+   "desc": "stone reverb + low prayer murmur",
+   "id": "tCxhFcZmZJ"
+  },
+  {
+   "name": "S07_smoke",
+   "from": "C044",
+   "to": "C047",
+   "db": -30,
+   "desc": "wind rising to -24dB",
+   "id": "CqSukd2EEy"
+  },
+  {
+   "name": "S08_raid",
+   "from": "C048",
+   "to": "C061",
+   "db": -18,
+   "desc": "fire + hooves + screams + collapse",
+   "id": "jURsOF0LD0"
+  }
+ ],
+ "silences": [
+  {
+   "cut": "C019",
+   "whole": true,
+   "note": "ambience to -60dB — she cannot hear the world"
+  },
+  {
+   "cut": "C039",
+   "from_offset": 4.0,
+   "note": "14s of nothing after the soil grip"
+  },
+  {
+   "cut": "C062",
+   "whole": true,
+   "note": "end card is silent"
+  }
+ ],
+ "sfx": [
+  {
+   "cut": "C008",
+   "at": 0.0,
+   "desc": "cloth twice, second half a beat late"
+  },
+  {
+   "cut": "C034",
+   "at": 0.5,
+   "desc": "leather pressed exactly twice — motif reused in ep5"
+  },
+  {
+   "cut": "C037",
+   "at": 0.0,
+   "desc": "hooves receding, doppler"
+  },
+  {
+   "cut": "C039",
+   "at": 3.0,
+   "desc": "soil gripped once, then silence"
+  },
+  {
+   "cut": "C048",
+   "at": 0.0,
+   "desc": "peak of the part"
+  },
+  {
+   "cut": "C056",
+   "at": 0.5,
+   "desc": "dry herbs on soil; duck fire -6dB"
+  },
+  {
+   "cut": "C061",
+   "at": 0.0,
+   "desc": "one breath only"
+  }
+ ],
+ "subtitles": {
+  "ko": "subtitles/EP01_part1.ko.srt",
+  "en": "subtitles/EP01_part1.en.srt"
+ },
+ "delivery": {
+  "codec": "h264 high",
+  "bitrate": "16-20M 2-pass",
+  "audio": "aac 384k 48k",
+  "loudness": "-14 LUFS",
+  "peak": "-1 dBTP",
+  "colour": "rec709"
+ },
+ "score": [
+  {
+   "name": "cue_A_ash",
+   "id": "6Ae3YfFiJO",
+   "start": 0,
+   "use": 45.0,
+   "db": -26,
+   "note": "S01 재 — 해결되지 않는 첼로 드론. 0:00~0:45"
+  },
+  {
+   "name": "cue_B_withdraw",
+   "id": "YMvcd1gWeC",
+   "start": 210,
+   "use": 58.0,
+   "db": -24,
+   "note": "S05 후퇴 — 시계 같은 저현. 3:30에 들어와 C039 침묵 3초 전에 빠진다"
+  },
+  {
+   "name": "cue_C_raid",
+   "id": "mEjvHgahJQ",
+   "start": 345,
+   "use": 70.0,
+   "db": -20,
+   "note": "S08 습격 — 유일한 빌드. 5:45~6:55, C062 암전에서 칼같이 끊긴다"
+  }
+ ]
 }

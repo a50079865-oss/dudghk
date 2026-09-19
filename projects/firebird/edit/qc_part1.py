@@ -44,9 +44,41 @@ def cut_starts(man):
     return rows, t
 
 
+def analyse_stems(media):
+    """베드와 스코어 원본을 잰다 — 희박한가, 작기만 한가."""
+    rows = []
+    for sub in ("beds", "score"):
+        d = Path(media) / sub
+        if not d.is_dir():
+            continue
+        for f in sorted(d.iterdir()):
+            if f.suffix.lower() not in (".wav", ".mp3", ".m4a", ".ogg"):
+                continue
+            info = ff(["-i", str(f)], expect_ok=False)
+            m = re.search(r"Duration:\s*(\d+):(\d+):([\d.]+)", info)
+            dur = (int(m.group(1))*3600 + int(m.group(2))*60
+                   + float(m.group(3))) if m else 0.0
+            vol = ff(["-i", str(f), "-af", "volumedetect", "-f", "null", "-"],
+                     expect_ok=False)
+            mean = re.search(r"mean_volume:\s*(-?[\d.]+)", vol)
+            peak = re.search(r"max_volume:\s*(-?[\d.]+)", vol)
+            # 원본이 얼마나 비어 있는가 — 게인을 올려서 해결될 문제인지 가른다
+            sil = ff(["-i", str(f), "-af", "silencedetect=noise=-40dB:d=0.5",
+                      "-f", "null", "-"], expect_ok=False)
+            gaps = re.findall(r"silence_duration:\s*([\d.]+)", sil)
+            quiet = sum(float(g) for g in gaps)
+            rows.append((f"{sub}/{f.stem}", dur,
+                         mean.group(1) if mean else "?",
+                         peak.group(1) if peak else "?",
+                         quiet, (quiet / dur * 100) if dur else 0.0))
+    return rows
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--film", required=True)
+    ap.add_argument("--stems", default=None,
+                    help="media 폴더 — 있으면 베드·스코어 원본도 잰다")
     ap.add_argument("--manifest", default=str(Path(__file__).with_name("manifest.json")))
     ap.add_argument("--out", default="qc")
     ap.add_argument("--cols", type=int, default=8)
@@ -170,6 +202,15 @@ def main():
             L.append(f"| {hhmmss(st)} | {hit[0] if hit else '-'} |\n")
     else:
         L.append("없음.\n")
+
+    if a.stems:
+        st = analyse_stems(a.stems)
+        L.append(f"\n## 원본 스템 ({len(st)}개)\n")
+        L.append("| 스템 | 길이 | 평균 | 피크 | 빈 시간 | 비율 |\n|---|---|---|---|---|---|\n")
+        for name, dur, mean, pk, quiet, pct in st:
+            L.append(f"| {name} | {dur:.1f}s | {mean} dB | {pk} dB | "
+                     f"{quiet:.1f}s | **{pct:.0f}%** |\n")
+        L.append("\n빈 비율이 높으면 게인을 올려도 채워지지 않는다 — 소재를 다시 뽑아야 한다.\n")
 
     L.append("\n## 그림\n")
     L.append("- `contact_sheet.jpg` — 62컷 각각의 중간 프레임\n")
