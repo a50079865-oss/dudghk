@@ -9,8 +9,7 @@
  "timeline": [
   {
    "cut": "C001",
-   "start": 0,
-   "dur": 12,
+   "dur": 17,
    "tier": "C",
    "content": "회색 하늘. **재가 아래로 내린다.** 느린 틸트다운",
    "kind": "still",
@@ -23,25 +22,26 @@
   },
   {
    "cut": "C002",
-   "start": 12,
-   "dur": 5,
+   "dur": 5.0,
    "tier": "B",
    "content": "지평선까지 이어진 피난민 행렬. 락오프",
    "kind": "video",
-   "source": "rg6KGJextc"
+   "source": "rg6KGJextc",
+   "in": 0.0,
+   "out": 5.0
   },
   {
    "cut": "C003",
-   "start": 17,
-   "dur": 5,
+   "dur": 3.5,
    "tier": "B",
    "content": "행렬 측면 트래킹. 발·수레바퀴·진흙",
    "kind": "video",
-   "source": "tCroSbcmZJ"
+   "source": "tCroSbcmZJ",
+   "in": 0.8,
+   "out": 4.3
   },
   {
    "cut": "C004",
-   "start": 22,
    "dur": 23,
    "tier": "C",
    "content": "재가 어깨에 내려앉는다. 아무도 위를 보지 않는다",
@@ -55,8 +55,7 @@
   },
   {
    "cut": "C005",
-   "start": 45,
-   "dur": 11,
+   "dur": 13,
    "tier": "C",
    "content": "길가 임시 치료소 와이드",
    "kind": "still",
@@ -69,63 +68,67 @@
   },
   {
    "cut": "C006",
-   "start": 56,
-   "dur": 5,
+   "dur": 4.2,
    "tier": "A",
    "content": "**엘라라**가 붕대를 감는다",
    "kind": "video",
-   "source": "N2DP8VJ6D9"
+   "source": "N2DP8VJ6D9",
+   "in": 0.0,
+   "out": 4.2
   },
   {
    "cut": "C007",
-   "start": 61,
-   "dur": 6,
+   "dur": 3.0,
    "tier": "C",
    "content": "손 인서트 — 약초 얼룩·짧은 손톱",
    "kind": "video",
    "source": "4RVOTgI9Aa",
-   "note": "정지컷 영상화 1호 — 손 인서트, 100mm 푸시인이 클립에 포함됨"
-  },
-  {
-   "cut": "C008",
-   "start": 67,
-   "dur": 5,
-   "tier": "A",
-   "content": "**푼크툼: 왼손이 반 박자 늦게 따라온다**",
-   "kind": "video",
-   "source": "p8FV1FNehw"
+   "note": "주인 확정용 1차 등장. 인서트는 짧아야 인서트다",
+   "in": 0.0,
+   "out": 3.0
   },
   {
    "cut": "C009",
-   "start": 72,
-   "dur": 5,
+   "dur": 3.4,
    "tier": "A",
    "content": "노파: \"저 아이는 어디서 왔소?\"",
    "kind": "video",
-   "source": "vQLt7lWa47"
+   "source": "vQLt7lWa47",
+   "in": 0.0,
+   "out": 3.4
   },
   {
    "cut": "C010",
-   "start": 77,
-   "dur": 5,
+   "dur": 5.0,
    "tier": "A",
    "content": "엘라라 — 답하지 않는다",
    "kind": "video",
-   "source": "jU31nApLD0"
+   "source": "jU31nApLD0",
+   "in": 0.0,
+   "out": 5.0
+  },
+  {
+   "cut": "C007b",
+   "dur": 4.6,
+   "kind": "video",
+   "in": 0.4,
+   "out": 5.0,
+   "media_from": "C007",
+   "note": "같은 소재의 재등장. 주인은 C007 에서 이미 확정됐으므로 여기서는 정보가 아니라 대답이 된다 — 그녀는 답하는 대신 계속 일한다"
   },
   {
    "cut": "C011",
-   "start": 82,
-   "dur": 5,
+   "dur": 3.4,
    "tier": "A",
    "content": "다음 사람에게 간다",
    "kind": "video",
-   "source": "4RVOBXg9Aa"
+   "source": "4RVOBXg9Aa",
+   "in": 0.0,
+   "out": 3.4
   },
   {
    "cut": "C012",
-   "start": 87,
-   "dur": 11,
+   "dur": 16,
    "tier": "C",
    "content": "치료소 전경. 부상자들이 늘어서 있다",
    "kind": "still",
@@ -138,26 +141,38 @@
   },
   {
    "cut": "C013",
-   "start": 98,
-   "dur": 5,
+   "dur": 3.6,
    "tier": "B",
    "content": "물을 나르는 아이들",
    "kind": "video",
-   "source": "gOAL0pJSXO"
+   "source": "gOAL0pJSXO",
+   "in": 0.7,
+   "out": 4.3
   },
   {
    "cut": "C014",
-   "start": 103,
-   "dur": 5,
+   "dur": 5.0,
    "tier": "A",
    "content": "엘라라 CU — 지친 눈",
    "kind": "video",
-   "source": "YMhGQkaWeC"
+   "source": "YMhGQkaWeC",
+   "in": 0.0,
+   "out": 5.0
+  },
+  {
+   "cut": "C008",
+   "dur": 2.6,
+   "tier": "A",
+   "content": "**푼크툼: 왼손이 반 박자 늦게 따라온다**",
+   "kind": "video",
+   "source": "p8FV1FNehw",
+   "in": 1.2,
+   "out": 3.8,
+   "moved": "C014 뒤로 — 인서트의 주인을 확정한다"
   },
   {
    "cut": "C015",
-   "start": 108,
-   "dur": 12,
+   "dur": 15,
    "tier": "C",
    "content": "피 묻은 천이 대야에 담긴다",
    "kind": "still",
@@ -170,44 +185,37 @@
   },
   {
    "cut": "C016",
-   "start": 120,
-   "dur": 5,
+   "dur": 4.0,
    "tier": "A",
    "content": "소년 환자. 울고 있다",
    "kind": "video",
-   "source": "YMhGQrCWeC"
+   "source": "YMhGQrCWeC",
+   "in": 0.5,
+   "out": 4.5
   },
   {
    "cut": "C017",
-   "start": 125,
-   "dur": 5,
+   "dur": 4.4,
    "tier": "A",
    "content": "엘라라가 이름을 묻는다",
    "kind": "video",
-   "source": "DoQTkwspcl"
+   "source": "DoQTkwspcl",
+   "in": 0.0,
+   "out": 4.4
   },
   {
    "cut": "C018",
-   "start": 130,
-   "dur": 5,
+   "dur": 5.0,
    "tier": "A",
    "content": "소년이 답한다",
    "kind": "video",
-   "source": "dtqDxP6XSL"
-  },
-  {
-   "cut": "C019",
-   "start": 135,
-   "dur": 5,
-   "tier": "A",
-   "content": "**엘라라가 잠깐 굳는다** ← Wound 설치",
-   "kind": "video",
-   "source": "DoQTkyUpcl"
+   "source": "dtqDxP6XSL",
+   "in": 0.0,
+   "out": 5.0
   },
   {
    "cut": "C020",
-   "start": 140,
-   "dur": 8,
+   "dur": 12,
    "tier": "C",
    "content": "소년의 손을 잡은 그녀의 손",
    "kind": "still",
@@ -216,12 +224,22 @@
     "mode": "in",
     "from": 1.02,
     "to": 1.06
-   }
+   },
+   "moved": "C018 뒤로 — 인서트의 주인을 확정한다"
+  },
+  {
+   "cut": "C019",
+   "dur": 5.0,
+   "tier": "A",
+   "content": "**엘라라가 잠깐 굳는다** ← Wound 설치",
+   "kind": "video",
+   "source": "DoQTkyUpcl",
+   "in": 0.0,
+   "out": 5.0
   },
   {
    "cut": "C021",
-   "start": 148,
-   "dur": 5,
+   "dur": 3.8,
    "tier": "A",
    "content": "엘라라가 다시 움직인다",
    "kind": "video",
@@ -229,12 +247,13 @@
    "transition_after": {
     "type": "dissolve",
     "seconds": 0.5
-   }
+   },
+   "in": 1.2,
+   "out": 5.0
   },
   {
    "cut": "C022",
-   "start": 153,
-   "dur": 20,
+   "dur": 18,
    "tier": "C",
    "content": "천막 사이로 새벽빛",
    "kind": "still",
@@ -253,44 +272,47 @@
   },
   {
    "cut": "C024",
-   "start": 173,
-   "dur": 5,
+   "dur": 5.0,
    "tier": "B",
    "content": "**북방 기병대**가 능선에 오른다",
    "kind": "video",
-   "source": "4RVOBj09Aa"
+   "source": "4RVOBj09Aa",
+   "in": 0.0,
+   "out": 5.0
   },
   {
    "cut": "C025",
-   "start": 178,
-   "dur": 5,
+   "dur": 3.2,
    "tier": "B",
    "content": "말 다리 레벨 트래킹",
    "kind": "video",
-   "source": "9ZMyolhNYZ"
+   "source": "9ZMyolhNYZ",
+   "in": 0.9,
+   "out": 4.1
   },
   {
    "cut": "C026",
-   "start": 183,
-   "dur": 5,
+   "dur": 4.0,
    "tier": "A",
    "content": "**리븐** CU — steel-grey eyes",
    "kind": "video",
-   "source": "6Ap4IwbiJO"
+   "source": "6Ap4IwbiJO",
+   "in": 0.6,
+   "out": 4.6
   },
   {
    "cut": "C027",
-   "start": 188,
-   "dur": 5,
+   "dur": 5.0,
    "tier": "A",
    "content": "브리스가 정찰 보고. 리븐이 한 단어로 답한다",
    "kind": "video",
    "source": "4RVPQCg9Aa",
-   "lipsynced": true
+   "lipsynced": true,
+   "in": 0.0,
+   "out": 5.0
   },
   {
    "cut": "C028",
-   "start": 193,
    "dur": 17,
    "tier": "C",
    "content": "리븐 왼쪽 끝 / 마을 오른쪽 끝. **능선이 둘 사이를 가른다**",
@@ -304,8 +326,7 @@
   },
   {
    "cut": "C029",
-   "start": 210,
-   "dur": 8,
+   "dur": 13,
    "tier": "C",
    "content": "국경 초소 잔해",
    "kind": "still",
@@ -318,44 +339,37 @@
   },
   {
    "cut": "C030",
-   "start": 218,
-   "dur": 5,
+   "dur": 4.6,
    "tier": "B",
    "content": "부상병들이 널려 있다",
    "kind": "video",
-   "source": "1lN5Ab0r4r"
+   "source": "1lN5Ab0r4r",
+   "in": 0.0,
+   "out": 4.6
   },
   {
    "cut": "C031",
-   "start": 223,
-   "dur": 5,
+   "dur": 3.0,
    "tier": "A",
    "content": "브리스: \"넷입니다.\"",
    "kind": "video",
    "source": "jU3xBXBLD0",
-   "lipsynced": true
+   "lipsynced": true,
+   "in": 0.0,
+   "out": 3.0
   },
   {
    "cut": "C032",
-   "start": 228,
-   "dur": 5,
+   "dur": 5.0,
    "tier": "A",
    "content": "리븐 — 계산하는 얼굴",
    "kind": "video",
-   "source": "Bh5eLBZoQR"
-  },
-  {
-   "cut": "C033",
-   "start": 233,
-   "dur": 5,
-   "tier": "A",
-   "content": "**요란(19)**의 얼굴 ★페이오프 설치",
-   "kind": "video",
-   "source": "nVmAQTGYQD"
+   "source": "Bh5eLBZoQR",
+   "in": 0.0,
+   "out": 5.0
   },
   {
    "cut": "C034",
-   "start": 238,
    "dur": 6,
    "tier": "C",
    "content": "**푼크툼: 엄지가 검 자루를 두 번 누른다**",
@@ -365,31 +379,43 @@
     "mode": "hold",
     "from": 1.0,
     "to": 1.0
-   }
+   },
+   "moved": "C032 뒤로 — 인서트의 주인을 확정한다"
+  },
+  {
+   "cut": "C033",
+   "dur": 4.2,
+   "tier": "A",
+   "content": "**요란(19)**의 얼굴 ★페이오프 설치",
+   "kind": "video",
+   "source": "nVmAQTGYQD",
+   "in": 0.0,
+   "out": 4.2
   },
   {
    "cut": "C035",
-   "start": 244,
-   "dur": 5,
+   "dur": 4.3,
    "tier": "A",
    "content": "리븐: **\"…후퇴한다.\"**",
    "kind": "video",
    "source": "xSirhxIjfW",
-   "lipsynced": true
+   "lipsynced": true,
+   "in": 0.0,
+   "out": 4.3
   },
   {
    "cut": "C036",
-   "start": 249,
-   "dur": 5,
+   "dur": 5.0,
    "tier": "A",
    "content": "요란이 그를 본다",
    "kind": "video",
-   "source": "N2DPIns6D9"
+   "source": "N2DPIns6D9",
+   "in": 0.0,
+   "out": 5.0
   },
   {
    "cut": "C037",
-   "start": 254,
-   "dur": 5,
+   "dur": 5.0,
    "tier": "B",
    "content": "기병대가 돌아선다",
    "kind": "video",
@@ -397,12 +423,13 @@
    "transition_after": {
     "type": "dissolve",
     "seconds": 0.33
-   }
+   },
+   "in": 0.0,
+   "out": 5.0
   },
   {
    "cut": "C039",
-   "start": 267,
-   "dur": 26,
+   "dur": 24,
    "tier": "C",
    "content": "요란의 손이 흙을 쥔다",
    "kind": "still",
@@ -420,8 +447,7 @@
   },
   {
    "cut": "C040",
-   "start": 285,
-   "dur": 8,
+   "dur": 13,
    "tier": "C",
    "content": "마을 예배당 내부",
    "kind": "still",
@@ -434,27 +460,28 @@
   },
   {
    "cut": "C041",
-   "start": 293,
-   "dur": 5,
+   "dur": 5.0,
    "tier": "A",
    "content": "사제의 기도 — *\"불새가 우리를 구하였고…\"*",
    "kind": "video",
    "source": "w4nUvCC7EI",
-   "lipsynced": true
+   "lipsynced": true,
+   "in": 0.0,
+   "out": 5.0
   },
   {
    "cut": "C042",
-   "start": 298,
-   "dur": 5,
+   "dur": 4.0,
    "tier": "B",
    "content": "고개 숙인 마을 사람들",
    "kind": "video",
-   "source": "3zdNhesREY"
+   "source": "3zdNhesREY",
+   "in": 0.5,
+   "out": 4.5
   },
   {
    "cut": "C043",
-   "start": 303,
-   "dur": 12,
+   "dur": 16,
    "tier": "C",
    "content": "**벽화의 불새** 인서트 ← 나중에 거짓으로 드러난다",
    "kind": "still",
@@ -467,8 +494,7 @@
   },
   {
    "cut": "C044",
-   "start": 315,
-   "dur": 10,
+   "dur": 14,
    "tier": "C",
    "content": "지평선의 검은 연기. 느린 푸시인",
    "kind": "still",
@@ -481,26 +507,27 @@
   },
   {
    "cut": "C045",
-   "start": 325,
-   "dur": 5,
+   "dur": 3.4,
    "tier": "A",
    "content": "엘라라가 고개를 든다",
    "kind": "video",
-   "source": "fHlhygaCDY"
+   "source": "fHlhygaCDY",
+   "in": 0.6,
+   "out": 4.0
   },
   {
    "cut": "C046",
-   "start": 330,
-   "dur": 5,
+   "dur": 3.2,
    "tier": "B",
    "content": "피난민들이 웅성인다",
    "kind": "video",
-   "source": "rg6KzGCxtc"
+   "source": "rg6KzGCxtc",
+   "in": 0.8,
+   "out": 4.0
   },
   {
    "cut": "C047",
-   "start": 335,
-   "dur": 10,
+   "dur": 13,
    "tier": "C",
    "content": "연기가 커진다",
    "kind": "still",
@@ -513,71 +540,77 @@
   },
   {
    "cut": "C048",
-   "start": 345,
-   "dur": 5,
+   "dur": 4.6,
    "tier": "B",
    "content": "적 기병이 마을로 쏟아진다",
    "kind": "video",
-   "source": "LwRrWccswO"
+   "source": "LwRrWccswO",
+   "in": 0.4,
+   "out": 5.0
   },
   {
    "cut": "C049",
-   "start": 350,
-   "dur": 5,
+   "dur": 2.8,
    "tier": "B",
    "content": "핸드헬드 — 무너지는 좌판",
    "kind": "video",
-   "source": "lJ2j0Mzgv9"
+   "source": "lJ2j0Mzgv9",
+   "in": 1.0,
+   "out": 3.8
   },
   {
    "cut": "C050",
-   "start": 355,
-   "dur": 5,
+   "dur": 3.0,
    "tier": "B",
    "content": "도망치는 군중",
    "kind": "video",
-   "source": "0efYbrtTfW"
+   "source": "0efYbrtTfW",
+   "in": 0.6,
+   "out": 3.6
   },
   {
    "cut": "C051",
-   "start": 360,
-   "dur": 5,
+   "dur": 4.0,
    "tier": "A",
    "content": "엘라라가 부상자를 끌어당긴다",
    "kind": "video",
-   "source": "xSiknMljfW"
+   "source": "xSiknMljfW",
+   "in": 0.0,
+   "out": 4.0
   },
   {
    "cut": "C052",
-   "start": 365,
-   "dur": 5,
+   "dur": 2.6,
    "tier": "B",
    "content": "불이 지붕으로 옮겨붙는다",
    "kind": "video",
-   "source": "8akXgPTIrU"
+   "source": "8akXgPTIrU",
+   "in": 1.4,
+   "out": 4.0
   },
   {
    "cut": "C053",
-   "start": 370,
-   "dur": 5,
+   "dur": 2.6,
    "tier": "B",
    "content": "말들이 날뛴다",
    "kind": "video",
-   "source": "KL4q2Vvkqp"
+   "source": "KL4q2Vvkqp",
+   "in": 0.9,
+   "out": 3.5
   },
   {
    "cut": "C054",
-   "start": 375,
-   "dur": 5,
+   "dur": 4.4,
    "tier": "A",
    "content": "엘라라 — 공포를 누른다 (E4)",
    "kind": "video",
-   "source": "aFsmOYFfSh"
+   "source": "aFsmOYFfSh",
+   "in": 0.0,
+   "out": 4.4
   },
   {
    "cut": "C055",
-   "start": 380,
-   "dur": 5,
+   "dur": 5.0,
    "tier": "B",
    "content": "길이 막힌다",
    "kind": "video",
@@ -585,11 +618,12 @@
    "crop": {
     "drop_top": 0.34,
     "why": "생성 이미지 상단에 규칙 프롬프트가 캡션으로 렌더됐다. 그 아래에서 16:9 를 오려 쓴다"
-   }
+   },
+   "in": 0.0,
+   "out": 5.0
   },
   {
    "cut": "C056",
-   "start": 385,
    "dur": 6,
    "tier": "C",
    "content": "흙바닥에 떨어진 약초 주머니",
@@ -603,44 +637,47 @@
   },
   {
    "cut": "C057",
-   "start": 391,
-   "dur": 5,
+   "dur": 4.0,
    "tier": "B",
    "content": "불길이 골목을 삼킨다",
    "kind": "video",
-   "source": "vQLtOEJa47"
+   "source": "vQLtOEJa47",
+   "in": 0.6,
+   "out": 4.6
   },
   {
    "cut": "C058",
-   "start": 396,
-   "dur": 5,
+   "dur": 4.6,
    "tier": "A",
    "content": "엘라라가 멈춰 선다",
    "kind": "video",
-   "source": "Bh5esnUoQR"
+   "source": "Bh5esnUoQR",
+   "in": 0.0,
+   "out": 4.6
   },
   {
    "cut": "C059",
-   "start": 401,
-   "dur": 5,
+   "dur": 4.4,
    "tier": "B",
    "content": "마을 전경 — 절반이 불탄다",
    "kind": "video",
-   "source": "xSiknufjfW"
+   "source": "xSiknufjfW",
+   "in": 0.5,
+   "out": 4.9
   },
   {
    "cut": "C060",
-   "start": 406,
-   "dur": 5,
+   "dur": 3.0,
    "tier": "A",
    "content": "엘라라 CU",
    "kind": "video",
-   "source": "N2DPIUv6D9"
+   "source": "N2DPIUv6D9",
+   "in": 0.0,
+   "out": 3.0
   },
   {
    "cut": "C061",
-   "start": 411,
-   "dur": 4,
+   "dur": 4.6,
    "tier": "A",
    "content": "**엘라라가 처음으로 고개를 든다** ★클리프행어",
    "kind": "video",
@@ -648,11 +685,12 @@
    "transition_after": {
     "type": "cut_to_black",
     "seconds": 0.25
-   }
+   },
+   "in": 0.4,
+   "out": 5.0
   },
   {
    "cut": "C062",
-   "start": 415,
    "dur": 5,
    "tier": "C",
    "content": "암전 → 엔드 타이틀",

@@ -99,6 +99,9 @@ def find_media(media, cut, exts, entry=None):
         p = Path(__file__).resolve().parent / entry["source"]
         if p.exists():
             return p
+    # 같은 소재를 다른 자리에서 다시 쓰는 컷이 있다 — 재등장은 정보가 아니라 대답이다.
+    if entry and entry.get("media_from"):
+        cut = entry["media_from"]
     for e in exts:
         p = media / f"{cut}{e}"
         if p.exists():
@@ -139,12 +142,18 @@ def build_segment(entry, media, work, fps, crf):
              "-t", str(dur), *venc, *aenc, "-shortest", str(out)])
         return out, False
     # 클립이 지시서의 길이보다 짧으면 마지막 프레임을 물리고, 길면 자른다.
+    # 인/출점 — 클립 안에서 쓸 구간. 입력측 -ss 는 키프레임으로 스냅되므로
+    # trim 필터를 쓴다. 동작이 이미 진행 중인 곳에서 들어가고 완결 전에 나간다.
     pre = ""
+    if entry.get("in") is not None:
+        i_ = float(entry["in"])
+        o_ = float(entry.get("out", i_ + dur))
+        pre += f"trim=start={i_:.3f}:end={o_:.3f},setpts=PTS-STARTPTS,"
     cr = entry.get("crop")
     if cr:
         # 픽셀이 아니라 비율로 자른다 — 소스 해상도가 달라도 같은 그림이 나온다.
         keep = 1.0 - cr["drop_top"]
-        pre = (f"crop=w='min(iw\\,ih*{keep}*16/9)':h='ih*{keep}'"
+        pre += (f"crop=w='min(iw\\,ih*{keep}*16/9)':h='ih*{keep}'"
                f":x='(iw-ow)/2':y='ih*{cr['drop_top']}',")
     vf = (f"{pre}scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},"
           f"tpad=stop_mode=clone:stop_duration=6,fps={fps}")
@@ -225,7 +234,12 @@ def main():
     run([FFMPEG, "-y", "-f", "concat", "-safe", "0", "-i", str(lst), "-c", "copy", str(body)])
 
     # ── 오디오 레이어 ────────────────────────────────────────────────
-    starts = {e["cut"]: e["start"] for e in man["timeline"]}
+    # start 를 매니페스트에 손으로 들고 있으면 컷 순서나 길이를 바꾸는 순간
+    # 전부 낡는다. 배열 순서에서 누적으로 계산한다.
+    starts, _t = {}, 0.0
+    for _e in man["timeline"]:
+        starts[_e["cut"]] = _t
+        _t += _e["dur"]
     durs = {e["cut"]: e["dur"] for e in man["timeline"]}
     inputs, filters, labels = ["-i", str(body)], [], ["[0:a]"]
     idx = 1
