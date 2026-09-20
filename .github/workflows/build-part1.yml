@@ -28,6 +28,7 @@ jobs:
           MEDIA_URLS: ${{ secrets.MEDIA_URLS }}
           MEDIA_URLS_AUDIO: ${{ secrets.MEDIA_URLS_AUDIO }}
           MEDIA_URLS_PATCH: ${{ secrets.MEDIA_URLS_PATCH }}
+          MEDIA_KEY: ${{ secrets.MEDIA_KEY }}
         run: |
           if [ -f urls.json ]; then
             echo "저장소의 urls.json 을 쓴다"
@@ -46,6 +47,15 @@ jobs:
           fi
           # 소재를 고칠 때마다 시크릿 전체를 다시 붙이지 않아도 되게,
           # 덮어쓸 항목만 담은 작은 시크릿을 맨 마지막에 합친다.
+          # 저장소에 암호문으로 들어 있는 덮어쓰기 목록. 열쇠는 짧은 시크릿 하나뿐이고,
+          # 주소를 고칠 때마다 긴 JSON 을 다시 붙여넣지 않아도 된다.
+          if [ -n "$MEDIA_KEY" ] && [ -f urls_patch.enc ]; then
+            openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 \
+              -in urls_patch.enc -out urls_patch_dec.json -pass "pass:$MEDIA_KEY" \
+              || { echo "::error::urls_patch.enc 복호화 실패 — MEDIA_KEY 가 맞는지 확인할 것"; exit 1; }
+            python3 -c "import json;a=json.load(open('urls.json'));b=json.load(open('urls_patch_dec.json'));a.update(b);json.dump(a,open('urls.json','w'));print(f'암호문에서 덮어쓰기 {len(b)}건 적용')"
+            rm -f urls_patch_dec.json
+          fi
           if [ -n "$MEDIA_URLS_PATCH" ]; then
             printf '%s' "$MEDIA_URLS_PATCH" > urls_patch.json
             python3 -c "import json;a=json.load(open('urls.json'));b=json.load(open('urls_patch.json'));a.update(b);json.dump(a,open('urls.json','w'));print(f'덮어쓰기 {len(b)}건 적용: '+', '.join(sorted(b)))"
@@ -55,11 +65,20 @@ jobs:
           # 없으면 3분 렌더한 뒤 검은 화면으로 알게 되는 대신 지금 멈춘다.
           python3 - <<'CHECK'
           import json, sys, re
+          from pathlib import Path
           urls = json.load(open("urls.json"))
           man = json.load(open("manifest.json"))
           have = {re.sub(r"\.(mp4|png|jpg|jpeg|webp|mov)$", "", k) for k in urls}
-          need = {e["cut"] for e in man["timeline"]
-                  if not e.get("source") and not e.get("media_from")}
+          # source 는 대개 생성 식별자이지 저장소 경로가 아니다. 저장소가 직접 들고
+          # 있는 파일(엔드카드)과 다른 컷 소재를 빌려 쓰는 컷만 제외한다.
+          need = set()
+          for e in man["timeline"]:
+              if e.get("media_from"):
+                  continue
+              src = e.get("source", "")
+              if src and (Path(__file__).parent / src).exists():
+                  continue
+              need.add(e["cut"])
           missing = sorted(need - have)
           print(f"주소 키 {len(have)}개 · 매니페스트 컷 {len(need)}개")
           if missing:

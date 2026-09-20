@@ -12,3 +12,6 @@ projects/firebird/edit/qc/waveform.png
 projects/firebird/edit/qc/spectrogram.png
 projects/firebird/edit/qc/report.md
 projects/firebird/edit/urls_patch.json
+
+# 주소 암호문의 평문판 — 절대 커밋하지 않는다
+projects/firebird/edit/urls_patch_dec.json
