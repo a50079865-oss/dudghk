@@ -9,16 +9,22 @@
  "timeline": [
   {
    "cut": "C001",
-   "dur": 17,
+   "dur": 9,
    "tier": "C",
    "content": "회색 하늘. **재가 아래로 내린다.** 느린 틸트다운",
-   "kind": "still",
+   "kind": "video",
    "source": "4RVOc2r9Aa",
-   "ken_burns": {
-    "mode": "tilt_down",
-    "from": 1.06,
-    "to": 1.06
-   }
+   "in": 0.0,
+   "out": 9.0,
+   "note": "정지컷 영상화 — 화면 안이 움직인다. 카메라 무브는 클립에 포함"
+  },
+  {
+   "cut": "C001b",
+   "dur": 8,
+   "kind": "video",
+   "in": 0.0,
+   "out": 8.0,
+   "note": "C001 의 마지막 프레임에서 이어지는 뒤 절반"
   },
   {
    "cut": "C002",
@@ -42,16 +48,22 @@
   },
   {
    "cut": "C004",
-   "dur": 23,
+   "dur": 12,
    "tier": "C",
    "content": "재가 어깨에 내려앉는다. 아무도 위를 보지 않는다",
-   "kind": "still",
+   "kind": "video",
    "source": "nVmA8taYQD",
-   "ken_burns": {
-    "mode": "in",
-    "from": 1.0,
-    "to": 1.05
-   }
+   "in": 0.0,
+   "out": 12.0,
+   "note": "정지컷 영상화 — 화면 안이 움직인다. 카메라 무브는 클립에 포함"
+  },
+  {
+   "cut": "C004b",
+   "dur": 11,
+   "kind": "video",
+   "in": 0.0,
+   "out": 11.0,
+   "note": "C004 의 마지막 프레임에서 이어지는 뒤 절반"
   },
   {
    "cut": "C005",
@@ -128,16 +140,22 @@
   },
   {
    "cut": "C012",
-   "dur": 16,
+   "dur": 8,
    "tier": "C",
    "content": "치료소 전경. 부상자들이 늘어서 있다",
-   "kind": "still",
+   "kind": "video",
    "source": "1lN5Nwvr4r",
-   "ken_burns": {
-    "mode": "out",
-    "from": 1.08,
-    "to": 1.02
-   }
+   "in": 0.0,
+   "out": 8.0,
+   "note": "정지컷 영상화 — 화면 안이 움직인다. 카메라 무브는 클립에 포함"
+  },
+  {
+   "cut": "C012b",
+   "dur": 8,
+   "kind": "video",
+   "in": 0.0,
+   "out": 8.0,
+   "note": "C012 의 마지막 프레임에서 이어지는 뒤 절반"
   },
   {
    "cut": "C013",
@@ -253,22 +271,26 @@
   },
   {
    "cut": "C022",
-   "dur": 18,
+   "dur": 9,
    "tier": "C",
    "content": "천막 사이로 새벽빛",
-   "kind": "still",
+   "kind": "video",
    "source": "1lN56wEr4r",
-   "ken_burns": {
-    "mode": "tilt_up",
-    "from": 1.09,
-    "to": 1.09
-   },
-   "transition_after": null,
    "merged_from": [
     "C022",
     "C023"
    ],
-   "note": "C023 과 같은 그림이었다. 합치며 길이가 늘었으므로 이동 속도를 병합 전과 맞추려 틸트 폭을 1.05→1.09 로 키웠다"
+   "note": "정지컷 영상화 — 화면 안이 움직인다. 카메라 무브는 클립에 포함",
+   "in": 0.0,
+   "out": 9.0
+  },
+  {
+   "cut": "C022b",
+   "dur": 9,
+   "kind": "video",
+   "in": 0.0,
+   "out": 9.0,
+   "note": "C022 의 마지막 프레임에서 이어지는 뒤 절반"
   },
   {
    "cut": "C024",
@@ -429,21 +451,26 @@
   },
   {
    "cut": "C039",
-   "dur": 24,
+   "dur": 12,
    "tier": "C",
    "content": "요란의 손이 흙을 쥔다",
-   "kind": "still",
+   "kind": "video",
    "source": "TdCWuqSVNR",
-   "ken_burns": {
-    "mode": "in",
-    "from": 1.0,
-    "to": 1.06
-   },
    "merged_from": [
     "C038",
     "C039"
    ],
-   "note": "C038 과 같은 그림이었다. 반대 방향 켄번스가 서로를 지우고 있었다. 길이가 26초로 늘어 푸시인 폭을 1.04→1.06 으로 키웠다"
+   "note": "정지컷 영상화 — 화면 안이 움직인다. 카메라 무브는 클립에 포함",
+   "in": 0.0,
+   "out": 12.0
+  },
+  {
+   "cut": "C039b",
+   "dur": 12,
+   "kind": "video",
+   "in": 0.0,
+   "out": 12.0,
+   "note": "C039 의 마지막 프레임에서 이어지는 뒤 절반"
   },
   {
    "cut": "C040",
@@ -481,16 +508,22 @@
   },
   {
    "cut": "C043",
-   "dur": 16,
+   "dur": 8,
    "tier": "C",
    "content": "**벽화의 불새** 인서트 ← 나중에 거짓으로 드러난다",
-   "kind": "still",
+   "kind": "video",
    "source": "LwRr2B1swO",
-   "ken_burns": {
-    "mode": "out",
-    "from": 1.06,
-    "to": 1.0
-   }
+   "in": 0.0,
+   "out": 8.0,
+   "note": "정지컷 영상화 — 화면 안이 움직인다. 카메라 무브는 클립에 포함"
+  },
+  {
+   "cut": "C043b",
+   "dur": 8,
+   "kind": "video",
+   "in": 0.0,
+   "out": 8.0,
+   "note": "C043 의 마지막 프레임에서 이어지는 뒤 절반"
   },
   {
    "cut": "C044",
@@ -796,7 +829,7 @@
   {
    "name": "S04_05_army",
    "from": "C022",
-   "to": "C039",
+   "to": "C039b",
    "db": -28,
    "desc": "wind + harness + leather + metal",
    "id": "DoFemiVpcl"
@@ -833,9 +866,9 @@
    "note": "ambience to -60dB — she cannot hear the world"
   },
   {
-   "cut": "C039",
-   "from_offset": 12.0,
-   "note": "14s of nothing after the soil grip"
+   "cut": "C039b",
+   "note": "흙을 쥔 뒤의 12초 — 화면도 같이 멈춘다",
+   "whole": true
   },
   {
    "cut": "C062",
