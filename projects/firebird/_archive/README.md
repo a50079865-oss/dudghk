@@ -27,3 +27,17 @@
 ## 이 폴더를 다시 여는 유일한 조건
 
 **사용자가 명시적으로 지시할 때.** 그 외에는 열지 않는다.
+
+
+---
+
+## 2026-09-20 — 부분 해제
+
+사용자 지시(*"되살리는데"*)로 **세계관 문서 6종을 `v2/world/`로 복원**했다.
+
+복원: `01_WORLD_BIBLE.md` · `01_WORLD_BIBLE_v2.md` · `05_KINGDOMS_MASTER.md` · `06_VISUAL_BIBLE.md` · `15_MYTH_AND_MAGIC_SYSTEM.md` · `16_POWERS_AND_ANTAGONISTS.md`
+
+**봉인 유지:** 인물 마스터(`02_`·`03_`·`04_`) · `08_STORY_SEASON1` · `09_OPENING_90SEC` · 카메라/생성 규칙 · `v2026-09-19/` 제작 문서 전체 · `02_CHARACTER_MASTER/`
+→ 거절된 7분 필름을 직접 만들어낸 문서들이다. **인물·세력 정보는 복원된 `16_POWERS_AND_ANTAGONISTS.md`가 상위이며 그것으로 충분하다.**
+
+**봉인 판단의 정정:** 세계관 자체는 문제가 아니었다. 문제는 그것을 화면에 올리지 못한 시나리오화와 연출이었다. (`v2/CANON_INDEX.md` 4절)
