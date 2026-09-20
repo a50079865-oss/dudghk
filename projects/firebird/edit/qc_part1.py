@@ -115,8 +115,8 @@ def main():
     # "영상 컷"이라고 해서 움직인다는 보장이 없다. 클립이 거의 정지인 경우가
     # 있고, 그러면 정지 비중이 매니페스트가 말하는 것보다 높다.
     motion = []
-    for cut, st, dur, kind in rows:
-        a_t, b_t = st + dur * 0.25, st + dur * 0.75
+    for cut, st, cdur, kind in rows:
+        a_t, b_t = st + cdur * 0.25, st + cdur * 0.75
         fa, fb = out / "_m_a.jpg", out / "_m_b.jpg"
         for t_, dst in ((a_t, fa), (b_t, fb)):
             ff(["-y", "-ss", f"{t_:.3f}", "-i", str(film), "-frames:v", "1",
