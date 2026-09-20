@@ -124,10 +124,13 @@ def main():
         try:
             from PIL import Image, ImageChops, ImageStat
             ia, ib = Image.open(fa).convert("L"), Image.open(fb).convert("L")
-            st_ = ImageStat.Stat(ImageChops.difference(ia, ib))
-            motion.append((cut, kind, st_.rms[0]))
+            diff = ImageStat.Stat(ImageChops.difference(ia, ib)).rms[0]
+            # 평탄한 그림은 화면이 크게 움직여도 픽셀 차이가 작다.
+            # 그림 자체의 대비로 나눠야 "움직였는가"에 가까워진다.
+            detail = max(ImageStat.Stat(ia).stddev[0], 1.0)
+            motion.append((cut, kind, diff, detail, diff / detail * 100))
         except Exception:
-            motion.append((cut, kind, -1.0))
+            motion.append((cut, kind, -1.0, -1.0, -1.0))
     for f_ in (out / "_m_a.jpg", out / "_m_b.jpg"):
         f_.unlink(missing_ok=True)
 
@@ -183,6 +186,7 @@ def main():
     dur_m = re.search(r"Duration:\s*(\d+):(\d+):([\d.]+)", streams)
     dur = (int(dur_m.group(1)) * 3600 + int(dur_m.group(2)) * 60
            + float(dur_m.group(3))) if dur_m else 0.0
+    film_len = dur or total
 
     # ── 4. 보고서 ─────────────────────────────────────────────────────
     L = []
@@ -264,28 +268,35 @@ def main():
             for name, dur, mean, pk, quiet, pct, _ in dead:
                 L.append(f"- `{name}` — {dur:.1f}s · {mean} dB · 빈 시간 {pct:.0f}%\n")
 
-    STILLISH = 3.0
-    quiet_cuts = sorted([r for r in motion if 0 <= r[2] < STILLISH], key=lambda z: z[2])
-    vid_dead = [r for r in quiet_cuts if r[1] == "video"]
-    L.append(f"\n## 움직임 — 컷의 25% 지점과 75% 지점 차이 ({len(rows)}컷)\n")
-    L.append(f"값이 {STILLISH} 미만이면 그 컷은 사실상 정지 화면이다.\n\n")
-    L.append(f"**움직이지 않는 영상 컷 {len(vid_dead)}개** — 영상으로 뽑았으나 정지처럼 보인다\n\n")
-    if vid_dead:
-        L.append("| 컷 | 차이 |\n|---|---|\n")
-        for cut, _, v in vid_dead:
-            L.append(f"| **{cut}** | {v:.2f} |\n")
+    # 원시 차이는 그림의 대비에 좌우된다. 평탄한 능선 실루엣은 화면이 크게
+    # 밀려도 숫자가 작게 나온다. 대비로 나눈 값을 기준으로 삼고 둘 다 보인다.
+    STILLISH = 4.0          # 대비 대비 차이(%)
+    LOCKED = {"C028", "C034", "C056", "C062"}   # 지시서가 정지로 못박은 컷
+    quiet = sorted([r for r in motion if 0 <= r[4] < STILLISH], key=lambda z: z[4])
+    L.append(f"\n## 움직임 — 컷의 25% 지점과 75% 지점 비교 ({len(rows)}컷)\n")
+    L.append("`차이`는 두 프레임의 픽셀 차, `대비`는 그림 자체의 표준편차, "
+             f"`비율`은 차이÷대비. **비율 {STILLISH}% 미만이면 사실상 정지**로 본다 "
+             "— 평탄한 그림이 크게 움직여도 픽셀 차는 작기 때문에 원시 차이만으로는 "
+             "판단할 수 없다.\n\n")
+    unintended = [r for r in quiet if r[0] not in LOCKED]
+    L.append(f"**의도치 않게 멈춘 컷 {len(unintended)}개**\n\n")
+    if unintended:
+        L.append("| 컷 | 종류 | 차이 | 대비 | 비율 |\n|---|---|---|---|---|\n")
+        for cut, kind, diff, det, pct in unintended:
+            L.append(f"| **{cut}** | {kind} | {diff:.2f} | {det:.1f} | {pct:.1f}% |\n")
     else:
-        L.append("없음 — 영상 컷은 전부 움직인다.\n")
-    still_dead = [r for r in quiet_cuts if r[1] == "still"]
-    if still_dead:
-        L.append(f"\n움직이지 않는 정지 컷 {len(still_dead)}개 — "
-                 "켄번스가 너무 느려 프레임이 반복된다 "
-                 f"({', '.join(c for c, _, _ in still_dead)})\n")
-    moving = sum(1 for _, _, v in motion if v >= STILLISH)
-    real_still = sum(d for (c, s0, d, k), (c2, k2, v) in zip(rows, motion) if v < STILLISH)
+        L.append("없음.\n")
+    locked_hit = [r for r in quiet if r[0] in LOCKED]
+    if locked_hit:
+        L.append(f"\n지시서가 정지로 지정한 컷 {len(locked_hit)}개도 함께 걸렸다 — "
+                 f"조치 대상이 아니다 ({', '.join(c for c, *_ in locked_hit)}).\n")
+    moving = sum(1 for r in motion if r[4] >= STILLISH)
+    dead_t = sum(d for (c, s0, d, k), r in zip(rows, motion) if r[4] < STILLISH)
+    unint_t = sum(d for (c, s0, d, k), r in zip(rows, motion)
+                  if r[4] < STILLISH and c not in LOCKED)
     L.append(f"\n움직이는 컷 {moving}/{len(rows)} · "
-             f"**실질 정지 시간 {real_still:.0f}초 = {real_still/dur*100:.1f}%** "
-             f"(매니페스트 기준 정지는 {sum(d for c,s0,d,k in rows if k=='still')}초)\n")
+             f"멈춘 시간 {dead_t:.0f}초 = {dead_t/film_len*100:.1f}% "
+             f"(그중 의도치 않은 것 **{unint_t:.0f}초 = {unint_t/film_len*100:.1f}%**)\n")
 
     L.append("\n## 그림\n")
     L.append("- `contact_sheet.jpg` — 62컷 각각의 중간 프레임\n")
