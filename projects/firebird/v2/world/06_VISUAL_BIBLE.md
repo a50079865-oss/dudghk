@@ -51,7 +51,7 @@ EP8 — palettes converge; soft natural green appears after renewal
 ## Magic Visualization
 Magic should appear as reality reacting.
 
-Aureon:
+Asren:
 - heat distortion
 - ash rising upward
 - stilling fire
