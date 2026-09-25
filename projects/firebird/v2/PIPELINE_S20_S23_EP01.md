@@ -175,3 +175,13 @@ AVOID: buildings, walls, castle, towers, trees with leaves, green grass, green f
 16:9 cinematic establishing plate, high angle. Photoreal live-action cinema, ARRI Alexa look, fine 35mm grain, black pro-mist, deep low-key. The same refugee camp after the fire, in cold blue-grey evening light: where tents stood, only blackened timber frames remain standing in a flat field of grey ash; low smoke lying flat along the ground; a few embers still glowing orange, the only warm colour in frame. Scorched rope, collapsed canvas, a few survivors sitting slumped far away as small faceless shapes. On the ash in the foreground, one small child's leather shoe lies untouched by the fire. Fine GREY ash in the air (never white snow). The coldest image of the episode.
 AVOID: flames, orange sky, stone buildings, walls, castle, town houses, crying faces, faces looking at camera, white snow, letterbox bars, CGI, illustration.
 ```
+
+## 결과 — 공간 plate
+
+| plate | 판정 | 메모 |
+|---|---|---|
+| `P1_CAMP_DAY` | ✅ | 빼곡한 천막 · 빨랫줄 · **한 장만 붉은 붕대** · 강 · 연기 · 돌 건물 0 |
+| `P2_MED_TENT` | ✅ 조건부 | 짚 · 회색 담요 · 입구 빛 · 상자 뚜껑의 양피지. 누운 사람 얼굴이 **뭉개짐**(AI 결함 — 배경 참조라 무방) · 상자 속 **짙은 현대식 병** → S24 약병은 별도 묘사 |
+| `P3_FIELD` | ✅ 조건부 | 창 · 둥근 방패 · **손가락 모양 장갑** · 수레 셋 · 흰 해 원반. **HDR처럼 과샤프** — ARRI 소프트와 다름 → 공간 배치 참조로만, 질감은 따르지 않음 |
+| `P4_RIDGE` | ✅ **최고** | 능선 길 · 물 고인 바퀴자국 · 골짜기 안개 · 회청 황혼 |
+| `P5_ASH_CAMP` | ✅ 조건부 | 검은 뼈대 · 불씨 · 멀리 생존자 · **신발 들어감 → 채택으로 처리**. 신발이 **끈 달린 현대식 가죽 부츠**에 너무 밝음 → S24: 끈 없는 중세 턴슈즈, 작게 |
