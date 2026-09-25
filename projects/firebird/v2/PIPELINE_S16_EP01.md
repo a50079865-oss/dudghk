@@ -141,6 +141,13 @@ AVOID: plate armour, shining knights, banners with readable symbols, glossy MMO 
 | CUT05 | ✅ | 하이앵글 · 빼곡한 천막 · 빨랫줄 · 강 · 강가의 여자 뒷모습. 빨래가 붕대보다 옷에 가까움, 먼 강둑에 약한 녹색 → S24에서 교정 |
 | CUT06 | ✅ | 갈라진 손 · 번지는 핏물 · 강돌 · 회색 천·리넨 소매. 아이 그림자 누락(경미) |
 
+### 결과 — CUT02 · CUT04 2차
+
+| 컷 | 판정 | 메모 |
+|---|---|---|
+| CUT02 | ✅ | 캐논 깃발 4색 정확 · 울 직물 질감·해진 끝 · 금빛 전설 하늘. 클립아트 느낌 해소 |
+| CUT04 | ✅ 구도 통과 | 뾰족한 테·금 간 띠·녹아 흘러내린 쪽 전부 ✓. **테가 백합 문장(fleur-de-lis)으로 나옴** — 실존 프랑스 왕가 상징이라 S24에서 **단순한 뾰족 테**로 교체 (`fleur-like` 문구 삭제) |
+
 > 캐논 깃발 (고정): 스켈드리아 = midnight-blue + silver wolf · 드라에보르 = oxblood + black dragon · 리사라 = deep muted teal + silver sea-serpent · 아우레비아 = deep crimson + aged-gold Firebird
 
 ### CUT01 — 죽은 세계
