@@ -48,3 +48,11 @@
 - ~~조연 시트 EP01분 (브리스 · 요란 · 도르만 · 린)~~ ✅
 - **S16 — EP01 48컷 480p 프리뷰**
 - 후순위 조연: 세라펠 · 할바르드 (EP02 이전, "확실히 나이 든" 규칙)
+
+
+## 의상 기준 정정 (2026-09-25, S24에서 발견)
+
+**엘라라의 실제 시트 의상**이 기준이다 — 이후 모든 프롬프트는 이 문장을 쓴다:
+> dark brown hair gathered in a loose low bun with loose strands, a dark charcoal-grey cloth tied around her head as a headband with the ends hanging at the back, flushed wind-reddened cheeks, brown eyes, a dark charcoal wool overdress torn at the shoulder worn over an undyed linen chemise, barefoot
+
+S16 프리뷰 전체가 *"grey cloth over her hair, worn undyed linen dress"* 로 생성됨 → 프리뷰의 엘라라 의상은 **구도 참고용일 뿐, 의상 기준이 아니다.**
