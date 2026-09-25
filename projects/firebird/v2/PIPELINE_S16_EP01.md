@@ -425,3 +425,29 @@ Photoreal live-action cinema. Not illustration, not anime, not 3D render, not co
 AVOID: medium shot, full body, wide shot, tears, crying, smiling, eye contact with camera, beauty lighting, makeup, outdoors, stone wall, neon aura, glowing eyes, particle effects, magic sparkles, HUD or runes, glossy MMO rendering, plate armour, spikes, superhero poses, idol-perfect faces, modern hairstyles, clean new clothing, centered symmetrical composition, crowds with visible faces, readable in-image text, random letters, labels, logos, watermarks, modern objects, white snow, snowflakes, snow on the ground, natural green vegetation.
 ```
 
+
+### 결과 — 배치 2 2차 (CUT15~18)
+
+| 컷 | 판정 | 메모 |
+|---|---|---|
+| CUT15 | ✅ 조건부 | 목을 받치고 약병을 기울임 ✓. ① **머릿수건 없음**(올림머리) — 의상 이탈 ② 짚 밑이 **현대식 운반 팔레트** (고증 위반) → 공통 AVOID에 `modern shipping pallets` 추가. S24에서 교정 |
+| CUT16 | ❌ **재생성** | ① **활짝 웃음** — 거짓말하는 얼굴이 아니라 행복한 장면으로 읽힘 ② 손이 **배**에 있어 **임신 신호**로 오독됨 ③ 아이 눈높이 로우앵글이 아니라 옆 와이드 ④ 검은 조끼 추가 |
+| CUT17 | ✅ | 진창 로우 와이드 · 쓰러진 말 · 둥근 방패 · 박힌 창 · 연기 속 대열 · 말 옆 남자의 등. 망토가 검정이 아니라 회갈색 → S24 |
+| CUT18 | ✅ | **왕자처럼 안 보인다** — 장식 없는 사슬·갬비슨·검은 망토, 땀에 젖은 검은 머리, 닦지 않은 피, 투구를 안장에 거는 손, 전장을 훑는 눈. 얼굴은 시트와 다름(텍스트 전용 단계라 예상대로) |
+
+- CUT14 이미지가 한 번 더 들어옴 — 이미 판정 완료(✅ 조건부, 약병 6→5).
+
+### CUT16 재생성 (2차)
+
+### CUT16 — 나 안 아파 (2차)
+
+```text
+PREVIEW DRAFT 480p — storyboard direction check only (composition & art direction, not identity):
+Obey the project frame (16:9 or 9:16; vertical keeps lower ~20% clean for subtitles). Shallow depth of field with FG/MG/BG separation; ARRI Alexa filmic look (soft, grainy, low-key default). Cinematic photoreal, never CGI/illustration. Characters described by text only (no reference lock at this stage); pick a deliberate non-frontal angle per shot and vary angles between adjacent cuts.
+
+16:9 cinematic film still. Low angle from the eye height of a six-year-old girl inside a dark canvas tent: the child's back and messy dark hair, tied with a strip of grey cloth, fill the out-of-focus left edge of frame. Beyond her, a thin young woman kneels on the straw-covered floor, one hand resting on the child's head. She wears a worn undyed linen dress and grey cloth tied over her hair. Her face gives only a faint, tight, closed-mouth reassurance that does not reach her eyes — she is lying. Her other hand grips her own knee hard, knuckles white, and she is holding her breath, shoulders slightly hunched as if suppressing a cough. An empty glass vial lies on the floor between them.
+Late-medieval continent of Kasran, overcast sky, cold diffused daylight, fine GREY ash flakes drifting slowly in the air (dark grey ash, never white snow), wet churned mud underfoot. Weathered pale stone, dark timber, stained canvas, rough wool and linen, blackened steel — nothing new, nothing clean, everything wet, scorched or frayed. Desaturated ash grey and steel slate with mud-brown shadows; the only warm colour in frame is real firelight. Low-key, real darkness allowed. Beautiful but brutal medieval reality, interrupted only rarely by overwhelming ancient myth.
+Photoreal live-action cinema. Not illustration, not anime, not 3D render, not concept painting. ARRI Alexa look: fine 35mm grain, black pro-mist, soft halation, crushed blacks, shallow depth of field with clear foreground/midground/background separation. Practical light sources only. Epic scale but cold: thriller-noir tension with the intimacy of melodrama. 11th–13th century European material culture: mail armour, wool, linen, leather, timber, stone. No plate armour.
+AVOID: smiling, broad smile, happy, hand on belly, hand on stomach, pregnancy, black vest, tabard, tears, cute pose, eye contact with camera, neon aura, glowing eyes, particle effects, magic sparkles, HUD or runes, glossy MMO rendering, plate armour, spikes, superhero poses, idol-perfect faces, modern hairstyles, clean new clothing, centered symmetrical composition, crowds with visible faces, readable in-image text, random letters, labels, logos, watermarks, modern objects, modern shipping pallets, white snow, snowflakes, snow on the ground, natural green vegetation.
+```
+
