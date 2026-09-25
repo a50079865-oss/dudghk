@@ -110,3 +110,14 @@ AVOID  neon aura, glowing eyes, particle effects, magic sparkles, HUD or runes, 
 - 불이 붙은 대상이 **덜 탄다** — EP01에서 엘라라의 옷이 타지 않은 것과 같은 법칙
 
 > 프롬프트 핵심 문장 (검증됨): *"frozen dead still in mid-motion, razor-sharp edges with ZERO motion blur, as if caught by an impossibly fast shutter"*
+
+
+## 추가 확정 — `S6_FIREBIRD_MARK` (2026-09-25)
+
+| 저장명 | 판정 | 용도 |
+|---|---|---|
+| `S6_FIREBIRD_MARK` | ✅ **확정 — 불새의 표식 기준** | EP01 CUT38 인서트 · CUT48 · EP02 · EP05 · EP08 모든 문양 컷의 참조 |
+
+- 한 갈래 불꽃 실루엣이 한눈에 읽힘 (몸통 + 위로 휜 끝 + 옆 불씨 둘) · **선이 아니라 물집 잡힌 화상** · 가장자리 그을린 고리 · 주변 피부에 재 · 빛나지 않음
+- **경계가 지나치게 선명한 것은 결함이 아니라 장점**: 자연 화상은 이런 모양으로 생기지 않는다 — "사고가 아니다"를 설명 없이 보여준다
+- 알려진 결함: 1:1이 아니라 16:9로 생성됨 (참조 용도에 지장 없음)
