@@ -394,3 +394,34 @@ Photoreal live-action cinema. Not illustration, not anime, not 3D render, not co
 AVOID: prince crown, golden trim, plate armour, pauldrons, engraved armour, helmet on head, heroic pose, clean face, eye contact with camera, idol-perfect face, neon aura, glowing eyes, particle effects, magic sparkles, HUD or runes, glossy MMO rendering, plate armour, spikes, superhero poses, idol-perfect faces, modern hairstyles, clean new clothing, centered symmetrical composition, crowds with visible faces, readable in-image text, random letters, labels, logos, watermarks, modern objects, natural green vegetation.
 ```
 
+
+### 결과 — 배치 2 1차 (CUT11 · 13 · 14)
+
+| 컷 | 판정 | 메모 |
+|---|---|---|
+| CUT11 (2차) | ✅ **통과** | **정확히 6개** · 손 2개(같은 사람, 걷은 소매) · 상자 속을 더듬는 왼손 · 여섯 번째를 내려놓는 오른손 · 라벨 없음. 숫자 이중 표기 + 초과 숫자 AVOID가 먹혔다 |
+| CUT13 | ⚠️ 재생성 | 시선(누운 사람 쪽)·그을음·탁자로 뻗는 손 ✓. **미디엄 샷으로 나옴** — 회차의 심장 컷인데 클로즈업 홀드가 아니다. 천막 밖(돌담·진흙)으로 나감 |
+| CUT14 | ✅ 조건부 | 도르만 어깨 너머 · 입을 열다 멈춤 · 약병 들고 멀어지는 엘라라 · 상자 뚜껑의 양피지 이름표(읽히지 않음 ✓). **탁자 위 약병이 6개** — 하나 가져갔으니 **5개**여야 함 → S24에서 교정 |
+
+**엘라라 얼굴 — CUT09·12·13·14에서 거의 같은 인물로 유지됨.** 텍스트만으로도 수렴 중. S24 시트 락에서 확정.
+
+### 전역 수정 — 재가 눈으로 렌더링됨
+
+- 증상: CUT05~14 전반에 **흰 눈송이·바닥의 눈**. 원인은 ENV-1의 *"fine grey ash drifting slowly like snow"* — 모델이 "snow"를 글자 그대로 그림.
+- 수정: *"fine GREY ash flakes drifting slowly in the air (dark grey ash, never white snow)"* + 공통 AVOID에 `white snow, snowflakes, snow on the ground`.
+- **`PIPELINE_S6.md` 의 ENV-1 도 S24 전에 같은 문구로 교체한다.** (캐논상 EP01 무대는 남부 — CUT17 *"눈은 없다 — 여기는 남쪽이다"*)
+
+### CUT13 재생성 (2차)
+
+### CUT13 — 저는 안 세요 (2차)
+
+```text
+PREVIEW DRAFT 480p — storyboard direction check only (composition & art direction, not identity):
+Obey the project frame (16:9 or 9:16; vertical keeps lower ~20% clean for subtitles). Shallow depth of field with FG/MG/BG separation; ARRI Alexa filmic look (soft, grainy, low-key default). Cinematic photoreal, never CGI/illustration. Characters described by text only (no reference lock at this stage); pick a deliberate non-frontal angle per shot and vary angles between adjacent cuts.
+
+16:9 cinematic film still. Extreme close-up, her face fills most of the frame, held still, inside a dark canvas medical tent. A thin young woman of 23, framed slightly off-center, seen from a low three-quarter side angle. Plain tired face, faint soot smeared on her cheek, a few loose strands of hair escaping from the grey cloth tied over her head. She is not looking at the man speaking to her off-screen; her eyes are turned away toward the out-of-focus people lying on the tent floor. Her face is still and closed, jaw set, no tears. Only a soft blurred sliver of an old man's grey beard at the very edge of frame. Low grey daylight from the tent entrance on one side of her face, the other side falling into shadow.
+Late-medieval continent of Kasran, overcast sky, cold diffused daylight, fine GREY ash flakes drifting slowly in the air (dark grey ash, never white snow), wet churned mud underfoot. Weathered pale stone, dark timber, stained canvas, rough wool and linen, blackened steel — nothing new, nothing clean, everything wet, scorched or frayed. Desaturated ash grey and steel slate with mud-brown shadows; the only warm colour in frame is real firelight. Low-key, real darkness allowed. Beautiful but brutal medieval reality, interrupted only rarely by overwhelming ancient myth.
+Photoreal live-action cinema. Not illustration, not anime, not 3D render, not concept painting. ARRI Alexa look: fine 35mm grain, black pro-mist, soft halation, crushed blacks, shallow depth of field with clear foreground/midground/background separation. Practical light sources only. Epic scale but cold: thriller-noir tension with the intimacy of melodrama. 11th–13th century European material culture: mail armour, wool, linen, leather, timber, stone. No plate armour.
+AVOID: medium shot, full body, wide shot, tears, crying, smiling, eye contact with camera, beauty lighting, makeup, outdoors, stone wall, neon aura, glowing eyes, particle effects, magic sparkles, HUD or runes, glossy MMO rendering, plate armour, spikes, superhero poses, idol-perfect faces, modern hairstyles, clean new clothing, centered symmetrical composition, crowds with visible faces, readable in-image text, random letters, labels, logos, watermarks, modern objects, white snow, snowflakes, snow on the ground, natural green vegetation.
+```
+

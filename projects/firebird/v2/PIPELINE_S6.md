@@ -38,7 +38,7 @@
 ### 환경 앵커 (Environment Anchor) — 모든 씬 프롬프트에 붙인다
 
 ```
-ENV-1  Late-medieval continent of Kasran, overcast sky, cold diffused daylight, fine grey ash drifting slowly like snow, wet churned mud underfoot.
+ENV-1  Late-medieval continent of Kasran, overcast sky, cold diffused daylight, fine GREY ash flakes drifting slowly in the air (dark grey ash, never white snow), wet churned mud underfoot.
 ENV-2  Weathered pale stone, dark timber, stained canvas, rough wool and linen, blackened steel — nothing new, nothing clean, everything wet, scorched or frayed.
 ENV-3  Desaturated ash grey and steel slate with mud-brown shadows; the only warm colour in frame is real firelight. Low-key, real darkness allowed.
 ENV-4  When the firebird Asren is present: fire stops moving, ash rises instead of falling, flame cores turn ivory-white, motion slows by half a beat. Nothing glows, nothing sparkles.
