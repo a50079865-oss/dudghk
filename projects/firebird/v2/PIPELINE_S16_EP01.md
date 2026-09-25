@@ -891,3 +891,80 @@ AVOID: glowing mark, tattoo, ink, bright light, magic sparkles, sexualised frami
 | CUT42 | ✅ | **주황 → 회청 톤 전환 성공.** 검게 탄 천막 뼈대 · 재 위에 주저앉은 생존자 · 꺼져 가는 불씨 · 오른쪽 위에서 들어오는 기병. 돌 건물 0 (`ENV_CAMP` 효과) |
 | CUT43 | ✅ 조건부 | 망토·투구 없는 리븐의 등 · 고개만 드는 생존자. **기병이 그의 뒤가 아니라 앞에서 마주 봄** · 정중앙 대칭 → S24 |
 | CUT44 | ✅ | 리븐의 검은 망토에 싸인 요란 · **나무 두 조각 + 회색 천 부목** · 가장자리의 진흙 장화를 올려다보는 눈. 정수리 부감이 아니라 옆 부감 (경미) |
+
+### 결과 — 배치 6 2차 (CUT45~48)
+
+| 컷 | 판정 | 메모 |
+|---|---|---|
+| CUT45 ★★ | ✅ | 회색 천 매듭을 묶는 엘라라 손(전경) + 망토 없이 내려다보는 리븐(배경) **둘 다 선명** · 매듭만 봄 · 요란의 검은 망토. 리븐이 **칼을 이미 뽑아 들고 있음** — 칼은 CUT47에서 뽑는다 → S24 |
+| CUT46 | ✅ | 피 묻은 엄지가 깨뜨리는 밀랍 봉인 · **늑대 문양, 글자 0** · 가죽 통 · 사슬 배경 |
+| CUT47 | ✅ | 일어선 엘라라 · 피 묻은 천 · 아이를 뒤로 · 눈을 감지 않음 · 전경 칼끝. **린이 금발·머리끈 없음** → S24 시트 락. 레터박스 · 흰 입자 남음 |
+| CUT48 ★★★ | ⚠️ **재생성** | 밧줄·손목 ✓. 문양이 **깔끔한 외곽선의 불꽃 아이콘(이모지)** 처럼 그려짐 — "문신처럼 보인다"는 S6 결함이 그대로. 크고 정중앙, **어깨가 드러남**, 천 아래로 사라지지 않음. 시즌 전체의 상징이라 프리뷰에서 방향을 잡는다 |
+
+→ **EP01 48컷 중 47컷 구도 확정. 남은 1컷 = CUT48 문양.**
+
+### CUT48 재생성 (2차)
+
+### CUT48 — 묶어라 (2차)
+
+```text
+PREVIEW DRAFT 480p — storyboard direction check only (composition & art direction, not identity):
+Obey the project frame (16:9 or 9:16; vertical keeps lower ~20% clean for subtitles). Shallow depth of field with FG/MG/BG separation; ARRI Alexa filmic look (soft, grainy, low-key default). Cinematic photoreal, never CGI/illustration. Characters described by text only (no reference lock at this stage); pick a deliberate non-frontal angle per shot and vary angles between adjacent cuts.
+
+16:9 cinematic film still. Extreme close-up insert in cold blue evening light, framed tight on a thin young woman's bound wrists held in front of her chest. Rough hemp rope is being wound around her wrists by a man's gloved hand entering from the edge of frame. Her worn undyed linen dress is fully on both shoulders; only the collar has been tugged a little open by the movement. Just inside the collar, below the collarbone, a small irregular burn no bigger than a thumbprint shows on the skin — blistered, uneven raw red edges, roughly the shape of a single flame but not drawn, not outlined, not a symbol — and the linen is already sliding back over it, half hiding it.
+Late-medieval continent of Kasran, overcast sky, cold diffused daylight, fine GREY ash flakes drifting slowly in the air (dark grey ash, never white snow), wet churned mud underfoot. A refugee camp in open country: only canvas tents, timber frames, ropes, mud and ash — no stone buildings, no walls, no castle, no town houses. Rough wool and linen, blackened steel — nothing new, nothing clean, everything wet, scorched or frayed. Desaturated ash grey and steel slate with mud-brown shadows; the only warm colour in frame is real firelight. Low-key, real darkness allowed. Beautiful but brutal medieval reality, interrupted only rarely by overwhelming ancient myth.
+Photoreal live-action cinema. Not illustration, not anime, not 3D render, not concept painting. ARRI Alexa look: fine 35mm grain, black pro-mist, soft halation, crushed blacks, shallow depth of field with clear foreground/midground/background separation. Practical light sources only. Epic scale but cold: thriller-noir tension with the intimacy of melodrama. 11th–13th century European material culture: mail armour, wool, linen, leather, timber, stone. No plate armour.
+AVOID: clean outlined flame, flame icon, emoji, symbol, tattoo, ink, drawn line, large mark, glowing mark, bare shoulder, off-shoulder, cleavage, sexualised framing, face, gore, bright light, magic sparkles, neon aura, glowing eyes, particle effects, magic sparkles, HUD or runes, glossy MMO rendering, plate armour, breastplate, cuirass, pauldrons, spaulders, riveted plates, spikes, superhero poses, idol-perfect faces, modern hairstyles, clean new clothing, centered symmetrical composition, crowds with visible faces, readable in-image text, random letters, labels, logos, watermarks, modern objects, modern shipping pallets, letterbox bars, black bars, white snow, snowflakes, snow on the ground, natural green vegetation.
+```
+
+
+
+---
+
+# S16 총괄 — S24(본 이미지)로 넘길 수정 목록
+
+## A. 시트 락으로 해결 (프롬프트 수정 불필요)
+| 인물 | 해당 컷 | 문제 |
+|---|---|---|
+| 엘라라 | CUT12 · 15 · 16 | 옷 색(짙은 회색) · 머릿수건 누락 · 표정(울먹임 → 마른 눈, 다문 입) |
+| 리븐 | CUT18 · 28 | 시트와 다른 얼굴 · **CUT28 유명 캐릭터 룩 겹침** |
+| 요란 | CUT26 | 너무 어려 보임 · 콧수염 없음 |
+| 린 | CUT47 | 금발 · 회색 천 머리끈 없음 |
+
+## B. 연속성 규칙
+| 규칙 | 해당 컷 |
+|---|---|
+| **리븐은 CUT26 이후 망토 없음** | CUT39 (망토 있음 → 제거) |
+| 리븐은 투구를 쓰지 않는다 | CUT32 · 41 |
+| 리븐의 칼은 CUT47에서 처음 뽑는다 | CUT45 |
+| 약병: 탁자 위 5개 (하나 가져감) | CUT14 |
+| 시선: 리븐은 앞만 봄 / 브리스는 뒤를 봄 | CUT30 · 31 · 32 |
+
+## C. 배경 문구 (ENV 변형으로 해결)
+| 문제 | 해당 컷 | 처리 |
+|---|---|---|
+| 전장에 돌 건물 | CUT19 · 24 · 25 · 26 | `ENV_FIELD` |
+| 수용소에 돌 건물 | CUT34 · 35 | `ENV_CAMP` |
+| 재가 눈으로 나옴 | CUT05~18 · 47 | ENV-1 수정문 (배치 3부터 적용 완료) |
+| 레터박스 띠 | CUT40 · 42 · 47 | AVOID `letterbox bars` 추가 완료 |
+
+## D. 구도·연출 (컷별)
+| 컷 | 수정 |
+|---|---|
+| CUT01 | 네 그림자의 옷을 롱코트 → 망토 |
+| CUT04 | 백합 문장 → 단순한 뾰족 테 |
+| CUT05 | 빨랫줄 = 붕대 · 먼 강둑 녹색 제거 |
+| CUT09 · 43 | 정중앙 대칭 → 카메라를 한쪽으로 |
+| CUT23 | 사람 위에 사람 — 더 빽빽하게 |
+| CUT28 | 대열이 **멀어진다** (가로지르지 않게) |
+| CUT34 | 주황/청 반반 조명 강화 |
+| CUT37 | 시간대 = 밤 (CUT38과 맞춤) |
+| CUT41 | 뒤따르기 시작한 기병 몇 |
+| CUT43 | 기병은 그의 **뒤에** 멈춘다 |
+
+## 검증된 규칙 (EP02~08 전체에 적용)
+1. **숫자가 플롯인 컷**: `EXACTLY SIX (6) — six, not seven` + 초과 숫자를 AVOID에 (CUT11 · 20 · 23 · 32에서 전부 적중)
+2. **아스렌은 전체가 보이지 않는다**: 잘린 깃털 끝 + 그림자 (CUT03 · 38)
+3. **아스렌의 불**: "frozen dead still… ZERO motion blur" (CUT37 · 38)
+4. **장소별 ENV 3종**: 일반 / `ENV_FIELD` / `ENV_CAMP` — 모델은 "pale stone" 한 단어로 건물을 짓는다
+5. **"like snow" 같은 비유는 글자 그대로 그려진다** — 비유 금지, 색·재질로 쓴다
