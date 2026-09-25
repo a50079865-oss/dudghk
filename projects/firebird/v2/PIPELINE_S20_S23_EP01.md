@@ -136,3 +136,42 @@
 2. **S24 첫 묶음 — 심장 컷 6개**: CUT13 · 28 · 37 · 38 · 45 · 48
    - ref = 인물 시트 정면 패널 + 공간 plate (+ CUT38·48은 `S6_FIREBIRD_MARK` · `S6_ASREN_FIRE`)
    - QUALITY 모드 = 컷당 2안
+
+---
+
+## 공간 plate 프롬프트 (Nano Banana 2 · 16:9 · 2K · ref 없음)
+
+### P1_CAMP_DAY — 수용소 (낮)
+
+```text
+16:9 cinematic establishing plate, no people in the foreground. Photoreal live-action cinema, ARRI Alexa look, fine 35mm grain, black pro-mist, low-key. A crowded refugee camp in open country under a flat overcast sky, cold diffused daylight: about a hundred stained grey canvas tents on timber frames packed close together in churned wet mud, narrow muddy lanes, guy ropes everywhere, clotheslines hung with grey-brown washed linen bandages — and one single bandage still faintly red. Thin cooking smoke. A cold grey river at the far edge of the camp. Distant figures only as tiny faceless shapes. Fine GREY ash flakes drifting in the air (dark grey ash, never white snow). Desaturated ash grey and mud-brown; the only warm colour is one small cooking fire. 11th–13th century material culture: canvas, timber, rope, wool, linen.
+AVOID: stone buildings, walls, castle, town houses, modern tents, tarpaulin, plastic, green grass, white snow, snowflakes, visible faces, readable text, logos, watermarks, letterbox bars, CGI, illustration.
+```
+
+### P2_MED_TENT — 의무 천막 안
+
+```text
+16:9 cinematic interior plate, empty of standing people. Photoreal live-action cinema, ARRI Alexa look, fine 35mm grain, black pro-mist, deep low-key darkness. Inside a large dark canvas medical tent, hot and airless: rows of straw pallets and grey wool blankets on a packed-mud floor, the shapes of sick people lying under blankets, soft and faceless. The ONLY light source is one narrow shaft of grey daylight through the open entrance flap, falling in a band across the floor; everything else falls into real darkness. A rough wooden table near the entrance, an open wooden crate beside it; inside the crate lid a small scrap of parchment with faded illegible marks. Canvas stained with damp, timber tent poles, hanging herbs. Desaturated mud-brown and ash grey.
+AVOID: hospital beds, modern medical equipment, bright lighting, windows, lamps, labels on bottles, readable text, faces looking at camera, stone walls, white snow, letterbox bars, CGI, illustration.
+```
+
+### P3_FIELD — 남부 전장
+
+```text
+16:9 cinematic establishing plate, low angle one metre above the ground. Photoreal live-action cinema, ARRI Alexa look, fine 35mm grain, black pro-mist, low-key. A southern battlefield just after the fighting, open country with no buildings: churned wet mud, broken spears standing in the ground, scattered round wooden shields, a leather glove pressed into the mud still holding the shape of fingers, three plain wooden two-wheeled carts in the middle distance. Grey smoke drifting low across the field; a pale white disc of sun barely visible through thick overcast. Dead brown grass and distant bare hills. Fine GREY ash flakes in the air (never white snow). Desaturated steel-blue grey and mud brown; the only warm colour is a small dying fire.
+AVOID: buildings, walls, castle, towers, town, gore, bodies in focus, plate armour, banners with readable symbols, green grass, white snow, letterbox bars, CGI, illustration.
+```
+
+### P4_RIDGE — 능선 길
+
+```text
+16:9 cinematic establishing plate, high crane angle. Photoreal live-action cinema, ARRI Alexa look, fine 35mm grain, black pro-mist, low-key. A long muddy road winding along the crest of a barren ridge at the start of dusk, deep hoofprints and cart ruts filled with grey water. On one side the ridge drops steeply over slopes of dead brown grass into a wide valley far below, where a faint grey haze lies. Distant bare hills layered into the cold blue-grey distance. No buildings anywhere. Fine GREY ash flakes in the air (never white snow). Cold, fading light; desaturated blue-grey and brown.
+AVOID: buildings, walls, castle, towers, trees with leaves, green grass, green fields, people, white snow, letterbox bars, CGI, illustration.
+```
+
+### P5_ASH_CAMP — 불탄 수용소 (저녁)
+
+```text
+16:9 cinematic establishing plate, high angle. Photoreal live-action cinema, ARRI Alexa look, fine 35mm grain, black pro-mist, deep low-key. The same refugee camp after the fire, in cold blue-grey evening light: where tents stood, only blackened timber frames remain standing in a flat field of grey ash; low smoke lying flat along the ground; a few embers still glowing orange, the only warm colour in frame. Scorched rope, collapsed canvas, a few survivors sitting slumped far away as small faceless shapes. On the ash in the foreground, one small child's leather shoe lies untouched by the fire. Fine GREY ash in the air (never white snow). The coldest image of the episode.
+AVOID: flames, orange sky, stone buildings, walls, castle, town houses, crying faces, faces looking at camera, white snow, letterbox bars, CGI, illustration.
+```
