@@ -11,7 +11,7 @@
 
 ## 배치 1 — 심장 컷 6개 (시트 락 검증)
 
-> v2 (2026-09-25): 엘라라 묘사를 **시트 기준으로 교체** · CUT13 구도 참조 제거 · 밤/저녁 ENV 시간 구절 교체.
+> v3: 엘라라 묘사 = 시트 기준 · **구도 참조는 CUT38에만** (프리뷰의 얼굴·옛 의상이 옮겨오므로) · 밤/저녁 ENV 교체.
 
 ### CUT13 — 저는 안 세요
 
@@ -52,7 +52,6 @@ AVOID: light brown hair, cloth cap covering the whole head, pale cheeks, dark gl
 - S5_FRONT_YORAN (전경 인물)
 - S5_FRONT_RIVEN (선두 기수)
 - P3_FIELD (공간)
-- S16_EP01_CUT28 (구도)
 
 ```text
 MANDATORY DRAMA IMAGE PREFIX (append to EVERY scene-image prompt, no exceptions):
@@ -87,7 +86,6 @@ AVOID: column crossing the frame, rider looking back, cloak on the lead rider, c
 - S5_FRONT_ELARA
 - S5_FRONT_LIN
 - S6_ASREN_FIRE (불 판정 기준)
-- S16_EP01_CUT37 (구도)
 
 ```text
 MANDATORY DRAMA IMAGE PREFIX (append to EVERY scene-image prompt, no exceptions):
@@ -158,7 +156,6 @@ AVOID: complete bird, bird head, eyes, bat wing, dragon wing, leathery membrane,
 - S5_FRONT_RIVEN
 - S5_FRONT_YORAN
 - P5_ASH_CAMP (공간)
-- S16_EP01_CUT45 (구도)
 
 ```text
 MANDATORY DRAMA IMAGE PREFIX (append to EVERY scene-image prompt, no exceptions):
@@ -191,7 +188,7 @@ AVOID: drawn sword, sword in hand, cloak on the standing man, helmet, eye contac
 
 **참조 이미지:**
 - S6_FIREBIRD_MARK (문양 — 필수)
-- S16_EP01_CUT48 2차 (구도)
+- S5_SHEET_ELARA (의상 — 차콜 겉옷·리넨 속옷)
 
 ```text
 MANDATORY DRAMA IMAGE PREFIX (append to EVERY scene-image prompt, no exceptions):
@@ -255,3 +252,14 @@ AVOID: clean outlined flame, flame icon, emoji, tattoo, ink, large mark, fully v
 3. AVOID에 `light brown hair, cloth cap covering the whole head, pale cheeks, dark glass bottles`
 
 **전역 규칙 (EP02~08 포함):** 인물 묘사 문장은 **시트에서 받아 적는다.** 기획서 문구가 아니라 시트가 기준이다.
+
+## 결과 — CUT13 v2 (시트 + 공간 plate만)
+
+| 안 | 판정 | 메모 |
+|---|---|---|
+| a | ✅ 동일 인물 | **시트와 같은 사람** — 짙은 갈색 쪽머리 · 머리띠형 천(끝이 늘어짐) · 붉은 뺨 · 갈색 눈 · 어깨 찢긴 차콜 겉옷 + 리넨 속옷. 그러나 미디엄 샷 · 도르만 없음 · 조명 평평 · 상자의 짙은 병 남음 |
+| b | ✅ **채택 → `S24_EP01_CUT13`** | 동일 인물 · 3/4 측면 · 얕은 심도 · ARRI 소프트 · 프레임 끝 도르만 수염. 시선이 도르만 쪽으로 약간 향함 (각본: 누운 사람 쪽) → 영상 단계에서 시선 이동으로 연출 |
+
+→ **시트 락 검증 성공.** 원인 두 개(구도 참조 · 시트와 싸우는 글)를 없애자 즉시 잡혔다.
+→ **확정 규칙:** ① 인물 묘사는 시트에서 받아 적는다 ② 얼굴이 보이는 컷에 S16 프리뷰를 구도 참조로 걸지 않는다 (예외: CUT38 — 날개 구도가 핵심이고 얼굴이 작은 측면)
+→ 리븐 · 요란 · 린도 시트를 보고 묘사를 다시 적은 뒤 CUT28 · 37 · 38 · 45 진행.
