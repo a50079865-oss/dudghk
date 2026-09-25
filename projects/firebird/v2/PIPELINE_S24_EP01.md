@@ -220,3 +220,20 @@ Late-medieval continent of Kasran, cold blue-grey evening dusk, fine GREY ash fl
 Photoreal live-action cinema. Not illustration, not anime, not 3D render, not concept painting. ARRI Alexa look: fine 35mm grain, black pro-mist, soft halation, crushed blacks, shallow depth of field with clear foreground/midground/background separation. Practical light sources only. Epic scale but cold: thriller-noir tension with the intimacy of melodrama. 11th–13th century European material culture: mail armour, wool, linen, leather, timber, stone. No plate armour.
 AVOID: clean outlined flame, flame icon, emoji, tattoo, ink, large mark, fully visible mark, glowing, bare shoulder, off-shoulder, cleavage, sexualised framing, face, neon aura, glowing eyes, particle effects, magic sparkles, HUD or runes, glossy MMO rendering, plate armour, breastplate, cuirass, pauldrons, spaulders, riveted plates, spikes, superhero poses, idol-perfect faces, modern hairstyles, clean new clothing, centered symmetrical composition, crowds with visible faces, readable in-image text, random letters, labels, logos, watermarks, modern objects, modern shipping pallets, letterbox bars, black bars, white snow, snowflakes, snow on the ground, natural green vegetation.
 ```
+
+---
+
+## 결과 — CUT13 (a · b)
+
+| 안 | 판정 | 메모 |
+|---|---|---|
+| a | ⚠️ | 마른 눈 · 그을음 · 머릿수건 · 프레임 끝 도르만 수염 ✓ · **공간 plate가 강하게 먹힘**(상자·양피지·약초·입구 빛). 그러나 얼굴이 프레임을 채우지 않음 · 렘브란트/반쪽 어둠 없음 · 의상이 **짙은 모직 숄** · 상자 속 현대식 병(P2에서 옮겨옴) |
+| b | ✅ **채택 후보** | 더 타이트 · 얕은 심도 · ARRI 소프트 · 리넨 옷깃 보임. 조명은 여전히 평평함 |
+
+### 🔴 진단 — 얼굴이 시트가 아니라 S16 프리뷰에서 왔을 가능성
+
+- a · b 두 장의 얼굴이 **S16 CUT13 2차 프리뷰의 얼굴과 거의 동일**하다. 구도 참조(프리뷰)가 구도만이 아니라 **얼굴까지** 복사했을 가능성이 높다.
+- 그렇다면 이번 검증(시트 락이 유지되는가)은 아직 판정 불가 — 시트가 이긴 건지 프리뷰가 이긴 건지 모른다.
+- **A/B 테스트:** 같은 프롬프트로 **구도 참조를 빼고** (엘라라 시트 + P2만) 1장. 얼굴이 바뀌면 프리뷰가 얼굴을 덮고 있었던 것.
+- 결과에 따른 규칙 후보: **얼굴이 크게 나오는 컷에는 구도 참조를 걸지 않는다.** 구도 참조는 인서트·와이드·뒷모습 컷에만.
+- P2의 현대식 병처럼 **공간 plate의 결함도 그대로 옮겨온다** → plate 결함은 프롬프트 AVOID로 막는다 (`dark glass bottles, modern bottles`).
