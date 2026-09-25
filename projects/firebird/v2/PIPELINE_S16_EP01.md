@@ -294,3 +294,103 @@ Photoreal live-action cinema. Not illustration, not anime, not 3D render, not co
 AVOID: labels on vials, writing, emotional crying, eye contact with camera, neon aura, glowing eyes, particle effects, magic sparkles, HUD or runes, glossy MMO rendering, plate armour, spikes, superhero poses, idol-perfect faces, modern hairstyles, clean new clothing, centered symmetrical composition, crowds with visible faces, readable in-image text, random letters, labels, logos, watermarks, modern objects, natural green vegetation.
 ```
 
+
+### 결과 — CUT07~12 1차
+
+| 컷 | 판정 | 메모 |
+|---|---|---|
+| CUT07 | ✅ | 린 어깨 너머 · **회색 천 머리끈** 들어옴 · 엘라라 붕대를 쥔 채 멈춤, 아이를 안 봄 · 바구니. 강이 웅덩이처럼 좁아짐(경미) |
+| CUT08 | ✅ | 망원 압축 천막 층 · 콩 고르는 노파 · 신발 꿰매는 사내 · 아무도 고개 안 듦 · 능선 위 먼지 기둥 |
+| CUT09 | ✅ 조건부 | 등 뒤 · 맨발 · 바구니 · 좌우로 누운 발들 · 끝의 어두운 큰 천막. **정중앙 1점 투시 대칭** → S24에서 카메라를 한쪽으로 비킨다. 왼쪽 흰 통이 플라스틱처럼 보임 |
+| CUT10 | ✅ | 천장 부감 · 짚 위의 줄 · 입구 빛줄기 · 구석 상자 앞 도르만의 등 |
+| CUT11 | ❌ **재생성** | **약병이 7개** — 이 컷의 존재 이유가 "여섯"이다. **손이 3개** (상자 속 손이 다른 사람). 천막 밖·눈 |
+| CUT12 | ✅ | 사이드 투샷 · 도르만 그녀를 봄 · 엘라라 약병만 봄 · 약병 6개 라벨 없음. 엘라라 옷이 **짙은 회색**으로 바뀜(CUT09는 생리넨) → S24 시트 락으로 해결 |
+
+> 교훈: **숫자가 주제인 컷은 숫자를 대문자·괄호로 두 번 박고, 초과 숫자를 AVOID에 넣는다.** EP01은 6 · 19 · 200 · 300이 전부 플롯이다.
+
+## 배치 2 — CUT11 재생성 + CUT13~18
+
+### CUT11 — 여섯 (2차)
+
+```text
+PREVIEW DRAFT 480p — storyboard direction check only (composition & art direction, not identity):
+Obey the project frame (16:9 or 9:16; vertical keeps lower ~20% clean for subtitles). Shallow depth of field with FG/MG/BG separation; ARRI Alexa filmic look (soft, grainy, low-key default). Cinematic photoreal, never CGI/illustration. Characters described by text only (no reference lock at this stage); pick a deliberate non-frontal angle per shot and vary angles between adjacent cuts.
+
+16:9 cinematic film still. Insert close-up at table height inside a dark canvas medical tent. EXACTLY SIX (6) small plain hand-blown glass vials — six, not seven — stand in a single row on a rough wooden table, unlabeled, stoppered with cork and wax, cloudy liquid inside. One old man's weathered right hand, sleeve rolled up, is just setting down the sixth vial at the end of the row. His own left hand, in the same rolled sleeve, reaches deep into an open wooden crate at the left edge of frame and finds it empty. Only these two hands are in frame, both belonging to him. Deep focus falls off behind: the out-of-focus shapes of people lying on the tent floor inside the tent.
+Late-medieval continent of Kasran, overcast sky, cold diffused daylight, fine grey ash drifting slowly like snow, wet churned mud underfoot. Weathered pale stone, dark timber, stained canvas, rough wool and linen, blackened steel — nothing new, nothing clean, everything wet, scorched or frayed. Desaturated ash grey and steel slate with mud-brown shadows; the only warm colour in frame is real firelight. Low-key, real darkness allowed. Beautiful but brutal medieval reality, interrupted only rarely by overwhelming ancient myth.
+Photoreal live-action cinema. Not illustration, not anime, not 3D render, not concept painting. ARRI Alexa look: fine 35mm grain, black pro-mist, soft halation, crushed blacks, shallow depth of field with clear foreground/midground/background separation. Practical light sources only. Epic scale but cold: thriller-noir tension with the intimacy of melodrama. 11th–13th century European material culture: mail armour, wool, linen, leather, timber, stone. No plate armour.
+AVOID: seven vials, eight vials, more than six vials, third hand, extra hands, second person, labels on vials, printed paper, writing, modern bottles, pills, outdoors, snow, neon aura, glowing eyes, particle effects, magic sparkles, HUD or runes, glossy MMO rendering, plate armour, spikes, superhero poses, idol-perfect faces, modern hairstyles, clean new clothing, centered symmetrical composition, crowds with visible faces, readable in-image text, random letters, labels, logos, watermarks, modern objects, natural green vegetation.
+```
+
+### CUT13 — 저는 안 세요
+
+```text
+PREVIEW DRAFT 480p — storyboard direction check only (composition & art direction, not identity):
+Obey the project frame (16:9 or 9:16; vertical keeps lower ~20% clean for subtitles). Shallow depth of field with FG/MG/BG separation; ARRI Alexa filmic look (soft, grainy, low-key default). Cinematic photoreal, never CGI/illustration. Characters described by text only (no reference lock at this stage); pick a deliberate non-frontal angle per shot and vary angles between adjacent cuts.
+
+16:9 cinematic film still. Tight close-up held on a thin young woman of 23 inside a dark canvas medical tent, framed slightly off-center, seen from a low three-quarter side angle. Plain tired face, faint soot on her cheek, grey cloth tied over her hair, worn undyed linen dress. She is not looking at the man speaking to her off-screen; her eyes are turned toward the out-of-focus people lying on the floor beyond frame. Her face is still and closed. In the soft foreground, the blurred shoulder and grey beard of an old man. Her hand is reaching toward the edge of a wooden table where small glass vials stand.
+Late-medieval continent of Kasran, overcast sky, cold diffused daylight, fine grey ash drifting slowly like snow, wet churned mud underfoot. Weathered pale stone, dark timber, stained canvas, rough wool and linen, blackened steel — nothing new, nothing clean, everything wet, scorched or frayed. Desaturated ash grey and steel slate with mud-brown shadows; the only warm colour in frame is real firelight. Low-key, real darkness allowed. Beautiful but brutal medieval reality, interrupted only rarely by overwhelming ancient myth.
+Photoreal live-action cinema. Not illustration, not anime, not 3D render, not concept painting. ARRI Alexa look: fine 35mm grain, black pro-mist, soft halation, crushed blacks, shallow depth of field with clear foreground/midground/background separation. Practical light sources only. Epic scale but cold: thriller-noir tension with the intimacy of melodrama. 11th–13th century European material culture: mail armour, wool, linen, leather, timber, stone. No plate armour.
+AVOID: tears, crying, smiling, eye contact with camera, beauty lighting, makeup, labels on vials, neon aura, glowing eyes, particle effects, magic sparkles, HUD or runes, glossy MMO rendering, plate armour, spikes, superhero poses, idol-perfect faces, modern hairstyles, clean new clothing, centered symmetrical composition, crowds with visible faces, readable in-image text, random letters, labels, logos, watermarks, modern objects, natural green vegetation.
+```
+
+### CUT14 — 말리지 않는다
+
+```text
+PREVIEW DRAFT 480p — storyboard direction check only (composition & art direction, not identity):
+Obey the project frame (16:9 or 9:16; vertical keeps lower ~20% clean for subtitles). Shallow depth of field with FG/MG/BG separation; ARRI Alexa filmic look (soft, grainy, low-key default). Cinematic photoreal, never CGI/illustration. Characters described by text only (no reference lock at this stage); pick a deliberate non-frontal angle per shot and vary angles between adjacent cuts.
+
+16:9 cinematic film still. Over-the-shoulder shot from behind an old man with a short grey beard and a leather apron, out of focus in the foreground. Beyond him, a thin young woman in a worn undyed linen dress and grey head cloth has turned away and walks toward the dark far end of the medical tent, one small glass vial held in her hand at her side. The old man's mouth is slightly open, as if about to speak and stopping. On the rough table in front of him, now only five small vials and an open wooden crate; inside the crate's lid, a small scrap of parchment with a few faded, illegible ink marks.
+Late-medieval continent of Kasran, overcast sky, cold diffused daylight, fine grey ash drifting slowly like snow, wet churned mud underfoot. Weathered pale stone, dark timber, stained canvas, rough wool and linen, blackened steel — nothing new, nothing clean, everything wet, scorched or frayed. Desaturated ash grey and steel slate with mud-brown shadows; the only warm colour in frame is real firelight. Low-key, real darkness allowed. Beautiful but brutal medieval reality, interrupted only rarely by overwhelming ancient myth.
+Photoreal live-action cinema. Not illustration, not anime, not 3D render, not concept painting. ARRI Alexa look: fine 35mm grain, black pro-mist, soft halation, crushed blacks, shallow depth of field with clear foreground/midground/background separation. Practical light sources only. Epic scale but cold: thriller-noir tension with the intimacy of melodrama. 11th–13th century European material culture: mail armour, wool, linen, leather, timber, stone. No plate armour.
+AVOID: readable words, letters, legible writing, labels on vials, eye contact with camera, neon aura, glowing eyes, particle effects, magic sparkles, HUD or runes, glossy MMO rendering, plate armour, spikes, superhero poses, idol-perfect faces, modern hairstyles, clean new clothing, centered symmetrical composition, crowds with visible faces, readable in-image text, random letters, labels, logos, watermarks, modern objects, natural green vegetation.
+```
+
+### CUT15 — 먹인다
+
+```text
+PREVIEW DRAFT 480p — storyboard direction check only (composition & art direction, not identity):
+Obey the project frame (16:9 or 9:16; vertical keeps lower ~20% clean for subtitles). Shallow depth of field with FG/MG/BG separation; ARRI Alexa filmic look (soft, grainy, low-key default). Cinematic photoreal, never CGI/illustration. Characters described by text only (no reference lock at this stage); pick a deliberate non-frontal angle per shot and vary angles between adjacent cuts.
+
+16:9 cinematic film still. Low side angle at floor level inside the dark medical tent. A thin young woman kneels beside an old sick man lying on a straw pallet under a grey blanket. With one hand she supports the back of his neck; with the other she tilts a small glass vial to his lips. His throat moves as he swallows. Her movements are practiced and gentle. Soft grey daylight from the tent entrance falls across them. Foreground: out-of-focus straw and the edge of another pallet.
+Late-medieval continent of Kasran, overcast sky, cold diffused daylight, fine grey ash drifting slowly like snow, wet churned mud underfoot. Weathered pale stone, dark timber, stained canvas, rough wool and linen, blackened steel — nothing new, nothing clean, everything wet, scorched or frayed. Desaturated ash grey and steel slate with mud-brown shadows; the only warm colour in frame is real firelight. Low-key, real darkness allowed. Beautiful but brutal medieval reality, interrupted only rarely by overwhelming ancient myth.
+Photoreal live-action cinema. Not illustration, not anime, not 3D render, not concept painting. ARRI Alexa look: fine 35mm grain, black pro-mist, soft halation, crushed blacks, shallow depth of field with clear foreground/midground/background separation. Practical light sources only. Epic scale but cold: thriller-noir tension with the intimacy of melodrama. 11th–13th century European material culture: mail armour, wool, linen, leather, timber, stone. No plate armour.
+AVOID: modern medicine, syringes, labels, eye contact with camera, sentimental glow, neon aura, glowing eyes, particle effects, magic sparkles, HUD or runes, glossy MMO rendering, plate armour, spikes, superhero poses, idol-perfect faces, modern hairstyles, clean new clothing, centered symmetrical composition, crowds with visible faces, readable in-image text, random letters, labels, logos, watermarks, modern objects, natural green vegetation.
+```
+
+### CUT16 — 나 안 아파
+
+```text
+PREVIEW DRAFT 480p — storyboard direction check only (composition & art direction, not identity):
+Obey the project frame (16:9 or 9:16; vertical keeps lower ~20% clean for subtitles). Shallow depth of field with FG/MG/BG separation; ARRI Alexa filmic look (soft, grainy, low-key default). Cinematic photoreal, never CGI/illustration. Characters described by text only (no reference lock at this stage); pick a deliberate non-frontal angle per shot and vary angles between adjacent cuts.
+
+16:9 cinematic film still. Low angle from the height of a six-year-old girl standing on the tent floor, looking up at a thin young woman who kneels in front of her and rests one hand on the child's messy dark hair. The child wears a torn grey linen tunic with a rope belt, her hair tied with a strip of grey cloth, bare feet; she is seen from behind at the edge of frame. The young woman's face, in grey cloth head scarf, gives a small tight reassuring look while her other hand presses unconsciously against her own ribs. An empty glass vial lies on the floor between them.
+Late-medieval continent of Kasran, overcast sky, cold diffused daylight, fine grey ash drifting slowly like snow, wet churned mud underfoot. Weathered pale stone, dark timber, stained canvas, rough wool and linen, blackened steel — nothing new, nothing clean, everything wet, scorched or frayed. Desaturated ash grey and steel slate with mud-brown shadows; the only warm colour in frame is real firelight. Low-key, real darkness allowed. Beautiful but brutal medieval reality, interrupted only rarely by overwhelming ancient myth.
+Photoreal live-action cinema. Not illustration, not anime, not 3D render, not concept painting. ARRI Alexa look: fine 35mm grain, black pro-mist, soft halation, crushed blacks, shallow depth of field with clear foreground/midground/background separation. Practical light sources only. Epic scale but cold: thriller-noir tension with the intimacy of melodrama. 11th–13th century European material culture: mail armour, wool, linen, leather, timber, stone. No plate armour.
+AVOID: smiling broadly, cute pose, tears, eye contact with camera, labels, neon aura, glowing eyes, particle effects, magic sparkles, HUD or runes, glossy MMO rendering, plate armour, spikes, superhero poses, idol-perfect faces, modern hairstyles, clean new clothing, centered symmetrical composition, crowds with visible faces, readable in-image text, random letters, labels, logos, watermarks, modern objects, natural green vegetation.
+```
+
+### CUT17 — 다른 세계
+
+```text
+PREVIEW DRAFT 480p — storyboard direction check only (composition & art direction, not identity):
+Obey the project frame (16:9 or 9:16; vertical keeps lower ~20% clean for subtitles). Shallow depth of field with FG/MG/BG separation; ARRI Alexa filmic look (soft, grainy, low-key default). Cinematic photoreal, never CGI/illustration. Characters described by text only (no reference lock at this stage); pick a deliberate non-frontal angle per shot and vary angles between adjacent cuts.
+
+16:9 cinematic film still. Low wide shot one metre above churned mud on a southern battlefield just after the fighting. Grey smoke drifts across the ground. Broken spears stand stuck in the mud; a fallen horse and scattered round wooden shields lie in the foreground and midground. No snow. In the far background, through the smoke, a line of northern soldiers in blackened, undecorated mail hauberks and dark cloaks re-forms its ranks. In the midground, seen from behind, a man stops his horse in the mud and is dismounting.
+Late-medieval continent of Kasran, overcast sky, cold diffused daylight, fine grey ash drifting slowly like snow, wet churned mud underfoot. Weathered pale stone, dark timber, stained canvas, rough wool and linen, blackened steel — nothing new, nothing clean, everything wet, scorched or frayed. Desaturated ash grey and steel slate with mud-brown shadows; the only warm colour in frame is real firelight. Low-key, real darkness allowed. Beautiful but brutal medieval reality, interrupted only rarely by overwhelming ancient myth.
+Photoreal live-action cinema. Not illustration, not anime, not 3D render, not concept painting. ARRI Alexa look: fine 35mm grain, black pro-mist, soft halation, crushed blacks, shallow depth of field with clear foreground/midground/background separation. Practical light sources only. Epic scale but cold: thriller-noir tension with the intimacy of melodrama. 11th–13th century European material culture: mail armour, wool, linen, leather, timber, stone. No plate armour.
+AVOID: gore, dismembered bodies, plate armour, shining armour, banners with readable symbols, snow, green grass, crowds with visible faces, neon aura, glowing eyes, particle effects, magic sparkles, HUD or runes, glossy MMO rendering, plate armour, spikes, superhero poses, idol-perfect faces, modern hairstyles, clean new clothing, centered symmetrical composition, crowds with visible faces, readable in-image text, random letters, labels, logos, watermarks, modern objects, natural green vegetation.
+```
+
+### CUT18 — 리븐
+
+```text
+PREVIEW DRAFT 480p — storyboard direction check only (composition & art direction, not identity):
+Obey the project frame (16:9 or 9:16; vertical keeps lower ~20% clean for subtitles). Shallow depth of field with FG/MG/BG separation; ARRI Alexa filmic look (soft, grainy, low-key default). Cinematic photoreal, never CGI/illustration. Characters described by text only (no reference lock at this stage); pick a deliberate non-frontal angle per shot and vary angles between adjacent cuts.
+
+16:9 cinematic film still. Low angle close-up of a man of 27 who has just dismounted on a smoky battlefield. Short black hair soaked with sweat, a lean hard face, dried blood caked on the left side of his face that he has not wiped away. He wears a blackened, undecorated mail hauberk over a dark gambeson, mail coif pushed down around his neck, a black wool cloak. His hand is hanging a plain steel nasal helmet on his saddle beside him. He does not look at the camera; only his eyes move, scanning the field as if counting. Behind him, out of focus, smoke and the dark shapes of soldiers.
+Late-medieval continent of Kasran, overcast sky, cold diffused daylight, fine grey ash drifting slowly like snow, wet churned mud underfoot. Weathered pale stone, dark timber, stained canvas, rough wool and linen, blackened steel — nothing new, nothing clean, everything wet, scorched or frayed. Desaturated ash grey and steel slate with mud-brown shadows; the only warm colour in frame is real firelight. Low-key, real darkness allowed. Beautiful but brutal medieval reality, interrupted only rarely by overwhelming ancient myth.
+Photoreal live-action cinema. Not illustration, not anime, not 3D render, not concept painting. ARRI Alexa look: fine 35mm grain, black pro-mist, soft halation, crushed blacks, shallow depth of field with clear foreground/midground/background separation. Practical light sources only. Epic scale but cold: thriller-noir tension with the intimacy of melodrama. 11th–13th century European material culture: mail armour, wool, linen, leather, timber, stone. No plate armour.
+AVOID: prince crown, golden trim, plate armour, pauldrons, engraved armour, helmet on head, heroic pose, clean face, eye contact with camera, idol-perfect face, neon aura, glowing eyes, particle effects, magic sparkles, HUD or runes, glossy MMO rendering, plate armour, spikes, superhero poses, idol-perfect faces, modern hairstyles, clean new clothing, centered symmetrical composition, crowds with visible faces, readable in-image text, random letters, labels, logos, watermarks, modern objects, natural green vegetation.
+```
+
