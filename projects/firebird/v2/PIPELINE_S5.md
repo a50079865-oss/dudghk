@@ -1,0 +1,72 @@
+# 5단계 결과물: 캐릭터 마스터 시트
+
+> 생성: 사용자 직접 (매그니픽 웹 · Google Nano Banana 2 · 크레딧 0)
+> 검수: 에이전트 (채팅 첨부 이미지로 확인)
+
+## 확정 시트
+
+| 저장명 | 인물 · 상태 | 판정 | 락 소스 |
+|---|---|---|---|
+| `S45_ELARA_C` | 엘라라 콘셉트 (C안 — 어린 쪽) | ✅ | 시트 생성 참조용 |
+| `S45_RIVEN_C` | 리븐 콘셉트 (C안) | ✅ | 시트 생성 참조용 |
+| `S5_SHEET_ELARA` | 엘라라 마스터 시트 | ✅ 확정 | **정면(FRONT) 패널** |
+| `S5_SHEET_RIVEN` | 리븐 마스터 시트 — 평상 | ✅ 확정 | **정면(FRONT) 패널** |
+| `S5_SHEET_RIVEN_BATTLE` | 리븐 마스터 시트 — 전투 | ✅ 확정 (투구 제외) | **정면(FRONT) 패널** |
+| `S5_SHEET_BRYS` | 브리스 (24) — 조연 5패널 | ✅ 확정 | **정면(FRONT) 패널** |
+| `S5_SHEET_YORAN` | 요란 (19) — 조연 5패널 | ✅ 확정 | **정면(FRONT) 패널** |
+| `S5_SHEET_DORMAN` | 도르만 (노인) — 조연 3패널 | ✅ 확정 | **정면(FRONT) 패널** |
+| `S5_SHEET_LIN` | 린 (6) — 조연 3패널 | ✅ 확정 | 얼굴 = **정면**, 의상·체형 = **전신** (예외) |
+
+> **락 규칙 (master-sheet-v2):** 영상·씬 생성의 캐릭터 참조는 **시트 통째가 아니라 정면 1컷.** 멀티패널보다 생성 전이가 안정적이다.
+
+## 알려진 결함 (락 소스에 영향 없음)
+
+| 시트 | 결함 | 처리 |
+|---|---|---|
+| 엘라라 | 표정 1·3번 거의 동일 / 소매가 전신 패널에서만 걷힘 | 정면 패널만 락 소스로 쓰므로 무시 |
+| 엘라라 | 전신 패널 **맨발** | 피난민 수용소에서 타당 — **유지** |
+| 엘라라 | 표정 2번에 **누운 사람**이 들어옴 (규칙상 제외 대상) | **유지** — 그녀가 무엇을 하는 사람인지 한 컷에 있다 |
+| 리븐 평상 | 표정 1번에 턱의 피 누락 | 정면 패널만 락 소스로 쓰므로 무시 |
+| 리븐 전투 | **투구 형상 실패** (코가리개 없음, 점토 질감) | **참조 금지.** 투구 규칙으로 처리 (`PIPELINE_S4` 참조) |
+| 리븐 전투 | 장비 행에 "내린 코이프" 누락, 장화 중복 | 평상 시트가 코이프 내린 상태를 대신한다 |
+| 브리스 | 표정 3개 요청 → **4개**, 표정 아래 **영문 캡션 인쇄** (헤더 전용 규칙 위반) | 정면 패널에 글자 없음 → 무시. 캡션 있는 패널은 참조 금지 |
+| 요란 | 머리색 **갈색** (요청: 어두운 금발) | **갈색으로 캐논 갱신** — 시트가 기준. 이후 프롬프트에서 "dark blond" 삭제 |
+| 도르만 | 3/4 패널이 위아래 두 컷으로 쪼개짐 | 정면 패널만 락 소스 → 무시 |
+| 린 | 정면 패널이 **쪼그려 앉아 올려다보는 자세** / "3/4" 패널이 실제로는 **옆얼굴** | 얼굴은 정면, 의상·키는 전신 패널로 **나눠 락**. 옆얼굴은 EP01 CUT29류 측면 컷 참조로 오히려 유용 |
+
+## 확인된 것
+
+- **한글 패널 헤더 렌더링 — 3장 모두 무결.** 시트류에 GPT 2 불필요 → 크레딧 절약
+- **얼굴 일관성 — 콘셉트 → 시트 → 전투 시트까지 동일 인물 유지**
+- **갑옷 고증 — 11~13세기 사슬 시대 정확** (코이프 끈 조임 · 기승용 하버크 트임 · 갬비슨 · 쇼스 · 원반 폼멜)
+- **설계한 소품이 전부 들어왔다:** 요란 = 리븐의 큰 검은 망토(EP01 CUT26) + 오른쪽 정강이 부목 · 회색 붕대 · 항상 앉은 자세 / 린 = **엘라라 머릿수건과 같은 회색 천**으로 묶은 머리 / 도르만 = 가죽 앞치마 · 끈 허리띠 · 작은 약병
+- **린의 약병·끈 허리띠·맨발** — 엘라라 전신 패널의 맨발과 짝이 맞는다 (같은 수용소)
+
+## 다음
+
+- ~~6단계 세계관 시트~~ → `PIPELINE_S6.md`
+- ~~조연 시트 EP01분 (브리스 · 요란 · 도르만 · 린)~~ ✅
+- **S16 — EP01 48컷 480p 프리뷰**
+- 후순위 조연: 세라펠 · 할바르드 (EP02 이전, "확실히 나이 든" 규칙)
+
+
+## 의상 기준 정정 (2026-09-25, S24에서 발견)
+
+**엘라라의 실제 시트 의상**이 기준이다 — 이후 모든 프롬프트는 이 문장을 쓴다:
+> dark brown hair gathered in a loose low bun with loose strands, a dark charcoal-grey cloth tied around her head as a headband with the ends hanging at the back, flushed wind-reddened cheeks, brown eyes, a dark charcoal wool overdress torn at the shoulder worn over an undyed linen chemise, barefoot
+
+S16 프리뷰 전체가 *"grey cloth over her hair, worn undyed linen dress"* 로 생성됨 → 프리뷰의 엘라라 의상은 **구도 참고용일 뿐, 의상 기준이 아니다.**
+
+## 인물 묘사 기준 — 시트에서 받아 적은 문장 (2026-09-25)
+
+> 모든 씬 프롬프트는 아래 문장을 쓴다. 기획서 문구가 시트와 다르면 **시트가 이긴다.**
+
+| 인물 | 시트 기준 문장 | 주의 |
+|---|---|---|
+| **리븐** | short dark near-black hair, damp, falling in a short fringe, dark stubble, grey-blue eyes, a fresh cut on the left side of his jaw with dried blood; black **hooded** wool cloak, mail hauberk over a dark gambeson, brown leather belt, dark trousers, muddy boots | **수염이 있다(짧은 수염)** — "beard" 금지어로 쓰면 안 됨. 망토에 **후드가 있다** |
+| **요란** | messy light-brown hair falling over his forehead, a thin faint moustache, pale face, blue eyes, a quilted undyed gambeson stained with blood, khaki trousers | 시트에 이미 **부목**이 있음 → CUT25~28은 부목 없음, CUT44 이후만 부목 |
+| **린** | a six-year-old **East Asian** girl, dark brown hair in a low ponytail tied with a knotted strip of dark charcoal-grey cloth, soot-smudged face, dark eyes, an oversized undyed grey-beige linen tunic with a frayed hem and a rope belt, barefoot | S16 프리뷰(CUT47 금발 등) 전부 시트와 다름 |
+| **브리스** | short light-brown hair, grey-blue eyes, broad plain face, a grey wool cloak with a high collar fastened at the chest, mail hauberk, padded gambeson sleeves, dark trousers, boots | |
+| **도르만** | sixty, thinning short grey hair, short grey-white beard, deep-set tired eyes, an undyed linen shirt with rolled sleeves, a brown leather bib apron tied with rope and a cloth pouch, linen trousers, worn leather shoes | |
+
+**S16에서 제가 넣은 잘못된 금지어:** CUT27의 `hood`(리븐 망토는 후드형), CUT28의 `beard`(리븐은 짧은 수염). S24에서 정정.

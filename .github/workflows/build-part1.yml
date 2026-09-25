@@ -1,0 +1,164 @@
+name: Build EP1 Part 1
+
+# build/part1 브랜치에 푸시하면 돈다. 기본 브랜치를 건드리지 않으려고 push 트리거를 쓴다.
+on:
+  push:
+    branches: [build/part1]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: ffmpeg 준비
+        run: pip install imageio-ffmpeg pillow
+
+      - name: 주소 목록 준비
+        working-directory: projects/firebird/edit
+        env:
+          MEDIA_URLS: ${{ secrets.MEDIA_URLS }}
+          MEDIA_URLS_AUDIO: ${{ secrets.MEDIA_URLS_AUDIO }}
+          MEDIA_URLS_PATCH: ${{ secrets.MEDIA_URLS_PATCH }}
+          MEDIA_KEY: ${{ secrets.MEDIA_KEY }}
+        run: |
+          if [ -f urls.json ]; then
+            echo "저장소의 urls.json 을 쓴다"
+          elif [ -n "$MEDIA_URLS" ]; then
+            printf '%s' "$MEDIA_URLS" > urls.json
+            echo "시크릿에서 urls.json 을 만들었다"
+          else
+            echo "::error::urls.json 도 MEDIA_URLS 시크릿도 없다"; exit 1
+          fi
+          # 오디오(스코어·앰비언스)는 별도 시크릿으로 합친다
+          if [ -n "$MEDIA_URLS_AUDIO" ]; then
+            printf '%s' "$MEDIA_URLS_AUDIO" > urls_audio.json
+            python3 -c "import json;a=json.load(open('urls.json'));b=json.load(open('urls_audio.json'));a.update(b);json.dump(a,open('urls.json','w'));print(f'오디오 {len(b)}건 합침')"
+          else
+            echo "::warning::MEDIA_URLS_AUDIO 가 없다 — 스코어와 앰비언스 없이 빌드한다"
+          fi
+          # 소재를 고칠 때마다 시크릿 전체를 다시 붙이지 않아도 되게,
+          # 덮어쓸 항목만 담은 작은 시크릿을 맨 마지막에 합친다.
+          # 저장소에 암호문으로 들어 있는 덮어쓰기 목록. 열쇠는 짧은 시크릿 하나뿐이고,
+          # 주소를 고칠 때마다 긴 JSON 을 다시 붙여넣지 않아도 된다.
+          if [ -n "$MEDIA_KEY" ] && [ -f urls_patch.enc ]; then
+            openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 \
+              -in urls_patch.enc -out urls_patch_dec.json -pass "pass:$MEDIA_KEY" \
+              || { echo "::error::urls_patch.enc 복호화 실패 — MEDIA_KEY 가 맞는지 확인할 것"; exit 1; }
+            python3 -c "import json;a=json.load(open('urls.json'));b=json.load(open('urls_patch_dec.json'));a.update(b);json.dump(a,open('urls.json','w'));print(f'암호문에서 덮어쓰기 {len(b)}건 적용')"
+            rm -f urls_patch_dec.json
+          fi
+          if [ -n "$MEDIA_URLS_PATCH" ]; then
+            printf '%s' "$MEDIA_URLS_PATCH" > urls_patch.json
+            python3 -c "import json;a=json.load(open('urls.json'));b=json.load(open('urls_patch.json'));a.update(b);json.dump(a,open('urls.json','w'));print(f'덮어쓰기 {len(b)}건 적용: '+', '.join(sorted(b)))"
+          fi
+          python3 -c "import json;d=json.load(open('urls.json'));print(f'주소 {len(d)}건')"
+          # 매니페스트가 요구하는 컷이 주소 목록에 다 있는지 여기서 본다.
+          # 없으면 3분 렌더한 뒤 검은 화면으로 알게 되는 대신 지금 멈춘다.
+          python3 - <<'CHECK'
+          import json, sys, re
+          from pathlib import Path
+          urls = json.load(open("urls.json"))
+          man = json.load(open("manifest.json"))
+          have = {re.sub(r"\.(mp4|png|jpg|jpeg|webp|mov)$", "", k) for k in urls}
+          # source 는 대개 생성 식별자이지 저장소 경로가 아니다. 저장소가 직접 들고
+          # 있는 파일(엔드카드)과 다른 컷 소재를 빌려 쓰는 컷만 제외한다.
+          need = set()
+          for e in man["timeline"]:
+              if e.get("media_from"):
+                  continue
+              src = e.get("source", "")
+              if src and (Path(__file__).parent / src).exists():
+                  continue
+              need.add(e["cut"])
+          missing = sorted(need - have)
+          print(f"주소 키 {len(have)}개 · 매니페스트 컷 {len(need)}개")
+          if missing:
+              print(f"::error::주소 목록에 없는 컷 {len(missing)}건: {', '.join(missing)}")
+              print("MEDIA_URLS_PATCH 시크릿이 갱신되지 않았을 가능성이 높다.")
+              sys.exit(1)
+          print("모든 컷의 주소가 있다")
+          CHECK
+
+      - name: 소스 다운로드
+        working-directory: projects/firebird/edit
+        run: python3 fetch_media.py --urls urls.json --out ./media
+
+      - name: 빌드
+        working-directory: projects/firebird/edit
+        run: |
+          python3 build_part1.py --media ./media --out part1.mp4 \
+            --subs ../v2026-09-19/subtitles/EP01_part1.ko.srt
+          ls -la part1.mp4
+
+      - name: 자막 구운 판도 하나
+        working-directory: projects/firebird/edit
+        continue-on-error: true
+        run: |
+          python3 build_part1.py --media ./media --out part1_burned.mp4 --burn-subs \
+            --subs ../v2026-09-19/subtitles/EP01_part1.ko.srt
+
+      - name: 휴대폰용 경량 판
+        working-directory: projects/firebird/edit
+        run: |
+          FF=$(python3 -c "import imageio_ffmpeg;print(imageio_ffmpeg.get_ffmpeg_exe())")
+          "$FF" -y -i part1_burned.mp4 -vf scale=854:480 \
+            -c:v libx264 -preset medium -crf 30 -profile:v main \
+            -c:a aac -b:a 96k -movflags +faststart part1_preview.mp4
+          ls -lh part1_preview.mp4
+
+      # 빌드 직후 바로 해부한다 — 미디어가 아직 러너에 있으므로
+      # 완성본뿐 아니라 베드·스코어 원본까지 잴 수 있다.
+      - name: 검수
+        run: |
+          python3 projects/firebird/edit/qc_part1.py \
+            --film projects/firebird/edit/part1.mp4 \
+            --stems projects/firebird/edit/media \
+            --out projects/firebird/edit/qc
+
+      - name: 검수 결과 커밋
+        run: |
+          # 앞선 실행이 늦게 끝나면서 새 결과를 덮어쓰는 일이 있었다.
+          # 지금 빌드한 커밋이 build/part1 의 현재 끝이 아니면 올리지 않는다.
+          git fetch -q origin build/part1
+          TIP=$(git rev-parse origin/build/part1)
+          if [ "$TIP" != "${{ github.sha }}" ]; then
+            echo "::warning::이 실행(${{ github.sha }})은 build/part1 의 끝($TIP)이 아니다 — 검수 결과를 올리지 않는다"
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B qc/results
+          git add -f projects/firebird/edit/qc
+          git commit -m "QC: 실행 ${{ github.run_id }} 측정 결과" || echo "변경 없음"
+          git push -f origin qc/results
+
+      # 파일별로 나눠 올린다 — 하나 받으려고 전체를 받지 않아도 되게.
+      - uses: actions/upload-artifact@v4
+        with:
+          name: part1-preview-경량
+          path: projects/firebird/edit/part1_preview.mp4
+          retention-days: 14
+          if-no-files-found: error
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: part1-자막트랙
+          path: projects/firebird/edit/part1.mp4
+          retention-days: 14
+          if-no-files-found: error
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: part1-자막구움
+          path: projects/firebird/edit/part1_burned.mp4
+          retention-days: 14
+          if-no-files-found: error
