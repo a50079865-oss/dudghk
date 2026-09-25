@@ -881,3 +881,13 @@ Photoreal live-action cinema. Not illustration, not anime, not 3D render, not co
 AVOID: glowing mark, tattoo, ink, bright light, magic sparkles, sexualised framing, cleavage, gore, snow, neon aura, glowing eyes, particle effects, magic sparkles, HUD or runes, glossy MMO rendering, plate armour, breastplate, cuirass, pauldrons, spaulders, riveted plates, spikes, superhero poses, idol-perfect faces, modern hairstyles, clean new clothing, centered symmetrical composition, crowds with visible faces, readable in-image text, random letters, labels, logos, watermarks, modern objects, modern shipping pallets, white snow, snowflakes, snow on the ground, natural green vegetation.
 ```
 
+
+### 결과 — 배치 6 1차 (CUT40~44)
+
+| 컷 | 판정 | 메모 |
+|---|---|---|
+| CUT40 | ✅ | 타이트 클로즈업 · 투구·망토 없음 · 닦지 않은 피 · **눈동자에 작은 불빛** · 전경의 회색 망토 자락(브리스). 모델이 레터박스(상하 검은 띠)를 넣음 → S24에서 AVOID `letterbox bars` |
+| CUT41 | ✅ 조건부 | 능선의 대열 · **혼자 비탈을 내려가는 기수** · 아래 골짜기에 연기 나는 수용소. 기수가 **투구를 쓴 것처럼** 보임, 뒤따르는 기병이 아직 없음 → S24 |
+| CUT42 | ✅ | **주황 → 회청 톤 전환 성공.** 검게 탄 천막 뼈대 · 재 위에 주저앉은 생존자 · 꺼져 가는 불씨 · 오른쪽 위에서 들어오는 기병. 돌 건물 0 (`ENV_CAMP` 효과) |
+| CUT43 | ✅ 조건부 | 망토·투구 없는 리븐의 등 · 고개만 드는 생존자. **기병이 그의 뒤가 아니라 앞에서 마주 봄** · 정중앙 대칭 → S24 |
+| CUT44 | ✅ | 리븐의 검은 망토에 싸인 요란 · **나무 두 조각 + 회색 천 부목** · 가장자리의 진흙 장화를 올려다보는 눈. 정수리 부감이 아니라 옆 부감 (경미) |
