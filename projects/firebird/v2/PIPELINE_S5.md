@@ -56,3 +56,17 @@
 > dark brown hair gathered in a loose low bun with loose strands, a dark charcoal-grey cloth tied around her head as a headband with the ends hanging at the back, flushed wind-reddened cheeks, brown eyes, a dark charcoal wool overdress torn at the shoulder worn over an undyed linen chemise, barefoot
 
 S16 프리뷰 전체가 *"grey cloth over her hair, worn undyed linen dress"* 로 생성됨 → 프리뷰의 엘라라 의상은 **구도 참고용일 뿐, 의상 기준이 아니다.**
+
+## 인물 묘사 기준 — 시트에서 받아 적은 문장 (2026-09-25)
+
+> 모든 씬 프롬프트는 아래 문장을 쓴다. 기획서 문구가 시트와 다르면 **시트가 이긴다.**
+
+| 인물 | 시트 기준 문장 | 주의 |
+|---|---|---|
+| **리븐** | short dark near-black hair, damp, falling in a short fringe, dark stubble, grey-blue eyes, a fresh cut on the left side of his jaw with dried blood; black **hooded** wool cloak, mail hauberk over a dark gambeson, brown leather belt, dark trousers, muddy boots | **수염이 있다(짧은 수염)** — "beard" 금지어로 쓰면 안 됨. 망토에 **후드가 있다** |
+| **요란** | messy light-brown hair falling over his forehead, a thin faint moustache, pale face, blue eyes, a quilted undyed gambeson stained with blood, khaki trousers | 시트에 이미 **부목**이 있음 → CUT25~28은 부목 없음, CUT44 이후만 부목 |
+| **린** | a six-year-old **East Asian** girl, dark brown hair in a low ponytail tied with a knotted strip of dark charcoal-grey cloth, soot-smudged face, dark eyes, an oversized undyed grey-beige linen tunic with a frayed hem and a rope belt, barefoot | S16 프리뷰(CUT47 금발 등) 전부 시트와 다름 |
+| **브리스** | short light-brown hair, grey-blue eyes, broad plain face, a grey wool cloak with a high collar fastened at the chest, mail hauberk, padded gambeson sleeves, dark trousers, boots | |
+| **도르만** | sixty, thinning short grey hair, short grey-white beard, deep-set tired eyes, an undyed linen shirt with rolled sleeves, a brown leather bib apron tied with rope and a cloth pouch, linen trousers, worn leather shoes | |
+
+**S16에서 제가 넣은 잘못된 금지어:** CUT27의 `hood`(리븐 망토는 후드형), CUT28의 `beard`(리븐은 짧은 수염). S24에서 정정.
