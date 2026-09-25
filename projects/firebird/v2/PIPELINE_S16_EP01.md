@@ -130,6 +130,19 @@ AVOID: plate armour, shining knights, banners with readable symbols, glossy MMO 
 
 ## 배치 1 — CUT01~12 (프롤로그 + 수용소 · 의무 천막)
 
+### 결과 — CUT01~06 1차
+
+| 컷 | 판정 | 메모 |
+|---|---|---|
+| CUT01 | ✅ | 지면 1m · 재 평원 · 기운 기둥 · 안개 속 네 그림자. 네 인물의 옷이 **현대 롱코트**처럼 보임 → S24에서 망토로 교정 |
+| CUT02 | ⚠️ 재생성 | 구도·금빛 전설 조명 ✓. ① **깃발 색이 캐논과 다름** — 프롬프트 오류(제 책임).  의 Flag 항목으로 교정 ② 문양이 **벡터 클립아트**처럼 인쇄된 느낌 → 울 직물·손자수로 |
+| CUT03 | ✅ | 잘린 깃털 날개 · 빛기둥 · 뒷모습만의 무릎 꿇은 군중. 중앙 통로 대칭은 「공식 전설」 컷이라 허용 |
+| CUT04 | ❌ 재생성 | **왕관이 아니라 반지/팔찌**로 읽힘 — 뾰족한 테가 없음. 금 간 것·녹은 것은 ✓ |
+| CUT05 | ✅ | 하이앵글 · 빼곡한 천막 · 빨랫줄 · 강 · 강가의 여자 뒷모습. 빨래가 붕대보다 옷에 가까움, 먼 강둑에 약한 녹색 → S24에서 교정 |
+| CUT06 | ✅ | 갈라진 손 · 번지는 핏물 · 강돌 · 회색 천·리넨 소매. 아이 그림자 누락(경미) |
+
+> 캐논 깃발 (고정): 스켈드리아 = midnight-blue + silver wolf · 드라에보르 = oxblood + black dragon · 리사라 = deep muted teal + silver sea-serpent · 아우레비아 = deep crimson + aged-gold Firebird
+
 ### CUT01 — 죽은 세계
 
 ```text
@@ -148,10 +161,10 @@ AVOID: ruins city, skeletons, bones, dramatic sunset, neon aura, glowing eyes, p
 PREVIEW DRAFT 480p — storyboard direction check only (composition & art direction, not identity):
 Obey the project frame (16:9 or 9:16; vertical keeps lower ~20% clean for subtitles). Shallow depth of field with FG/MG/BG separation; ARRI Alexa filmic look (soft, grainy, low-key default). Cinematic photoreal, never CGI/illustration. Characters described by text only (no reference lock at this stage); pick a deliberate non-frontal angle per shot and vary angles between adjacent cuts.
 
-16:9 cinematic film still. Low angle looking up from the foot of four tall wooden banner poles planted in grey ash, off-center composition with the poles receding diagonally. Four large cloth banners unfurl in the wind, each with a simple embroidered emblem and no text: a silver wolf on dark grey, a black dragon on dull red, a silver sea-serpent on deep blue, and a golden firebird with fully spread symmetrical wings on black. Above them the sky breaks open with warm golden light, exaggerated like a painted legend. Foreground: out-of-focus ash-covered hand gripping the nearest pole.
+16:9 cinematic film still. Low angle looking up from the foot of four tall wooden banner poles planted in grey ash, off-center composition with the poles receding diagonally. Four large heavy WOOL banners, hand-woven and hand-embroidered, matte and slightly frayed, unfurl in the wind, each with one simple emblem and no text: a restrained silver wolf on midnight-blue wool; a black dragon on oxblood wool; a silver sea-serpent on deep muted teal wool; an aged-gold firebird with fully spread symmetrical wings on deep crimson wool. The embroidery shows real thread texture and uneven stitching. Above them the sky breaks open with warm golden light, exaggerated like a painted legend. Foreground: out-of-focus ash-covered hand gripping the nearest pole.
 Late-medieval continent of Kasran, a thousand years ago. This shot is the official legend as the kingdoms tell it: the light is exaggerated warm gold, heroic and too beautiful, like a church mural come to life — yet still photographed as real, with real ash, real cloth, real weather.
 Photoreal live-action cinema. Not illustration, not anime, not 3D render, not concept painting. ARRI Alexa look: fine 35mm grain, black pro-mist, soft halation, crushed blacks, shallow depth of field with clear foreground/midground/background separation. Practical light sources only. Epic scale but cold: thriller-noir tension with the intimacy of melodrama. 11th–13th century European material culture: mail armour, wool, linen, leather, timber, stone. No plate armour.
-AVOID: letters on banners, mottos, modern flags, neon aura, glowing eyes, particle effects, magic sparkles, HUD or runes, glossy MMO rendering, plate armour, spikes, superhero poses, idol-perfect faces, modern hairstyles, clean new clothing, centered symmetrical composition, crowds with visible faces, readable in-image text, random letters, labels, logos, watermarks, modern objects, natural green vegetation.
+AVOID: letters on banners, mottos, modern flags, printed vector graphics, clip-art emblems, glossy satin, saturated colours, neon aura, glowing eyes, particle effects, magic sparkles, HUD or runes, glossy MMO rendering, plate armour, spikes, superhero poses, idol-perfect faces, modern hairstyles, clean new clothing, centered symmetrical composition, crowds with visible faces, readable in-image text, random letters, labels, logos, watermarks, modern objects, natural green vegetation.
 ```
 
 ### CUT03 — 내려온 것
@@ -172,10 +185,10 @@ AVOID: complete bird, bird head, eyes, phoenix, fire bird made of flames, angel,
 PREVIEW DRAFT 480p — storyboard direction check only (composition & art direction, not identity):
 Obey the project frame (16:9 or 9:16; vertical keeps lower ~20% clean for subtitles). Shallow depth of field with FG/MG/BG separation; ARRI Alexa filmic look (soft, grainy, low-key default). Cinematic photoreal, never CGI/illustration. Characters described by text only (no reference lock at this stage); pick a deliberate non-frontal angle per shot and vary angles between adjacent cuts.
 
-16:9 cinematic film still. Macro insert close-up at ground level. A single gold crown lies half-sunk in grey ash; it is cracked, and one side has melted and run like wax. Fine ash keeps settling on it, almost covering it, only a cracked rim of gold still showing. Cold overcast light, the gold dull and desaturated. Background: a flat blur of grey ash plain.
+16:9 cinematic film still. Macro insert close-up at ground level. A heavy medieval king's crown — a broad gold circlet large enough for a man's head, with tall pointed fleur-like tines rising from its rim — lies tilted, half-sunk in grey ash. It is cracked through the band, and one side with two of its tines has melted and run like wax. Fine ash keeps settling on it, filling its inside, almost covering it. Cold overcast light, the gold dull and desaturated. Background: a flat blur of grey ash plain.
 Late-medieval continent of Kasran, overcast sky, cold diffused daylight, fine grey ash drifting slowly like snow, wet churned mud underfoot. Weathered pale stone, dark timber, stained canvas, rough wool and linen, blackened steel — nothing new, nothing clean, everything wet, scorched or frayed. Desaturated ash grey and steel slate with mud-brown shadows; the only warm colour in frame is real firelight. Low-key, real darkness allowed. Beautiful but brutal medieval reality, interrupted only rarely by overwhelming ancient myth.
 Photoreal live-action cinema. Not illustration, not anime, not 3D render, not concept painting. ARRI Alexa look: fine 35mm grain, black pro-mist, soft halation, crushed blacks, shallow depth of field with clear foreground/midground/background separation. Practical light sources only. Epic scale but cold: thriller-noir tension with the intimacy of melodrama. 11th–13th century European material culture: mail armour, wool, linen, leather, timber, stone. No plate armour.
-AVOID: jewels sparkling, shiny new gold, glowing crown, neon aura, glowing eyes, particle effects, magic sparkles, HUD or runes, glossy MMO rendering, plate armour, spikes, superhero poses, idol-perfect faces, modern hairstyles, clean new clothing, centered symmetrical composition, crowds with visible faces, readable in-image text, random letters, labels, logos, watermarks, modern objects, natural green vegetation.
+AVOID: plain ring, bracelet, band without points, jewels sparkling, shiny new gold, glowing crown, neon aura, glowing eyes, particle effects, magic sparkles, HUD or runes, glossy MMO rendering, plate armour, spikes, superhero poses, idol-perfect faces, modern hairstyles, clean new clothing, centered symmetrical composition, crowds with visible faces, readable in-image text, random letters, labels, logos, watermarks, modern objects, natural green vegetation.
 ```
 
 ### CUT05 — 지금
