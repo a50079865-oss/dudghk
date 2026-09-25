@@ -634,3 +634,16 @@ Photoreal live-action cinema. Not illustration, not anime, not 3D render, not co
 AVOID: cloak on the nearest rider, eye contact with camera, smiling, green grass, plate armour, neon aura, glowing eyes, particle effects, magic sparkles, HUD or runes, glossy MMO rendering, plate armour, breastplate, cuirass, pauldrons, spaulders, riveted plates, spikes, superhero poses, idol-perfect faces, modern hairstyles, clean new clothing, centered symmetrical composition, crowds with visible faces, readable in-image text, random letters, labels, logos, watermarks, modern objects, modern shipping pallets, white snow, snowflakes, snow on the ground, natural green vegetation.
 ```
 
+
+### 결과 — 배치 4 1차 (CUT21 2차 · CUT25 · CUT26)
+
+| 컷 | 판정 | 메모 |
+|---|---|---|
+| CUT21 (2차) | ✅ **통과** | **판금 0** — 사슬 + 갬비슨만 · 열린 전장(마을 사라짐) · 겨드랑이로 들어 올림 · 늦게 손 뻗는 두 병사 · 두 명 누운 수레 |
+| CUT25 | ✅ | 망토 입은 리븐의 등(망토 넘기기 **전** — 정확) · 요란: 옅은 콧수염·갈색 머리·피 젖은 갬비슨 · 올려다보는 눈(컷 종료 이미지). 다리 각도는 약함(찢긴 바지만) |
+| CUT26 | ✅ | **망토 없는 리븐 + 큰 검은 망토에 싸인 요란** — 망토가 넘어간 게 한눈에 읽힘 · 피 묻은 손이 물통을 놓음. 요란이 CUT25보다 **훨씬 어려 보이고 콧수염 없음** → S24 시트 락 필수 |
+
+### 전역 메모 — 전장에 돌 건물이 끼어든다
+
+- CUT19·24·25·26 전장 배경에 **흰 돌벽·목조 건물**이 반복 등장. 원인: 공통 ENV의 *"Weathered pale stone"*.
+- S24부터 **전장 컷 전용 ENV 변형**: 돌 대신 *"open battlefield, no buildings, no walls — only mud, smoke, dead grass, distant bare hills"*.
