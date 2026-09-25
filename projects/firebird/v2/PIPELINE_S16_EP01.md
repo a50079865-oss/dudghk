@@ -88,3 +88,13 @@ AVOID: plate armour, shining knights, banners with readable symbols, glossy MMO 
 - 차별화 근거: 대너리스는 **그녀만** 타지 않는다(선택받은 자의 증명). 아스렌은 **산 것을 아무것도** 태우지 않는다(EP08 병사들도). 특별함의 증거가 아니라 세계의 법칙이다.
 - **이미지로 차별화한다:** 정면 워크아웃 금지 · 승리 포즈 금지 · 날개를 그녀 뒤에 배경처럼 세우지 않는다. **측면, 구부정한 걸음, 아이를 내려다봄.** 타지 않았다는 사실은 **디테일(불꽃 속을 지나가는 소매)** 로만.
 
+
+## 2차 프롬프트 (CUT38 재설계 · CUT39 · CUT29 수정)
+
+변경한 변수만 기록 (진단 없는 재생성 금지 규칙):
+
+| 컷 | 진단 | 바꾼 것 |
+|---|---|---|
+| CUT38 | "immense pair of wings spreads across the whole sky" → 모델이 **완전한 새 한 마리**를 그렸다 | 날개 **일부만, 프레임에 잘리게** · 인물 **측면** · 드럼통 금지 추가 |
+| CUT39 | "still burning… the fire is small in frame" → 모닥불로 축소됨 | 천막 **여러 채가 타고 있음**, 굵은 연기 기둥 |
+| CUT29 | "hooves splashing at the bottom edge" → 몸 없는 다리 / "tall brown columns" → 간헐천 | 전경을 **진창 바퀴자국**으로 · 먼지를 **행렬 뒤로 끌리는 낮은 장막**으로 |
