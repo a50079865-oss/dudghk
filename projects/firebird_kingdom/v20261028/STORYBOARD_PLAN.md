@@ -76,3 +76,4 @@
 - 컷21: 원 프롬프트(처형장 군중 속 어린 소녀)가 콘텐츠 필터에 걸림 → 진단: 미성년 + 처형 맥락 → **군중 발치의 작은 신발 인서트**로 변경해 1회 재생성 통과. 본 생성에서도 이 대체안 유지 권장.
 - 결과 URL: `storyboard/results_preview_v1.json` · 셀렉터: `storyboard/storyboard_preview_firebird_480p_v20261028.html`
 - 이미지는 원격(Higgsfield CDN) 참조 — 작업 환경 네트워크 정책상 CDN 다운로드 불가
+- **열람 경로(대체):** Higgsfield 프로젝트 「불새의 왕국 — EP1 스토리보드 480p v1」 · 씬별 폴더 9개(S01~S09)에 41컷 첨부 완료 (크레딧 0)
