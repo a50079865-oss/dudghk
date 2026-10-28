@@ -1,0 +1,19 @@
+{
+  "version": "v20261028",
+  "frame": "16:9",
+  "camera_film": "ARRI Alexa with anamorphic lenses, fine 35mm grain, soft organic (non-clinical) rendering",
+  "grade_stock": "bleach-bypass look, desaturated, harsh contrast, gritty metallic texture",
+  "color_balance": {"dominant": "ash grey", "accent": "ember amber (only warm color — embers, candles, the firebird's glow)", "contrast_type": "warm-cool (Itten), amber vs ash"},
+  "lighting_base": "low-key chiaroscuro, deep controlled shadows, single hard key, restrained highlights; volumetric light shafts with ash and dust in the air",
+  "atmosphere": "fine ash and dust particles always drifting in the air, indoors and outdoors",
+  "art_direction": "production-rich FG/MG/BG layering, no dead space; scorched white stone, worn linen and leather; no glossy fantasy armor",
+  "scene_overrides": {
+    "S01": "flat ash-grey dawn light, vast negative space",
+    "S04": "motivated candle practical as key; Rembrandt lighting on close-ups",
+    "S05": "near-monochrome desaturated memory flash, hard flat light, heavier grain",
+    "S06": "hard rim backlight from the doorway, figures as silhouettes; cold side light on Riven close-ups",
+    "S07": "hard light, flying sparks are the only warm points",
+    "S08": "total stillness turns to warm amber glow from the ember (liberated color code) on palm and faces; the rest stays ash grey",
+    "S09": "flat ash-grey daylight, wind, vast negative space"
+  }
+}
