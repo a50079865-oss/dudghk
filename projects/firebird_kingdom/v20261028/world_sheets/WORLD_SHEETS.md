@@ -4,7 +4,7 @@
 |---|---|---|
 | AUREVIA_sheet.png | 아우레비아 — 수도 솔라라 · 왕궁 · 불새 신전 · 시장 · 농촌 · **국경 마을** · 강 다리 · 신전 내부 | EP1·6 |
 | AUREVIA_solara_hero.png | 솔라라 전경 | EP6 |
-| AUREVIA_border_village_before.png | 국경 마을(피난 직전, 예배당 종탑) | **파일럿 S02 plate** |
+| AUREVIA_border_village_before.png | 국경 마을 벨렌(피난 직전, 예배당 종탑) | **파일럿 S02 plate** |
 | AUREVIA_refugee_road.png | 피난 행렬 언덕길 | **파일럿 S02·S01 plate** |
 | PILOT_burned_chapel_interior.png | 불탄 돌 예배당 내부 | **파일럿 S04~S08 plate** |
 | PILOT_village_ash_sky.png | 불타는 마을 + 재 하늘 | **파일럿 S08 plate** |
@@ -24,5 +24,12 @@
 | 고대 아르카디아 | — | 원 안의 검/태양 기호 | Pale Stone · Blackened Bronze · Ash Grey · Faded Ivory |
 
 - **스켈드리아 구호 교체(표절 차단):** "THE NORTH ENDURES" 사용 금지 → **"겨울은 끝나지 않지만, 우리는 살아간다."** / "A kingdom built not for beauty, but to survive the winter."
-- **에린도르(Eryndor):** 엘라라의 고향 마을 (사용자 확정)
+- **에린도르(Eryndor):** 네 왕국과 아르카디아가 있는 **대륙 이름** (사용자 확정 — 아르카디아 시트 'The First Kingdom of Eryndor'와 일치)
+- **엘라라의 고향 마을:** **벨렌(Velen)** — 아우레비아 국경 마을, 불탄 돌 예배당 소재 (바렌 가문 성의 어원)
 - **룩 노트:** 시트들은 골든아워·채도 높은 컨셉아트 톤. 파일럿 본 생성 시 plate는 **구조·건축 ref**로만 쓰고 색은 global_look(블리치 바이패스·재빛+앰버)로 덮는다.
+
+## plate 사용 규칙 (S23 — 본 생성 시 프롬프트에 강제)
+1. **십자가 금지:** 예배당 제단의 십자가·종탑 십자가 → **날개 편 청동 불새 부조 / 불꽃 제단 / 종탑 꼭대기 청동 불새**로 교체. 프롬프트에 `no Christian cross, no crucifix; the altar bears a bronze winged-firebird relief and a stone fire bowl` 상시 주입.
+2. **사슴·별 깃발 금지:** `PILOT_hill_army_view.png`는 구도·지형만 참조. 깃발은 **스켈드리아 — 미드나잇 블루 바탕의 은빛 늑대, 목에 쇠사슬**. 프롬프트에 `no stag, no star sigil` 주입.
+3. **스켈드리아 문장 공통:** 모든 늑대 문장은 목에 쇠사슬을 두른 형태(차별화 규칙 1 + EP3 셋업).
+4. **색:** plate의 골든아워·고채도 색은 무시, global_look(블리치 바이패스 · 재빛+불씨 앰버) 우선.
