@@ -1,0 +1,741 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>불새의 왕국 스토리보드</title>
+<style>
+:root { --bg:#0b0d12; --card:#151924; --line:#262c3b; --fg:#e7e9ee; --mut:#8d94a5; --amber:#e39b3c; --ok:#4fbf7a; --fix:#e0614f; }
+@media (prefers-color-scheme: light) { :root:not([data-theme="dark"]) { --bg:#f4f2ee; --card:#fff; --line:#ddd8cf; --fg:#1d1f24; --mut:#6b6f78; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:14px/1.5 -apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif; }
+header { position:sticky; top:0; z-index:5; background:var(--bg); border-bottom:1px solid var(--line); padding:12px 16px; display:flex; flex-wrap:wrap; gap:8px 16px; align-items:center; }
+h1 { font-size:16px; margin:0; } h1 small { color:var(--mut); font-weight:400; }
+.stat { color:var(--mut); } .stat b { color:var(--fg); }
+header button, .sel button { background:transparent; color:var(--fg); border:1px solid var(--line); border-radius:6px; padding:5px 10px; cursor:pointer; font:inherit; }
+header button:hover { border-color:var(--amber); }
+main { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:14px; padding:16px; max-width:1600px; margin:0 auto; }
+.scene-h { grid-column:1/-1; margin:10px 0 0; font-size:13px; color:var(--amber); letter-spacing:.04em; border-bottom:1px solid var(--line); padding-bottom:4px; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:10px; overflow:hidden; }
+.card.ok { border-color:var(--ok); } .card.fix { border-color:var(--fix); }
+.card img { display:block; width:100%; aspect-ratio:16/9; object-fit:cover; background:#000; }
+.meta { padding:10px 12px 12px; }
+.row { display:flex; gap:6px; align-items:center; flex-wrap:wrap; }
+.sc { color:var(--mut); }
+.badge { font-size:11px; padding:1px 7px; border-radius:99px; border:1px solid var(--line); }
+.badge.dlg { color:#8fb8ff; } .badge.ins { color:var(--amber); } .badge.pace { color:var(--mut); }
+.ko { margin:6px 0 2px; } .sub { margin:0; color:var(--mut); font-size:12px; }
+.tags { margin:6px 0 0; } .tags span { font-size:11px; color:var(--mut); margin-right:6px; }
+.note { margin:6px 0 0; font-size:12px; color:var(--amber); }
+.sel { display:flex; gap:6px; margin-top:8px; }
+.card.ok .ok { background:var(--ok); color:#000; border-color:var(--ok); }
+.card.fix .fix { background:var(--fix); color:#000; border-color:var(--fix); }
+.memo { width:100%; margin-top:8px; min-height:56px; background:var(--bg); color:var(--fg); border:1px solid var(--line); border-radius:6px; padding:6px; font:inherit; }
+body.only-fix .card:not(.fix) { display:none; }
+#out { display:none; margin:0 16px 16px; } #out textarea { width:100%; height:180px; background:var(--card); color:var(--fg); border:1px solid var(--line); border-radius:8px; padding:8px; font:12px ui-monospace,monospace; }
+@media (max-width:480px) { main { grid-template-columns:1fr; padding:12px 16px; } }
+</style></head>
+<body>
+<header>
+  <h1>《불새의 왕국》 EP1 파일럿 스토리보드 <small>480p 초벌 · 16:9 · nano_banana_2_lite · 41컷</small></h1>
+  <span class="stat">OK <b id="nOk">0</b> · 수정 <b id="nFix">0</b> · 미선택 <b id="nNone">41</b></span>
+  <button id="allOk" type="button">미선택 전부 OK</button>
+  <button id="onlyFix" type="button">수정만 보기</button>
+  <button id="export" type="button">selections.json 내보내기</button>
+</header>
+<section id="out"><p>아래 내용을 복사해 채팅에 붙여 주세요 (파일도 함께 다운로드됩니다).</p><textarea id="outText" readonly></textarea></section>
+<main id="grid">
+<article class="card" data-id="1" data-scene="S01">
+  <a href="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085207_abeeb034-de3e-4f06-8b2b-5bf8500706cf.png" target="_blank" rel="noopener"><img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085207_abeeb034-de3e-4f06-8b2b-5bf8500706cf_min.webp" alt="컷 1"></a>
+  <div class="meta">
+    <div class="row"><b>#01</b><span class="sc">S01 징후</span>
+      <span class="badge ins">인서트</span><span class="badge pace">🌊 slow</span></div>
+    <p class="ko">새벽 불탄 국경 평원 — 연기는 왼쪽으로, 재는 바람을 거슬러 오른쪽 위로</p>
+    <p class="sub">화각: low-angle wide · 화자: —</p>
+    <p class="tags"><span>#여백</span> <span>#재빛낮</span> <span>#징후</span></p>
+    
+    <div class="sel">
+      <button class="ok" type="button">● OK</button>
+      <button class="fix" type="button">✎ 수정</button>
+    </div>
+    <textarea class="memo" placeholder="수정 요청 (예: 더 어둡게, 로우앵글로, 아이를 화면 왼쪽에)" hidden></textarea>
+  </div>
+</article>
+<article class="card" data-id="2" data-scene="S01">
+  <a href="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085208_111bc68b-9a43-456b-a7ee-0b7a389ea40f.png" target="_blank" rel="noopener"><img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085208_111bc68b-9a43-456b-a7ee-0b7a389ea40f_min.webp" alt="컷 2"></a>
+  <div class="meta">
+    <div class="row"><b>#02</b><span class="sc">S01 징후</span>
+      <span class="badge ins">인서트</span><span class="badge pace">🌊 slow</span></div>
+    <p class="ko">말들과 울타리 위 까마귀들이 일제히 남쪽을 본다</p>
+    <p class="sub">화각: side · 화자: —</p>
+    <p class="tags"><span>#여백</span> <span>#재빛낮</span> <span>#징후</span></p>
+    
+    <div class="sel">
+      <button class="ok" type="button">● OK</button>
+      <button class="fix" type="button">✎ 수정</button>
+    </div>
+    <textarea class="memo" placeholder="수정 요청 (예: 더 어둡게, 로우앵글로, 아이를 화면 왼쪽에)" hidden></textarea>
+  </div>
+</article>
+<article class="card" data-id="3" data-scene="S01">
+  <a href="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085208_56f2a068-2192-43e0-b0f0-69caabac9806.png" target="_blank" rel="noopener"><img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085208_56f2a068-2192-43e0-b0f0-69caabac9806_min.webp" alt="컷 3"></a>
+  <div class="meta">
+    <div class="row"><b>#03</b><span class="sc">S01 징후</span>
+      <span class="badge ins">인서트</span><span class="badge pace">🌊 slow</span></div>
+    <p class="ko">먼 북쪽 — 얼어붙은 호수 아래 움직이는 거대한 형체</p>
+    <p class="sub">화각: high-angle aerial · 화자: —</p>
+    <p class="tags"><span>#여백</span> <span>#재빛낮</span> <span>#징후</span></p>
+    
+    <div class="sel">
+      <button class="ok" type="button">● OK</button>
+      <button class="fix" type="button">✎ 수정</button>
+    </div>
+    <textarea class="memo" placeholder="수정 요청 (예: 더 어둡게, 로우앵글로, 아이를 화면 왼쪽에)" hidden></textarea>
+  </div>
+</article>
+<article class="card" data-id="4" data-scene="S01">
+  <a href="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085210_b070d02e-8b5b-4520-9db3-8ccb54171424.png" target="_blank" rel="noopener"><img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085210_b070d02e-8b5b-4520-9db3-8ccb54171424_min.webp" alt="컷 4"></a>
+  <div class="meta">
+    <div class="row"><b>#04</b><span class="sc">S01 징후</span>
+      <span class="badge ins">인서트</span><span class="badge pace">🌊 slow</span></div>
+    <p class="ko">무너진 종탑의 금 간 청동 종</p>
+    <p class="sub">화각: worm&#x27;s-eye low · 화자: —</p>
+    <p class="tags"><span>#여백</span> <span>#재빛낮</span> <span>#징후</span></p>
+    
+    <div class="sel">
+      <button class="ok" type="button">● OK</button>
+      <button class="fix" type="button">✎ 수정</button>
+    </div>
+    <textarea class="memo" placeholder="수정 요청 (예: 더 어둡게, 로우앵글로, 아이를 화면 왼쪽에)" hidden></textarea>
+  </div>
+</article>
+<article class="card" data-id="5" data-scene="S01">
+  <a href="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085208_6341e687-2ea0-4171-bb18-1353973ccc3d.png" target="_blank" rel="noopener"><img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085208_6341e687-2ea0-4171-bb18-1353973ccc3d_min.webp" alt="컷 5"></a>
+  <div class="meta">
+    <div class="row"><b>#05</b><span class="sc">S01 징후</span>
+      <span class="badge ins">인서트</span><span class="badge pace">🌊 slow</span></div>
+    <p class="ko">재 속에 놓인 피 묻은 작은 의료용 칼</p>
+    <p class="sub">화각: macro insert · 화자: —</p>
+    <p class="tags"><span>#여백</span> <span>#재빛낮</span> <span>#징후</span></p>
+    
+    <div class="sel">
+      <button class="ok" type="button">● OK</button>
+      <button class="fix" type="button">✎ 수정</button>
+    </div>
+    <textarea class="memo" placeholder="수정 요청 (예: 더 어둡게, 로우앵글로, 아이를 화면 왼쪽에)" hidden></textarea>
+  </div>
+</article>
+<article class="card" data-id="6" data-scene="S02">
+  <a href="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085210_100d581e-a895-496f-b31c-18e9b30564f4.png" target="_blank" rel="noopener"><img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085210_100d581e-a895-496f-b31c-18e9b30564f4_min.webp" alt="컷 6"></a>
+  <div class="meta">
+    <div class="row"><b>#06</b><span class="sc">S02 남은 사람</span>
+      <span class="badge dlg">대사</span><span class="badge pace">🌊 slow</span></div>
+    <p class="ko">불탄 마을 광장 — 피난 행렬이 떠나고, 무릎 꿇은 엘라라가 부상자를 분류한다</p>
+    <p class="sub">화각: high-angle wide · 화자: ELARA, ELDER, CHILD</p>
+    <p class="tags"><span>#재빛낮</span></p>
+    
+    <div class="sel">
+      <button class="ok" type="button">● OK</button>
+      <button class="fix" type="button">✎ 수정</button>
+    </div>
+    <textarea class="memo" placeholder="수정 요청 (예: 더 어둡게, 로우앵글로, 아이를 화면 왼쪽에)" hidden></textarea>
+  </div>
+</article>
+<article class="card" data-id="7" data-scene="S02">
+  <a href="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085209_bbb23554-c28e-4b87-874a-a7df63abb0a7.png" target="_blank" rel="noopener"><img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085209_bbb23554-c28e-4b87-874a-a7df63abb0a7_min.webp" alt="컷 7"></a>
+  <div class="meta">
+    <div class="row"><b>#07</b><span class="sc">S02 남은 사람</span>
+      <span class="badge dlg">대사</span><span class="badge pace">🌊 slow</span></div>
+    <p class="ko">노인의 어깨 너머 — 고개도 들지 않고 치료하는 엘라라</p>
+    <p class="sub">화각: over-the-shoulder · 화자: ELARA, ELDER, CHILD</p>
+    <p class="tags"><span>#재빛낮</span></p>
+    
+    <div class="sel">
+      <button class="ok" type="button">● OK</button>
+      <button class="fix" type="button">✎ 수정</button>
+    </div>
+    <textarea class="memo" placeholder="수정 요청 (예: 더 어둡게, 로우앵글로, 아이를 화면 왼쪽에)" hidden></textarea>
+  </div>
+</article>
+<article class="card" data-id="8" data-scene="S02">
+  <a href="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085208_d993c363-5130-4191-ac7d-49c9cb2d8d02.png" target="_blank" rel="noopener"><img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085208_d993c363-5130-4191-ac7d-49c9cb2d8d02_min.webp" alt="컷 8"></a>
+  <div class="meta">
+    <div class="row"><b>#08</b><span class="sc">S02 남은 사람</span>
+      <span class="badge dlg">대사</span><span class="badge pace">🌊 slow</span></div>
+    <p class="ko">엘라라 측면 클로즈업 — 들쭉날쭉 자른 머리, 재 묻은 얼굴, 굳은 눈</p>
+    <p class="sub">화각: side demai close-up · 화자: ELARA, ELDER, CHILD</p>
+    <p class="tags"><span>#재빛낮</span></p>
+    
+    <div class="sel">
+      <button class="ok" type="button">● OK</button>
+      <button class="fix" type="button">✎ 수정</button>
+    </div>
+    <textarea class="memo" placeholder="수정 요청 (예: 더 어둡게, 로우앵글로, 아이를 화면 왼쪽에)" hidden></textarea>
+  </div>
+</article>
+<article class="card" data-id="9" data-scene="S02">
+  <a href="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085209_2243d9e9-1868-4bcd-98b7-46b25a8c9813.png" target="_blank" rel="noopener"><img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085209_2243d9e9-1868-4bcd-98b7-46b25a8c9813_min.webp" alt="컷 9"></a>
+  <div class="meta">
+    <div class="row"><b>#09</b><span class="sc">S02 남은 사람</span>
+      <span class="badge dlg">대사</span><span class="badge pace">🌊 slow</span></div>
+    <p class="ko">아이 눈높이 — 무릎 꿇고 아이에게 엄마 이름을 묻는 엘라라</p>
+    <p class="sub">화각: low child-height two-shot · 화자: ELARA, ELDER, CHILD</p>
+    <p class="tags"><span>#재빛낮</span></p>
+    
+    <div class="sel">
+      <button class="ok" type="button">● OK</button>
+      <button class="fix" type="button">✎ 수정</button>
+    </div>
+    <textarea class="memo" placeholder="수정 요청 (예: 더 어둡게, 로우앵글로, 아이를 화면 왼쪽에)" hidden></textarea>
+  </div>
+</article>
+<article class="card" data-id="10" data-scene="S02">
+  <a href="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085209_71a18922-4856-464c-9ac2-18017059dbe8.png" target="_blank" rel="noopener"><img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085209_71a18922-4856-464c-9ac2-18017059dbe8_min.webp" alt="컷 10"></a>
+  <div class="meta">
+    <div class="row"><b>#10</b><span class="sc">S02 남은 사람</span>
+      <span class="badge dlg">대사</span><span class="badge pace">🌊 slow</span></div>
+    <p class="ko">떨리는 손을 주먹으로 감추는 엘라라의 손</p>
+    <p class="sub">화각: macro insert · 화자: ELARA, ELDER, CHILD</p>
+    <p class="tags"><span>#재빛낮</span></p>
+    
+    <div class="sel">
+      <button class="ok" type="button">● OK</button>
+      <button class="fix" type="button">✎ 수정</button>
+    </div>
+    <textarea class="memo" placeholder="수정 요청 (예: 더 어둡게, 로우앵글로, 아이를 화면 왼쪽에)" hidden></textarea>
+  </div>
+</article>
+<article class="card" data-id="11" data-scene="S02">
+  <a href="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085208_6fff9eaf-fb3a-49bf-be3f-0bb045049fc1.png" target="_blank" rel="noopener"><img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085208_6fff9eaf-fb3a-49bf-be3f-0bb045049fc1_min.webp" alt="컷 11"></a>
+  <div class="meta">
+    <div class="row"><b>#11</b><span class="sc">S02 남은 사람</span>
+      <span class="badge dlg">대사</span><span class="badge pace">🌊 slow</span></div>
+    <p class="ko">멀어지는 피난 행렬 — 남은 엘라라의 작은 뒷모습</p>
+    <p class="sub">화각: wide from behind · 화자: ELARA, ELDER, CHILD</p>
+    <p class="tags"><span>#재빛낮</span></p>
+    
+    <div class="sel">
+      <button class="ok" type="button">● OK</button>
+      <button class="fix" type="button">✎ 수정</button>
+    </div>
+    <textarea class="memo" placeholder="수정 요청 (예: 더 어둡게, 로우앵글로, 아이를 화면 왼쪽에)" hidden></textarea>
+  </div>
+</article>
+<article class="card" data-id="12" data-scene="S03">
+  <a href="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085208_360d55fc-4ce0-4a3e-906e-2d41187a7000.png" target="_blank" rel="noopener"><img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085208_360d55fc-4ce0-4a3e-906e-2d41187a7000_min.webp" alt="컷 12"></a>
+  <div class="meta">
+    <div class="row"><b>#12</b><span class="sc">S03 어머니의 칼</span>
+      <span class="badge ins">인서트</span><span class="badge pace">🌊 slow</span></div>
+    <p class="ko">칼 손잡이의 닳은 각인 — 칼날의 앰버 반사</p>
+    <p class="sub">화각: macro insert · 화자: —</p>
+    <p class="tags"><span>#인서트</span> <span>#불씨앰버</span></p>
+    
+    <div class="sel">
+      <button class="ok" type="button">● OK</button>
+      <button class="fix" type="button">✎ 수정</button>
+    </div>
+    <textarea class="memo" placeholder="수정 요청 (예: 더 어둡게, 로우앵글로, 아이를 화면 왼쪽에)" hidden></textarea>
+  </div>
+</article>
+<article class="card" data-id="13" data-scene="S04">
+  <a href="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085300_32aec9ab-8368-40f9-8489-75f505ab4d3a.png" target="_blank" rel="noopener"><img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085300_32aec9ab-8368-40f9-8489-75f505ab4d3a_min.webp" alt="컷 13"></a>
+  <div class="meta">
+    <div class="row"><b>#13</b><span class="sc">S04 적의 숨</span>
+      <span class="badge dlg">대사</span><span class="badge pace">🌊 slow</span></div>
+    <p class="ko">불탄 돌 예배당 — 무너진 지붕으로 회색 빛줄기, 장의자 위 적병</p>
+    <p class="sub">화각: low-angle wide interior · 화자: ELARA, SOLDIER, CHILD</p>
+    <p class="tags"><span>#여백</span> <span>#촛불</span></p>
+    
+    <div class="sel">
+      <button class="ok" type="button">● OK</button>
+      <button class="fix" type="button">✎ 수정</button>
+    </div>
+    <textarea class="memo" placeholder="수정 요청 (예: 더 어둡게, 로우앵글로, 아이를 화면 왼쪽에)" hidden></textarea>
+  </div>
+</article>
+<article class="card" data-id="14" data-scene="S04">
+  <a href="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085258_56c4fb38-2152-4f79-aee5-a1f390b6d0ef.png" target="_blank" rel="noopener"><img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085258_56c4fb38-2152-4f79-aee5-a1f390b6d0ef_min.webp" alt="컷 14"></a>
+  <div class="meta">
+    <div class="row"><b>#14</b><span class="sc">S04 적의 숨</span>
+      <span class="badge dlg">대사</span><span class="badge pace">🌊 slow</span></div>
+    <p class="ko">엘라라가 칼끝을 적병 목에 댄다 — 그가 눈을 뜬다</p>
+    <p class="sub">화각: high angle over · 화자: ELARA, SOLDIER, CHILD</p>
+    <p class="tags"><span>#여백</span> <span>#촛불</span></p>
+    
+    <div class="sel">
+      <button class="ok" type="button">● OK</button>
+      <button class="fix" type="button">✎ 수정</button>
+    </div>
+    <textarea class="memo" placeholder="수정 요청 (예: 더 어둡게, 로우앵글로, 아이를 화면 왼쪽에)" hidden></textarea>
+  </div>
+</article>
+<article class="card" data-id="15" data-scene="S04">
+  <a href="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085258_afcadc34-7dfa-4469-9e2a-556977a03db2.png" target="_blank" rel="noopener"><img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085258_afcadc34-7dfa-4469-9e2a-556977a03db2_min.webp" alt="컷 15"></a>
+  <div class="meta">
+    <div class="row"><b>#15</b><span class="sc">S04 적의 숨</span>
+      <span class="badge dlg">대사</span><span class="badge pace">🌊 slow</span></div>
+    <p class="ko">칼끝이 목에서 내려가 붕대를 자른다</p>
+    <p class="sub">화각: macro insert · 화자: ELARA, SOLDIER, CHILD</p>
+    <p class="tags"><span>#여백</span> <span>#촛불</span></p>
+    
+    <div class="sel">
+      <button class="ok" type="button">● OK</button>
+      <button class="fix" type="button">✎ 수정</button>
+    </div>
+    <textarea class="memo" placeholder="수정 요청 (예: 더 어둡게, 로우앵글로, 아이를 화면 왼쪽에)" hidden></textarea>
+  </div>
+</article>
+<article class="card" data-id="16" data-scene="S04">
+  <a href="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085259_42226796-e120-46d9-a801-18eaf3e46e96.png" target="_blank" rel="noopener"><img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085259_42226796-e120-46d9-a801-18eaf3e46e96_min.webp" alt="컷 16"></a>
+  <div class="meta">
+    <div class="row"><b>#16</b><span class="sc">S04 적의 숨</span>
+      <span class="badge dlg">대사</span><span class="badge pace">🌊 slow</span></div>
+    <p class="ko">앞치마 주머니 속 찢어진 늑대 문장 천 조각</p>
+    <p class="sub">화각: insert · 화자: ELARA, SOLDIER, CHILD</p>
+    <p class="tags"><span>#여백</span> <span>#촛불</span></p>
+    
+    <div class="sel">
+      <button class="ok" type="button">● OK</button>
+      <button class="fix" type="button">✎ 수정</button>
+    </div>
+    <textarea class="memo" placeholder="수정 요청 (예: 더 어둡게, 로우앵글로, 아이를 화면 왼쪽에)" hidden></textarea>
+  </div>
+</article>
+<article class="card" data-id="17" data-scene="S04">
+  <a href="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085258_51b7b93e-3e8d-42e5-b4d2-b1f46f640a64.png" target="_blank" rel="noopener"><img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085258_51b7b93e-3e8d-42e5-b4d2-b1f46f640a64_min.webp" alt="컷 17"></a>
+  <div class="meta">
+    <div class="row"><b>#17</b><span class="sc">S04 적의 숨</span>
+      <span class="badge dlg">대사</span><span class="badge pace">🌊 slow</span></div>
+    <p class="ko">엘라라 어깨 너머 — 문간의 아이가 묻는다</p>
+    <p class="sub">화각: over-the-shoulder · 화자: ELARA, SOLDIER, CHILD</p>
+    <p class="tags"><span>#여백</span> <span>#촛불</span></p>
+    
+    <div class="sel">
+      <button class="ok" type="button">● OK</button>
+      <button class="fix" type="button">✎ 수정</button>
+    </div>
+    <textarea class="memo" placeholder="수정 요청 (예: 더 어둡게, 로우앵글로, 아이를 화면 왼쪽에)" hidden></textarea>
+  </div>
+</article>
+<article class="card" data-id="18" data-scene="S04">
+  <a href="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085259_6c570039-afb2-48c3-9493-9575b0f2a471.png" target="_blank" rel="noopener"><img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085259_6c570039-afb2-48c3-9493-9575b0f2a471_min.webp" alt="컷 18"></a>
+  <div class="meta">
+    <div class="row"><b>#18</b><span class="sc">S04 적의 숨</span>
+      <span class="badge dlg">대사</span><span class="badge pace">🌊 slow</span></div>
+    <p class="ko">엘라라 3/4 클로즈업 — &quot;살아 있으니까.&quot;</p>
+    <p class="sub">화각: three-quarter demai close-up · 화자: ELARA, SOLDIER, CHILD</p>
+    <p class="tags"><span>#여백</span> <span>#촛불</span></p>
+    
+    <div class="sel">
+      <button class="ok" type="button">● OK</button>
+      <button class="fix" type="button">✎ 수정</button>
+    </div>
+    <textarea class="memo" placeholder="수정 요청 (예: 더 어둡게, 로우앵글로, 아이를 화면 왼쪽에)" hidden></textarea>
+  </div>
+</article>
+<article class="card" data-id="19" data-scene="S05">
+  <a href="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085258_6e2d337d-315d-4767-ad6c-e42d2f01c4b0.png" target="_blank" rel="noopener"><img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085258_6e2d337d-315d-4767-ad6c-e42d2f01c4b0_min.webp" alt="컷 19"></a>
+  <div class="meta">
+    <div class="row"><b>#19</b><span class="sc">S05 처형장</span>
+      <span class="badge ins">인서트</span><span class="badge pace">⚡ tight</span></div>
+    <p class="ko">(플래시·탈색) 회색 하늘 아래 밧줄</p>
+    <p class="sub">화각: worm&#x27;s-eye low · 화자: —</p>
+    <p class="tags"><span>#플래시</span> <span>#탈색</span></p>
+    
+    <div class="sel">
+      <button class="ok" type="button">● OK</button>
+      <button class="fix" type="button">✎ 수정</button>
+    </div>
+    <textarea class="memo" placeholder="수정 요청 (예: 더 어둡게, 로우앵글로, 아이를 화면 왼쪽에)" hidden></textarea>
+  </div>
+</article>
+<article class="card" data-id="20" data-scene="S05">
+  <a href="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085300_5ca73ed0-0cef-4a04-9a3a-33200c072435.png" target="_blank" rel="noopener"><img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085300_5ca73ed0-0cef-4a04-9a3a-33200c072435_min.webp" alt="컷 20"></a>
+  <div class="meta">
+    <div class="row"><b>#20</b><span class="sc">S05 처형장</span>
+      <span class="badge ins">인서트</span><span class="badge pace">⚡ tight</span></div>
+    <p class="ko">(플래시·탈색) 군중 사이로 뻗은 어머니의 손</p>
+    <p class="sub">화각: insert · 화자: —</p>
+    <p class="tags"><span>#플래시</span> <span>#탈색</span></p>
+    
+    <div class="sel">
+      <button class="ok" type="button">● OK</button>
+      <button class="fix" type="button">✎ 수정</button>
+    </div>
+    <textarea class="memo" placeholder="수정 요청 (예: 더 어둡게, 로우앵글로, 아이를 화면 왼쪽에)" hidden></textarea>
+  </div>
+</article>
+<article class="card" data-id="21" data-scene="S05">
+  <a href="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085457_a2f40283-b578-4a64-a05b-8df3c645ef3e.png" target="_blank" rel="noopener"><img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085457_a2f40283-b578-4a64-a05b-8df3c645ef3e_min.webp" alt="컷 21"></a>
+  <div class="meta">
+    <div class="row"><b>#21</b><span class="sc">S05 처형장</span>
+      <span class="badge ins">인서트</span><span class="badge pace">⚡ tight</span></div>
+    <p class="ko">(플래시·탈색) 군중 속 어린 소녀의 눈</p>
+    <p class="sub">화각: high angle · 화자: —</p>
+    <p class="tags"><span>#플래시</span> <span>#탈색</span></p>
+    <p class="note">필터 회피 재생성 — 어린 소녀 얼굴 대신 군중 속 작은 신발 인서트로 변경</p>
+    <div class="sel">
+      <button class="ok" type="button">● OK</button>
+      <button class="fix" type="button">✎ 수정</button>
+    </div>
+    <textarea class="memo" placeholder="수정 요청 (예: 더 어둡게, 로우앵글로, 아이를 화면 왼쪽에)" hidden></textarea>
+  </div>
+</article>
+<article class="card" data-id="22" data-scene="S06">
+  <a href="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085300_75683c24-2ca6-42c7-98b0-3dd349b0b72b.png" target="_blank" rel="noopener"><img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085300_75683c24-2ca6-42c7-98b0-3dd349b0b72b_min.webp" alt="컷 22"></a>
+  <div class="meta">
+    <div class="row"><b>#22</b><span class="sc">S06 칼과 검</span>
+      <span class="badge dlg">대사</span><span class="badge pace">🌊 slow</span></div>
+    <p class="ko">예배당 문간 역광 — 갑옷 사령관과 병사들의 실루엣</p>
+    <p class="sub">화각: low-angle backlit · 화자: RIVEN, ELARA, TORVAL</p>
+    <p class="tags"><span>#대치</span> <span>#역광</span></p>
+    
+    <div class="sel">
+      <button class="ok" type="button">● OK</button>
+      <button class="fix" type="button">✎ 수정</button>
+    </div>
+    <textarea class="memo" placeholder="수정 요청 (예: 더 어둡게, 로우앵글로, 아이를 화면 왼쪽에)" hidden></textarea>
+  </div>
+</article>
+<article class="card" data-id="23" data-scene="S06">
+  <a href="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085259_8ed2742f-6598-4077-b05d-2a195f425e4b.png" target="_blank" rel="noopener"><img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085259_8ed2742f-6598-4077-b05d-2a195f425e4b_min.webp" alt="컷 23"></a>
+  <div class="meta">
+    <div class="row"><b>#23</b><span class="sc">S06 칼과 검</span>
+      <span class="badge dlg">대사</span><span class="badge pace">🌊 slow</span></div>
+    <p class="ko">아이를 등 뒤로 감싸고 칼을 든 엘라라 — 측면</p>
+    <p class="sub">화각: side · 화자: RIVEN, ELARA, TORVAL</p>
+    <p class="tags"><span>#대치</span> <span>#역광</span></p>
+    
+    <div class="sel">
+      <button class="ok" type="button">● OK</button>
+      <button class="fix" type="button">✎ 수정</button>
+    </div>
+    <textarea class="memo" placeholder="수정 요청 (예: 더 어둡게, 로우앵글로, 아이를 화면 왼쪽에)" hidden></textarea>
+  </div>
+</article>
+<article class="card" data-id="24" data-scene="S06">
+  <a href="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085301_e7837f60-73dc-457c-a45f-5d23e428a67d.png" target="_blank" rel="noopener"><img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085301_e7837f60-73dc-457c-a45f-5d23e428a67d_min.webp" alt="컷 24"></a>
+  <div class="meta">
+    <div class="row"><b>#24</b><span class="sc">S06 칼과 검</span>
+      <span class="badge dlg">대사</span><span class="badge pace">🌊 slow</span></div>
+    <p class="ko">바닥에서 올려다본 검끝 — 오브젝트 POV</p>
+    <p class="sub">화각: object POV floor · 화자: RIVEN, ELARA, TORVAL</p>
+    <p class="tags"><span>#대치</span> <span>#역광</span></p>
+    
+    <div class="sel">
+      <button class="ok" type="button">● OK</button>
+      <button class="fix" type="button">✎ 수정</button>
+    </div>
+    <textarea class="memo" placeholder="수정 요청 (예: 더 어둡게, 로우앵글로, 아이를 화면 왼쪽에)" hidden></textarea>
+  </div>
+</article>
+<article class="card" data-id="25" data-scene="S06">
+  <a href="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085349_e905e50e-930b-4ddc-b1a6-8827f2ac433f.png" target="_blank" rel="noopener"><img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085349_e905e50e-930b-4ddc-b1a6-8827f2ac433f_min.webp" alt="컷 25"></a>
+  <div class="meta">
+    <div class="row"><b>#25</b><span class="sc">S06 칼과 검</span>
+      <span class="badge dlg">대사</span><span class="badge pace">🌊 slow</span></div>
+    <p class="ko">리븐 어깨 너머 엘라라 — &quot;상처부터 눌러.&quot;</p>
+    <p class="sub">화각: over-the-shoulder · 화자: RIVEN, ELARA, TORVAL</p>
+    <p class="tags"><span>#대치</span> <span>#역광</span></p>
+    
+    <div class="sel">
+      <button class="ok" type="button">● OK</button>
+      <button class="fix" type="button">✎ 수정</button>
+    </div>
+    <textarea class="memo" placeholder="수정 요청 (예: 더 어둡게, 로우앵글로, 아이를 화면 왼쪽에)" hidden></textarea>
+  </div>
+</article>
+<article class="card" data-id="26" data-scene="S06">
+  <a href="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085350_310fdecd-1125-4231-b97c-85949cdd9867.png" target="_blank" rel="noopener"><img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085350_310fdecd-1125-4231-b97c-85949cdd9867_min.webp" alt="컷 26"></a>
+  <div class="meta">
+    <div class="row"><b>#26</b><span class="sc">S06 칼과 검</span>
+      <span class="badge dlg">대사</span><span class="badge pace">🌊 slow</span></div>
+    <p class="ko">장갑 낀 손이 꿰맨 상처를 확인한다</p>
+    <p class="sub">화각: insert · 화자: RIVEN, ELARA, TORVAL</p>
+    <p class="tags"><span>#대치</span> <span>#역광</span></p>
+    
+    <div class="sel">
+      <button class="ok" type="button">● OK</button>
+      <button class="fix" type="button">✎ 수정</button>
+    </div>
+    <textarea class="memo" placeholder="수정 요청 (예: 더 어둡게, 로우앵글로, 아이를 화면 왼쪽에)" hidden></textarea>
+  </div>
+</article>
+<article class="card" data-id="27" data-scene="S06">
+  <a href="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085351_9a8758d8-ef24-47f4-9696-ddcc70081673.png" target="_blank" rel="noopener"><img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085351_9a8758d8-ef24-47f4-9696-ddcc70081673_min.webp" alt="컷 27"></a>
+  <div class="meta">
+    <div class="row"><b>#27</b><span class="sc">S06 칼과 검</span>
+      <span class="badge dlg">대사</span><span class="badge pace">🌊 slow</span></div>
+    <p class="ko">토르발 — &quot;사령관님.&quot;</p>
+    <p class="sub">화각: three-quarter medium · 화자: RIVEN, ELARA, TORVAL</p>
+    <p class="tags"><span>#대치</span> <span>#역광</span></p>
+    
+    <div class="sel">
+      <button class="ok" type="button">● OK</button>
+      <button class="fix" type="button">✎ 수정</button>
+    </div>
+    <textarea class="memo" placeholder="수정 요청 (예: 더 어둡게, 로우앵글로, 아이를 화면 왼쪽에)" hidden></textarea>
+  </div>
+</article>
+<article class="card" data-id="28" data-scene="S06">
+  <a href="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085352_48f4e7fb-da63-433b-96ad-b66282dece07.png" target="_blank" rel="noopener"><img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085352_48f4e7fb-da63-433b-96ad-b66282dece07_min.webp" alt="컷 28"></a>
+  <div class="meta">
+    <div class="row"><b>#28</b><span class="sc">S06 칼과 검</span>
+      <span class="badge dlg">대사</span><span class="badge pace">🌊 slow</span></div>
+    <p class="ko">리븐 데마이 클로즈업 — 침묵, 시선이 그녀의 손으로</p>
+    <p class="sub">화각: demai close-up · 화자: RIVEN, ELARA, TORVAL</p>
+    <p class="tags"><span>#대치</span> <span>#역광</span></p>
+    
+    <div class="sel">
+      <button class="ok" type="button">● OK</button>
+      <button class="fix" type="button">✎ 수정</button>
+    </div>
+    <textarea class="memo" placeholder="수정 요청 (예: 더 어둡게, 로우앵글로, 아이를 화면 왼쪽에)" hidden></textarea>
+  </div>
+</article>
+<article class="card" data-id="29" data-scene="S06">
+  <a href="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085352_839b6570-6d4b-4916-bd61-112253d6b833.png" target="_blank" rel="noopener"><img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085352_839b6570-6d4b-4916-bd61-112253d6b833_min.webp" alt="컷 29"></a>
+  <div class="meta">
+    <div class="row"><b>#29</b><span class="sc">S06 칼과 검</span>
+      <span class="badge dlg">대사</span><span class="badge pace">🌊 slow</span></div>
+    <p class="ko">늑대 문장 조각을 움켜쥔 엘라라의 주먹 (컷16과 같은 소품)</p>
+    <p class="sub">화각: macro insert · 화자: RIVEN, ELARA, TORVAL</p>
+    <p class="tags"><span>#대치</span> <span>#역광</span></p>
+    
+    <div class="sel">
+      <button class="ok" type="button">● OK</button>
+      <button class="fix" type="button">✎ 수정</button>
+    </div>
+    <textarea class="memo" placeholder="수정 요청 (예: 더 어둡게, 로우앵글로, 아이를 화면 왼쪽에)" hidden></textarea>
+  </div>
+</article>
+<article class="card" data-id="30" data-scene="S07">
+  <a href="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085352_df0876ac-abd9-4770-ab16-7021a1bc0490.png" target="_blank" rel="noopener"><img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085352_df0876ac-abd9-4770-ab16-7021a1bc0490_min.webp" alt="컷 30"></a>
+  <div class="meta">
+    <div class="row"><b>#30</b><span class="sc">S07 무너지는 지붕</span>
+      <span class="badge ins">인서트</span><span class="badge pace">⚡ tight</span></div>
+    <p class="ko">불붙은 들보가 떨어진다 — 더치</p>
+    <p class="sub">화각: dutch · 화자: RIVEN</p>
+    <p class="tags"><span>#폭발</span></p>
+    
+    <div class="sel">
+      <button class="ok" type="button">● OK</button>
+      <button class="fix" type="button">✎ 수정</button>
+    </div>
+    <textarea class="memo" placeholder="수정 요청 (예: 더 어둡게, 로우앵글로, 아이를 화면 왼쪽에)" hidden></textarea>
+  </div>
+</article>
+<article class="card" data-id="31" data-scene="S07">
+  <a href="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085349_c7eb6425-8ac8-458d-8cfc-e9afb146f08c.png" target="_blank" rel="noopener"><img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085349_c7eb6425-8ac8-458d-8cfc-e9afb146f08c_min.webp" alt="컷 31"></a>
+  <div class="meta">
+    <div class="row"><b>#31</b><span class="sc">S07 무너지는 지붕</span>
+      <span class="badge ins">인서트</span><span class="badge pace">⚡ tight</span></div>
+    <p class="ko">리븐이 망토로 아이를 감싼다</p>
+    <p class="sub">화각: high angle · 화자: RIVEN</p>
+    <p class="tags"><span>#폭발</span></p>
+    
+    <div class="sel">
+      <button class="ok" type="button">● OK</button>
+      <button class="fix" type="button">✎ 수정</button>
+    </div>
+    <textarea class="memo" placeholder="수정 요청 (예: 더 어둡게, 로우앵글로, 아이를 화면 왼쪽에)" hidden></textarea>
+  </div>
+</article>
+<article class="card" data-id="32" data-scene="S07">
+  <a href="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085350_cdb2475e-3b12-414a-9c4b-02b17c87c09c.png" target="_blank" rel="noopener"><img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085350_cdb2475e-3b12-414a-9c4b-02b17c87c09c_min.webp" alt="컷 32"></a>
+  <div class="meta">
+    <div class="row"><b>#32</b><span class="sc">S07 무너지는 지붕</span>
+      <span class="badge ins">인서트</span><span class="badge pace">⚡ tight</span></div>
+    <p class="ko">잔해 너머로 그것을 보는 엘라라의 눈</p>
+    <p class="sub">화각: demai close-up · 화자: RIVEN</p>
+    <p class="tags"><span>#폭발</span></p>
+    
+    <div class="sel">
+      <button class="ok" type="button">● OK</button>
+      <button class="fix" type="button">✎ 수정</button>
+    </div>
+    <textarea class="memo" placeholder="수정 요청 (예: 더 어둡게, 로우앵글로, 아이를 화면 왼쪽에)" hidden></textarea>
+  </div>
+</article>
+<article class="card" data-id="33" data-scene="S08">
+  <a href="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085349_879c0b57-e602-4e86-adc3-73c830b4f9f8.png" target="_blank" rel="noopener"><img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085349_879c0b57-e602-4e86-adc3-73c830b4f9f8_min.webp" alt="컷 33"></a>
+  <div class="meta">
+    <div class="row"><b>#33</b><span class="sc">S08 재가 오르다</span>
+      <span class="badge ins">인서트</span><span class="badge pace">🌊 slow</span></div>
+    <p class="ko">갑작스런 정적 — 모두 멈추고 재가 공중에 멈춰 있다</p>
+    <p class="sub">화각: wide side · 화자: —</p>
+    <p class="tags"><span>#폭발→정적</span> <span>#불씨앰버</span></p>
+    
+    <div class="sel">
+      <button class="ok" type="button">● OK</button>
+      <button class="fix" type="button">✎ 수정</button>
+    </div>
+    <textarea class="memo" placeholder="수정 요청 (예: 더 어둡게, 로우앵글로, 아이를 화면 왼쪽에)" hidden></textarea>
+  </div>
+</article>
+<article class="card" data-id="34" data-scene="S08">
+  <a href="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085350_ca11e0a6-6a1f-4055-98d0-9501f70c64b5.png" target="_blank" rel="noopener"><img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085350_ca11e0a6-6a1f-4055-98d0-9501f70c64b5_min.webp" alt="컷 34"></a>
+  <div class="meta">
+    <div class="row"><b>#34</b><span class="sc">S08 재가 오르다</span>
+      <span class="badge ins">인서트</span><span class="badge pace">🌊 slow</span></div>
+    <p class="ko">재가 무너진 지붕 밖 하늘로 거꾸로 오른다</p>
+    <p class="sub">화각: worm&#x27;s-eye low · 화자: —</p>
+    <p class="tags"><span>#폭발→정적</span> <span>#불씨앰버</span></p>
+    
+    <div class="sel">
+      <button class="ok" type="button">● OK</button>
+      <button class="fix" type="button">✎ 수정</button>
+    </div>
+    <textarea class="memo" placeholder="수정 요청 (예: 더 어둡게, 로우앵글로, 아이를 화면 왼쪽에)" hidden></textarea>
+  </div>
+</article>
+<article class="card" data-id="35" data-scene="S08">
+  <a href="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085350_dc31583f-e095-420f-b1d5-413a8bd217b8.png" target="_blank" rel="noopener"><img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085350_dc31583f-e095-420f-b1d5-413a8bd217b8_min.webp" alt="컷 35"></a>
+  <div class="meta">
+    <div class="row"><b>#35</b><span class="sc">S08 재가 오르다</span>
+      <span class="badge ins">인서트</span><span class="badge pace">🌊 slow</span></div>
+    <p class="ko">구름 뒤로 지나가는 거대한 날개 그림자</p>
+    <p class="sub">화각: extreme wide high · 화자: —</p>
+    <p class="tags"><span>#폭발→정적</span> <span>#불씨앰버</span></p>
+    
+    <div class="sel">
+      <button class="ok" type="button">● OK</button>
+      <button class="fix" type="button">✎ 수정</button>
+    </div>
+    <textarea class="memo" placeholder="수정 요청 (예: 더 어둡게, 로우앵글로, 아이를 화면 왼쪽에)" hidden></textarea>
+  </div>
+</article>
+<article class="card" data-id="36" data-scene="S08">
+  <a href="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085350_a40e94a5-515c-418a-b815-99c4c8bc5ca4.png" target="_blank" rel="noopener"><img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085350_a40e94a5-515c-418a-b815-99c4c8bc5ca4_min.webp" alt="컷 36"></a>
+  <div class="meta">
+    <div class="row"><b>#36</b><span class="sc">S08 재가 오르다</span>
+      <span class="badge ins">인서트</span><span class="badge pace">🌊 slow</span></div>
+    <p class="ko">먼 종탑들의 종이 저절로 흔들린다</p>
+    <p class="sub">화각: dutch · 화자: —</p>
+    <p class="tags"><span>#폭발→정적</span> <span>#불씨앰버</span></p>
+    
+    <div class="sel">
+      <button class="ok" type="button">● OK</button>
+      <button class="fix" type="button">✎ 수정</button>
+    </div>
+    <textarea class="memo" placeholder="수정 요청 (예: 더 어둡게, 로우앵글로, 아이를 화면 왼쪽에)" hidden></textarea>
+  </div>
+</article>
+<article class="card" data-id="37" data-scene="S08">
+  <a href="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085418_3a63ce55-3543-48a8-a446-d917f59a5c0f.png" target="_blank" rel="noopener"><img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085418_3a63ce55-3543-48a8-a446-d917f59a5c0f_min.webp" alt="컷 37"></a>
+  <div class="meta">
+    <div class="row"><b>#37</b><span class="sc">S08 재가 오르다</span>
+      <span class="badge ins">인서트</span><span class="badge pace">🌊 slow</span></div>
+    <p class="ko">붉은 불씨 깃털 하나가 예배당 안으로 내려온다</p>
+    <p class="sub">화각: object POV · 화자: —</p>
+    <p class="tags"><span>#폭발→정적</span> <span>#불씨앰버</span></p>
+    
+    <div class="sel">
+      <button class="ok" type="button">● OK</button>
+      <button class="fix" type="button">✎ 수정</button>
+    </div>
+    <textarea class="memo" placeholder="수정 요청 (예: 더 어둡게, 로우앵글로, 아이를 화면 왼쪽에)" hidden></textarea>
+  </div>
+</article>
+<article class="card" data-id="38" data-scene="S08">
+  <a href="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085419_9f32d54b-f31a-4ae0-8198-6838ceda8950.png" target="_blank" rel="noopener"><img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085419_9f32d54b-f31a-4ae0-8198-6838ceda8950_min.webp" alt="컷 38"></a>
+  <div class="meta">
+    <div class="row"><b>#38</b><span class="sc">S08 재가 오르다</span>
+      <span class="badge ins">인서트</span><span class="badge pace">🌊 slow</span></div>
+    <p class="ko">피 묻은 손바닥 위에 내려앉은 불씨 — 태우지 않는다</p>
+    <p class="sub">화각: macro insert · 화자: —</p>
+    <p class="tags"><span>#폭발→정적</span> <span>#불씨앰버</span></p>
+    
+    <div class="sel">
+      <button class="ok" type="button">● OK</button>
+      <button class="fix" type="button">✎ 수정</button>
+    </div>
+    <textarea class="memo" placeholder="수정 요청 (예: 더 어둡게, 로우앵글로, 아이를 화면 왼쪽에)" hidden></textarea>
+  </div>
+</article>
+<article class="card" data-id="39" data-scene="S08">
+  <a href="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085418_ab6f057c-148f-4586-bb2d-03e88dc223c3.png" target="_blank" rel="noopener"><img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085418_ab6f057c-148f-4586-bb2d-03e88dc223c3_min.webp" alt="컷 39"></a>
+  <div class="meta">
+    <div class="row"><b>#39</b><span class="sc">S08 재가 오르다</span>
+      <span class="badge ins">인서트</span><span class="badge pace">🌊 slow</span></div>
+    <p class="ko">아래에서 앰버 빛을 받은 리븐 — 검이 내려간다</p>
+    <p class="sub">화각: low demai close-up · 화자: —</p>
+    <p class="tags"><span>#폭발→정적</span> <span>#불씨앰버</span></p>
+    
+    <div class="sel">
+      <button class="ok" type="button">● OK</button>
+      <button class="fix" type="button">✎ 수정</button>
+    </div>
+    <textarea class="memo" placeholder="수정 요청 (예: 더 어둡게, 로우앵글로, 아이를 화면 왼쪽에)" hidden></textarea>
+  </div>
+</article>
+<article class="card" data-id="40" data-scene="S09">
+  <a href="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085418_4a7bef28-791c-418c-a94d-25655197d9f5.png" target="_blank" rel="noopener"><img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085418_4a7bef28-791c-418c-a94d-25655197d9f5_min.webp" alt="컷 40"></a>
+  <div class="meta">
+    <div class="row"><b>#40</b><span class="sc">S09 증인</span>
+      <span class="badge dlg">대사</span><span class="badge pace">🌊 slow</span></div>
+    <p class="ko">연기 나는 예배당을 내려다보는 언덕 위 재빛 망토의 인물</p>
+    <p class="sub">화각: wide side · 화자: OBSERVER</p>
+    <p class="tags"><span>#여백</span> <span>#재빛낮</span></p>
+    
+    <div class="sel">
+      <button class="ok" type="button">● OK</button>
+      <button class="fix" type="button">✎ 수정</button>
+    </div>
+    <textarea class="memo" placeholder="수정 요청 (예: 더 어둡게, 로우앵글로, 아이를 화면 왼쪽에)" hidden></textarea>
+  </div>
+</article>
+<article class="card" data-id="41" data-scene="S09">
+  <a href="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085418_f599dcfd-10c8-4908-a288-4fe7abb56146.png" target="_blank" rel="noopener"><img loading="lazy" src="https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261028_085418_f599dcfd-10c8-4908-a288-4fe7abb56146_min.webp" alt="컷 41"></a>
+  <div class="meta">
+    <div class="row"><b>#41</b><span class="sc">S09 증인</span>
+      <span class="badge dlg">대사</span><span class="badge pace">🌊 slow</span></div>
+    <p class="ko">후드 그림자 속 입술 — &quot;증인이 선택되었다.&quot;</p>
+    <p class="sub">화각: extreme close-up · 화자: OBSERVER</p>
+    <p class="tags"><span>#여백</span> <span>#재빛낮</span></p>
+    
+    <div class="sel">
+      <button class="ok" type="button">● OK</button>
+      <button class="fix" type="button">✎ 수정</button>
+    </div>
+    <textarea class="memo" placeholder="수정 요청 (예: 더 어둡게, 로우앵글로, 아이를 화면 왼쪽에)" hidden></textarea>
+  </div>
+</article></main>
+<script>
+const KEY = 'firebird_ep1_preview_v1';
+let state = {};
+try { state = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch (e) { state = {}; }
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {} };
+const cards = [...document.querySelectorAll('.card')];
+let last = '';
+cards.forEach(c => {
+  if (c.dataset.scene !== last) {
+    last = c.dataset.scene;
+    const h = document.createElement('h2'); h.className = 'scene-h';
+    h.textContent = c.querySelector('.sc').textContent; c.before(h);
+  }
+});
+function paint() {
+  let ok = 0, fix = 0;
+  cards.forEach(c => {
+    const s = state[c.dataset.id] || {};
+    c.classList.toggle('ok', s.v === 'ok'); c.classList.toggle('fix', s.v === 'fix');
+    const m = c.querySelector('.memo'); m.hidden = s.v !== 'fix'; if (m.value !== (s.memo || '')) m.value = s.memo || '';
+    if (s.v === 'ok') ok++; if (s.v === 'fix') fix++;
+  });
+  nOk.textContent = ok; nFix.textContent = fix; nNone.textContent = cards.length - ok - fix;
+}
+cards.forEach(c => {
+  const id = c.dataset.id;
+  c.querySelector('.ok').onclick = () => { state[id] = { ...(state[id]||{}), v: state[id]?.v === 'ok' ? null : 'ok' }; save(); paint(); };
+  c.querySelector('.fix').onclick = () => { state[id] = { ...(state[id]||{}), v: state[id]?.v === 'fix' ? null : 'fix' }; save(); paint(); };
+  c.querySelector('.memo').oninput = e => { state[id] = { ...(state[id]||{}), memo: e.target.value }; save(); };
+});
+allOk.onclick = () => { cards.forEach(c => { if (!state[c.dataset.id]?.v) state[c.dataset.id] = { v: 'ok' }; }); save(); paint(); };
+onlyFix.onclick = () => { document.body.classList.toggle('only-fix'); onlyFix.textContent = document.body.classList.contains('only-fix') ? '전체 보기' : '수정만 보기'; };
+document.getElementById('export').onclick = () => {
+  const sel = cards.map(c => { const s = state[c.dataset.id] || {}; return { cut: +c.dataset.id, scene: c.dataset.scene, verdict: s.v || 'none', memo: s.memo || '' }; });
+  const txt = JSON.stringify({ version: 'preview_480p_v1', selections: sel }, null, 1);
+  out.style.display = 'block'; outText.value = txt; outText.select();
+  try { const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([txt], { type: 'application/json' })); a.download = 'selections.json'; a.click(); } catch (e) {}
+};
+paint();
+</script>
+</body></html>
