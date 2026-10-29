@@ -1,7 +1,9 @@
 {
  "elevenlabs_flow": "C5b91gJsFTfUVnKwG3qI",
  "model": "eleven_v4",
- "candidates": {
+ "locked": {},
+ "language": "English dialogue + Korean subtitles (user decision 2026-10-29); Korean candidates archived",
+ "candidates_ko_archived": {
   "ELARA": [
    {
     "voice": "Dana - Calm, Warm and Clear",
@@ -50,5 +52,48 @@
   "CHILD": [],
   "SOLDIER": []
  },
- "locked": {}
+ "candidates_en": {
+  "ELARA": [
+   {
+    "voice": "Mira - warm and natural",
+    "voice_id": "9XELrPIyVsbmAjCB3Bwh",
+    "sample": "done"
+   }
+  ],
+  "RIVEN": [
+   {
+    "voice": "Joseph - Northern British",
+    "voice_id": "EtGAAwTx6aMveVbqUxuU",
+    "sample": "pending (ElevenLabs busy)"
+   },
+   {
+    "voice": "Jordie - Warm & Natural (British)",
+    "voice_id": "U977vpWUjb8YL0J1JaFF",
+    "sample": "not started"
+   }
+  ],
+  "TORVAL": [
+   {
+    "voice": "NARRATOR ROB (deep British)",
+    "voice_id": "N3KdYXuAuQCEeNRC4lXJ",
+    "sample": "done"
+   }
+  ],
+  "ELDER": [
+   {
+    "voice": "Jon Peters - Gravelly, Old",
+    "voice_id": "iB5aLrknrSagc00jivta",
+    "sample": "done"
+   }
+  ],
+  "OBSERVER": [
+   {
+    "voice": "Mark - mystery",
+    "voice_id": "GU8Qu28KNb4JbhQV7DX7",
+    "sample": "done"
+   }
+  ],
+  "CHILD": [],
+  "SOLDIER": []
+ }
 }

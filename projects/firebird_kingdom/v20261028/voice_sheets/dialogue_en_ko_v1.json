@@ -1,0 +1,143 @@
+{
+ "rule": "Spoken dialogue = English (locked voice per character, dubbed in post). Subtitles = Korean. No BGM.",
+ "signature": {
+  "ko": "살아 있으니까.",
+  "en": "Because he's alive.",
+  "EP8": "Because I'm alive too."
+ },
+ "lines": [
+  {
+   "scene": "S02",
+   "video_slot": 10,
+   "speaker": "ELDER",
+   "ko": "엘라라, 가자. 저놈들 다시 온다.",
+   "en": "Elara, come on. They'll be back."
+  },
+  {
+   "scene": "S02",
+   "video_slot": 10,
+   "speaker": "ELARA",
+   "ko": "먼저 가세요. 저기 아직 숨 쉬는 사람 있어요.",
+   "en": "Go on ahead. Someone over there is still breathing."
+  },
+  {
+   "scene": "S02",
+   "video_slot": 10,
+   "speaker": "ELDER",
+   "ko": "적을 살리면 너도 적이 되는 거다. 네 어미처럼.",
+   "en": "Save the enemy, and you become the enemy. Just like your mother."
+  },
+  {
+   "scene": "S02",
+   "video_slot": 12,
+   "speaker": "ELARA",
+   "ko": "엄마 이름이 뭐야?",
+   "en": "What's your mother's name?"
+  },
+  {
+   "scene": "S02",
+   "video_slot": 12,
+   "speaker": "CHILD",
+   "ko": "…생각이 안 나요.",
+   "en": "...I can't remember."
+  },
+  {
+   "scene": "S02",
+   "video_slot": 12,
+   "speaker": "ELARA",
+   "ko": "그럼 생각날 때까지 내 옆에 있어.",
+   "en": "Then stay with me until you do."
+  },
+  {
+   "scene": "S04",
+   "video_slot": 22,
+   "speaker": "SOLDIER",
+   "ko": "…죽여라.",
+   "en": "...Kill me."
+  },
+  {
+   "scene": "S04",
+   "video_slot": 22,
+   "speaker": "ELARA",
+   "ko": "그건 내 일이 아니야.",
+   "en": "That's not my job."
+  },
+  {
+   "scene": "S04",
+   "video_slot": 25,
+   "speaker": "CHILD",
+   "ko": "왜 저 사람을 살려요? 저 사람들이 우리 집을…",
+   "en": "Why are you saving him? His people burned our home..."
+  },
+  {
+   "scene": "S04",
+   "video_slot": 26,
+   "speaker": "ELARA",
+   "ko": "살아 있으니까.",
+   "en": "Because he's alive."
+  },
+  {
+   "scene": "S06",
+   "video_slot": 38,
+   "speaker": "RIVEN",
+   "ko": "칼 내려놔.",
+   "en": "Put the knife down."
+  },
+  {
+   "scene": "S06",
+   "video_slot": 38,
+   "speaker": "ELARA",
+   "ko": "당신 병사야. 데려가려면 상처부터 눌러.",
+   "en": "He's your soldier. If you want him, press on the wound first."
+  },
+  {
+   "scene": "S06",
+   "video_slot": 40,
+   "speaker": "TORVAL",
+   "ko": "사령관님.",
+   "en": "Commander."
+  },
+  {
+   "scene": "S06",
+   "video_slot": 39,
+   "speaker": "RIVEN",
+   "ko": "…누가 꿰맸지.",
+   "en": "...Who stitched this?"
+  },
+  {
+   "scene": "S06",
+   "video_slot": 39,
+   "speaker": "ELARA",
+   "ko": "여기 의사가 나 말고 또 보여?",
+   "en": "See any other healer around here?"
+  },
+  {
+   "scene": "S06",
+   "video_slot": 41,
+   "speaker": "RIVEN",
+   "ko": "누가 이 마을을 태웠지?",
+   "en": "Who burned this village?"
+  },
+  {
+   "scene": "S06",
+   "video_slot": 41,
+   "speaker": "ELARA",
+   "ko": "당신들.",
+   "en": "Your people."
+  },
+  {
+   "scene": "S07",
+   "video_slot": 47,
+   "speaker": "RIVEN",
+   "ko": "숨 참아.",
+   "en": "Hold your breath."
+  },
+  {
+   "scene": "S09",
+   "video_slot": 62,
+   "speaker": "OBSERVER",
+   "ko": "증인이 선택되었다.",
+   "en": "The witness has been chosen."
+  }
+ ]
+}
