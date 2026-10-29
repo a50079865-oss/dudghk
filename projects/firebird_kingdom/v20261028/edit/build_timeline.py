@@ -34,16 +34,22 @@ def line_len(n, en):
         return dur(os.path.join(tts_dir, f[0])), 'tts'
     words = len(re.findall(r"[A-Za-z']+", en))
     return round(0.6 + words / 2.6, 2), 'est'
-# offsets inside clips for slots whose action timing is known
-offset = {22: 1.0}          # soldier speaks while knife is at throat (one-take 0-3s)
-cursor, subs = 0.0, []
+# explicit placement: line -> (clip idx, offset s). On-screen speakers sit on their own close shots;
+# off-screen lines ride on backs / OTS / inserts so no other face appears to be talking.
+place = {1: (9, 1.0), 2: (10, 0.5), 3: (10, 4.2), 4: (12, 0.5), 5: (12, 2.6), 6: (13, 0.4),
+         7: (22, 1.0), 8: (22, 3.6), 9: (25, 1.0), 10: (26, 1.5),
+         11: (38, 0.1), 12: (38, 1.8), 14: (39, 0.3), 13: (40, 1.1), 15: (41, 0.3), 16: (41, 2.9),
+         17: (42, 0.5), 18: (47, 1.0), 19: (62, 1.0)}
+subs = []
 for n, l in enumerate(dlg, 1):
-    clip = by_idx[l['video_slot']]
-    st = max(clip['start'] + offset.get(l['video_slot'], 0.4), cursor + 0.25)
+    ci, off = place[n]
+    st = by_idx[ci]['start'] + off
     d, kind = line_len(n, l['en'])
-    subs.append({'n': n, 'speaker': l['speaker'], 'slot': l['video_slot'], 'start': round(st, 2),
+    subs.append({'n': n, 'speaker': l['speaker'], 'slot': ci, 'start': round(st, 2),
                  'end': round(st + d, 2), 'len_src': kind, 'en': l['en'], 'ko': l['ko']})
-    cursor = st + d
+subs.sort(key=lambda x: x['start'])
+for a, b in zip(subs, subs[1:]):
+    assert a['end'] <= b['start'] + 0.01, f"overlap {a['n']} -> {b['n']}"
 
 def ts(x):
     h, r = divmod(x, 3600); m, s = divmod(r, 60)
@@ -53,7 +59,7 @@ with open('edit/subtitles_ko_v0.srt', 'w') as f:
         end = s['end'] + 0.3
         if k + 1 < len(subs):
             end = min(end, subs[k + 1]['start'] - 0.05)
-        f.write(f"{s['n']}\n{ts(s['start'])} --> {ts(end)}\n{s['ko']}\n\n")
+        f.write(f"{k + 1}\n{ts(s['start'])} --> {ts(end)}\n{s['ko']}\n\n")
 
 json.dump({'version': 'rough_v0', 'fps': 24, 'resolution': '1928x1076', 'total_s': round(t, 2),
            'rules': 'clip audio muted; A1 dialogue (EN), A2 SFX, no BGM; KO subtitles',
