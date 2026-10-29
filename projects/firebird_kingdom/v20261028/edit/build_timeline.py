@@ -27,7 +27,7 @@ by_idx = {c['idx']: c for c in tl}
 
 # --- dialogue placement (estimated until TTS durations are known) ---
 dlg = json.load(open('voice_sheets/dialogue_en_ko_v1.json'))['lines']
-tts_dir = 'voice_sheets/tts_v1'
+tts_dir = 'edit/dialogue_trim' if os.path.isdir('edit/dialogue_trim') else 'voice_sheets/tts_v1'
 def line_len(n, en):
     f = [x for x in os.listdir(tts_dir) if x.startswith(f'{n:02d}_')] if os.path.isdir(tts_dir) else []
     if f:
