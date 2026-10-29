@@ -1,0 +1,19 @@
+{
+ "method": "Higgsfield media_import_url (server-side fetch of cloudfront mp4) -> video_analysis_create",
+ "results": {
+  "12 (C09 Elara asks the girl)": {
+   "analysis_id": "a698f0ad-e24f-4a01-a755-8c91ab2ebb47",
+   "visual": "OK: Elara braid, rust shawl, child mustard shawl match sheets; refugees bg; firebird banner",
+   "audio": "FAIL: cinematic score (drones+strings) = BGM violation; English speech generated: \"Is there anyone left?\" (not script)"
+  },
+  "26 (C18 Elara line)": {
+   "analysis_id": "cf0718b3-5bae-43c0-a423-5c61f1f5c1fd",
+   "status": "pending"
+  },
+  "40 (C27 Torval)": {
+   "analysis_id": "640e109e-8d22-4af0-9ad2-ca4e808ea3d7",
+   "status": "pending"
+  }
+ },
+ "conclusion": "Kling sound=on ignores NO MUSIC; clip audio must not be used. Final audio = strip clip audio, rebuild SFX layer + locked English voices + KO subtitles."
+}
