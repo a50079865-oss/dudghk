@@ -1,0 +1,531 @@
+{
+ "version": "v0",
+ "rule": "SFX only, no BGM, no voices",
+ "beds": [
+  {
+   "scene": "S01",
+   "start": 0.0,
+   "end": 26.21,
+   "sfx": "desolate wind over a burned plain, faint crackle of dying embers, distant crows, no music"
+  },
+  {
+   "scene": "S02",
+   "start": 26.21,
+   "end": 70.58,
+   "sfx": "burned village square ambience: low wind, crackling fires, shuffling refugee footsteps on ash, murmurs without words, a distant crying baby, no music"
+  },
+  {
+   "scene": "S03",
+   "start": 70.58,
+   "end": 83.71,
+   "sfx": "quiet close room tone, soft ember hiss, cloth rustle, no music"
+  },
+  {
+   "scene": "S04",
+   "start": 83.71,
+   "end": 131.0,
+   "sfx": "ruined stone chapel interior: hollow wind through a broken roof, single candle flame flutter, slow drips, creaking charred beams, no music"
+  },
+  {
+   "scene": "S05",
+   "start": 131.0,
+   "end": 148.21,
+   "sfx": "muffled memory: low dull wind, distant crowd murmur filtered and slowed, faint creak of rope, no music"
+  },
+  {
+   "scene": "S06",
+   "start": 148.21,
+   "end": 198.67,
+   "sfx": "tense chapel interior: armor creak and chainmail shifts, heavy boots on stone, wind through the doorway, embers ticking, no music"
+  },
+  {
+   "scene": "S07",
+   "start": 198.67,
+   "end": 219.92,
+   "sfx": "roaring fire, crackling burning timber, falling sparks, smoke rush, no music"
+  },
+  {
+   "scene": "S08",
+   "start": 219.92,
+   "end": 270.25,
+   "sfx": "sudden total silence: near-silent air tone with an extremely faint high shimmer, no music"
+  },
+  {
+   "scene": "S09",
+   "start": 270.25,
+   "end": 294.46,
+   "sfx": "high moor wind, distant smoke crackle far below, cloak fabric flapping, no music"
+  }
+ ],
+ "spots": [
+  {
+   "idx": 1,
+   "slot": "C01",
+   "scene": "S01",
+   "t": 0.5,
+   "sfx": "gust of wind carrying ash"
+  },
+  {
+   "idx": 2,
+   "slot": "C02",
+   "scene": "S01",
+   "t": 7.04,
+   "sfx": "crows ruffling feathers, a single caw"
+  },
+  {
+   "idx": 2,
+   "slot": "C02",
+   "scene": "S01",
+   "t": 8.54,
+   "sfx": "horse snort in distance"
+  },
+  {
+   "idx": 3,
+   "slot": "C03",
+   "scene": "S01",
+   "t": 11.58,
+   "sfx": "deep low groan of thick ice shifting under pressure"
+  },
+  {
+   "idx": 4,
+   "slot": "C04",
+   "scene": "S01",
+   "t": 17.12,
+   "sfx": "faint metallic hum of a cracked bronze bell trembling, ash trickling"
+  },
+  {
+   "idx": 5,
+   "slot": "C05",
+   "scene": "S01",
+   "t": 22.17,
+   "sfx": "tiny ember sizzle on metal"
+  },
+  {
+   "idx": 6,
+   "slot": "B1a",
+   "scene": "S01→S02",
+   "t": 26.71,
+   "sfx": "fire roar reflected, crow eye blink"
+  },
+  {
+   "idx": 7,
+   "slot": "B1b",
+   "scene": "S01→S02",
+   "t": 30.75,
+   "sfx": "footsteps crunching in ash fading away"
+  },
+  {
+   "idx": 8,
+   "slot": "B1c",
+   "scene": "S01→S02",
+   "t": 34.59,
+   "sfx": "linen bandage pulled taut, fabric stretch"
+  },
+  {
+   "idx": 9,
+   "slot": "C06",
+   "scene": "S02",
+   "t": 38.83,
+   "sfx": "crowd footsteps passing, cloth bandage wrapping"
+  },
+  {
+   "idx": 10,
+   "slot": "C07",
+   "scene": "S02",
+   "t": 44.38,
+   "sfx": "bandage pressed, a wounded man groans softly"
+  },
+  {
+   "idx": 11,
+   "slot": "C08",
+   "scene": "S02",
+   "t": 48.92,
+   "sfx": "ash falling softly, her breath out through the nose"
+  },
+  {
+   "idx": 12,
+   "slot": "C09",
+   "scene": "S02",
+   "t": 53.96,
+   "sfx": "hands on a shawl, cloth rustle"
+  },
+  {
+   "idx": 13,
+   "slot": "C10",
+   "scene": "S02",
+   "t": 60.3,
+   "sfx": "knuckles tightening, skin and fabric creak"
+  },
+  {
+   "idx": 14,
+   "slot": "C11",
+   "scene": "S02",
+   "t": 64.04,
+   "sfx": "wind rising, footsteps receding"
+  },
+  {
+   "idx": 15,
+   "slot": "B2a",
+   "scene": "S02→S03",
+   "t": 70.88,
+   "sfx": "fibers snapping"
+  },
+  {
+   "idx": 16,
+   "slot": "B2b",
+   "scene": "S02→S03",
+   "t": 75.12,
+   "sfx": "leather sheath, handle grip"
+  },
+  {
+   "idx": 17,
+   "slot": "C12",
+   "scene": "S03",
+   "t": 79.17,
+   "sfx": "blade turning, faint metallic ring"
+  },
+  {
+   "idx": 18,
+   "slot": "B3a",
+   "scene": "S03→S04",
+   "t": 83.71,
+   "sfx": "candle wick crackle"
+  },
+  {
+   "idx": 19,
+   "slot": "B3b",
+   "scene": "S03→S04",
+   "t": 88.25,
+   "sfx": "wax drip tick on bronze"
+  },
+  {
+   "idx": 20,
+   "slot": "B3c",
+   "scene": "S03→S04",
+   "t": 92.29,
+   "sfx": "metal gauntlet settling on stone"
+  },
+  {
+   "idx": 21,
+   "slot": "C13",
+   "scene": "S04",
+   "t": 96.83,
+   "sfx": "footsteps on stone and ash entering, soldier stirring on a wooden pew"
+  },
+  {
+   "idx": 22,
+   "slot": "C14-C16",
+   "scene": "S04",
+   "t": 102.38,
+   "sfx": "soldier sharp breath"
+  },
+  {
+   "idx": 22,
+   "slot": "C14-C16",
+   "scene": "S04",
+   "t": 105.38,
+   "sfx": "blade drawn back"
+  },
+  {
+   "idx": 22,
+   "slot": "C14-C16",
+   "scene": "S04",
+   "t": 106.88,
+   "sfx": "leather pouch rummaged, empty"
+  },
+  {
+   "idx": 22,
+   "slot": "C14-C16",
+   "scene": "S04",
+   "t": 110.38,
+   "sfx": "braid grabbed, hair tension"
+  },
+  {
+   "idx": 22,
+   "slot": "C14-C16",
+   "scene": "S04",
+   "t": 111.38,
+   "sfx": "knife sawing through thick hair, strand snapping"
+  },
+  {
+   "idx": 22,
+   "slot": "C14-C16",
+   "scene": "S04",
+   "t": 113.38,
+   "sfx": "cut braid falls free"
+  },
+  {
+   "idx": 22,
+   "slot": "C14-C16",
+   "scene": "S04",
+   "t": 114.88,
+   "sfx": "tying knot pulled tight, soldier gasps"
+  },
+  {
+   "idx": 25,
+   "slot": "C17",
+   "scene": "S04",
+   "t": 118.42,
+   "sfx": "small footsteps stop in the doorway"
+  },
+  {
+   "idx": 26,
+   "slot": "C18",
+   "scene": "S04",
+   "t": 123.46,
+   "sfx": "candle flicker, breath"
+  },
+  {
+   "idx": 27,
+   "slot": "B4a",
+   "scene": "S04→S05",
+   "t": 131.5,
+   "sfx": "heartbeat-like low pulse, very subtle"
+  },
+  {
+   "idx": 28,
+   "slot": "B4b",
+   "scene": "S04→S05",
+   "t": 135.34,
+   "sfx": "rope fibers twisting, creak"
+  },
+  {
+   "idx": 29,
+   "slot": "C19",
+   "scene": "S05",
+   "t": 139.28,
+   "sfx": "rope creak swinging in wind"
+  },
+  {
+   "idx": 30,
+   "slot": "C20",
+   "scene": "S05",
+   "t": 142.32,
+   "sfx": "crowd jostle, a mother gasp without words"
+  },
+  {
+   "idx": 31,
+   "slot": "C21",
+   "scene": "S05",
+   "t": 145.37,
+   "sfx": "many feet moving, then stillness"
+  },
+  {
+   "idx": 32,
+   "slot": "B5a",
+   "scene": "S05→S06",
+   "t": 148.51,
+   "sfx": "iron-shod hoof slamming on stone, ash burst"
+  },
+  {
+   "idx": 33,
+   "slot": "B5b",
+   "scene": "S05→S06",
+   "t": 152.45,
+   "sfx": "heavy war banner snapping in wind"
+  },
+  {
+   "idx": 34,
+   "slot": "B5c",
+   "scene": "S05→S06",
+   "t": 156.59,
+   "sfx": "distant rhythmic hoofbeats making dust tremble on wood"
+  },
+  {
+   "idx": 35,
+   "slot": "C22",
+   "scene": "S06",
+   "t": 160.83,
+   "sfx": "heavy boots and armor entering a doorway"
+  },
+  {
+   "idx": 36,
+   "slot": "C23",
+   "scene": "S06",
+   "t": 165.88,
+   "sfx": "knife raised, child whimper breath"
+  },
+  {
+   "idx": 37,
+   "slot": "C24",
+   "scene": "S06",
+   "t": 170.92,
+   "sfx": "sword tip scraping stone"
+  },
+  {
+   "idx": 38,
+   "slot": "C25",
+   "scene": "S06",
+   "t": 174.96,
+   "sfx": "armor creak, tense breath"
+  },
+  {
+   "idx": 39,
+   "slot": "C26",
+   "scene": "S06",
+   "t": 181.0,
+   "sfx": "leather gauntlet on cloth, stitches tugged"
+  },
+  {
+   "idx": 40,
+   "slot": "C27",
+   "scene": "S06",
+   "t": 185.04,
+   "sfx": "grip tightening on a sword hilt, leather creak"
+  },
+  {
+   "idx": 41,
+   "slot": "C28",
+   "scene": "S06",
+   "t": 189.08,
+   "sfx": "quiet exhale"
+  },
+  {
+   "idx": 42,
+   "slot": "C29",
+   "scene": "S06",
+   "t": 195.13,
+   "sfx": "fabric scrap crumpled in a fist"
+  },
+  {
+   "idx": 43,
+   "slot": "B6a",
+   "scene": "S06→S07",
+   "t": 199.17,
+   "sfx": "sword pushed back into scabbard, steel slide and click"
+  },
+  {
+   "idx": 44,
+   "slot": "B6b",
+   "scene": "S06→S07",
+   "t": 203.01,
+   "sfx": "ember pulsing crackle in a charred beam"
+  },
+  {
+   "idx": 45,
+   "slot": "B6c",
+   "scene": "S06→S07",
+   "t": 207.05,
+   "sfx": "wool coat rustle"
+  },
+  {
+   "idx": 46,
+   "slot": "C30",
+   "scene": "S07",
+   "t": 210.99,
+   "sfx": "burning roof beam cracking and crashing down, sparks exploding"
+  },
+  {
+   "idx": 47,
+   "slot": "C31",
+   "scene": "S07",
+   "t": 214.14,
+   "sfx": "cloak whipped around, embers swirling, falling debris"
+  },
+  {
+   "idx": 48,
+   "slot": "C32",
+   "scene": "S07",
+   "t": 217.08,
+   "sfx": "sharp intake of breath, fire roar close"
+  },
+  {
+   "idx": 49,
+   "slot": "B7a",
+   "scene": "S07→S08",
+   "t": 219.92,
+   "sfx": "all sound sucked away into silence"
+  },
+  {
+   "idx": 50,
+   "slot": "B7b",
+   "scene": "S07→S08",
+   "t": 224.46,
+   "sfx": "single soft flame stillness tone"
+  },
+  {
+   "idx": 51,
+   "slot": "C33",
+   "scene": "S08",
+   "t": 228.5,
+   "sfx": "suspended silence"
+  },
+  {
+   "idx": 52,
+   "slot": "C34",
+   "scene": "S08",
+   "t": 236.34,
+   "sfx": "soft airy whoosh of ash rising"
+  },
+  {
+   "idx": 53,
+   "slot": "C35",
+   "scene": "S08",
+   "t": 239.54,
+   "sfx": "vast low wing-beat rumble behind clouds, very distant"
+  },
+  {
+   "idx": 54,
+   "slot": "C36",
+   "scene": "S08",
+   "t": 245.59,
+   "sfx": "distant church bells starting to ring by themselves, overlapping"
+  },
+  {
+   "idx": 55,
+   "slot": "C37",
+   "scene": "S08",
+   "t": 250.63,
+   "sfx": "feather drifting, faint warm crackle"
+  },
+  {
+   "idx": 56,
+   "slot": "C38",
+   "scene": "S08",
+   "t": 256.47,
+   "sfx": "ember touching skin, soft glowing hum, no burn"
+  },
+  {
+   "idx": 57,
+   "slot": "C39",
+   "scene": "S08",
+   "t": 264.71,
+   "sfx": "sword slowly lowered, steel whisper"
+  },
+  {
+   "idx": 58,
+   "slot": "B8a",
+   "scene": "S08→S09",
+   "t": 270.55,
+   "sfx": "feather filament glowing hum"
+  },
+  {
+   "idx": 59,
+   "slot": "B8b",
+   "scene": "S08→S09",
+   "t": 274.59,
+   "sfx": "smoke column rumble"
+  },
+  {
+   "idx": 60,
+   "slot": "B8c",
+   "scene": "S08→S09",
+   "t": 278.63,
+   "sfx": "boots on wind-flattened grass"
+  },
+  {
+   "idx": 61,
+   "slot": "C40",
+   "scene": "S09",
+   "t": 282.88,
+   "sfx": "cloak flapping in high wind"
+  },
+  {
+   "idx": 62,
+   "slot": "C41",
+   "scene": "S09",
+   "t": 289.72,
+   "sfx": "breath inside a hood"
+  }
+ ]
+}
