@@ -53,13 +53,23 @@
     "4cd3ebb1-3844-4dbb-bba5-cc6d269c5f5d"
    ],
    "beats": "knife at throat -> sees blood -> pouch empty -> saws off braid -> braid tourniquet on thigh",
-   "status": "1 of 2 done",
+   "status": "segment B generating",
    "results": {
     "2d74cf68": "nsfw filter (knife/blood)",
     "4cd3ebb1": {
      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261029_154032_4cd3ebb1-3844-4dbb-bba5-cc6d269c5f5d.mp4",
      "qa": "one continuous take OK, candle stays, faces stable. 0-8s good (knife at throat -> lowers -> searches pouch -> hand to braid). FAIL beat: braid never cut; from ~10s she ties a white linen bandage on his thigh instead (contradicts 'no bandage left'). Fix idea: keep 0-8.2s, chain a 2nd segment from the 8.2s frame (braid cut + braid tourniquet)."
     }
+   },
+   "chain": {
+    "segA": "4cd3ebb1 frames 0-191 (0-7.96s)",
+    "chain_frame": "frame 192 of 4cd3ebb1 -> uploaded media 36fa3fe4-8bec-4ecd-b9f9-0e033d797530",
+    "segB_jobs": [
+     "545c0596-b2e2-4d0c-98fd-04fe9a4ce9fe",
+     "3357590f-9582-497f-a92f-c8dfe37d0e42"
+    ],
+    "segB_duration": 8,
+    "concat": "A[0:192] + B[0:] (B frame0 == A frame192)"
    }
   }
  }
