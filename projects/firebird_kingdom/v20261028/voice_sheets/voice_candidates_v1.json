@@ -62,14 +62,14 @@
   ],
   "RIVEN": [
    {
-    "voice": "Joseph - Northern British",
+    "voice": "Joseph - Northern British Storyteller",
     "voice_id": "EtGAAwTx6aMveVbqUxuU",
-    "sample": "pending (ElevenLabs busy)"
+    "sample": "done 2026-10-29 -> samples/RIVEN_joseph.mp3 (6.8s)"
    },
    {
     "voice": "Jordie - Warm & Natural (British)",
     "voice_id": "U977vpWUjb8YL0J1JaFF",
-    "sample": "not started"
+    "sample": "done 2026-10-29 -> samples/RIVEN_jordie.mp3 (7.0s)"
    }
   ],
   "TORVAL": [
@@ -93,7 +93,32 @@
     "sample": "done"
    }
   ],
-  "CHILD": [],
-  "SOLDIER": []
+  "CHILD": [
+   {
+    "voice": "Emmaline - young British girl",
+    "voice_id": "nDJIICjR9zfJExIFeSCN",
+    "sample": "done -> samples/CHILD_emmaline.mp3 (6.6s)"
+   },
+   {
+    "voice": "Lulu Lollipop (cartoon, high-pitched)",
+    "voice_id": "ocZQ262SsZb9RIxcQBOj",
+    "sample": "not made - too cartoonish for tone, backup only"
+   }
+  ],
+  "SOLDIER": [
+   {
+    "voice": "Thomas Candia - young British, deep undertone",
+    "voice_id": "KJF2ogTBPpTHWHAqRZrS",
+    "sample": "done -> samples/SOLDIER_thomas.mp3 (audition line '...Just finish it.')"
+   },
+   {
+    "voice": "Rupert - young British",
+    "voice_id": "dI6Ldou06iqSFGEJjKW0",
+    "sample": "pending (ElevenLabs free tier busy)"
+   }
+  ]
+ },
+ "issues": {
+  "SOLDIER_line": "'...Kill me.' blocked by ElevenLabs ToS filter (partial refund). Proposed replacement EN: '...Just finish it.' (KO subtitle '…죽여라.' can stay). Needs user OK."
  }
 }
