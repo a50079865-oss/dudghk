@@ -139,6 +139,20 @@
   "spots": 325,
   "total": 1225
  },
- "status": "all 29 generated (Magnific). Download BLOCKED: host pikaso.cdnpk.net denied by session network policy. Re-fetch signed URLs via creations_wait(identifiers) after allowlisting; then save to edit/sfx/<key>.mp3",
- "listen": "https://www.magnific.com/app/creation/<id>"
+ "status": "downloaded 29/29 -> edit/sfx/*.mp3 (2026-10-29)",
+ "listen": "https://www.magnific.com/app/creation/<id>",
+ "levels_note": {
+  "bed_S03": "very quiet (mean -69 dB) -> +20~25 dB in mix",
+  "bed_S08": "intentionally near-silent (-50 dB)",
+  "spot_56": "quiet (mean -55 dB) -> +20 dB in mix",
+  "peaking_0dB": [
+   "spot_02",
+   "spot_22b",
+   "spot_29",
+   "spot_32",
+   "spot_33",
+   "spot_46",
+   "bed_S07"
+  ]
+ }
 }
