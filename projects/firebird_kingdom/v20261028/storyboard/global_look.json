@@ -1,10 +1,14 @@
 {
   "version": "v20261028",
   "frame": "16:9",
-  "camera_film": "ARRI Alexa with anamorphic lenses, fine 35mm grain, soft organic (non-clinical) rendering",
+  "camera_film": "ARRI Alexa 35 / Alexa Mini LF look: ARRI color science (LogC to Rec709), natural skin tones, smooth highlight roll-off, anamorphic lenses, fine 35mm grain, soft organic rendering",
   "grade_stock": "bleach-bypass look, desaturated, harsh contrast, gritty metallic texture",
-  "color_balance": {"dominant": "ash grey", "accent": "ember amber (only warm color — embers, candles, the firebird's glow)", "contrast_type": "warm-cool (Itten), amber vs ash"},
-  "lighting_base": "low-key chiaroscuro, deep controlled shadows, single hard key, restrained highlights; volumetric light shafts with ash and dust in the air",
+  "color_balance": {
+    "dominant": "ash grey",
+    "accent": "ember amber (only warm color — embers, candles, the firebird's glow)",
+    "contrast_type": "warm-cool (Itten), amber vs ash"
+  },
+  "lighting_base": "low-key chiaroscuro, single hard key, NEGATIVE FILL on the shadow side (black flags, no bounce), deep controlled shadows with readable crushed blacks, restrained highlights; volumetric shafts with ash and dust",
   "atmosphere": "fine ash and dust particles always drifting in the air, indoors and outdoors",
   "art_direction": "production-rich FG/MG/BG layering, no dead space; scorched white stone, worn linen and leather; no glossy fantasy armor",
   "scene_overrides": {
@@ -15,5 +19,29 @@
     "S07": "hard light, flying sparks are the only warm points",
     "S08": "total stillness turns to warm amber glow from the ember (liberated color code) on palm and faces; the rest stays ash grey",
     "S09": "flat ash-grey daylight, wind, vast negative space"
+  },
+  "depth_of_field": "always shallow: fast prime f/1.4-f/2 or telephoto, subject razor sharp, background melting into bokeh; foreground occlusion layer out of focus",
+  "shot_grammar": {
+    "rule": "every scene mixes several shot types; eye-level or flat frontal/plain side composition is forbidden",
+    "vocabulary": [
+      "low angle",
+      "high angle",
+      "dutch angle",
+      "top view (overhead)",
+      "drone shot",
+      "cutaway",
+      "insert",
+      "over-the-shoulder",
+      "POV",
+      "long shot",
+      "close-up",
+      "extreme close-up"
+    ],
+    "per_scene_min_types": 3,
+    "never": [
+      "eye-level",
+      "straight-on frontal",
+      "flat profile without angle"
+    ]
   }
 }
