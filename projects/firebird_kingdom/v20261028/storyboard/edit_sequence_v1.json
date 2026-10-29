@@ -1,0 +1,338 @@
+{
+ "version": "edit_sequence_v1",
+ "higgsfield_bridge_folder": "94b5afaa-0d1c-474c-9d30-7ed7395937ff",
+ "count": 62,
+ "sequence": [
+  {
+   "slot": "C01",
+   "type": "main",
+   "job_id": "4360f25e-b415-42ac-9495-98cbb8546bc0"
+  },
+  {
+   "slot": "C02",
+   "type": "main",
+   "job_id": "adccb03f-8e84-4883-8315-3ad9c2c4c532"
+  },
+  {
+   "slot": "C03",
+   "type": "main",
+   "job_id": "9f30108b-1574-49b2-804e-b69a410407f9"
+  },
+  {
+   "slot": "C04",
+   "type": "main",
+   "job_id": "7410fac0-7869-43e6-ac8f-57bd6676c093"
+  },
+  {
+   "slot": "C05",
+   "type": "main",
+   "job_id": "9a5439c7-6870-4fbc-9b10-549d9d99b69c"
+  },
+  {
+   "slot": "B1a",
+   "type": "bridge",
+   "job_id": "8df83200-9bd6-4347-b8f3-1f029ea7bddb",
+   "ko": "까마귀 눈동자에 비친 불타는 마을"
+  },
+  {
+   "slot": "B1b",
+   "type": "bridge",
+   "job_id": "f3d9023b-1717-41ad-9dda-652251a789f3",
+   "ko": "재 위의 피난 발자국, 반쯤 묻힌 나무 장난감 말"
+  },
+  {
+   "slot": "B1c",
+   "type": "bridge",
+   "job_id": "4721a3a8-d292-465c-b40f-7de9afee2676",
+   "ko": "재 묻은 손등이 리넨 붕대를 당긴다"
+  },
+  {
+   "slot": "C06",
+   "type": "main",
+   "job_id": "96dfedce-3a40-4df7-8e49-132060835b09"
+  },
+  {
+   "slot": "C07",
+   "type": "main",
+   "job_id": "2d3f0148-2a79-455a-8392-89ff7645c4ad"
+  },
+  {
+   "slot": "C08",
+   "type": "main",
+   "job_id": "78a2edde-f295-4146-9546-8926b33a1838"
+  },
+  {
+   "slot": "C09",
+   "type": "main",
+   "job_id": "56307df5-90d0-44ce-beeb-7f2e7db5d567"
+  },
+  {
+   "slot": "C10",
+   "type": "main",
+   "job_id": "8fd3a70b-2ba0-4805-a5ca-64cbe1043621"
+  },
+  {
+   "slot": "C11",
+   "type": "main",
+   "job_id": "ddab313a-b9f8-4b77-b461-b8ff9750f64b"
+  },
+  {
+   "slot": "B2a",
+   "type": "bridge",
+   "job_id": "971a40eb-4454-4516-82a3-5d73ac219a19",
+   "ko": "잘린 리넨 섬유의 해진 끝"
+  },
+  {
+   "slot": "B2b",
+   "type": "bridge",
+   "job_id": "39fc982d-213f-46b6-9a76-c41f0a3532b6",
+   "ko": "앞치마 주머니로 들어가는 손, 뼈 손잡이의 결"
+  },
+  {
+   "slot": "C12",
+   "type": "main",
+   "job_id": "d22ed318-3327-48ea-88f5-dd71b8e169e6"
+  },
+  {
+   "slot": "B3a",
+   "type": "bridge",
+   "job_id": "aa9a0a36-bc58-43e5-bb9d-72289197e90f",
+   "ko": "칼날의 앰버 반사가 촛불 심지로"
+  },
+  {
+   "slot": "B3b",
+   "type": "bridge",
+   "job_id": "7cfce089-084f-4ddb-be89-0dae9e0c0f1d",
+   "ko": "그을린 청동 불새 부조, 흘러내린 촛농"
+  },
+  {
+   "slot": "B3c",
+   "type": "bridge",
+   "job_id": "08859a15-2f2d-4ea5-8150-0b89649443f0",
+   "ko": "돌바닥에 떨어진 찌그러진 북방군 건틀릿"
+  },
+  {
+   "slot": "C13",
+   "type": "main",
+   "job_id": "ef2a973a-77f9-40e0-a9c4-bbfe5abc2bf3"
+  },
+  {
+   "slot": "C14",
+   "type": "main",
+   "job_id": "5731144a-8a0c-43f1-abb8-649f78ff3d15"
+  },
+  {
+   "slot": "C15",
+   "type": "main",
+   "job_id": "bb56be7c-d738-4c18-820c-ac0294c10e85"
+  },
+  {
+   "slot": "C16",
+   "type": "main",
+   "job_id": "316ada55-0605-444a-ac00-19b4988b4787"
+  },
+  {
+   "slot": "C17",
+   "type": "main",
+   "job_id": "92df33bf-65b7-4661-b888-b8027be134a7"
+  },
+  {
+   "slot": "C18",
+   "type": "main",
+   "job_id": "d1a905a0-5abd-4730-8622-d202e4bafc23"
+  },
+  {
+   "slot": "B4a",
+   "type": "bridge",
+   "job_id": "5112113a-c5a6-4d48-b4dc-f29721f68688",
+   "ko": "엘라라의 홍채에 흔들리는 촛불 — 동공이 커진다"
+  },
+  {
+   "slot": "B4b",
+   "type": "bridge",
+   "job_id": "4b03a2b9-563e-4baa-8eb5-9b6b8cce3a5e",
+   "ko": "잘린 붕대 섬유 → 탈색된 삼밧줄 섬유"
+  },
+  {
+   "slot": "C19",
+   "type": "main",
+   "job_id": "960798a9-dbc9-495e-acad-1d027ed4a0a1"
+  },
+  {
+   "slot": "C20",
+   "type": "main",
+   "job_id": "46cb2398-e3ef-458e-a0a7-823bc6195a1f"
+  },
+  {
+   "slot": "C21",
+   "type": "main",
+   "job_id": "6e2b84de-3653-4381-809e-d6276b47b607"
+  },
+  {
+   "slot": "B5a",
+   "type": "bridge",
+   "job_id": "a814327a-831c-4bde-8f3f-39d0f1ba4b3a",
+   "ko": "재 덮인 돌바닥을 내리찍는 말발굽, 튀어오르는 재"
+  },
+  {
+   "slot": "B5b",
+   "type": "bridge",
+   "job_id": "c141f40a-2361-49e7-a92d-6fc296361824",
+   "ko": "바람에 휘날리는 사슬 늑대 군기"
+  },
+  {
+   "slot": "B5c",
+   "type": "bridge",
+   "job_id": "4411914c-9fd7-48c5-bd46-510e8ca9bac6",
+   "ko": "장의자 위 먼지가 진동에 튀어 오른다"
+  },
+  {
+   "slot": "C22",
+   "type": "main",
+   "job_id": "7ad047e7-3424-4f60-946b-d055fec6d1d9"
+  },
+  {
+   "slot": "C23",
+   "type": "main",
+   "job_id": "5074fec3-b01b-4061-909f-4191d58c4ea6"
+  },
+  {
+   "slot": "C24",
+   "type": "main",
+   "job_id": "801a376f-2c27-4e53-9214-90bdeaba9fe3"
+  },
+  {
+   "slot": "C25",
+   "type": "main",
+   "job_id": "ab0455a3-a849-44a2-9caf-b227f5513ce3"
+  },
+  {
+   "slot": "C26",
+   "type": "main",
+   "job_id": "a37e32fa-c2aa-426b-acd9-6263675ce9f0"
+  },
+  {
+   "slot": "C27",
+   "type": "main",
+   "job_id": "42950d67-5c8a-4050-8715-3a1056e49943"
+  },
+  {
+   "slot": "C28",
+   "type": "main",
+   "job_id": "d4f45a49-efc6-4790-9456-5ae9e5f26db1"
+  },
+  {
+   "slot": "C29",
+   "type": "main",
+   "job_id": "2dfec55a-33af-4dbe-a6b0-cd16c9dd0d53"
+  },
+  {
+   "slot": "B6a",
+   "type": "bridge",
+   "job_id": "11ae98ac-9933-4166-9efe-20386776f348",
+   "ko": "건틀릿 엄지가 칼집으로 검을 한 마디 밀어 넣는다"
+  },
+  {
+   "slot": "B6b",
+   "type": "bridge",
+   "job_id": "18bbd27f-cf52-46a6-a384-12e4453b8a51",
+   "ko": "그을린 들보 균열 속 불씨, 하나가 떨어진다"
+  },
+  {
+   "slot": "B6c",
+   "type": "bridge",
+   "job_id": "76b15613-0a72-4f93-9da0-0ae6d1cc2403",
+   "ko": "리븐 코트 주머니 속 마른 검은 빵 한 조각"
+  },
+  {
+   "slot": "C30",
+   "type": "main",
+   "job_id": "d7450659-25d6-4f76-8eb9-7752cab5394b"
+  },
+  {
+   "slot": "C31",
+   "type": "main",
+   "job_id": "eb58afd1-1243-4723-bd41-646cba89ea9f"
+  },
+  {
+   "slot": "C32",
+   "type": "main",
+   "job_id": "76e8dce2-6016-4ddf-aed2-6d6e0835e41e"
+  },
+  {
+   "slot": "B7a",
+   "type": "bridge",
+   "job_id": "8ffb62e8-52c1-4957-99b9-5c9cc49b5cee",
+   "ko": "공중의 불꽃이 느려지다 멈춘다"
+  },
+  {
+   "slot": "B7b",
+   "type": "bridge",
+   "job_id": "dab95c0b-0a53-4553-baba-ce8eb5e4fb5e",
+   "ko": "옆으로 누웠던 촛불이 완벽히 곧게 선다"
+  },
+  {
+   "slot": "C33",
+   "type": "main",
+   "job_id": "f7b184b4-0bb9-43d9-ac6b-da40ce32e97a"
+  },
+  {
+   "slot": "C34",
+   "type": "main",
+   "job_id": "d1e77d99-1cbe-41df-ab6f-04b29724bb87"
+  },
+  {
+   "slot": "C35",
+   "type": "main",
+   "job_id": "7a256fa3-4390-450e-8537-a669e54b0530"
+  },
+  {
+   "slot": "C36",
+   "type": "main",
+   "job_id": "d502b19e-38ec-400b-9ffd-a7520d74d137"
+  },
+  {
+   "slot": "C37",
+   "type": "main",
+   "job_id": "00aec783-e789-4257-aa54-09216bd37f82"
+  },
+  {
+   "slot": "C38",
+   "type": "main",
+   "job_id": "45e14ddd-6466-4581-90fd-8ef1665fb431"
+  },
+  {
+   "slot": "C39",
+   "type": "main",
+   "job_id": "ed99ea41-f040-4f24-a6ca-ab9f5b223209"
+  },
+  {
+   "slot": "B8a",
+   "type": "bridge",
+   "job_id": "029e8911-c226-45cb-8823-4dacf1e606e3",
+   "ko": "손바닥 위 불씨 깃털의 앰버 섬유"
+  },
+  {
+   "slot": "B8b",
+   "type": "bridge",
+   "job_id": "4aae57b5-8099-44dd-b831-58098e07f739",
+   "ko": "예배당 지붕에서 솟는 연기 기둥, 재가 바람을 거슬러 오른다"
+  },
+  {
+   "slot": "B8c",
+   "type": "bridge",
+   "job_id": "c6757f51-fbc8-432a-a293-5dfde4e63742",
+   "ko": "재빛 망토 자락과 장화, 재 묻은 풀이 바람에 눕는다"
+  },
+  {
+   "slot": "C40",
+   "type": "main",
+   "job_id": "aa35a1eb-d638-42a6-8234-a8323a45a89a"
+  },
+  {
+   "slot": "C41",
+   "type": "main",
+   "job_id": "03c6ffe5-66d4-4318-ae95-525ca22236b9"
+  }
+ ]
+}

@@ -17,3 +17,9 @@
 
 적용 파일: storyboard/global_look.json (shot_grammar, depth_of_field, lighting_base)
 EP1 파일럿 위반 컷 재배정: storyboard/angle_remap_v2.json
+
+## 5. 브릿지 컷 · 인서트 (사용자 지시 · 2026-10-29)
+- 씬과 씬 사이마다 2~3컷: 익스트림 클로즈업, 또는 소재의 질감을 보여 주는 아름다운 인서트.
+- 의미 없는 이미지는 넣지 않는다. 컷마다 '의미'(모티프·복선·감정)와 '연결 방식'(매치컷, 사운드 브릿지, 움직임 연결)을 명시한다.
+- 룩은 그 씬의 시나리오 톤을 따른다(scene_overrides).
+- EP1 적용본: storyboard/BRIDGE_CUTS.md · 전체 편집 순서: storyboard/edit_sequence_v1.json
