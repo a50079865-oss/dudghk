@@ -53,7 +53,7 @@
     "4cd3ebb1-3844-4dbb-bba5-cc6d269c5f5d"
    ],
    "beats": "knife at throat -> sees blood -> pouch empty -> saws off braid -> braid tourniquet on thigh",
-   "status": "segment B generating",
+   "status": "DONE",
    "results": {
     "2d74cf68": "nsfw filter (knife/blood)",
     "4cd3ebb1": {
@@ -69,7 +69,21 @@
      "3357590f-9582-497f-a92f-c8dfe37d0e42"
     ],
     "segB_duration": 8,
-    "concat": "A[0:192] + B[0:] (B frame0 == A frame192)"
+    "concat": "A[0:192] + B[0:] (B frame0 == A frame192)",
+    "segB_results": {
+     "545c0596": "FAIL: braid never cut",
+     "3357590f": "PICK: braid cut ~4s, hair jaw-length from ~5s, ties braid at his side; candle stays"
+    },
+    "segB_pick_url": "https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261029_155009_3357590f-9582-497f-a92f-c8dfe37d0e42.mp4",
+    "segA_url": "https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261029_154032_4cd3ebb1-3844-4dbb-bba5-cc6d269c5f5d.mp4"
+   },
+   "final": {
+    "local": "video/clips_v2/S04_onetake_final.mp4 (gitignored, rebuild with cmd)",
+    "duration_s": 16.04,
+    "seam": "frame 192 (7.96s), visually continuous",
+    "cmd": "ffmpeg -i segA.mp4 -i segB.mp4 -filter_complex \"[0:v]trim=end_frame=192,setpts=PTS-STARTPTS[a];[1:v]setpts=PTS-STARTPTS[b];[a][b]concat=n=2:v=1:a=0,format=yuv420p[v]\" -map \"[v]\" -c:v libx264 -crf 15 -preset slow -r 24 S04_onetake_final.mp4",
+    "notes": "tourniquet knot itself mostly off-frame at her side; short hair at end matches C17/C18",
+    "edit_plan": "edit sequence: 21 C13 -> S04_onetake_final -> 25 C17 (drop 22,23,24)"
    }
   }
  }
