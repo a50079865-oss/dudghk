@@ -1,7 +1,14 @@
 {
  "elevenlabs_flow": "C5b91gJsFTfUVnKwG3qI",
  "model": "eleven_v4",
- "locked": {},
+ "locked": {
+  "RIVEN": {
+   "voice": "Joseph - Northern British Storyteller",
+   "voice_id": "EtGAAwTx6aMveVbqUxuU",
+   "locked_on": "2026-10-29",
+   "by": "user"
+  }
+ },
  "language": "English dialogue + Korean subtitles (user decision 2026-10-29); Korean candidates archived",
  "candidates_ko_archived": {
   "ELARA": [
