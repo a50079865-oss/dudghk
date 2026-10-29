@@ -1,0 +1,11 @@
+{
+ "date": "2026-10-29",
+ "reason": "user decision A (52, 53) + re-do braid-cut scene (23/C15)",
+ "settings": {"model": "kling3_0", "mode": "pro", "sound": "off (clip audio is discarded in edit)", "folder_id": "88424093-1dbd-4d13-8733-1eb70f6a46e7"},
+ "image_model_note": "nano_banana_flash no longer in catalog -> nano_banana_2_1 (2k)",
+ "items": {
+  "23": {"slot": "C15", "duration": 5, "start_image": "bf0ff910-b0c3-4008-ba9d-8076bfa1bd01 (existing s24 alt 152: over-shoulder braid cut, candle)", "video_job": "754f50db-3fbd-47f8-b809-086d7ad6b201"},
+  "52": {"slot": "C34", "duration": 6, "start_image": "ca83bb2c-1117-437f-aa5a-36447ef0e6f5 (new; old 341 had spiral sky; 1st retry with location ref hit nsfw filter x2 -> retried without ref)", "image_alts": ["5c115bb4-0479-4f74-a238-f2eb056cbd4d"], "video_job": "4c21f709-e4e0-469a-9ce3-18ce9f4a728d"},
+  "53": {"slot": "C35", "duration": 6, "start_image": "084e45cd-a21c-498c-a44f-24de97bf17bc (new; wing-shaped cloud shadow + amber glow, no creature; old 351/352 both showed bat-winged dragon)", "image_alts": ["da7fab57-110c-4276-b030-145a42f88c60"], "video_job": "ae7449db-3121-4ec0-8741-6d46640a6dc4"}
+ }
+}
