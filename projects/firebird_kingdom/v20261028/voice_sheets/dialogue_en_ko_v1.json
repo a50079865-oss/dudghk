@@ -53,14 +53,18 @@
    "video_slot": 22,
    "speaker": "SOLDIER",
    "ko": "…죽여라.",
-   "en": "...Kill me."
+   "en": "...Just finish it.",
+   "en_original": "...Kill me.",
+   "note": "changed: ElevenLabs ToS filter",
+   "video_slot_note": "now inside S04_onetake_final (0-7.96s segment)"
   },
   {
    "scene": "S04",
    "video_slot": 22,
    "speaker": "ELARA",
    "ko": "그건 내 일이 아니야.",
-   "en": "That's not my job."
+   "en": "That's not my job.",
+   "video_slot_note": "now inside S04_onetake_final (0-7.96s segment)"
   },
   {
    "scene": "S04",

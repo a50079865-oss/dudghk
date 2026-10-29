@@ -7,6 +7,42 @@
    "voice_id": "EtGAAwTx6aMveVbqUxuU",
    "locked_on": "2026-10-29",
    "by": "user"
+  },
+  "ELARA": {
+   "voice": "Mira - warm and natural",
+   "voice_id": "9XELrPIyVsbmAjCB3Bwh",
+   "locked_on": "2026-10-29",
+   "by": "user"
+  },
+  "TORVAL": {
+   "voice": "NARRATOR ROB (deep British)",
+   "voice_id": "N3KdYXuAuQCEeNRC4lXJ",
+   "locked_on": "2026-10-29",
+   "by": "user"
+  },
+  "ELDER": {
+   "voice": "Jon Peters - Gravelly, Old",
+   "voice_id": "iB5aLrknrSagc00jivta",
+   "locked_on": "2026-10-29",
+   "by": "user"
+  },
+  "OBSERVER": {
+   "voice": "Mark - mystery",
+   "voice_id": "GU8Qu28KNb4JbhQV7DX7",
+   "locked_on": "2026-10-29",
+   "by": "user"
+  },
+  "CHILD": {
+   "voice": "Emmaline - young British girl",
+   "voice_id": "nDJIICjR9zfJExIFeSCN",
+   "locked_on": "2026-10-29",
+   "by": "user"
+  },
+  "SOLDIER": {
+   "voice": "Thomas Candia - young British, deep undertone",
+   "voice_id": "KJF2ogTBPpTHWHAqRZrS",
+   "locked_on": "2026-10-29",
+   "by": "user"
   }
  },
  "language": "English dialogue + Korean subtitles (user decision 2026-10-29); Korean candidates archived",
@@ -126,6 +162,6 @@
   ]
  },
  "issues": {
-  "SOLDIER_line": "'...Kill me.' blocked by ElevenLabs ToS filter (partial refund). Proposed replacement EN: '...Just finish it.' (KO subtitle '…죽여라.' can stay). Needs user OK."
+  "SOLDIER_line": "RESOLVED 2026-10-29: user approved EN '...Just finish it.' (KO subtitle unchanged)"
  }
 }
