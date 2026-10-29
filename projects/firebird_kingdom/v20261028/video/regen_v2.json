@@ -53,7 +53,14 @@
     "4cd3ebb1-3844-4dbb-bba5-cc6d269c5f5d"
    ],
    "beats": "knife at throat -> sees blood -> pouch empty -> saws off braid -> braid tourniquet on thigh",
-   "status": "generating"
+   "status": "1 of 2 done",
+   "results": {
+    "2d74cf68": "nsfw filter (knife/blood)",
+    "4cd3ebb1": {
+     "url": "https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261029_154032_4cd3ebb1-3844-4dbb-bba5-cc6d269c5f5d.mp4",
+     "qa": "one continuous take OK, candle stays, faces stable. 0-8s good (knife at throat -> lowers -> searches pouch -> hand to braid). FAIL beat: braid never cut; from ~10s she ties a white linen bandage on his thigh instead (contradicts 'no bandage left'). Fix idea: keep 0-8.2s, chain a 2nd segment from the 8.2s frame (braid cut + braid tourniquet)."
+    }
+   }
   }
  }
 }
