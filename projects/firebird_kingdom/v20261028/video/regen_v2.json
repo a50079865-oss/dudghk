@@ -15,7 +15,7 @@
    "start_image": "bf0ff910-b0c3-4008-ba9d-8076bfa1bd01 (existing s24 alt 152: over-shoulder braid cut, candle)",
    "video_job": "754f50db-3fbd-47f8-b809-086d7ad6b201",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261029_153114_754f50db-3fbd-47f8-b809-086d7ad6b201.mp4",
-   "qa": "HOLD: braid cut reads ok mid-shot, but the candle vanishes ~2s in and the end is ambiguous (braid still looks attached). Candidate for S04 one-take replacement."
+   "qa": "HOLD: braid cut reads ok mid-shot, but the candle vanishes ~2s in and the end is ambiguous (braid still looks attached). Candidate for S04 one-take replacement. -> superseded by S04_onetake (user chose option 1)"
   },
   "52": {
    "slot": "C34",
@@ -38,6 +38,22 @@
    "video_job": "ae7449db-3121-4ec0-8741-6d46640a6dc4",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_33y5OecIsqLwjBCwWgIAggfjfGM/hf_20261029_153323_ae7449db-3121-4ec0-8741-6d46640a6dc4.mp4",
    "qa": "PASS: soft wing-shaped cloud shadow with ember glow, no creature/dragon; village burning below"
+  },
+  "S04_onetake": {
+   "replaces": [
+    "22 C14",
+    "23 C15",
+    "24 C16"
+   ],
+   "keeps": "21 C13 entrance wide",
+   "duration": 15,
+   "start_image": "5731144a-8a0c-43f1-abb8-649f78ff3d15 (C14 pick: knife at throat, long braid, candle)",
+   "video_jobs": [
+    "2d74cf68-f484-4974-a366-40ef4c36e63a",
+    "4cd3ebb1-3844-4dbb-bba5-cc6d269c5f5d"
+   ],
+   "beats": "knife at throat -> sees blood -> pouch empty -> saws off braid -> braid tourniquet on thigh",
+   "status": "generating"
   }
  }
 }
