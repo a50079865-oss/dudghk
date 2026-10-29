@@ -1,0 +1,144 @@
+{
+ "service": "Magnific audio_sfx_generate (ElevenLabs SFX)",
+ "plan": "budget: 9 beds x 20s loop + 20 key spots",
+ "beds": {
+  "S01": "SyXTPJYUb8",
+  "S02": "mE4UuCIhJQ",
+  "S03": "4RvBZZR9Aa",
+  "S04": "ksc2lgm16B",
+  "S05": "0exqdoqTfW",
+  "S06": "8aOlfQ8IrU",
+  "S07": "bxn3jw05Y2",
+  "S08": "rgTGS9Oxtc",
+  "S09": "3zumneeREY"
+ },
+ "spots": {
+  "02": {
+   "idx": 2,
+   "offset_s": 1.0,
+   "desc": "crows ruffle + caw",
+   "id": "rgTGSIixtc"
+  },
+  "03": {
+   "idx": 3,
+   "offset_s": 1.5,
+   "desc": "ice groan",
+   "id": "bxn3jBr5Y2"
+  },
+  "04": {
+   "idx": 4,
+   "offset_s": 1.0,
+   "desc": "bell hum trembling",
+   "id": "N2f8AxJ6D9"
+  },
+  "21": {
+   "idx": 21,
+   "offset_s": 1.0,
+   "desc": "footsteps entering chapel + pew creak",
+   "id": "1l0AgvQr4r"
+  },
+  "22a": {
+   "idx": 22,
+   "offset_s": 9.5,
+   "desc": "knife sawing braid",
+   "id": "1l0AgfHr4r"
+  },
+  "22b": {
+   "idx": 22,
+   "offset_s": 13.0,
+   "desc": "knot pulled + gasp",
+   "id": "dtUxmYjXSL"
+  },
+  "29": {
+   "idx": 29,
+   "offset_s": 0.2,
+   "desc": "gallows rope creak",
+   "id": "rgTGSFcxtc"
+  },
+  "32": {
+   "idx": 32,
+   "offset_s": 0.3,
+   "desc": "hoof slam on stone",
+   "id": "EbRP5mQuuO"
+  },
+  "33": {
+   "idx": 33,
+   "offset_s": 0.2,
+   "desc": "banner snapping",
+   "id": "jUMnwKoLD0"
+  },
+  "35": {
+   "idx": 35,
+   "offset_s": 0.5,
+   "desc": "armored soldiers enter",
+   "id": "bxn3jFP5Y2"
+  },
+  "37": {
+   "idx": 37,
+   "offset_s": 0.5,
+   "desc": "sword tip scrape",
+   "id": "gOd0P3gSXO"
+  },
+  "43": {
+   "idx": 43,
+   "offset_s": 0.5,
+   "desc": "sword into scabbard click",
+   "id": "6ACIzMEiJO"
+  },
+  "46": {
+   "idx": 46,
+   "offset_s": 0.2,
+   "desc": "burning beam crash",
+   "id": "1l0ASNNr4r"
+  },
+  "47": {
+   "idx": 47,
+   "offset_s": 0.3,
+   "desc": "cloak whip + debris",
+   "id": "mE4UQLbhJQ"
+  },
+  "49": {
+   "idx": 49,
+   "offset_s": 0.0,
+   "desc": "sound sucked into silence",
+   "id": "lJecyzCgv9"
+  },
+  "52": {
+   "idx": 52,
+   "offset_s": 0.3,
+   "desc": "ash rising whoosh",
+   "id": "5jYRs6uKxe"
+  },
+  "53": {
+   "idx": 53,
+   "offset_s": 0.5,
+   "desc": "distant wing-beat rumble",
+   "id": "1l0AS22r4r"
+  },
+  "54": {
+   "idx": 54,
+   "offset_s": 0.5,
+   "desc": "bells ringing by themselves",
+   "id": "ksc2g2F16B"
+  },
+  "56": {
+   "idx": 56,
+   "offset_s": 0.3,
+   "desc": "ember on palm hum",
+   "id": "rgTGUYLxtc"
+  },
+  "57": {
+   "idx": 57,
+   "offset_s": 0.5,
+   "desc": "sword lowered whisper",
+   "id": "IfygE7htvE"
+  }
+ },
+ "credits": {
+  "beds": 900,
+  "spots": 325,
+  "total": 1225
+ },
+ "status": "all 29 generated (Magnific). Download BLOCKED: host pikaso.cdnpk.net denied by session network policy. Re-fetch signed URLs via creations_wait(identifiers) after allowlisting; then save to edit/sfx/<key>.mp3",
+ "listen": "https://www.magnific.com/app/creation/<id>"
+}
