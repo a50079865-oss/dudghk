@@ -29,6 +29,15 @@ STAGE 4(영상) 생성 완료 → 검수·오디오 단계 → STAGE 5(편집).
   - 클립 로컬 경로 video/clips/ 는 .gitignore (용량 542MB, URL로 재다운로드)
 - 다음: 사용자에게 재생성 범위 확정 → 리븐/아이/부상병 목소리
 
+## 2026-10-29 세션2 후반 진행
+- 재생성: 52(C34)·53(C35) 통과, S04 원테이크 16s(앞 8s + 이어붙인 8s) → 22~24 대체 (video/regen_v2.json)
+- 목소리 7명 락 (voice_candidates_v1.json locked), 부상병 대사 EN "...Just finish it." (ToS 필터)
+- TTS 19/19 (voice_sheets/tts_v1, ElevenLabs 유료 플랜) → 무음 트림 edit/dialogue_trim
+- SFX: Magnific 베드 9 + 스폿 20 (edit/sfx, 1,225크레딧), 큐 시트 edit/sfx_cues_v0.json
+- 러프컷 v0: python3 edit/build_timeline.py && python3 edit/render_roughcut.py → edit/out/ (gitignore, 재렌더 가능)
+  - 294.4s, 1920x1080, 믹스 -22.4 LUFS, 한글 자막 번인(WenQuanYi Zen Hei)
+- 다음: 사용자 러프컷 피드백 → 컷 트림/타이밍, 나머지 SFX 스폿 47개(선택), 최종 라우드니스 -14~-16 LUFS 마스터
+
 ## 새 세션에서 할 일
 1. 네트워크 확인: `curl -sI https://d8j0ntlcm91z4.cloudfront.net/...mp4` 가 200인지 (허용 주소: d8j0ntlcm91z4.cloudfront.net, d2ol7oe51mr4n9.cloudfront.net, upload.higgsfield.ai)
 2. 62클립 다운로드 → ffmpeg 프레임 추출로 직접 화면 검수(얼굴·의상 드리프트, 십자가, 모션 깨짐) → 문제 컷만 재생성
