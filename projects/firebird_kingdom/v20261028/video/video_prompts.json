@@ -1,0 +1,566 @@
+{
+ "engine": "kling3_0",
+ "mode": "pro",
+ "sound": "on (SFX only)",
+ "aspect_ratio": "16:9",
+ "items": [
+  {
+   "slot": "C01",
+   "scene": "S01",
+   "start_job": "4360f25e-b415-42ac-9495-98cbb8546bc0",
+   "duration": 6,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: very slow push-in across the burned plain. ACTION: smoke drifts left while ash rises to the right against the wind.",
+   "speaker": null,
+   "index": 1
+  },
+  {
+   "slot": "C02",
+   "scene": "S01",
+   "start_job": "adccb03f-8e84-4883-8315-3ad9c2c4c532",
+   "duration": 4,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: static dutch frame, micro handheld breath. ACTION: the crows turn their heads south all at once.",
+   "speaker": null,
+   "index": 2
+  },
+  {
+   "slot": "C03",
+   "scene": "S01",
+   "start_job": "9f30108b-1574-49b2-804e-b69a410407f9",
+   "duration": 6,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: slow aerial glide forward. ACTION: beneath the frozen lake a vast shape moves under the ice.",
+   "speaker": null,
+   "index": 3
+  },
+  {
+   "slot": "C04",
+   "scene": "S01",
+   "start_job": "7410fac0-7869-43e6-ac8f-57bd6676c093",
+   "duration": 5,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: slow tilt up from below. ACTION: the cracked bronze bell trembles faintly, ash falling from its lip.",
+   "speaker": null,
+   "index": 4
+  },
+  {
+   "slot": "C05",
+   "scene": "S01",
+   "start_job": "9a5439c7-6870-4fbc-9b10-549d9d99b69c",
+   "duration": 5,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: slow macro push-in. ACTION: ash settles on the small medical knife; a faint ember glint on the blade.",
+   "speaker": null,
+   "index": 5
+  },
+  {
+   "slot": "B1a",
+   "scene": "S01→S02",
+   "start_job": "8df83200-9bd6-4347-b8f3-1f029ea7bddb",
+   "duration": 4,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: very slow macro push-in, motivated and minimal. ACTION: Extreme close-up of a crow's black eye in razor focus, the burning village reflected small and curved in its glossy iris; feathers dusted with ash. Subtle living motion only (drifting ash, flicker, fibers moving); a quiet bridge insert between scenes.",
+   "speaker": null,
+   "index": 6
+  },
+  {
+   "slot": "B1b",
+   "scene": "S01→S02",
+   "start_job": "f3d9023b-1717-41ad-9dda-652251a789f3",
+   "duration": 4,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: very slow macro push-in, motivated and minimal. ACTION: Overhead top view insert: hundreds of refugee footprints pressed into grey ash on a dirt road, all leading out of frame; a small carved wooden toy horse half-buried in the ash. Subtle living motion only (drifting ash, flicker, fibers moving); a quiet bridge insert between scenes.",
+   "speaker": null,
+   "index": 7
+  },
+  {
+   "slot": "B1c",
+   "scene": "S01→S02",
+   "start_job": "4721a3a8-d292-465c-b40f-7de9afee2676",
+   "duration": 4,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: very slow macro push-in, motivated and minimal. ACTION: Extreme close-up of a woman's ash-dusted knuckles pulling a strip of undyed linen bandage taut; fibers and ash flakes in razor focus, everything else melting into bokeh. Subtle living motion only (drifting ash, flicker, fibers moving); a quiet bridge insert between scenes.",
+   "speaker": null,
+   "index": 8
+  },
+  {
+   "slot": "C06",
+   "scene": "S02",
+   "start_job": "96dfedce-3a40-4df7-8e49-132060835b09",
+   "duration": 5,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: slow overhead drift. ACTION: refugees stream out of frame; Elara works on the wounded without looking up.",
+   "speaker": null,
+   "index": 9
+  },
+  {
+   "slot": "C07",
+   "scene": "S02",
+   "start_job": "2d3f0148-2a79-455a-8392-89ff7645c4ad",
+   "duration": 5,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: slow rack focus from the old man's shoulder to Elara. ACTION: Elara presses a bandage, never looking up.",
+   "speaker": null,
+   "index": 10
+  },
+  {
+   "slot": "C08",
+   "scene": "S02",
+   "start_job": "78a2edde-f295-4146-9546-8926b33a1838",
+   "duration": 5,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: very slow push-in. ACTION: Elara's jaw tightens, eyes hard, ash drifting past her face.",
+   "speaker": null,
+   "index": 11
+  },
+  {
+   "slot": "C09",
+   "scene": "S02",
+   "start_job": "56307df5-90d0-44ce-beeb-7f2e7db5d567",
+   "duration": 6,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: slow lateral glide at child height. ACTION: Elara gently holds the girl's shoulders and asks her something quietly. Elara speaks softly with natural lip movement (dialogue will be dubbed later).",
+   "speaker": "ELARA",
+   "index": 12
+  },
+  {
+   "slot": "C10",
+   "scene": "S02",
+   "start_job": "8fd3a70b-2ba0-4805-a5ca-64cbe1043621",
+   "duration": 4,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: static macro hold. ACTION: Elara's trembling hand slowly closes into a fist to hide the shaking.",
+   "speaker": null,
+   "index": 13
+  },
+  {
+   "slot": "C11",
+   "scene": "S02",
+   "start_job": "ddab313a-b9f8-4b77-b461-b8ff9750f64b",
+   "duration": 7,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: drone rising pull-back. ACTION: Elara and the girl stay small and still as the refugee line recedes into haze.",
+   "speaker": null,
+   "index": 14
+  },
+  {
+   "slot": "B2a",
+   "scene": "S02→S03",
+   "start_job": "971a40eb-4454-4516-82a3-5d73ac219a19",
+   "duration": 4,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: very slow macro push-in, motivated and minimal. ACTION: Extreme close-up macro of frayed linen bandage fibers just cut, loose threads catching a faint ember-amber glint; shallow focus. Subtle living motion only (drifting ash, flicker, fibers moving); a quiet bridge insert between scenes.",
+   "speaker": null,
+   "index": 15
+  },
+  {
+   "slot": "B2b",
+   "scene": "S02→S03",
+   "start_job": "39fc982d-213f-46b6-9a76-c41f0a3532b6",
+   "duration": 4,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: very slow macro push-in, motivated and minimal. ACTION: Low-angle macro insert: a woman's herb-stained fingers closing around a worn bone knife handle inside a leather apron pocket; bone grain and leather texture in razor focus. Subtle living motion only (drifting ash, flicker, fibers moving); a quiet bridge insert between scenes.",
+   "speaker": null,
+   "index": 16
+  },
+  {
+   "slot": "C12",
+   "scene": "S03",
+   "start_job": "d22ed318-3327-48ea-88f5-dd71b8e169e6",
+   "duration": 5,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: slow macro slide along the handle. ACTION: the worn engraving catches an ember-amber glint.",
+   "speaker": null,
+   "index": 17
+  },
+  {
+   "slot": "B3a",
+   "scene": "S03→S04",
+   "start_job": "aa9a0a36-bc58-43e5-bb9d-72289197e90f",
+   "duration": 4,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: very slow macro push-in, motivated and minimal. ACTION: Extreme close-up of a single candle wick flame in a burned stone chapel, the only warm ember-amber light in a desaturated grey frame, molten wax rim in razor focus. Subtle living motion only (drifting ash, flicker, fibers moving); a quiet bridge insert between scenes.",
+   "speaker": null,
+   "index": 18
+  },
+  {
+   "slot": "B3b",
+   "scene": "S03→S04",
+   "start_job": "7cfce089-084f-4ddb-be89-0dae9e0c0f1d",
+   "duration": 4,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: very slow macro push-in, motivated and minimal. ACTION: Low-angle insert of a scorched bronze winged-firebird relief on a stone altar, wax drips frozen down its wings, shallow depth of field, candle glow on bronze. Subtle living motion only (drifting ash, flicker, fibers moving); a quiet bridge insert between scenes.",
+   "speaker": null,
+   "index": 19
+  },
+  {
+   "slot": "B3c",
+   "scene": "S03→S04",
+   "start_job": "08859a15-2f2d-4ea5-8150-0b89649443f0",
+   "duration": 4,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: very slow macro push-in, motivated and minimal. ACTION: Dutch-angle low insert: a dented blue-grey steel gauntlet lying on scorched chapel flagstones, a small silver wolf in a chain collar engraved on the cuff; ash drifting in the candle light. Subtle living motion only (drifting ash, flicker, fibers moving); a quiet bridge insert between scenes.",
+   "speaker": null,
+   "index": 20
+  },
+  {
+   "slot": "C13",
+   "scene": "S04",
+   "start_job": "ef2a973a-77f9-40e0-a9c4-bbfe5abc2bf3",
+   "duration": 6,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: slow low-angle dolly in. ACTION: grey light shafts shift; the wounded soldier stirs on the pew as Elara enters.",
+   "speaker": null,
+   "index": 21
+  },
+  {
+   "slot": "C14",
+   "scene": "S04",
+   "start_job": "5731144a-8a0c-43f1-abb8-649f78ff3d15",
+   "duration": 5,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: static high-angle hold, micro push. ACTION: the soldier's eyes open and stare up at the knife at his throat.",
+   "speaker": null,
+   "index": 22
+  },
+  {
+   "slot": "C15",
+   "scene": "S04",
+   "start_job": "bb56be7c-d738-4c18-820c-ac0294c10e85",
+   "duration": 4,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: macro tracking with the blade. ACTION: the knife tip lowers from the throat and cuts the bandage instead.",
+   "speaker": null,
+   "index": 23
+  },
+  {
+   "slot": "C16",
+   "scene": "S04",
+   "start_job": "316ada55-0605-444a-ac00-19b4988b4787",
+   "duration": 4,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: slow overhead push-in. ACTION: the torn wolf-emblem scrap shifts slightly among the bandages.",
+   "speaker": null,
+   "index": 24
+  },
+  {
+   "slot": "C17",
+   "scene": "S04",
+   "start_job": "92df33bf-65b7-4661-b888-b8027be134a7",
+   "duration": 5,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: slow rack focus from Elara to the girl. ACTION: the girl in the doorway asks a question, backlit. Child speaks softly with natural lip movement (dialogue will be dubbed later).",
+   "speaker": "CHILD",
+   "index": 25
+  },
+  {
+   "slot": "C18",
+   "scene": "S04",
+   "start_job": "d1a905a0-5abd-4730-8622-d202e4bafc23",
+   "duration": 8,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: very slow push-in, candle flicker. ACTION: Elara answers quietly, half her face in shadow. Elara speaks softly with natural lip movement (dialogue will be dubbed later).",
+   "speaker": "ELARA",
+   "index": 26
+  },
+  {
+   "slot": "B4a",
+   "scene": "S04→S05",
+   "start_job": "5112113a-c5a6-4d48-b4dc-f29721f68688",
+   "duration": 4,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: very slow macro push-in, motivated and minimal. ACTION: Extreme close-up of a young woman's dark-brown iris, a candle flame reflected and trembling in it, the pupil widening; fine freckles at the edge of frame. Subtle living motion only (drifting ash, flicker, fibers moving); a quiet bridge insert between scenes.",
+   "speaker": null,
+   "index": 27
+  },
+  {
+   "slot": "B4b",
+   "scene": "S04→S05",
+   "start_job": "4b03a2b9-563e-4baa-8eb5-9b6b8cce3a5e",
+   "duration": 4,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: very slow macro push-in, motivated and minimal. ACTION: Extreme close-up of coarse hemp rope fibers twisting, near-monochrome desaturated memory look, hard flat light, heavy grain. Subtle living motion only (drifting ash, flicker, fibers moving); a quiet bridge insert between scenes.",
+   "speaker": null,
+   "index": 28
+  },
+  {
+   "slot": "C19",
+   "scene": "S05",
+   "start_job": "960798a9-dbc9-495e-acad-1d027ed4a0a1",
+   "duration": 3,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: fast tilt up. ACTION: the rope sways against the grey sky.",
+   "speaker": null,
+   "index": 29
+  },
+  {
+   "slot": "C20",
+   "scene": "S05",
+   "start_job": "46cb2398-e3ef-458e-a0a7-823bc6195a1f",
+   "duration": 3,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: fast push-in. ACTION: a mother's hand reaches through the crowd.",
+   "speaker": null,
+   "index": 30
+  },
+  {
+   "slot": "C21",
+   "scene": "S05",
+   "start_job": "6e2b84de-3653-4381-809e-d6276b47b607",
+   "duration": 3,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: quick handheld tilt down. ACTION: small worn shoes stand still among moving feet.",
+   "speaker": null,
+   "index": 31
+  },
+  {
+   "slot": "B5a",
+   "scene": "S05→S06",
+   "start_job": "a814327a-831c-4bde-8f3f-39d0f1ba4b3a",
+   "duration": 4,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: very slow macro push-in, motivated and minimal. ACTION: Low-angle extreme close-up of an iron-shod warhorse hoof striking ash-covered stone, a burst of grey ash exploding upward, frozen motion, shallow focus. Subtle living motion only (drifting ash, flicker, fibers moving); a quiet bridge insert between scenes.",
+   "speaker": null,
+   "index": 32
+  },
+  {
+   "slot": "B5b",
+   "scene": "S05→S06",
+   "start_job": "c141f40a-2361-49e7-a92d-6fc296361824",
+   "duration": 4,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: very slow macro push-in, motivated and minimal. ACTION: Dutch-angle insert of a midnight-blue war banner with a silver wolf in an iron chain collar snapping in the wind, ash streaming past, background soldiers out of focus. Subtle living motion only (drifting ash, flicker, fibers moving); a quiet bridge insert between scenes.",
+   "speaker": null,
+   "index": 33
+  },
+  {
+   "slot": "B5c",
+   "scene": "S05→S06",
+   "start_job": "4411914c-9fd7-48c5-bd46-510e8ca9bac6",
+   "duration": 4,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: very slow macro push-in, motivated and minimal. ACTION: Overhead top-view extreme close-up of ash and dust grains jumping and trembling on a charred wooden pew surface from approaching hoofbeats, candle light raking across. Subtle living motion only (drifting ash, flicker, fibers moving); a quiet bridge insert between scenes.",
+   "speaker": null,
+   "index": 34
+  },
+  {
+   "slot": "C22",
+   "scene": "S06",
+   "start_job": "7ad047e7-3424-4f60-946b-d055fec6d1d9",
+   "duration": 5,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: slow push-in on silhouettes. ACTION: armored figures fill the doorway in hard backlight, ash swirling.",
+   "speaker": null,
+   "index": 35
+  },
+  {
+   "slot": "C23",
+   "scene": "S06",
+   "start_job": "5074fec3-b01b-4061-909f-4191d58c4ea6",
+   "duration": 5,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: slow dutch arc around them. ACTION: Elara holds the knife steady, shielding the girl.",
+   "speaker": null,
+   "index": 36
+  },
+  {
+   "slot": "C24",
+   "scene": "S06",
+   "start_job": "801a376f-2c27-4e53-9214-90bdeaba9fe3",
+   "duration": 4,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: static floor-level hold, slow rack focus. ACTION: a sword tip lowers into frame toward the floor.",
+   "speaker": null,
+   "index": 37
+  },
+  {
+   "slot": "C25",
+   "scene": "S06",
+   "start_job": "ab0455a3-a849-44a2-9caf-b227f5513ce3",
+   "duration": 6,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: over-the-shoulder slow push. ACTION: Elara speaks firmly to Riven, not lowering her knife. Elara speaks softly with natural lip movement (dialogue will be dubbed later).",
+   "speaker": "ELARA",
+   "index": 38
+  },
+  {
+   "slot": "C26",
+   "scene": "S06",
+   "start_job": "a37e32fa-c2aa-426b-acd9-6263675ce9f0",
+   "duration": 4,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: macro hold. ACTION: a gauntleted hand checks the neat stitches on the wound.",
+   "speaker": null,
+   "index": 39
+  },
+  {
+   "slot": "C27",
+   "scene": "S06",
+   "start_job": "42950d67-5c8a-4050-8715-3a1056e49943",
+   "duration": 4,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: slow push-in. ACTION: Torval grips his sword hilt and speaks one word to his commander. Torval speaks softly with natural lip movement (dialogue will be dubbed later).",
+   "speaker": "TORVAL",
+   "index": 40
+  },
+  {
+   "slot": "C28",
+   "scene": "S06",
+   "start_job": "d4f45a49-efc6-4790-9456-5ae9e5f26db1",
+   "duration": 6,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: POV hold, slow rack focus. ACTION: Riven stays silent, his eyes lowering to her hands.",
+   "speaker": null,
+   "index": 41
+  },
+  {
+   "slot": "C29",
+   "scene": "S06",
+   "start_job": "2dfec55a-33af-4dbe-a6b0-cd16c9dd0d53",
+   "duration": 4,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: macro push-in. ACTION: Elara's fist tightens around the wolf-emblem scrap.",
+   "speaker": null,
+   "index": 42
+  },
+  {
+   "slot": "B6a",
+   "scene": "S06→S07",
+   "start_job": "11ae98ac-9933-4166-9efe-20386776f348",
+   "duration": 4,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: very slow macro push-in, motivated and minimal. ACTION: Extreme close-up of a leather-gauntleted thumb pushing a plain steel sword one inch back into its scabbard, metal edge catching cold side light, shallow focus. Subtle living motion only (drifting ash, flicker, fibers moving); a quiet bridge insert between scenes.",
+   "speaker": null,
+   "index": 43
+  },
+  {
+   "slot": "B6b",
+   "scene": "S06→S07",
+   "start_job": "18bbd27f-cf52-46a6-a384-12e4453b8a51",
+   "duration": 4,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: very slow macro push-in, motivated and minimal. ACTION: Low-angle extreme close-up of a charred roof beam, glowing ember-amber cracks pulsing inside the wood, a single ember detaching and falling toward camera. Subtle living motion only (drifting ash, flicker, fibers moving); a quiet bridge insert between scenes.",
+   "speaker": null,
+   "index": 44
+  },
+  {
+   "slot": "B6c",
+   "scene": "S06→S07",
+   "start_job": "76b15613-0a72-4f93-9da0-0ae6d1cc2403",
+   "duration": 4,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: very slow macro push-in, motivated and minimal. ACTION: Insert close-up of a dry heel of dark rye bread tucked inside the inner pocket of a navy wool coat under steel armor, revealed as the cloak shifts; razor focus on the crust. Subtle living motion only (drifting ash, flicker, fibers moving); a quiet bridge insert between scenes.",
+   "speaker": null,
+   "index": 45
+  },
+  {
+   "slot": "C30",
+   "scene": "S07",
+   "start_job": "d7450659-25d6-4f76-8eb9-7752cab5394b",
+   "duration": 3,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: fast crash zoom with handheld shake. ACTION: a burning beam breaks and falls, sparks exploding.",
+   "speaker": null,
+   "index": 46
+  },
+  {
+   "slot": "C31",
+   "scene": "S07",
+   "start_job": "eb58afd1-1243-4723-bd41-646cba89ea9f",
+   "duration": 3,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: fast high-angle push. ACTION: Riven wraps the girl in his cloak, embers swirling. Riven speaks softly with natural lip movement (dialogue will be dubbed later).",
+   "speaker": "RIVEN",
+   "index": 47
+  },
+  {
+   "slot": "C32",
+   "scene": "S07",
+   "start_job": "76e8dce2-6016-4ddf-aed2-6d6e0835e41e",
+   "duration": 3,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: whip-pan into extreme close-up. ACTION: Elara's eye widens through the gap in burning debris.",
+   "speaker": null,
+   "index": 48
+  },
+  {
+   "slot": "B7a",
+   "scene": "S07→S08",
+   "start_job": "8ffb62e8-52c1-4957-99b9-5c9cc49b5cee",
+   "duration": 4,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: very slow macro push-in, motivated and minimal. ACTION: Extreme close-up of flying sparks and ash in the air slowing and hanging motionless, each spark a sharp ember-amber point against deep grey darkness. Subtle living motion only (drifting ash, flicker, fibers moving); a quiet bridge insert between scenes.",
+   "speaker": null,
+   "index": 49
+  },
+  {
+   "slot": "B7b",
+   "scene": "S07→S08",
+   "start_job": "dab95c0b-0a53-4553-baba-ce8eb5e4fb5e",
+   "duration": 4,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: very slow macro push-in, motivated and minimal. ACTION: Extreme close-up of a candle flame that was bent sideways now standing perfectly straight and still, smoke frozen in a vertical thread. Subtle living motion only (drifting ash, flicker, fibers moving); a quiet bridge insert between scenes.",
+   "speaker": null,
+   "index": 50
+  },
+  {
+   "slot": "C33",
+   "scene": "S08",
+   "start_job": "f7b184b4-0bb9-43d9-ac6b-da40ce32e97a",
+   "duration": 8,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: very slow overhead drift. ACTION: everyone frozen mid-motion, ash suspended in the air.",
+   "speaker": null,
+   "index": 51
+  },
+  {
+   "slot": "C34",
+   "scene": "S08",
+   "start_job": "d1e77d99-1cbe-41df-ab6f-04b29724bb87",
+   "duration": 6,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: slow tilt up following the ash. ACTION: ash rises upward through the broken roof into the sky.",
+   "speaker": null,
+   "index": 52
+  },
+  {
+   "slot": "C35",
+   "scene": "S08",
+   "start_job": "7a256fa3-4390-450e-8537-a669e54b0530",
+   "duration": 6,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: slow aerial glide. ACTION: a vast wing shadow passes behind the clouds over the land.",
+   "speaker": null,
+   "index": 53
+  },
+  {
+   "slot": "C36",
+   "scene": "S08",
+   "start_job": "d502b19e-38ec-400b-9ffd-a7520d74d137",
+   "duration": 5,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: slow dutch drift. ACTION: distant bells swing by themselves.",
+   "speaker": null,
+   "index": 54
+  },
+  {
+   "slot": "C37",
+   "scene": "S08",
+   "start_job": "00aec783-e789-4257-aa54-09216bd37f82",
+   "duration": 6,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: slow descent following the feather. ACTION: a single glowing ember feather drifts down into the chapel.",
+   "speaker": null,
+   "index": 55
+  },
+  {
+   "slot": "C38",
+   "scene": "S08",
+   "start_job": "45e14ddd-6466-4581-90fd-8ef1665fb431",
+   "duration": 8,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: macro hold, extremely slow push. ACTION: the ember lands on the palm and glows without burning.",
+   "speaker": null,
+   "index": 56
+  },
+  {
+   "slot": "C39",
+   "scene": "S08",
+   "start_job": "ed99ea41-f040-4f24-a6ca-ab9f5b223209",
+   "duration": 6,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: slow low push-in. ACTION: amber light rises on Riven's face; his sword slowly lowers.",
+   "speaker": null,
+   "index": 57
+  },
+  {
+   "slot": "B8a",
+   "scene": "S08→S09",
+   "start_job": "029e8911-c226-45cb-8823-4dacf1e606e3",
+   "duration": 4,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: very slow macro push-in, motivated and minimal. ACTION: Macro extreme close-up of a single ember feather resting on a palm, its filaments glowing ember-amber from within without burning the skin; everything else ash grey. Subtle living motion only (drifting ash, flicker, fibers moving); a quiet bridge insert between scenes.",
+   "speaker": null,
+   "index": 58
+  },
+  {
+   "slot": "B8b",
+   "scene": "S08→S09",
+   "start_job": "4aae57b5-8099-44dd-b831-58098e07f739",
+   "duration": 4,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: very slow macro push-in, motivated and minimal. ACTION: Low-angle long shot of a thick column of smoke rising from a collapsed chapel roof, ash drifting upward against the wind, vast grey sky. Subtle living motion only (drifting ash, flicker, fibers moving); a quiet bridge insert between scenes.",
+   "speaker": null,
+   "index": 59
+  },
+  {
+   "slot": "B8c",
+   "scene": "S08→S09",
+   "start_job": "c6757f51-fbc8-432a-a293-5dfde4e63742",
+   "duration": 4,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: very slow macro push-in, motivated and minimal. ACTION: Low-angle extreme close-up of the hem of an ash-grey hooded cloak and worn leather boots standing in wind-flattened grass dusted with ash on a hilltop. Subtle living motion only (drifting ash, flicker, fibers moving); a quiet bridge insert between scenes.",
+   "speaker": null,
+   "index": 60
+  },
+  {
+   "slot": "C40",
+   "scene": "S09",
+   "start_job": "aa35a1eb-d638-42a6-8234-a8323a45a89a",
+   "duration": 7,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: slow drone orbit. ACTION: the hooded figure stands motionless above the smoking chapel.",
+   "speaker": null,
+   "index": 61
+  },
+  {
+   "slot": "C41",
+   "scene": "S09",
+   "start_job": "03c6ffe5-66d4-4318-ae95-525ca22236b9",
+   "duration": 5,
+   "prompt": "NO MUSIC, NO BGM, no score, no singing. Audio = diegetic sound effects only (wind, ash, fire, breath, cloth, metal, footsteps); no spoken words in the audio track. CHARACTER LOCK: keep every face, age, hair and costume exactly as in the start frame; no face drift, no morphing. Cinematic premium TV drama, ARRI Alexa 35 look, anamorphic, shallow depth of field, low-key with negative fill, bleach-bypass ash grey with ember-amber as the only warm color, fine film grain, natural physics, subtle realistic motion. CAMERA: static extreme close-up hold. ACTION: lips in the shadow of the hood speak one line. Observer speaks softly with natural lip movement (dialogue will be dubbed later).",
+   "speaker": "OBSERVER",
+   "index": 62
+  }
+ ]
+}

@@ -1,0 +1,54 @@
+{
+ "elevenlabs_flow": "C5b91gJsFTfUVnKwG3qI",
+ "model": "eleven_v4",
+ "candidates": {
+  "ELARA": [
+   {
+    "voice": "Dana - Calm, Warm and Clear",
+    "voice_id": "irJHeORKVxkHBaSIch3V",
+    "sample": "done"
+   },
+   {
+    "voice": "Han Aim",
+    "voice_id": "8jHHF8rMqMlg8if2mOUe",
+    "sample": "pending (ElevenLabs busy)"
+   }
+  ],
+  "RIVEN": [
+   {
+    "voice": "Jun Ho - Drama Actor",
+    "voice_id": "HrAPO433QYkPmU4F4CHw",
+    "sample": "pending"
+   },
+   {
+    "voice": "Gun Woong - Deep",
+    "voice_id": "J3IV02ZzZmojOIQbmpu0",
+    "sample": "pending"
+   }
+  ],
+  "TORVAL": [
+   {
+    "voice": "은성-부드러운 베이스톤",
+    "voice_id": "bd2K7BUn7jTuM1oHMBnW",
+    "sample": "pending"
+   }
+  ],
+  "ELDER": [
+   {
+    "voice": "Hyeonwoo (50s)",
+    "voice_id": "kiVK4omWhBQ9AzwcaRq7",
+    "sample": "pending"
+   }
+  ],
+  "OBSERVER": [
+   {
+    "voice": "Ji-hwan Cinematic Baritone",
+    "voice_id": "ORfDxGni2FpVI9mXoZhY",
+    "sample": "done"
+   }
+  ],
+  "CHILD": [],
+  "SOLDIER": []
+ },
+ "locked": {}
+}
