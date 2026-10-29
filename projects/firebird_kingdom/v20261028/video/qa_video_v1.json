@@ -8,12 +8,14 @@
   },
   "26 (C18 Elara line)": {
    "analysis_id": "cf0718b3-5bae-43c0-a423-5c61f1f5c1fd",
-   "status": "pending"
+   "visual": "OK: short messy hair (post-cut), rust shawl, god rays, chapel ruins",
+   "audio": "FAIL: ambient orchestral tone + invented line \"It is too late.\""
   },
   "40 (C27 Torval)": {
    "analysis_id": "640e109e-8d22-4af0-9ad2-ca4e808ea3d7",
-   "status": "pending"
+   "visual": "OK: grey beard, fur cloak, plate armor, low angle, shallow DOF. NOTE: chest emblem = plain white wolf head (world rule: silver wolf in chain collar) - minor",
+   "audio": "FAIL: drone bed + gibberish \"Nam ninta.\""
   }
  },
- "conclusion": "Kling sound=on ignores NO MUSIC; clip audio must not be used. Final audio = strip clip audio, rebuild SFX layer + locked English voices + KO subtitles."
+ "conclusion": "Kling sound=on ignores NO MUSIC; clip audio must not be used. Final audio = strip clip audio, rebuild SFX layer + locked English voices + KO subtitles. 3/3 sampled clips: visuals OK, audio FAIL (music + invented speech)."
 }
