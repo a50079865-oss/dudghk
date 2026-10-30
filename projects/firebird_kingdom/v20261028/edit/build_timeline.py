@@ -18,6 +18,9 @@ for i in range(1, 63):
         src, d, slot, note = f'{V}/clips_v2/53.mp4', dur(f'{V}/clips_v2/53.mp4'), 'C35', 'regen v2'
     else:
         src = f'{V}/clips/{i:02d}.mp4'; d = dur(src); slot = prompts[i]['slot']; note = ''
+    ls = f'edit/lipsync/final/{i:02d}.mp4'
+    if os.path.exists(ls):   # lip-synced replacement (edit/conform_lipsync.py)
+        src, d, note = ls, dur(ls), (note + '; lipsync').lstrip('; ')
     p = prompts[i]
     action = p['prompt'].split('ACTION:')[-1].strip()
     tl.append({'idx': i, 'slot': slot, 'scene': p['scene'], 'src': src, 'in': 0.0, 'dur': round(d, 3),

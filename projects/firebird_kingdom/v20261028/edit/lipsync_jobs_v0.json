@@ -1,5 +1,36 @@
-{"service":"Magnific video_speak","cost_check":{"lipsync-2.0":"2000 credits / 5s clip","veed-sync-2-v2v":"700 / 5s clip","latentsync":"25-40 / clip"},
- "trials":{
-  "62 (C41 observer)":{"mode":"latentsync","result":"FAILED: Face not detected (face hidden in hood, only lips visible)"},
-  "26 (C18 Elara, line 10)":{"mode":"latentsync","credits":40,"result":"done; output 25fps 7.68s (src 24fps 8.04s) -> conform in edit","local":"edit/lipsync/26_ls.mp4","compare":"edit/lipsync/26_compare.mp4"}},
- "audio_prep":"each clip gets a mono wav = its line placed at the timeline offset inside the clip, padded to clip length"}
+{
+ "service": "Magnific video_speak",
+ "cost_check": {
+  "lipsync-2.0": "2000 credits / 5s clip",
+  "veed-sync-2-v2v": "700 / 5s clip",
+  "latentsync": "25-40 / clip"
+ },
+ "trials": {
+  "62 (C41 observer)": {
+   "mode": "latentsync",
+   "result": "FAILED: Face not detected (face hidden in hood, only lips visible)"
+  },
+  "26 (C18 Elara, line 10)": {
+   "mode": "latentsync",
+   "credits": 40,
+   "result": "done; output 25fps 7.68s (src 24fps 8.04s) -> conform in edit",
+   "local": "edit/lipsync/26_ls.mp4",
+   "compare": "edit/lipsync/26_compare.mp4"
+  }
+ },
+ "audio_prep": "each clip gets a mono wav = its line placed at the timeline offset inside the clip, padded to clip length",
+ "batch": {
+  "mode": "latentsync",
+  "credits_total": 145,
+  "clips": {
+   "12 (C09 Elara asks, line 4)": "done 30cr",
+   "22 (one-take head 0-3.5s, soldier line 7)": "done 20cr",
+   "38 (C25 Elara, line 12)": "done 30cr",
+   "40 (C27 Torval, line 13)": "done 20cr",
+   "41 (C28 Riven, line 16)": "done 30cr",
+   "47 (C31 Riven, line 18)": "done 15cr"
+  },
+  "conform": "edit/conform_lipsync.py -> edit/lipsync/final/NN.mp4 (24fps, original length); build_timeline uses them automatically",
+  "note": "each clip lip-synced to its own speaker's line only; child (12) and Elara (22) not lip-synced"
+ }
+}
