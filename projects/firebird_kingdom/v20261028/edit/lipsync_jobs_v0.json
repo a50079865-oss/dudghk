@@ -1,0 +1,5 @@
+{"service":"Magnific video_speak","cost_check":{"lipsync-2.0":"2000 credits / 5s clip","veed-sync-2-v2v":"700 / 5s clip","latentsync":"25-40 / clip"},
+ "trials":{
+  "62 (C41 observer)":{"mode":"latentsync","result":"FAILED: Face not detected (face hidden in hood, only lips visible)"},
+  "26 (C18 Elara, line 10)":{"mode":"latentsync","credits":40,"result":"done; output 25fps 7.68s (src 24fps 8.04s) -> conform in edit","local":"edit/lipsync/26_ls.mp4","compare":"edit/lipsync/26_compare.mp4"}},
+ "audio_prep":"each clip gets a mono wav = its line placed at the timeline offset inside the clip, padded to clip length"}
