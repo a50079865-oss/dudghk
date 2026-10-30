@@ -1,0 +1,88 @@
+{
+ "note": "작가 업로드 12장 (Higgsfield media_id). 어느 이미지인지는 '0 업로드 번호 확인' 폴더의 번호 라벨 이미지로 확인 후 label 기입",
+ "check_folder": "149c76ee-d197-4f53-9088-b111e0f1f511",
+ "refs": [
+  {
+   "n": 1,
+   "media_id": "6bebb26a-3366-4d33-a988-7640ded21440",
+   "label_job": "4c50b292-036e-4cc4-8a42-5fe8cb62bc38",
+   "label": "SKELDRIA_sheet (사용자 '1.2.스켈드리아' — 1·2 모두 스켈드리아로 해석: 시트/전경 추정)"
+  },
+  {
+   "n": 2,
+   "media_id": "3f128977-12b2-4990-bd23-e9999a794e33",
+   "label_job": "83213da5-7ae5-4e2f-afe4-c859321c2806",
+   "label": "SKELDRIA_skaelhold_hero (추정)"
+  },
+  {
+   "n": 3,
+   "media_id": "27c6f7db-0a65-453a-ad3d-67bb35bb356c",
+   "label_job": "8f12b3e1-c74e-40d7-9da0-c9d7cfe131ce",
+   "label": "LYSARA"
+  },
+  {
+   "n": 4,
+   "media_id": "ae6b7ef5-98e3-46cf-ae2d-05c1338eedb3",
+   "label_job": "867dd06a-c79c-457b-bf3c-175fa389a8c6",
+   "label": "AUREVIA_sheet"
+  },
+  {
+   "n": 5,
+   "media_id": "3ceb104c-2ea4-4e8e-8c17-b2baa84f892b",
+   "label_job": "03c36c94-e116-4cb1-99d4-dc1694456811",
+   "label": "ARCADIA_ruins_four_banners (사용자 '네개왕국')"
+  },
+  {
+   "n": 6,
+   "media_id": "c577b202-9527-4114-8b18-5d03b77a5125",
+   "label_job": "209d491d-b199-4ac3-8398-2c851e8ae88e",
+   "label": "PLATE_refugee_road"
+  },
+  {
+   "n": 7,
+   "media_id": "d8d86bfc-f6ca-444a-bd8c-285c4a22b288",
+   "label_job": "c3fc601b-5d39-4ea3-bb5f-919071995ea5",
+   "label": "PLATE_border_village_velen"
+  },
+  {
+   "n": 8,
+   "media_id": "528e0d9d-016e-457a-9959-0cc091e4ba21",
+   "label_job": "d6a0ccb8-5c9a-49e8-bb48-21e36c39568a",
+   "label": "PLATE_burned_chapel"
+  },
+  {
+   "n": 9,
+   "media_id": "4ca363b1-8a68-49bc-8d83-d8c63cd37555",
+   "label_job": "d614cd01-a593-4307-81ce-d120cdc3edc7",
+   "label": "PLATE_hill_army"
+  },
+  {
+   "n": 10,
+   "media_id": "d718bfa0-d805-42d1-9e5b-c555a7eb2488",
+   "label_job": "0ef225f5-da7c-4df0-8975-9c3d164e8c6f",
+   "label": "PLATE_village_ash_sky"
+  },
+  {
+   "n": 11,
+   "media_id": "bfc1c602-3b45-40c5-b092-9d881217605c",
+   "label_job": "a770e3df-770d-4c16-95ca-7fb45c641f11",
+   "label": "CHAR_ELARA_sheet"
+  },
+  {
+   "n": 12,
+   "media_id": "00bce4e2-0a00-40f6-8268-71191e1ce2f5",
+   "label_job": "32db6711-c929-4086-8053-2a37ebd3d992",
+   "label": "CHAR_RIVEN_sheet"
+  }
+ ],
+ "pilot_ref_map": {
+  "ELARA": "bfc1c602-3b45-40c5-b092-9d881217605c",
+  "RIVEN": "00bce4e2-0a00-40f6-8268-71191e1ce2f5",
+  "AUREVIA_style": "ae6b7ef5-98e3-46cf-ae2d-05c1338eedb3",
+  "S01_S02_road": "c577b202-9527-4114-8b18-5d03b77a5125",
+  "S02_village": "d8d86bfc-f6ca-444a-bd8c-285c4a22b288",
+  "S04_S08_chapel": "528e0d9d-016e-457a-9959-0cc091e4ba21",
+  "S09_hill": "4ca363b1-8a68-49bc-8d83-d8c63cd37555",
+  "S08_ash_sky": "d718bfa0-d805-42d1-9e5b-c555a7eb2488"
+ }
+}

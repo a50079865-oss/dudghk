@@ -1,0 +1,30 @@
+{
+ "flow": "C5b91gJsFTfUVnKwG3qI",
+ "model": "eleven_v4",
+ "takes_per_line": 1,
+ "done": {
+  "03": "0zvMHkXO1SDI6vRooswY",
+  "05": "ugubbyspqRS2iwryjmEM",
+  "01": "a6Dary9yRIz5bQs5p9Po",
+  "02": "wTQk1sxVsKQZrBGJkqmt",
+  "04": "467VsVPQrSdBkKv6ih6D",
+  "08": "QTt2RPxwPBl4ti1p3uYN",
+  "09": "zqxZrUvYBYlflHV6FVD4",
+  "06": "d9WyTMsONBos4DnTzlYC",
+  "07": "eejhnKJ8HJPHG6DYL0lY",
+  "10": "ZXefoYnDzyiWpTTGEAqT",
+  "11": "x16UuIFR671ZUNhulYIe",
+  "12": "MjeovJvQs1IPYMaVUc4g",
+  "13": "RkKx0TqYP8JdqprfAQAY",
+  "14": "Qnbrij45OE0gFJn8rsz1",
+  "15": "I1Yty5UVbxxsS2wy3PbI",
+  "16": "SRGz1zKNio0JvUwmIWyC",
+  "17": "tsvQ3QxtHX4Q5uSvnb6V",
+  "18": "DeUsKKX2f21hrfOEx03k",
+  "19": "KucaCi4LgnO8tPy69SD1"
+ },
+ "todo": [],
+ "note": "ElevenLabs free tier often 'busy'; send one line at a time",
+ "blocked": "resolved: user upgraded ElevenLabs to paid plan",
+ "status": "19/19 done"
+}

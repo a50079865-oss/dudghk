@@ -1,0 +1,167 @@
+{
+ "elevenlabs_flow": "C5b91gJsFTfUVnKwG3qI",
+ "model": "eleven_v4",
+ "locked": {
+  "RIVEN": {
+   "voice": "Joseph - Northern British Storyteller",
+   "voice_id": "EtGAAwTx6aMveVbqUxuU",
+   "locked_on": "2026-10-29",
+   "by": "user"
+  },
+  "ELARA": {
+   "voice": "Mira - warm and natural",
+   "voice_id": "9XELrPIyVsbmAjCB3Bwh",
+   "locked_on": "2026-10-29",
+   "by": "user"
+  },
+  "TORVAL": {
+   "voice": "NARRATOR ROB (deep British)",
+   "voice_id": "N3KdYXuAuQCEeNRC4lXJ",
+   "locked_on": "2026-10-29",
+   "by": "user"
+  },
+  "ELDER": {
+   "voice": "Jon Peters - Gravelly, Old",
+   "voice_id": "iB5aLrknrSagc00jivta",
+   "locked_on": "2026-10-29",
+   "by": "user"
+  },
+  "OBSERVER": {
+   "voice": "Mark - mystery",
+   "voice_id": "GU8Qu28KNb4JbhQV7DX7",
+   "locked_on": "2026-10-29",
+   "by": "user"
+  },
+  "CHILD": {
+   "voice": "Emmaline - young British girl",
+   "voice_id": "nDJIICjR9zfJExIFeSCN",
+   "locked_on": "2026-10-29",
+   "by": "user"
+  },
+  "SOLDIER": {
+   "voice": "Thomas Candia - young British, deep undertone",
+   "voice_id": "KJF2ogTBPpTHWHAqRZrS",
+   "locked_on": "2026-10-29",
+   "by": "user"
+  }
+ },
+ "language": "English dialogue + Korean subtitles (user decision 2026-10-29); Korean candidates archived",
+ "candidates_ko_archived": {
+  "ELARA": [
+   {
+    "voice": "Dana - Calm, Warm and Clear",
+    "voice_id": "irJHeORKVxkHBaSIch3V",
+    "sample": "done"
+   },
+   {
+    "voice": "Han Aim",
+    "voice_id": "8jHHF8rMqMlg8if2mOUe",
+    "sample": "pending (ElevenLabs busy)"
+   }
+  ],
+  "RIVEN": [
+   {
+    "voice": "Jun Ho - Drama Actor",
+    "voice_id": "HrAPO433QYkPmU4F4CHw",
+    "sample": "pending"
+   },
+   {
+    "voice": "Gun Woong - Deep",
+    "voice_id": "J3IV02ZzZmojOIQbmpu0",
+    "sample": "pending"
+   }
+  ],
+  "TORVAL": [
+   {
+    "voice": "은성-부드러운 베이스톤",
+    "voice_id": "bd2K7BUn7jTuM1oHMBnW",
+    "sample": "pending"
+   }
+  ],
+  "ELDER": [
+   {
+    "voice": "Hyeonwoo (50s)",
+    "voice_id": "kiVK4omWhBQ9AzwcaRq7",
+    "sample": "pending"
+   }
+  ],
+  "OBSERVER": [
+   {
+    "voice": "Ji-hwan Cinematic Baritone",
+    "voice_id": "ORfDxGni2FpVI9mXoZhY",
+    "sample": "done"
+   }
+  ],
+  "CHILD": [],
+  "SOLDIER": []
+ },
+ "candidates_en": {
+  "ELARA": [
+   {
+    "voice": "Mira - warm and natural",
+    "voice_id": "9XELrPIyVsbmAjCB3Bwh",
+    "sample": "done"
+   }
+  ],
+  "RIVEN": [
+   {
+    "voice": "Joseph - Northern British Storyteller",
+    "voice_id": "EtGAAwTx6aMveVbqUxuU",
+    "sample": "done 2026-10-29 -> samples/RIVEN_joseph.mp3 (6.8s)"
+   },
+   {
+    "voice": "Jordie - Warm & Natural (British)",
+    "voice_id": "U977vpWUjb8YL0J1JaFF",
+    "sample": "done 2026-10-29 -> samples/RIVEN_jordie.mp3 (7.0s)"
+   }
+  ],
+  "TORVAL": [
+   {
+    "voice": "NARRATOR ROB (deep British)",
+    "voice_id": "N3KdYXuAuQCEeNRC4lXJ",
+    "sample": "done"
+   }
+  ],
+  "ELDER": [
+   {
+    "voice": "Jon Peters - Gravelly, Old",
+    "voice_id": "iB5aLrknrSagc00jivta",
+    "sample": "done"
+   }
+  ],
+  "OBSERVER": [
+   {
+    "voice": "Mark - mystery",
+    "voice_id": "GU8Qu28KNb4JbhQV7DX7",
+    "sample": "done"
+   }
+  ],
+  "CHILD": [
+   {
+    "voice": "Emmaline - young British girl",
+    "voice_id": "nDJIICjR9zfJExIFeSCN",
+    "sample": "done -> samples/CHILD_emmaline.mp3 (6.6s)"
+   },
+   {
+    "voice": "Lulu Lollipop (cartoon, high-pitched)",
+    "voice_id": "ocZQ262SsZb9RIxcQBOj",
+    "sample": "not made - too cartoonish for tone, backup only"
+   }
+  ],
+  "SOLDIER": [
+   {
+    "voice": "Thomas Candia - young British, deep undertone",
+    "voice_id": "KJF2ogTBPpTHWHAqRZrS",
+    "sample": "done -> samples/SOLDIER_thomas.mp3 (audition line '...Just finish it.')"
+   },
+   {
+    "voice": "Rupert - young British",
+    "voice_id": "dI6Ldou06iqSFGEJjKW0",
+    "sample": "pending (ElevenLabs free tier busy)"
+   }
+  ]
+ },
+ "issues": {
+  "SOLDIER_line": "RESOLVED 2026-10-29: user approved EN '...Just finish it.' (KO subtitle unchanged)"
+ }
+}

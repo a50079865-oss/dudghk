@@ -1,0 +1,196 @@
+[
+ {
+  "id": 7,
+  "scene": "S02",
+  "prompt": "IDENTITY LOCK: people must exactly match the attached character sheets (face, age, hair, wardrobe), never beautified. Assigned angle only, no flat eye-level. Telephoto shallow DOF, FG/MG/BG layers, ARRI Alexa filmic softness, fine 35mm grain, real skin texture, low-key.\nReal frame from a premium cinema TV drama, photoreal, never CGI or illustration, 16:9.\nBleach-bypass grade: desaturated ash grey, harsh contrast; the only warm color is ember amber. Low-key single hard key, volumetric shafts, drifting ash and dust. Scorched white stone, worn linen and leather. Location refs = architecture only; ignore their warm colors.\nNo crosses or crucifixes: altar = bronze winged-firebird relief + stone fire bowl; towers topped by bronze firebird. South banners crimson with gold firebird; north banners midnight-blue with silver wolf in iron chain collar; no stag, no star.\nSCENE LIGHT: \nSHOT (over-the-shoulder): Over-the-shoulder from an old refugee man with a walking stick and a bundle on his back (blurred foreground shoulder and bundle) toward Elara kneeling over a wounded villager, she does not look up, pressing a bandage.\nCAST: ELARA (match attached sheet): 23, long dark-brown braid, freckles, rust-red shawl over cream linen blouse and brown dress, leather herb pouches | the OLD REFUGEE MAN (match attached sheet)",
+  "medias": [
+   {
+    "value": "6b2121bf-0abd-4556-8aff-76506515d231",
+    "role": "image_references"
+   },
+   {
+    "value": "bfc1c602-3b45-40c5-b092-9d881217605c",
+    "role": "image_references"
+   },
+   {
+    "value": "d8d86bfc-f6ca-444a-bd8c-285c4a22b288",
+    "role": "image_references"
+   }
+  ]
+ },
+ {
+  "id": 9,
+  "scene": "S02",
+  "prompt": "IDENTITY LOCK: people must exactly match the attached character sheets (face, age, hair, wardrobe), never beautified. Assigned angle only, no flat eye-level. Telephoto shallow DOF, FG/MG/BG layers, ARRI Alexa filmic softness, fine 35mm grain, real skin texture, low-key.\nReal frame from a premium cinema TV drama, photoreal, never CGI or illustration, 16:9.\nBleach-bypass grade: desaturated ash grey, harsh contrast; the only warm color is ember amber. Low-key single hard key, volumetric shafts, drifting ash and dust. Scorched white stone, worn linen and leather. Location refs = architecture only; ignore their warm colors.\nNo crosses or crucifixes: altar = bronze winged-firebird relief + stone fire bowl; towers topped by bronze firebird. South banners crimson with gold firebird; north banners midnight-blue with silver wolf in iron chain collar; no stag, no star.\nSCENE LIGHT: \nSHOT (low child-height two-shot): Low angle at a child's eye height, side two-shot: Elara kneels to the level of a 7-year-old village girl covered in ash, gently holding the girl's shoulders, asking her something; refugees passing blurred behind.\nCAST: ELARA (match attached sheet): 23, long dark-brown braid, freckles, rust-red shawl over cream linen blouse and brown dress, leather herb pouches | the 7-year-old village GIRL (match attached sheet face exactly), ash on her cheek, oversized faded mustard-and-grey shawl",
+  "medias": [
+   {
+    "value": "77071b7b-6665-4901-8609-33626c0a7588",
+    "role": "image_references"
+   },
+   {
+    "value": "bfc1c602-3b45-40c5-b092-9d881217605c",
+    "role": "image_references"
+   },
+   {
+    "value": "d8d86bfc-f6ca-444a-bd8c-285c4a22b288",
+    "role": "image_references"
+   }
+  ]
+ },
+ {
+  "id": 11,
+  "scene": "S02",
+  "prompt": "IDENTITY LOCK: people must exactly match the attached character sheets (face, age, hair, wardrobe), never beautified. Assigned angle only, no flat eye-level. Telephoto shallow DOF, FG/MG/BG layers, ARRI Alexa filmic softness, fine 35mm grain, real skin texture, low-key.\nReal frame from a premium cinema TV drama, photoreal, never CGI or illustration, 16:9.\nBleach-bypass grade: desaturated ash grey, harsh contrast; the only warm color is ember amber. Low-key single hard key, volumetric shafts, drifting ash and dust. Scorched white stone, worn linen and leather. Location refs = architecture only; ignore their warm colors.\nNo crosses or crucifixes: altar = bronze winged-firebird relief + stone fire bowl; towers topped by bronze firebird. South banners crimson with gold firebird; north banners midnight-blue with silver wolf in iron chain collar; no stag, no star.\nSCENE LIGHT: \nSHOT (wide from behind): Wide shot from behind Elara and a 7-year-old village girl covered in ash standing small in the empty square while the refugee line recedes into the ash haze; heavy negative space.\nCAST: ELARA (match attached sheet): 23, long dark-brown braid, freckles, rust-red shawl over cream linen blouse and brown dress, leather herb pouches | the 7-year-old village GIRL (match attached sheet face exactly), ash on her cheek, oversized faded mustard-and-grey shawl",
+  "medias": [
+   {
+    "value": "77071b7b-6665-4901-8609-33626c0a7588",
+    "role": "image_references"
+   },
+   {
+    "value": "bfc1c602-3b45-40c5-b092-9d881217605c",
+    "role": "image_references"
+   },
+   {
+    "value": "c577b202-9527-4114-8b18-5d03b77a5125",
+    "role": "image_references"
+   }
+  ]
+ },
+ {
+  "id": 13,
+  "scene": "S04",
+  "prompt": "IDENTITY LOCK: people must exactly match the attached character sheets (face, age, hair, wardrobe), never beautified. Assigned angle only, no flat eye-level. Telephoto shallow DOF, FG/MG/BG layers, ARRI Alexa filmic softness, fine 35mm grain, real skin texture, low-key.\nReal frame from a premium cinema TV drama, photoreal, never CGI or illustration, 16:9.\nBleach-bypass grade: desaturated ash grey, harsh contrast; the only warm color is ember amber. Low-key single hard key, volumetric shafts, drifting ash and dust. Scorched white stone, worn linen and leather. Location refs = architecture only; ignore their warm colors.\nNo crosses or crucifixes: altar = bronze winged-firebird relief + stone fire bowl; towers topped by bronze firebird. South banners crimson with gold firebird; north banners midnight-blue with silver wolf in iron chain collar; no stag, no star.\nSCENE LIGHT: motivated candle practical as key; Rembrandt lighting on close-ups\nSHOT (low-angle wide interior): Low-angle wide interior of a burned stone chapel: shafts of grey light through a collapsed roof, charred pews, a candle stub burning; a young wounded northern soldier in torn navy wool and dented blue-grey armor lies wounded on a pew; Elara enters from the doorway.\nCAST: ELARA (match attached sheet): 23, long dark-brown braid, freckles, rust-red shawl over cream linen blouse and brown dress, leather herb pouches | the young wounded northern SOLDIER (match attached sheet face exactly), torn navy wool, dented blue-grey armor",
+  "medias": [
+   {
+    "value": "8c435e8a-0ba4-46a9-a6fd-80f1b5c225c8",
+    "role": "image_references"
+   },
+   {
+    "value": "bfc1c602-3b45-40c5-b092-9d881217605c",
+    "role": "image_references"
+   },
+   {
+    "value": "528e0d9d-016e-457a-9959-0cc091e4ba21",
+    "role": "image_references"
+   }
+  ]
+ },
+ {
+  "id": 14,
+  "scene": "S04",
+  "prompt": "IDENTITY LOCK: people must exactly match the attached character sheets (face, age, hair, wardrobe), never beautified. Assigned angle only, no flat eye-level. Telephoto shallow DOF, FG/MG/BG layers, ARRI Alexa filmic softness, fine 35mm grain, real skin texture, low-key.\nReal frame from a premium cinema TV drama, photoreal, never CGI or illustration, 16:9.\nBleach-bypass grade: desaturated ash grey, harsh contrast; the only warm color is ember amber. Low-key single hard key, volumetric shafts, drifting ash and dust. Scorched white stone, worn linen and leather. Location refs = architecture only; ignore their warm colors.\nNo crosses or crucifixes: altar = bronze winged-firebird relief + stone fire bowl; towers topped by bronze firebird. South banners crimson with gold firebird; north banners midnight-blue with silver wolf in iron chain collar; no stag, no star.\nSCENE LIGHT: motivated candle practical as key; Rembrandt lighting on close-ups\nSHOT (high angle over): High angle looking down over Elara's shoulder: she holds the small knife near the throat of a young wounded northern soldier in torn navy wool and dented blue-grey armor, whose eyes are open, staring up at her; tense stillness, candlelight.\nCAST: ELARA (match attached sheet): 23, long dark-brown braid, freckles, rust-red shawl over cream linen blouse and brown dress, leather herb pouches | the young wounded northern SOLDIER (match attached sheet face exactly), torn navy wool, dented blue-grey armor",
+  "medias": [
+   {
+    "value": "8c435e8a-0ba4-46a9-a6fd-80f1b5c225c8",
+    "role": "image_references"
+   },
+   {
+    "value": "bfc1c602-3b45-40c5-b092-9d881217605c",
+    "role": "image_references"
+   },
+   {
+    "value": "528e0d9d-016e-457a-9959-0cc091e4ba21",
+    "role": "image_references"
+   }
+  ]
+ },
+ {
+  "id": 17,
+  "scene": "S04",
+  "prompt": "IDENTITY LOCK: people must exactly match the attached character sheets (face, age, hair, wardrobe), never beautified. Assigned angle only, no flat eye-level. Telephoto shallow DOF, FG/MG/BG layers, ARRI Alexa filmic softness, fine 35mm grain, real skin texture, low-key.\nReal frame from a premium cinema TV drama, photoreal, never CGI or illustration, 16:9.\nBleach-bypass grade: desaturated ash grey, harsh contrast; the only warm color is ember amber. Low-key single hard key, volumetric shafts, drifting ash and dust. Scorched white stone, worn linen and leather. Location refs = architecture only; ignore their warm colors.\nNo crosses or crucifixes: altar = bronze winged-firebird relief + stone fire bowl; towers topped by bronze firebird. South banners crimson with gold firebird; north banners midnight-blue with silver wolf in iron chain collar; no stag, no star.\nSCENE LIGHT: motivated candle practical as key; Rembrandt lighting on close-ups\nSHOT (over-the-shoulder): Over-the-shoulder from Elara (blurred foreground) toward a 7-year-old village girl covered in ash standing in the chapel doorway, backlit by grey daylight, asking a question.\nCAST: ELARA (match attached sheet face exactly) but her braid is now CUT OFF: hair hacked short and uneven at jaw length, loose wisps; rust-red shawl, cream linen blouse, brown dress | the 7-year-old village GIRL (match attached sheet face exactly), ash on her cheek, oversized faded mustard-and-grey shawl",
+  "medias": [
+   {
+    "value": "77071b7b-6665-4901-8609-33626c0a7588",
+    "role": "image_references"
+   },
+   {
+    "value": "bfc1c602-3b45-40c5-b092-9d881217605c",
+    "role": "image_references"
+   },
+   {
+    "value": "528e0d9d-016e-457a-9959-0cc091e4ba21",
+    "role": "image_references"
+   }
+  ]
+ },
+ {
+  "id": 23,
+  "scene": "S06",
+  "prompt": "IDENTITY LOCK: people must exactly match the attached character sheets (face, age, hair, wardrobe), never beautified. Assigned angle only, no flat eye-level. Telephoto shallow DOF, FG/MG/BG layers, ARRI Alexa filmic softness, fine 35mm grain, real skin texture, low-key.\nReal frame from a premium cinema TV drama, photoreal, never CGI or illustration, 16:9.\nBleach-bypass grade: desaturated ash grey, harsh contrast; the only warm color is ember amber. Low-key single hard key, volumetric shafts, drifting ash and dust. Scorched white stone, worn linen and leather. Location refs = architecture only; ignore their warm colors.\nNo crosses or crucifixes: altar = bronze winged-firebird relief + stone fire bowl; towers topped by bronze firebird. South banners crimson with gold firebird; north banners midnight-blue with silver wolf in iron chain collar; no stag, no star.\nSCENE LIGHT: hard rim backlight from the doorway, figures as silhouettes; cold side light on Riven close-ups\nSHOT (side): Clean side profile medium shot: Elara shields a 7-year-old village girl covered in ash behind her back, small medical knife raised toward off-frame intruders, wounded a young wounded northern soldier in torn navy wool and dented blue-grey armor on the pew beside them.\nCAST: ELARA (match attached sheet face exactly) but her braid is now CUT OFF: hair hacked short and uneven at jaw length, loose wisps; rust-red shawl, cream linen blouse, brown dress | the 7-year-old village GIRL (match attached sheet face exactly), ash on her cheek, oversized faded mustard-and-grey shawl | the young wounded northern SOLDIER (match attached sheet face exactly), torn navy wool, dented blue-grey armor",
+  "medias": [
+   {
+    "value": "77071b7b-6665-4901-8609-33626c0a7588",
+    "role": "image_references"
+   },
+   {
+    "value": "8c435e8a-0ba4-46a9-a6fd-80f1b5c225c8",
+    "role": "image_references"
+   },
+   {
+    "value": "bfc1c602-3b45-40c5-b092-9d881217605c",
+    "role": "image_references"
+   },
+   {
+    "value": "528e0d9d-016e-457a-9959-0cc091e4ba21",
+    "role": "image_references"
+   }
+  ]
+ },
+ {
+  "id": 27,
+  "scene": "S06",
+  "prompt": "IDENTITY LOCK: people must exactly match the attached character sheets (face, age, hair, wardrobe), never beautified. Assigned angle only, no flat eye-level. Telephoto shallow DOF, FG/MG/BG layers, ARRI Alexa filmic softness, fine 35mm grain, real skin texture, low-key.\nReal frame from a premium cinema TV drama, photoreal, never CGI or illustration, 16:9.\nBleach-bypass grade: desaturated ash grey, harsh contrast; the only warm color is ember amber. Low-key single hard key, volumetric shafts, drifting ash and dust. Scorched white stone, worn linen and leather. Location refs = architecture only; ignore their warm colors.\nNo crosses or crucifixes: altar = bronze winged-firebird relief + stone fire bowl; towers topped by bronze firebird. South banners crimson with gold firebird; north banners midnight-blue with silver wolf in iron chain collar; no stag, no star.\nSCENE LIGHT: hard rim backlight from the doorway, figures as silhouettes; cold side light on Riven close-ups\nSHOT (three-quarter medium): Three-quarter medium shot of Torval in the chapel, hand on his sword hilt, looking toward his commander with grim meaning; soldiers blurred behind.\nCAST: TORVAL (match attached sheet face exactly): 40-something broad northern lieutenant, short grey beard, fur-lined dark cloak over steel",
+  "medias": [
+   {
+    "value": "163e23f8-7140-4309-ac3f-45cc19ff68a5",
+    "role": "image_references"
+   },
+   {
+    "value": "528e0d9d-016e-457a-9959-0cc091e4ba21",
+    "role": "image_references"
+   }
+  ]
+ },
+ {
+  "id": 31,
+  "scene": "S07",
+  "prompt": "IDENTITY LOCK: people must exactly match the attached character sheets (face, age, hair, wardrobe), never beautified. Assigned angle only, no flat eye-level. Telephoto shallow DOF, FG/MG/BG layers, ARRI Alexa filmic softness, fine 35mm grain, real skin texture, low-key.\nReal frame from a premium cinema TV drama, photoreal, never CGI or illustration, 16:9.\nBleach-bypass grade: desaturated ash grey, harsh contrast; the only warm color is ember amber. Low-key single hard key, volumetric shafts, drifting ash and dust. Scorched white stone, worn linen and leather. Location refs = architecture only; ignore their warm colors.\nNo crosses or crucifixes: altar = bronze winged-firebird relief + stone fire bowl; towers topped by bronze firebird. South banners crimson with gold firebird; north banners midnight-blue with silver wolf in iron chain collar; no stag, no star.\nSCENE LIGHT: hard light, flying sparks are the only warm points\nSHOT (high angle): High angle looking down: Riven crouches and pulls a 7-year-old village girl covered in ash under his dark cloak, shielding her from falling debris with his armored back.\nCAST: RIVEN (match attached sheet): 27, prince-commander, wavy shoulder-length brown hair, scar through left eyebrow, dark worn plate armor, midnight-blue wool cloak, silver chained-wolf clasp | the 7-year-old village GIRL (match attached sheet face exactly), ash on her cheek, oversized faded mustard-and-grey shawl",
+  "medias": [
+   {
+    "value": "77071b7b-6665-4901-8609-33626c0a7588",
+    "role": "image_references"
+   },
+   {
+    "value": "00bce4e2-0a00-40f6-8268-71191e1ce2f5",
+    "role": "image_references"
+   },
+   {
+    "value": "528e0d9d-016e-457a-9959-0cc091e4ba21",
+    "role": "image_references"
+   }
+  ]
+ },
+ {
+  "id": 33,
+  "scene": "S08",
+  "prompt": "IDENTITY LOCK: people must exactly match the attached character sheets (face, age, hair, wardrobe), never beautified. Assigned angle only, no flat eye-level. Telephoto shallow DOF, FG/MG/BG layers, ARRI Alexa filmic softness, fine 35mm grain, real skin texture, low-key.\nReal frame from a premium cinema TV drama, photoreal, never CGI or illustration, 16:9.\nBleach-bypass grade: desaturated ash grey, harsh contrast; the only warm color is ember amber. Low-key single hard key, volumetric shafts, drifting ash and dust. Scorched white stone, worn linen and leather. Location refs = architecture only; ignore their warm colors.\nNo crosses or crucifixes: altar = bronze winged-firebird relief + stone fire bowl; towers topped by bronze firebird. South banners crimson with gold firebird; north banners midnight-blue with silver wolf in iron chain collar; no stag, no star.\nSCENE LIGHT: total stillness turns to warm amber glow from the ember (liberated color code) on palm and faces; the rest stays ash grey\nSHOT (wide side): Wide side shot inside the ruined chapel: everyone frozen mid-motion, soldiers, Elara, Riven, a 7-year-old village girl covered in ash; ash particles hang suspended in the air like stopped time; total stillness.\nCAST: ELARA (match attached sheet face exactly) but her braid is now CUT OFF: hair hacked short and uneven at jaw length, loose wisps; rust-red shawl, cream linen blouse, brown dress | RIVEN (match attached sheet): 27, prince-commander, wavy shoulder-length brown hair, scar through left eyebrow, dark worn plate armor, midnight-blue wool cloak, silver chained-wolf clasp | the 7-year-old village GIRL (match attached sheet face exactly), ash on her cheek, oversized faded mustard-and-grey shawl",
+  "medias": [
+   {
+    "value": "77071b7b-6665-4901-8609-33626c0a7588",
+    "role": "image_references"
+   },
+   {
+    "value": "bfc1c602-3b45-40c5-b092-9d881217605c",
+    "role": "image_references"
+   },
+   {
+    "value": "00bce4e2-0a00-40f6-8268-71191e1ce2f5",
+    "role": "image_references"
+   },
+   {
+    "value": "528e0d9d-016e-457a-9959-0cc091e4ba21",
+    "role": "image_references"
+   }
+  ]
+ }
+]

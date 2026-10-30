@@ -1,0 +1,43 @@
+{
+ "project_id": "9e4db10c-661a-4b58-8fae-708054e80c0d",
+ "ELARA": [
+  "d3134e93-cbbc-4456-adba-0fee9c4b4a59",
+  "7231c150-b751-4e0c-910e-67cc3e70dec4",
+  "42c22fd5-2f47-4973-8a95-4090eb7562ec"
+ ],
+ "RIVEN": [
+  "6f9adec4-5ac0-40d8-accf-e4f51a5db730",
+  "e0e184ba-5235-43ec-b12b-2790a395c434",
+  "f144fb19-ccec-4492-9917-ba3a2566dae7"
+ ],
+ "TORVAL": [
+  "6aee9e2f-9d85-4cf5-925a-2b94838216d8",
+  "163e23f8-7140-4309-ac3f-45cc19ff68a5",
+  "129e88c1-3f1b-4eae-ac60-c99784d8f152"
+ ],
+ "CHILD": [
+  "77071b7b-6665-4901-8609-33626c0a7588",
+  "b2290920-263a-41e9-817f-1ab2e1e0c1db"
+ ],
+ "ELDER": [
+  "6b2121bf-0abd-4556-8aff-76506515d231",
+  "a0241287-7045-47a6-afed-d3c230ca69f7",
+  "82c1e486-0594-4b2f-9233-6cf504f69403"
+ ],
+ "SOLDIER": [
+  "0643fbb8-6642-41b8-a047-96846078b69e",
+  "8c435e8a-0ba4-46a9-a6fd-80f1b5c225c8"
+ ],
+ "filtered": {
+  "CHILD": "92ede9cc-3587-4bc8-bc11-0424418fd302",
+  "SOLDIER": "ff629571-3972-48c6-b4e7-9cbb6e6c0875"
+ },
+ "folders": {
+  "ELARA": "ae244412-6ba7-4cea-9872-f40e476cf222",
+  "RIVEN": "5ba22239-18f4-47eb-b2cf-ba2a245a2aa1",
+  "TORVAL": "66bbd04d-136e-4f9f-98a1-a394dcc6ccec",
+  "CHILD": "3bbd18f7-6975-40e2-b88b-3edaeb420174",
+  "ELDER": "88a56c8b-6c6f-4a59-8aa4-2edce052a174",
+  "SOLDIER": "5fc2bd73-2542-46e3-b25b-058ab78f377f"
+ }
+}
